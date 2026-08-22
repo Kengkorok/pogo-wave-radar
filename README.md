@@ -80,7 +80,7 @@ Use at your own risk. Respect cooldown & Niantic's terms — keep it fair play. 
 
 ### Apa ni?
 
-Event Pokémon GO yang ikut **waktu tempatan** (Community Day 2–5pm, Raid Day 11am–5pm, Spotlight Hour 6–7pm) bukan berlaku serentak seluruh dunia — ia bergerak macam **ombak** dari Kiribati → Jepun → Malaysia → Eropah → Brazil → US.
+Web app khas untuk para spoofer Pokemon Go, event Pokémon GO yang follow **waktu tempatan** (Community Day, Raid Day, Spotlight Hour) - ia bergerak macam **ombak** dari Kiribati → Jepun → Malaysia → Eropah → Brazil → US.
 
 Kalau event dah habis kat tempat kau, **kemungkinan besar masih live kat tempat lain.** App ni tunjuk:
 
@@ -95,32 +95,10 @@ Data auto-update dari [leekduck.com/events](https://leekduck.com/events/) setiap
 1. Buka [kengkorok.github.io/pogo-wave-radar](https://kengkorok.github.io/pogo-wave-radar/)
 2. Chrome/Android: **Add to Home screen** → install sebagai app
 3. Set zon kau (auto-detect biasanya dah betul)
-4. Event live → tekan bandar → **📋 salin koordinat** → paste kat GPS Joystick
-
-### 🛠 Dev
-
-```bash
-# Scrape leekduck sekali
-python scripts/scrape_events.py      # -> docs/events.json
-
-# Serve app tempatan
-cd docs && python -m http.server 8000
-# buka http://localhost:8000
-```
-
-**Struktur**
-
-```
-scripts/scrape_events.py     # Python scraper (leekduck -> events.json)
-docs/                        # GitHub Pages site
-  index.html  app.js  style.css  config.js  cities.json
-  events.json                # di-generate oleh GitHub Actions
-.github/workflows/scrape.yml # cron setiap 30 minit
-```
+4. Event live → tekan bandar → **📋 salin koordinat** → paste kat GPS Joystick, Teleport PGS
 
 **Bandar utama (19):** Kiribati · Auckland · Sydney · Tokyo · Nagoya · Osaka · Seoul · KLCC · Marina Bay Sands · Dubai · Izmir · Larissa · Budapest · Seville · Zaragoza · São Paulo · Chancay · New York · California (LA)
 
-Nak tambah/tukar bandar? Edit `docs/cities.json` (nama, IANA timezone, lat/lng).
 
 ### ☕ Derma
 
@@ -128,11 +106,10 @@ App ni free & takde iklan. Kalau app ni membantu korang tak terlepas event, bole
 
 - **Ko-fi** ⭐ — terbaik untuk penyokong luar negara, payout via PayPal: [ko-fi.com/kengkorok](https://ko-fi.com/kengkorok)
 - **DuitNow QR (Malaysia)** — zero fee, scan terus guna TNG eWallet / mana-mana app DuitNow: [duitnow-qr.png](https://kengkorok.github.io/pogo-wave-radar/img/duitnow-qr.png)
-- Link hidup dalam `docs/config.js` — edit & push untuk tukar.
 
 ### ⚠️ Disclaimer
 
-Guna pada risiko sendiri. Hormati cooldown & syarat Niantic — kekalkan fair play. App ni bukan dari Niantic, tak bergabung, dan tak diluluskan oleh Niantic.
+Guna atas risiko sendiri, kami tidak bertanggungjawab sekiranya akaun anda soft-banned, permanently banned, suspended etc. Respect cooldown & syarat Niantic/Scopely. App ni bukan dari Niantic, hanya untuk rujukan supaya memudahkan anda spoofing. 
 
 ---
 
