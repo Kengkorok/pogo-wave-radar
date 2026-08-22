@@ -1,5 +1,7 @@
 <div align="center">
 
+ [**Bahasa Melayu**](#bahasa-melayu) | [**English**](#english)
+<a name="english"></a>
 # 🌊 PoGo Wave Radar
 
 **Never miss a Pokémon GO event again.** Chase the event wave across time zones — pick a city, copy coords, spoof!
@@ -74,7 +76,7 @@ Use at your own risk. Respect cooldown & Niantic's terms — keep it fair play. 
 
 ---
 
-## 🇲🇾 Bahasa Melayu
+<a name="bahasa-melayu"></a>
 
 ### Apa ni?
 
