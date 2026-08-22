@@ -42,7 +42,7 @@ function fmtTime(ms, tz, opts) {
 function fmtDur(ms) {
   if (ms < 0) ms = 0;
   const h = Math.floor(ms / 3600000), m = Math.floor((ms % 3600000) / 60000);
-  return h > 0 ? `${h}j ${m}m` : `${m}m`;
+  return h > 0 ? `${h}h ${m}m` : `${m}m`;
 }
 function timeAgo(iso) {
   const d = new Date(iso);
@@ -110,30 +110,30 @@ function renderLive() {
     });
 
   if (!rows.length) {
-    box.innerHTML = '<div class="empty">Tiada event sekarang. Cuba aktifkan PvP atau tunggu event seterusnya. 🌊</div>';
+    box.innerHTML = '<div class="empty">No events right now. Try enabling PvP or wait for the next event. 🌊</div>';
     return;
   }
   box.innerHTML = rows.map((r) => {
     const isLive = r.live.length > 0;
     const tag = r.ev.type.replace(/-/g, ' ');
-    const myBadge = r.my.st === 'ended' ? ' <span class="badge ended">Dah habis kat tempat kau</span>'
-      : r.my.st === 'upcoming' ? ' <span class="badge soon">Belum start kat tempat kau</span>'
+    const myBadge = r.my.st === 'ended' ? ' <span class="badge ended">Ended in your area</span>'
+      : r.my.st === 'upcoming' ? ' <span class="badge soon">Not started in your area</span>'
       : isLive ? ' <span class="badge live">LIVE</span>' : '';
     const liveChips = isLive
       ? '<div class="chips">' + r.live.map((s) => chip(s, r.ev)).join('') + '</div>'
-      : '<div class="nextline">Mula dalam <b>' + fmtDur(r.upcoming[0].s - now.getTime()) + '</b> · ' +
-        fmtTime(r.upcoming[0].s, r.upcoming[0].city.tz) + ' waktu ' + r.upcoming[0].city.name + '</div>';
+      : '<div class="nextline">Starts in <b>' + fmtDur(r.upcoming[0].s - now.getTime()) + '</b> · ' +
+        fmtTime(r.upcoming[0].s, r.upcoming[0].city.tz) + ' in ' + r.upcoming[0].city.name + '</div>';
     const cta = isLive
-      ? '<button class="btn" data-wave="' + r.ev.slug + '">🌊 Lihat wave penuh</button>'
-      : '<button class="btn ghost" data-wave="' + r.ev.slug + '">Lihat wave</button>';
+      ? '<button class="btn" data-wave="' + r.ev.slug + '">🌊 View full wave</button>'
+      : '<button class="btn ghost" data-wave="' + r.ev.slug + '">View wave</button>';
     return '<article class="card' + (isLive ? ' live' : '') + '" id="ev-' + r.ev.slug + '">'
       + (r.ev.img ? '<img class="thumb" loading="lazy" src="' + r.ev.img + '" alt="">' : '')
       + '<div class="body">'
       + '<div class="row1"><span class="tag">' + esc(tag) + '</span>' + myBadge + '</div>'
       + '<h3>' + esc(r.ev.name) + '</h3>'
       + (isLive
-          ? '<div class="cd">Tamat dalam <b data-cd="' + Math.min(...r.live.map((s) => s.e)) + '">…</b> · <b>' + r.live.length + '</b> bandar live</div>'
-          : '<div class="cd">Bermula <b data-cd="' + r.upcoming[0].s + '">…</b></div>')
+          ? '<div class="cd">Ends in <b data-cd="' + Math.min(...r.live.map((s) => s.e)) + '">…</b> · <b>' + r.live.length + '</b> cities live</div>'
+          : '<div class="cd">Starts in <b data-cd="' + r.upcoming[0].s + '">…</b></div>')
       + liveChips
       + cta
       + '</div></article>';
@@ -146,7 +146,7 @@ function renderLive() {
 function chip(s, ev) {
   const c = s.city;
   const coords = c.lat.toFixed(4) + ', ' + c.lng.toFixed(4);
-  const until = s.e === Infinity ? '' : ' · tamat ' + fmtTime(s.e, c.tz);
+  const until = s.e === Infinity ? '' : ' · ends ' + fmtTime(s.e, c.tz);
   return '<button class="chip" data-coords="' + coords + '" data-name="' + esc(c.name) + '">'
     + '<span class="dot"></span>' + c.flag + ' ' + esc(c.name) + until + '</button>';
 }
@@ -170,7 +170,7 @@ function renderWave() {
     .sort((a, b) => {
       const order = { live: 0, upcoming: 1, ended: 2 };
       if (order[a.st] !== order[b.st]) return order[a.st] - order[b.st];
-      if (a.st === 'live') return b.e - a.e; // paling lama tinggal dulu
+      if (a.st === 'live') return b.e - a.e; // most time left first
       if (a.st === 'upcoming') return a.s - b.s;
       return 0;
     });
@@ -179,21 +179,21 @@ function renderWave() {
   $('#waveList').innerHTML = '<div class="wavehead">'
     + '<span class="tag">' + esc(ev.type.replace(/-/g, ' ')) + '</span>'
     + '<h3>' + esc(ev.name) + '</h3>'
-    + (ev.local_time ? '<p class="note">🕐 Event ikut waktu <b>tempatan</b> — ombak bergerak dari timur ke barat. Pilih bandar, salin koordinat, spoof!</p>'
-        : '<p class="note">🕐 Event global — serentak seluruh dunia (waktu UTC).</p>')
+    + (ev.local_time ? '<p class="note">🕐 Local-time event — the wave moves east to west. Pick a city, copy coords, spoof!</p>'
+        : '<p class="note">🕐 Global event — simultaneous worldwide (UTC).</p>')
     + '</div>'
     + '<div class="wavetable">' + states.map((s) => {
       const icon = s.st === 'live' ? '🟢' : s.st === 'upcoming' ? '🟡' : '⚫';
-      const lbl = s.st === 'live' ? 'LIVE' : s.st === 'upcoming' ? 'MULA ' + fmtTime(s.s, s.city.tz) : 'HABIS ' + fmtTime(s.e, s.city.tz);
-      const isMy = s.city.tz === myTZ ? ' <span class="badge mine">tempat kau</span>' : '';
+      const lbl = s.st === 'live' ? 'LIVE' : s.st === 'upcoming' ? 'STARTS ' + fmtTime(s.s, s.city.tz) : 'ENDS ' + fmtTime(s.e, s.city.tz);
+      const isMy = s.city.tz === myTZ ? ' <span class="badge mine">your area</span>' : '';
       const suggest = suggestion && s.city.tz === suggestion.city.tz ? ' ⭐' : '';
       return '<div class="wrow st-' + s.st + '">'
         + '<div class="wcity">' + icon + ' ' + s.city.flag + ' <b>' + esc(s.city.name) + '</b>' + isMy + suggest + '</div>'
-        + '<div class="wtime">' + (ev.local_time && s.st !== 'ended' ? fmtTime(s.s, s.city.tz) + ' – ' + fmtTime(s.e, s.city.tz) + ' waktu tempatan' : lbl) + '</div>'
+        + '<div class="wtime">' + (ev.local_time && s.st !== 'ended' ? fmtTime(s.s, s.city.tz) + ' – ' + fmtTime(s.e, s.city.tz) + ' local time' : lbl) + '</div>'
         + '<div class="wact"><button class="chip" data-coords="' + s.coords + '" data-name="' + esc(s.city.name) + '">📋 ' + s.coords + '</button></div>'
         + '</div>';
     }).join('') + '</div>'
-    + (suggestion ? '<div class="hint">⭐ Cadangan: <b>' + suggestion.city.name + '</b> — masih live, tamat ' + fmtTime(suggestion.e, suggestion.city.tz) + ' waktu tempatan.</div>' : '');
+    + (suggestion ? '<div class="hint">⭐ Suggestion: <b>' + suggestion.city.name + '</b> — still live, ends ' + fmtTime(suggestion.e, suggestion.city.tz) + ' local time.</div>' : '');
   bindChips();
 }
 
@@ -212,20 +212,20 @@ function renderAll() {
     })
     .sort((a, b) => (a.ev.start || '').localeCompare(b.ev.start || ''));
   const groups = [
-    ['live', '🔥 LIVE sekarang'],
-    ['up', '🟡 Akan datang'],
-    ['end', '⚫ Dah tamat'],
+    ['live', '🔥 Live now'],
+    ['up', '🟡 Upcoming'],
+    ['end', '⚫ Ended'],
   ];
   box.innerHTML = groups.map(([g, title]) => {
     const items = rows.filter((r) => r.group === g);
     if (!items.length) return '';
     return '<h2 class="group-title">' + title + ' <span class="cnt">' + items.length + '</span></h2>'
       + '<div class="alllist">' + items.map((r) => {
-        const badge = r.group === 'live' ? '<span class="badge live">' + r.live + ' bandar live</span>'
-          : r.group === 'up' ? '<span class="badge soon">mula ' + fmtTime(new Date(r.ev.start).getTime(), getUserTZ()) + '</span>' : '';
+        const badge = r.group === 'live' ? '<span class="badge live">' + r.live + ' cities live</span>'
+          : r.group === 'up' ? '<span class="badge soon">starts ' + fmtTime(new Date(r.ev.start).getTime(), getUserTZ()) + '</span>' : '';
         return '<div class="allrow" data-wave="' + r.ev.slug + '">'
           + '<div><span class="tag">' + esc(r.ev.type.replace(/-/g, ' ')) + '</span> <b>' + esc(r.ev.name) + '</b></div>'
-          + '<div class="sub">' + (r.ev.local_time ? 'waktu tempatan' : 'UTC') + ' · ' + esc(r.ev.start || '?') + ' → ' + esc(r.ev.end || '?') + ' ' + badge + '</div>'
+          + '<div class="sub">' + (r.ev.local_time ? 'local time' : 'UTC') + ' · ' + esc(r.ev.start || '?') + ' → ' + esc(r.ev.end || '?') + ' ' + badge + '</div>'
           + '</div>';
       }).join('') + '</div>';
   }).join('');
@@ -244,7 +244,7 @@ function goWave(slug) {
 function bindChips() {
   $$('.chip[data-coords]').forEach((el) => el.addEventListener('click', async () => {
     const txt = el.dataset.coords;
-    try { await navigator.clipboard.writeText(txt); toast('📋 ' + el.dataset.name + ': ' + txt + ' — paste kat GPS Joystick'); }
+    try { await navigator.clipboard.writeText(txt); toast('📋 ' + el.dataset.name + ': ' + txt + ' — paste into GPS Joystick'); }
     catch (e) { toast('📋 ' + el.dataset.name + ': ' + txt); }
   }));
 }
@@ -267,7 +267,7 @@ function startTicker() {
   setInterval(() => {
     $$('[data-cd]').forEach((el) => {
       const t = +el.dataset.cd - Date.now();
-      el.textContent = t > 0 ? fmtDur(t) : 'tamat';
+      el.textContent = t > 0 ? fmtDur(t) : 'ended';
     });
   }, 1000);
 }
@@ -283,6 +283,32 @@ function esc(s) {
   return String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
+/* ---------- donate ---------- */
+function renderDonate() {
+  const d = APP_CONFIG.donate || {};
+  const btns = [];
+  if (d.kofi) btns.push('<a class="donate-btn kofi" href="' + d.kofi + '" target="_blank" rel="noopener">☕ Buy me a coffee</a>');
+  if (d.buymeacoffee) btns.push('<a class="donate-btn" href="' + d.buymeacoffee + '" target="_blank" rel="noopener">🧋 Support</a>');
+  if (d.paypal) btns.push('<a class="donate-btn" href="' + d.paypal + '" target="_blank" rel="noopener">💛 PayPal</a>');
+  if (d.duitnow_qr) btns.push('<button class="donate-btn qr" id="qrbtn" type="button">🇲🇾 Scan to donate (MY)</button>');
+  $('#donateTop').innerHTML = btns.join(' ');
+}
+function showQR() {
+  const d = APP_CONFIG.donate || {};
+  const old = document.getElementById('qroverlay');
+  if (old) old.remove();
+  const overlay = document.createElement('div');
+  overlay.className = 'qroverlay';
+  overlay.id = 'qroverlay';
+  overlay.innerHTML = '<div class="qrbox">'
+    + '<button class="qrclose" aria-label="Close" type="button">✕</button>'
+    + '<h3>🇲🇾 ' + esc(d.duitnow_qr_name || 'DuitNow / TNG eWallet') + '</h3>'
+    + '<img src="' + d.duitnow_qr + '" alt="DuitNow QR">'
+    + '<p>Scan with <b>TNG eWallet</b> or any <b>DuitNow</b> app. Thank you! 🙏</p>'
+    + '</div>';
+  document.body.appendChild(overlay);
+}
+
 /* ---------- init ---------- */
 async function init() {
   USER_TZ = localStorage.getItem(TZ_STORAGE) || Intl.DateTimeFormat().resolvedOptions().timeZone || 'Asia/Kuala_Lumpur';
@@ -291,7 +317,7 @@ async function init() {
     const [c, e] = await Promise.all([fetch('cities.json').then((r) => r.json()), fetch('events.json').then((r) => r.json())]);
     CITIES = c; EVENTS = e.events || []; FETCHED_AT = e.fetched_at;
   } catch (err) {
-    $('#live').innerHTML = '<div class="empty">Tak dapat load data. Cuba refresh — kalau still rosak, tunggu GitHub Actions update.</div>';
+    $('#live').innerHTML = '<div class="empty">Could not load data. Refresh — if it persists, GitHub Actions will update soon.</div>';
     return;
   }
   $('#fetched').textContent = FETCHED_AT ? timeAgo(FETCHED_AT) : '—';
@@ -307,19 +333,15 @@ async function init() {
   renderWave();
   renderAll();
   renderDonate();
-}
-function renderDonate() {
-  const d = APP_CONFIG.donate || {};
-  const btns = [];
-  if (d.kofi) btns.push('<a class="donate-btn" href="' + d.kofi + '" target="_blank" rel="noopener">☕ Buy me a coffee</a>');
-  if (d.buymeacoffee) btns.push('<a class="donate-btn" href="' + d.buymeacoffee + '" target="_blank" rel="noopener">🧋 Support</a>');
-  if (d.paypal) btns.push('<a class="donate-btn" href="' + d.paypal + '" target="_blank" rel="noopener">💛 PayPal</a>');
-  if (d.duitnow_qr) btns.push('<button class="donate-btn" id="qrbtn">🇲🇾 TNG / DuitNow</button>');
-  $('#donate').innerHTML = btns.join(' ');
-  const qr = $('#qrbtn');
-  if (qr) qr.addEventListener('click', () => {
-    toast('🇲🇾 DuitNow: ' + (APP_CONFIG.donate.duitnow_qr_name || 'sila set config'));
-    window.open(APP_CONFIG.donate.duitnow_qr, '_blank');
+  document.addEventListener('click', (e) => {
+    const t = e.target;
+    if (t && t.id === 'qrbtn') { showQR(); return; }
+    if (t && (t.classList && t.classList.contains('qrclose'))) {
+      const ov = document.getElementById('qroverlay');
+      if (ov) ov.remove();
+      return;
+    }
+    if (t && t.id === 'qroverlay') t.remove();
   });
 }
 document.addEventListener('DOMContentLoaded', init);

@@ -1,23 +1,22 @@
 /* PoGo Wave Radar — donate & config */
 const APP_CONFIG = {
   /* ============================================================
-     SET KAU PUNYA LINK DI SINI, lepas tu commit & push.
+     SET YOUR OWN LINKS HERE, then commit & push.
      ============================================================ */
   donate: {
-    /* Ko-fi: daftar percuma kat https://ko-fi.com , link jadi
-       https://ko-fi.com/NAMA_KAU  — terbaik utk audience global */
+    /* Ko-fi: free signup at https://ko-fi.com — link becomes
+       https://ko-fi.com/YOUR_NAME — best for global audience */
     kofi: "https://ko-fi.com/kengkorok",
-    /* Buy Me a Coffee: https://buymeacoffee.com/NAMA_KAU */
+    /* Buy Me a Coffee: https://buymeacoffee.com/YOUR_NAME */
     buymeacoffee: null,
-    /* PayPal.Me: https://paypal.me/NAMA_KAU */
+    /* PayPal.Me: https://paypal.me/YOUR_NAME */
     paypal: null,
-    /* TNG/DuitNow: letak URL/imej QR DuitNow kau sendiri (host
-       kat repo, e.g. "img/duitnow-qr.png"). Personal transfer,
-       zero fee, tapi manual. Ko-fi tetap utama untuk luar negara. */
-    duitnow_qr: null,
-    duitnow_qr_name: "",
+    /* TNG/DuitNow: host your own QR image in the repo,
+       e.g. "img/duitnow-qr.png". Personal transfer, zero fee. */
+    duitnow_qr: "img/duitnow-qr.png",
+    duitnow_qr_name: "Maybank DuitNow QR",
   },
-  /* Default: event PvP (GO Battle League) disorok dari Live Now
-     supaya tak dominate. User boleh on semula kat app. */
+  /* Default: PvP events (GO Battle League) are hidden from Live Now
+     so they don't dominate. Users can toggle them back on. */
   show_pvp_default: false,
 };

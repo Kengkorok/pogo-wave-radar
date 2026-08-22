@@ -1,41 +1,42 @@
 <!doctype html>
-<html lang="ms">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b1220">
-<meta name="description" content="PoGo Wave Radar — jangan terlepas event Pokémon GO. Chase ombak event ikut zon waktu, pilih bandar, salin koordinat, spoof!">
+<meta name="description" content="PoGo Wave Radar — never miss a Pokémon GO event. Chase the event wave across time zones, pick a city, copy coords, spoof!">
 <title>🌊 PoGo Wave Radar</title>
 <link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+<link rel="icon" type="image/svg+xml" href="img/icon.svg">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
   <h1>🌊 PoGo Wave Radar</h1>
-  <p class="tagline">Chase ombak event ikut zon waktu — jangan terlepas lagi</p>
+  <p class="tagline">Never miss a Pokémon GO event again — chase the wave across time zones</p>
   <div class="tzbar">
-    <label for="tz">Zon kau</label>
+    <label for="tz">Your timezone</label>
     <select id="tz" title="Timezone"></select>
     <span id="tzclock"></span>
   </div>
   <div class="filters">
-    <label class="switch"><input type="checkbox" id="pvp"> Tunjuk PvP / GBL (biasanya disorok)</label>
+    <label class="switch"><input type="checkbox" id="pvp"> Show PvP / GBL (hidden by default)</label>
   </div>
+  <div id="donateTop"></div>
 </header>
 
 <nav class="tabs">
-  <button data-tab="live" class="active">🔥 Live Sekarang</button>
+  <button data-tab="live" class="active">🔥 Live Now</button>
   <button data-tab="wave">🌊 Wave Tracker</button>
-  <button data-tab="all">📅 Semua Event</button>
+  <button data-tab="all">📅 All Events</button>
 </nav>
 
 <main>
-  <section id="live"><div class="empty">Memuatkan…</div></section>
+  <section id="live"><div class="empty">Loading…</div></section>
 
   <section id="wave" hidden>
     <div class="wavebar">
-      <label for="waveSel">Pilih event:</label>
+      <label for="waveSel">Pick an event:</label>
       <select id="waveSel"></select>
     </div>
     <div id="waveList"></div>
@@ -45,9 +46,8 @@
 </main>
 
 <footer>
-  <p>Data event dari <a href="https://leekduck.com/events/" target="_blank" rel="noopener">leekduck.com</a> · dikemas kini <span id="fetched">—</span></p>
-  <div id="donate"></div>
-  <p class="tiny">Buat spoofer: guna koordinat kat GPS Joystick ikut risiko sendiri. Kekalkan cooldown &amp; fair play.</p>
+  <p>Event data from <a href="https://leekduck.com/events/" target="_blank" rel="noopener">leekduck.com</a> · updated <span id="fetched">—</span></p>
+  <p class="tiny">For spoofers: use the coords in GPS Joystick at your own risk. Respect cooldown &amp; fair play.</p>
 </footer>
 
 <div id="toast"></div>

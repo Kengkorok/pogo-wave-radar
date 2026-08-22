@@ -1,15 +1,15 @@
 {
   "name": "PoGo Wave Radar",
   "short_name": "Wave Radar",
-  "description": "Chase ombak event Pokémon GO ikut zon waktu. Pilih bandar, salin koordinat, spoof!",
+  "description": "Chase the Pokémon GO event wave across time zones. Pick a city, copy coords, spoof!",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#0b1220",
   "theme_color": "#0b1220",
-  "lang": "ms",
+  "lang": "en",
   "icons": [
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>",
+      "src": "img/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
