@@ -44,6 +44,19 @@ function fmtDur(ms) {
   const h = Math.floor(ms / 3600000), m = Math.floor((ms % 3600000) / 60000);
   return h > 0 ? `${h}h ${m}m` : `${m}m`;
 }
+/* Format a window [s,e] in a given timezone; adds the date when it isn't today there */
+function fmtWin(s, e, tz) {
+  const off = tzOffsetMs(tz, new Date(s));
+  const di = (ms) => Math.floor((ms + off) / 86400000);
+  const now = Date.now();
+  const tm = (ms) => fmtTime(ms, tz);
+  const dshort = (ms) => new Intl.DateTimeFormat('en-MY', { day: 'numeric', month: 'short', timeZone: tz }).format(new Date(ms));
+  if (di(s) === di(e)) {
+    if (di(s) === Math.floor((now + tzOffsetMs(tz, new Date(now))) / 86400000)) return tm(s) + ' – ' + tm(e);
+    return dshort(s) + ' · ' + tm(s) + ' – ' + tm(e);
+  }
+  return dshort(s) + ' ' + tm(s) + ' – ' + dshort(e) + ' ' + tm(e);
+}
 function timeAgo(iso) {
   const d = new Date(iso);
   return isNaN(d) ? '—' : new Intl.DateTimeFormat('en-MY', { dateStyle: 'medium', timeStyle: 'short' }).format(d);
@@ -189,7 +202,9 @@ function renderWave() {
       const suggest = suggestion && s.city.tz === suggestion.city.tz ? ' ⭐' : '';
       return '<div class="wrow st-' + s.st + '">'
         + '<div class="wcity">' + icon + ' ' + s.city.flag + ' <b>' + esc(s.city.name) + '</b>' + isMy + suggest + '</div>'
-        + '<div class="wtime">' + (ev.local_time && s.st !== 'ended' ? fmtTime(s.s, s.city.tz) + ' – ' + fmtTime(s.e, s.city.tz) + ' local time' : lbl) + '</div>'
+        + '<div class="wtime">' + (ev.local_time
+            ? '<span class="locwin">' + fmtWin(s.s, s.e, s.city.tz) + ' local</span><br><b class="yourwin">' + fmtWin(s.s, s.e, myTZ) + ' your time</b>'
+            : lbl) + '</div>'
         + '<div class="wact"><button class="chip" data-coords="' + s.coords + '" data-name="' + esc(s.city.name) + '">📋 ' + s.coords + '</button></div>'
         + '</div>';
     }).join('') + '</div>'
