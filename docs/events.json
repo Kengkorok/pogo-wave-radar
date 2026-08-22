@@ -1,0 +1,336 @@
+{
+ "fetched_at": "2026-08-22T09:43:02.879401+00:00",
+ "source": "https://leekduck.com/events/",
+ "events": [
+  {
+   "slug": "season-23-forever-forward",
+   "name": "Forever Forward",
+   "type": "season",
+   "start": "2026-06-02T10:00:00",
+   "end": "2026-09-08T10:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-06-02-season-23-forever-forward/season-23-forever-forward.jpg",
+   "url": "https://leekduck.com/events/season-23-forever-forward/"
+  },
+  {
+   "slug": "lego-pokemon-go-2026",
+   "name": "LEGO Stores and Pokémon GO",
+   "type": "event",
+   "start": "2026-08-03T10:00:00",
+   "end": "2026-09-30T23:59:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-03-lego-pokemon-go-2026/lego-stores-pokemon-go.jpg",
+   "url": "https://leekduck.com/events/lego-pokemon-go-2026/"
+  },
+  {
+   "slug": "go-pass-august-2026",
+   "name": "GO Pass: August",
+   "type": "go-pass",
+   "start": "2026-08-04T10:00:00",
+   "end": "2026-09-08T10:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-04-go-pass-august-2026/go-pass-august-2026.jpg",
+   "url": "https://leekduck.com/events/go-pass-august-2026/"
+  },
+  {
+   "slug": "shadow-giratina-altered-in-shadow-raids-august-2026",
+   "name": "Shadow Giratina (Altered Forme) in Shadow Raids",
+   "type": "raid-battles",
+   "start": "2026-08-05T06:00:00",
+   "end": "2026-09-08T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "url": "https://leekduck.com/events/shadow-giratina-altered-in-shadow-raids-august-2026/"
+  },
+  {
+   "slug": "10th-anniversary-celebration",
+   "name": "10th Anniversary Celebration - Perfect Mewtwo Timed Research",
+   "type": "event",
+   "start": "2026-08-12T16:00:00",
+   "end": "2026-09-06T23:59:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-12-10th-anniversary-celebration/10th-anniversary-celebration-2026.jpg",
+   "url": "https://leekduck.com/events/10th-anniversary-celebration/"
+  },
+  {
+   "slug": "water-festival-2026",
+   "name": "Ultra Unlock: Water Festival",
+   "type": "event",
+   "start": "2026-08-18T10:00:00",
+   "end": "2026-08-24T20:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-18-water-festival-2026/water-festival-2026.jpg?v2",
+   "url": "https://leekduck.com/events/water-festival-2026/"
+  },
+  {
+   "slug": "gbl-forever-forward_great-league_scroll-cup-great-league-edition",
+   "name": "Great League and Scroll Cup: Great League Edition | Forever Forward",
+   "type": "go-battle-league",
+   "start": "2026-08-18T20:00:00+00:00",
+   "end": "2026-08-25T20:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/gobattle-greatleague-key.jpg",
+   "url": "https://leekduck.com/events/gbl-forever-forward_great-league_scroll-cup-great-league-edition/"
+  },
+  {
+   "slug": "lunala-in-5-star-raid-battles-august-2026",
+   "name": "Lunala in 5-star Raid Battles",
+   "type": "raid-battles",
+   "start": "2026-08-19T06:00:00",
+   "end": "2026-08-25T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/lunala.jpg?v2",
+   "url": "https://leekduck.com/events/lunala-in-5-star-raid-battles-august-2026/"
+  },
+  {
+   "slug": "mega-swampert-in-mega-raids-august-2026",
+   "name": "Mega Swampert in Mega Raids",
+   "type": "raid-battles",
+   "start": "2026-08-19T06:00:00",
+   "end": "2026-08-25T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
+   "url": "https://leekduck.com/events/mega-swampert-in-mega-raids-august-2026/"
+  },
+  {
+   "slug": "starmie-super-mega-raid-day-2026",
+   "name": "Starmie Super Mega Raid Day",
+   "type": "raid-day",
+   "start": "2026-08-22T11:00:00",
+   "end": "2026-08-22T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-22-starmie-super-mega-raid-day-2026/starmie-super-mega-raid-day-2026.jpg",
+   "url": "https://leekduck.com/events/starmie-super-mega-raid-day-2026/"
+  },
+  {
+   "slug": "max-mondays-2026-08-24",
+   "name": "Dynamax Hitmontop during Max Monday",
+   "type": "max-mondays",
+   "start": "2026-08-24T06:00:00",
+   "end": "2026-08-24T21:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
+   "url": "https://leekduck.com/events/max-mondays-2026-08-24/"
+  },
+  {
+   "slug": "pokemon-xp-2026-worlds",
+   "name": "PokémonXP & 2026 Worlds",
+   "type": "event",
+   "start": "2026-08-25T10:00:00",
+   "end": "2026-08-30T20:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-25-pokemon-xp-2026-worlds/pokemon-xp-2026-worlds.jpg",
+   "url": "https://leekduck.com/events/pokemon-xp-2026-worlds/"
+  },
+  {
+   "slug": "gbl-forever-forward_great-league_ultra-league_master-league-split-3",
+   "name": "Great League, Ultra League, and Master League | Forever Forward",
+   "type": "go-battle-league",
+   "start": "2026-08-25T20:00:00+00:00",
+   "end": "2026-09-01T20:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/go-battle-league-season-27-forever-forward.jpg",
+   "url": "https://leekduck.com/events/gbl-forever-forward_great-league_ultra-league_master-league-split-3/"
+  },
+  {
+   "slug": "mega-gyarados-in-mega-raids-august-2026",
+   "name": "Mega Gyarados in Mega Raids",
+   "type": "raid-battles",
+   "start": "2026-08-26T06:00:00",
+   "end": "2026-09-08T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
+   "url": "https://leekduck.com/events/mega-gyarados-in-mega-raids-august-2026/"
+  },
+  {
+   "slug": "regirock-regice-registeel-in-5-star-raid-battles-august-2026",
+   "name": "Regirock, Regice, and Registeel in 5-star Raid Battles",
+   "type": "raid-battles",
+   "start": "2026-08-26T06:00:00",
+   "end": "2026-09-08T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "url": "https://leekduck.com/events/regirock-regice-registeel-in-5-star-raid-battles-august-2026/"
+  },
+  {
+   "slug": "raidhour20260826",
+   "name": "Regirock, Regice, and Registeel Raid Hour",
+   "type": "raid-hour",
+   "start": "2026-08-26T18:00:00",
+   "end": "2026-08-26T19:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/raidhour.jpg",
+   "url": "https://leekduck.com/events/raidhour20260826/"
+  },
+  {
+   "slug": "pokemonspotlighthour2026-08-27",
+   "name": "Mankey Spotlight Hour",
+   "type": "pokémon-spotlight-hour",
+   "start": "2026-08-27T18:00:00",
+   "end": "2026-08-27T19:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/pokemonspotlighthour.jpg",
+   "url": "https://leekduck.com/events/pokemonspotlighthour2026-08-27/"
+  },
+  {
+   "slug": "pokemon-world-championships-2026-timed-research-twitch-drops",
+   "name": "Twitch Drops for 2026 Pokémon World Championships",
+   "type": "research",
+   "start": "2026-08-28T16:00:00+00:00",
+   "end": "2026-08-31T03:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-28-pokemon-world-championships-2026-timed-research-twitch-drops/2026-worlds-go-drops.jpg",
+   "url": "https://leekduck.com/events/pokemon-world-championships-2026-timed-research-twitch-drops/"
+  },
+  {
+   "slug": "max-mondays-2026-08-31",
+   "name": "Dynamax Eevee during Max Monday",
+   "type": "max-mondays",
+   "start": "2026-08-31T06:00:00",
+   "end": "2026-08-31T21:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
+   "url": "https://leekduck.com/events/max-mondays-2026-08-31/"
+  },
+  {
+   "slug": "mega-ascension",
+   "name": "Mega Ascension",
+   "type": "event",
+   "start": "2026-08-31T10:00:00",
+   "end": "2026-09-04T23:59:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-31-mega-ascension/mega-ascension.jpg",
+   "url": "https://leekduck.com/events/mega-ascension/"
+  },
+  {
+   "slug": "gbl-forever-forward_great-league_ultra-league_master-league-mega-edition",
+   "name": "Great League, Ultra League, and Master League: Mega Edition | Forever Forward",
+   "type": "go-battle-league",
+   "start": "2026-09-01T20:00:00+00:00",
+   "end": "2026-09-08T20:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/go-battle-league-season-27-forever-forward.jpg",
+   "url": "https://leekduck.com/events/gbl-forever-forward_great-league_ultra-league_master-league-mega-edition/"
+  },
+  {
+   "slug": "raidhour20260902",
+   "name": "Regirock, Regice, and Registeel Raid Hour",
+   "type": "raid-hour",
+   "start": "2026-09-02T18:00:00",
+   "end": "2026-09-02T19:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/raidhour.jpg",
+   "url": "https://leekduck.com/events/raidhour20260902/"
+  },
+  {
+   "slug": "pokemon-go-fest-2026-mega-finale",
+   "name": "Pokémon GO Fest 2026: Mega Finale",
+   "type": "pokémon-go-fest",
+   "start": "2026-09-05T10:00:00",
+   "end": "2026-09-06T18:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-05-pokemon-go-fest-2026-mega-finale/pokemon-go-fest-2026-mega-finale.jpg",
+   "url": "https://leekduck.com/events/pokemon-go-fest-2026-mega-finale/"
+  },
+  {
+   "slug": "september-communitydayclassic2026",
+   "name": "September Community Day Classic",
+   "type": "community-day",
+   "start": "2026-09-12T14:00:00",
+   "end": "2026-09-12T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/cd-default.jpg",
+   "url": "https://leekduck.com/events/september-communitydayclassic2026/"
+  },
+  {
+   "slug": "super-mega-raid-day-september-2026",
+   "name": "Super Mega Raid Day",
+   "type": "raid-day",
+   "start": "2026-09-19T14:00:00",
+   "end": "2026-09-19T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "url": "https://leekduck.com/events/super-mega-raid-day-september-2026/"
+  },
+  {
+   "slug": "catch-mastery-september-2026",
+   "name": "Catch Mastery",
+   "type": "event",
+   "start": "2026-09-26T10:00:00",
+   "end": "2026-09-26T20:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "url": "https://leekduck.com/events/catch-mastery-september-2026/"
+  },
+  {
+   "slug": "max-battle-day-october-2026",
+   "name": "Max Battle Day",
+   "type": "max-battles",
+   "start": "2026-10-03T14:00:00",
+   "end": "2026-10-03T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "url": "https://leekduck.com/events/max-battle-day-october-2026/"
+  },
+  {
+   "slug": "october-communityday2026",
+   "name": "October Community Day",
+   "type": "community-day",
+   "start": "2026-10-10T14:00:00",
+   "end": "2026-10-10T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/cd-default.jpg",
+   "url": "https://leekduck.com/events/october-communityday2026/"
+  },
+  {
+   "slug": "hatch-day-october-2026",
+   "name": "Hatch Day",
+   "type": "event",
+   "start": "2026-10-17T11:00:00",
+   "end": "2026-10-17T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "url": "https://leekduck.com/events/hatch-day-october-2026/"
+  },
+  {
+   "slug": "max-battle-day-october-24-2026",
+   "name": "Max Battle Day",
+   "type": "max-battles",
+   "start": "2026-10-24T14:00:00",
+   "end": "2026-10-24T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "url": "https://leekduck.com/events/max-battle-day-october-24-2026/"
+  },
+  {
+   "slug": "super-mega-raid-day-october-2026",
+   "name": "Super Mega Raid Day",
+   "type": "raid-day",
+   "start": "2026-10-31T14:00:00",
+   "end": "2026-10-31T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "url": "https://leekduck.com/events/super-mega-raid-day-october-2026/"
+  },
+  {
+   "slug": "november-communityday2026",
+   "name": "November Community Day",
+   "type": "community-day",
+   "start": "2026-11-21T14:00:00",
+   "end": "2026-11-21T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/cd-default.jpg",
+   "url": "https://leekduck.com/events/november-communityday2026/"
+  },
+  {
+   "slug": "super-mega-raid-day-november-2026",
+   "name": "Super Mega Raid Day",
+   "type": "raid-day",
+   "start": "2026-11-28T14:00:00",
+   "end": "2026-11-28T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "url": "https://leekduck.com/events/super-mega-raid-day-november-2026/"
+  }
+ ]
+}

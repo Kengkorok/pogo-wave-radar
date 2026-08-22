@@ -1,0 +1,21 @@
+[
+  {"name": "Kiribati (Tarawa)", "flag": "🇰🇮", "tz": "Pacific/Tarawa", "lat": -0.8820, "lng": 169.5340, "note": "UTC+12/+13 — wave pertama dunia"},
+  {"name": "Auckland", "flag": "🇳🇿", "tz": "Pacific/Auckland", "lat": -36.8509, "lng": 174.7645, "note": "UTC+12/+13"},
+  {"name": "Sydney", "flag": "🇦🇺", "tz": "Australia/Sydney", "lat": -33.8688, "lng": 151.2093, "note": "UTC+10/+11"},
+  {"name": "Tokyo", "flag": "🇯🇵", "tz": "Asia/Tokyo", "lat": 35.6762, "lng": 139.6503, "note": "UTC+9"},
+  {"name": "Nagoya", "flag": "🇯🇵", "tz": "Asia/Tokyo", "lat": 35.1815, "lng": 136.9066, "note": "UTC+9"},
+  {"name": "Osaka", "flag": "🇯🇵", "tz": "Asia/Tokyo", "lat": 34.6937, "lng": 135.5023, "note": "UTC+9"},
+  {"name": "Seoul", "flag": "🇰🇷", "tz": "Asia/Seoul", "lat": 37.5665, "lng": 126.9780, "note": "UTC+9"},
+  {"name": "KLCC Kuala Lumpur", "flag": "🇲🇾", "tz": "Asia/Kuala_Lumpur", "lat": 3.1579, "lng": 101.7120, "note": "UTC+8 — home base korok"},
+  {"name": "Marina Bay Sands", "flag": "🇸🇬", "tz": "Asia/Singapore", "lat": 1.2834, "lng": 103.8607, "note": "UTC+8"},
+  {"name": "Dubai", "flag": "🇦🇪", "tz": "Asia/Dubai", "lat": 25.2048, "lng": 55.2708, "note": "UTC+4"},
+  {"name": "Izmir", "flag": "🇹🇷", "tz": "Europe/Istanbul", "lat": 38.4237, "lng": 27.1428, "note": "UTC+3"},
+  {"name": "Larissa", "flag": "🇬🇷", "tz": "Europe/Athens", "lat": 39.6390, "lng": 22.4200, "note": "UTC+2/+3"},
+  {"name": "Budapest", "flag": "🇭🇺", "tz": "Europe/Budapest", "lat": 47.4979, "lng": 19.0402, "note": "UTC+1/+2"},
+  {"name": "Seville", "flag": "🇪🇸", "tz": "Europe/Madrid", "lat": 37.3891, "lng": -5.9845, "note": "UTC+1/+2"},
+  {"name": "Zaragoza", "flag": "🇪🇸", "tz": "Europe/Madrid", "lat": 41.6488, "lng": -0.8891, "note": "UTC+1/+2"},
+  {"name": "Sao Paulo", "flag": "🇧🇷", "tz": "America/Sao_Paulo", "lat": -23.5505, "lng": -46.6333, "note": "UTC-3"},
+  {"name": "Chancay", "flag": "🇵🇪", "tz": "America/Lima", "lat": -11.5714, "lng": -77.2672, "note": "UTC-5"},
+  {"name": "New York", "flag": "🇺🇸", "tz": "America/New_York", "lat": 40.7128, "lng": -74.0060, "note": "UTC-4/-5"},
+  {"name": "California (LA)", "flag": "🇺🇸", "tz": "America/Los_Angeles", "lat": 34.0522, "lng": -118.2437, "note": "UTC-7/-8 — wave terakhir"}
+]
