@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-08-23T05:57:17.219746+00:00",
+ "fetched_at": "2026-08-23T06:55:19.259163+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -93,16 +93,6 @@
    "url": "https://leekduck.com/events/mega-swampert-in-mega-raids-august-2026/"
   },
   {
-   "slug": "starmie-super-mega-raid-day-2026",
-   "name": "Starmie Super Mega Raid Day",
-   "type": "raid-day",
-   "start": "2026-08-22T11:00:00",
-   "end": "2026-08-22T17:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-22-starmie-super-mega-raid-day-2026/starmie-super-mega-raid-day-2026.jpg",
-   "url": "https://leekduck.com/events/starmie-super-mega-raid-day-2026/"
-  },
-  {
    "slug": "max-mondays-2026-08-24",
    "name": "Dynamax Hitmontop during Max Monday",
    "type": "max-mondays",
@@ -149,7 +139,7 @@
    "start": "2026-08-26T06:00:00",
    "end": "2026-09-08T22:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/regi-trio.jpg",
    "url": "https://leekduck.com/events/regirock-regice-registeel-in-5-star-raid-battles-august-2026/"
   },
   {
