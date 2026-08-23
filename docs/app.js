@@ -21,6 +21,8 @@ const I18N = {
     tzLabel: 'Your timezone',
     pvpLabel: 'Show PvP / GBL (hidden by default)',
     tabLive: '🔥 Live Now', tabWave: '🌊 Wave Tracker', tabAll: '📅 All Events',
+    sectionLive: '🔥 Live Now', sectionUpcoming: '🟡 Upcoming Events',
+    tools: '🧰 Tools', iosNote: 'supports iOS',
     loading: 'Loading…', pickEvent: 'Pick an event:',
     footerData: 'Event data from <a href="https://leekduck.com/events/" target="_blank" rel="noopener">leekduck.com</a> · updated <span id="fetched">—</span>',
     disclaimer: 'For spoofers: use the coords in GPS Joystick at your own risk. Respect cooldown &amp; fair play.',
@@ -48,6 +50,8 @@ const I18N = {
     tzLabel: 'Zon kau',
     pvpLabel: 'Tunjuk PvP / GBL (disorok secara default)',
     tabLive: '🔥 Live Sekarang', tabWave: '🌊 Wave Tracker', tabAll: '📅 Semua Event',
+    sectionLive: '🔥 Live Sekarang', sectionUpcoming: '🟡 Event Akan Datang',
+    tools: '🧰 Tools', iosNote: 'sokong iOS',
     loading: 'Memuatkan…', pickEvent: 'Pilih event:',
     footerData: 'Data event dari <a href="https://leekduck.com/events/" target="_blank" rel="noopener">leekduck.com</a> · dikemas kini <span id="fetched">—</span>',
     disclaimer: 'Buat spoofer: guna koordinat kat GPS Joystick ikut risiko sendiri. Hormati cooldown &amp; fair play.',
@@ -171,6 +175,31 @@ function cityStates(ev) {
 function isPvP(ev) { return PVPTYPES.has(ev.type); }
 
 /* ---------- render: live now ---------- */
+function cardHtml(r) {
+  const isLive = r.live.length > 0;
+  const tag = r.ev.type.replace(/-/g, ' ');
+  const myBadge = r.my.st === 'ended' ? ' <span class="badge ended">' + t('endedArea') + '</span>'
+    : r.my.st === 'upcoming' ? ' <span class="badge soon">' + t('notStartedArea') + '</span>'
+    : isLive ? ' <span class="badge live">' + t('liveLbl') + '</span>' : '';
+  const chips = isLive
+    ? '<div class="chips">' + r.live.map((s) => chip(s, r.ev)).join('') + '</div>'
+    : '';
+  const cta = isLive
+    ? '<button class="btn" data-wave="' + r.ev.slug + '">' + t('viewFullWave') + '</button>'
+    : '<button class="btn ghost" data-wave="' + r.ev.slug + '">' + t('viewWave') + '</button>';
+  return '<article class="card' + (isLive ? ' live' : '') + '" id="ev-' + r.ev.slug + '">'
+    + (r.ev.img ? '<img class="thumb" loading="lazy" src="' + r.ev.img + '" alt="">' : '')
+    + '<div class="body">'
+    + '<div class="row1"><span class="tag">' + esc(tag) + '</span>' + myBadge + '</div>'
+    + '<h3>' + esc(r.ev.name) + '</h3>'
+    + (sum(r.ev) ? '<div class="evsum">ℹ️ ' + esc(sum(r.ev)) + '</div>' : '')
+    + (isLive
+        ? '<div class="cd">' + t('endsIn') + ' <b data-cd="' + Math.min(...r.live.map((s) => s.e)) + '">…</b> · <b>' + r.live.length + '</b> ' + t('citiesLive') + '</div>'
+        : '<div class="cd">' + t('startsIn') + ' <b data-cd="' + r.upcoming[0].s + '">…</b> · ' + fmtWin(r.upcoming[0].s, r.upcoming[0].e, getUserTZ()) + ' ' + t('yourTime') + '</div>')
+    + chips
+    + cta
+    + '</div></article>';
+}
 function renderLive() {
   const box = $('#live');
   const now = new Date();
@@ -190,36 +219,23 @@ function renderLive() {
       return aEnd - bEnd;
     });
 
-  if (!rows.length) {
+  const liveRows = rows.filter((r) => r.live.length > 0);
+  const upRows = rows.filter((r) => r.live.length === 0);
+
+  if (!liveRows.length && !upRows.length) {
     box.innerHTML = '<div class="empty">' + t('noEvents') + '</div>';
     return;
   }
-  box.innerHTML = rows.map((r) => {
-    const isLive = r.live.length > 0;
-    const tag = r.ev.type.replace(/-/g, ' ');
-    const myBadge = r.my.st === 'ended' ? ' <span class="badge ended">' + t('endedArea') + '</span>'
-      : r.my.st === 'upcoming' ? ' <span class="badge soon">' + t('notStartedArea') + '</span>'
-      : isLive ? ' <span class="badge live">' + t('liveLbl') + '</span>' : '';
-    const liveChips = isLive
-      ? '<div class="chips">' + r.live.map((s) => chip(s, r.ev)).join('') + '</div>'
-      : '<div class="nextline">' + t('startsSoon') + ' <b>' + fmtDur(r.upcoming[0].s - now.getTime()) + '</b> · ' +
-        fmtWin(r.upcoming[0].s, r.upcoming[0].e, getUserTZ()) + ' ' + t('yourTime') + '</div>';
-    const cta = isLive
-      ? '<button class="btn" data-wave="' + r.ev.slug + '">' + t('viewFullWave') + '</button>'
-      : '<button class="btn ghost" data-wave="' + r.ev.slug + '">' + t('viewWave') + '</button>';
-    return '<article class="card' + (isLive ? ' live' : '') + '" id="ev-' + r.ev.slug + '">'
-      + (r.ev.img ? '<img class="thumb" loading="lazy" src="' + r.ev.img + '" alt="">' : '')
-      + '<div class="body">'
-      + '<div class="row1"><span class="tag">' + esc(tag) + '</span>' + myBadge + '</div>'
-      + '<h3>' + esc(r.ev.name) + '</h3>'
-      + (sum(r.ev) ? '<div class="evsum">ℹ️ ' + esc(sum(r.ev)) + '</div>' : '')
-      + (isLive
-          ? '<div class="cd">' + t('endsIn') + ' <b data-cd="' + Math.min(...r.live.map((s) => s.e)) + '">…</b> · <b>' + r.live.length + '</b> ' + t('citiesLive') + '</div>'
-          : '<div class="cd">' + t('startsIn') + ' <b data-cd="' + r.upcoming[0].s + '">…</b> · ' + fmtWin(r.upcoming[0].s, r.upcoming[0].e, getUserTZ()) + ' ' + t('yourTime') + '</div>')
-      + liveChips
-      + cta
-      + '</div></article>';
-  }).join('');
+  let html = '';
+  if (liveRows.length) {
+    html += '<h2 class="group-title">' + t('sectionLive') + ' <span class="cnt">' + liveRows.length + '</span></h2>'
+      + liveRows.map(cardHtml).join('');
+  }
+  if (upRows.length) {
+    html += '<h2 class="group-title">' + t('sectionUpcoming') + ' <span class="cnt">' + upRows.length + '</span></h2>'
+      + upRows.map(cardHtml).join('');
+  }
+  box.innerHTML = html;
   bindWaveButtons();
   bindChips();
   startTicker();
@@ -431,6 +447,12 @@ async function init() {
     localStorage.setItem(LANG_STORAGE, LANG);
     renderLang();
   });
+  const toolsNav = $('#toolsnav');
+  const toolsBtn = $('#toolsbtn');
+  if (toolsBtn && toolsNav) {
+    toolsBtn.addEventListener('click', (e) => { e.stopPropagation(); toolsNav.classList.toggle('open'); });
+    document.addEventListener('click', (e) => { if (!toolsNav.contains(e.target)) toolsNav.classList.remove('open'); });
+  }
   $('#tz').addEventListener('change', (ev) => { USER_TZ = ev.target.value; localStorage.setItem(TZ_STORAGE, USER_TZ); renderTZ(); renderLive(); renderAll(); });
   $('#pvp').addEventListener('change', () => { localStorage.setItem(PVP_STORAGE, $('#pvp').checked ? '1' : '0'); renderLive(); renderWaveSelect(); renderWave(); renderAll(); });
   $$('.tabs button').forEach((b) => b.addEventListener('click', () => switchTab(b.dataset.tab)));
