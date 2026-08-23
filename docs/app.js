@@ -156,12 +156,14 @@ function renderLive() {
   startTicker();
 }
 
+function flagHtml(c) { return c.flag && c.flag.indexOf('.svg') > -1 ? '<img class="flag" src="' + c.flag + '" alt="">' : (c.flag || ''); }
+
 function chip(s, ev) {
   const c = s.city;
   const coords = c.lat.toFixed(4) + ', ' + c.lng.toFixed(4);
   const until = s.e === Infinity ? '' : ' · ends ' + fmtTime(s.e, c.tz);
   return '<button class="chip" data-coords="' + coords + '" data-name="' + esc(c.name) + '">'
-    + '<span class="dot"></span>' + c.flag + ' ' + esc(c.name) + until + '</button>';
+    + '<span class="dot"></span>' + flagHtml(c) + ' ' + esc(c.name) + until + '</button>';
 }
 
 /* ---------- render: wave tracker ---------- */
@@ -201,7 +203,7 @@ function renderWave() {
       const isMy = s.city.tz === myTZ ? ' <span class="badge mine">your area</span>' : '';
       const suggest = suggestion && s.city.tz === suggestion.city.tz ? ' ⭐' : '';
       return '<div class="wrow st-' + s.st + '">'
-        + '<div class="wcity">' + icon + ' ' + s.city.flag + ' <b>' + esc(s.city.name) + '</b>' + isMy + suggest + '</div>'
+        + '<div class="wcity">' + icon + ' ' + flagHtml(s.city) + ' <b>' + esc(s.city.name) + '</b>' + isMy + suggest + '</div>'
         + '<div class="wtime">' + (ev.local_time
             ? '<span class="locwin">' + fmtWin(s.s, s.e, s.city.tz) + ' local</span><br><b class="yourwin">' + fmtWin(s.s, s.e, myTZ) + ' your time</b>'
             : lbl) + '</div>'
