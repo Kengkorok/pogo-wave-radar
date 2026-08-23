@@ -73,6 +73,11 @@ const I18N = {
 function t(key) {
   return (I18N[LANG] && I18N[LANG][key]) || I18N.en[key] || key;
 }
+/* Event summary in current language; fallback to English when BM missing */
+function sum(ev) {
+  if (!ev) return null;
+  return LANG === 'ms' ? (ev.summary_ms || ev.summary) : ev.summary;
+}
 
 /* ---------- timezone helpers ---------- */
 function tzOffsetMs(tz, date) {
@@ -207,7 +212,7 @@ function renderLive() {
       + '<div class="body">'
       + '<div class="row1"><span class="tag">' + esc(tag) + '</span>' + myBadge + '</div>'
       + '<h3>' + esc(r.ev.name) + '</h3>'
-      + (r.ev.summary ? '<div class="evsum">ℹ️ ' + esc(r.ev.summary) + '</div>' : '')
+      + (sum(r.ev) ? '<div class="evsum">ℹ️ ' + esc(sum(r.ev)) + '</div>' : '')
       + (isLive
           ? '<div class="cd">' + t('endsIn') + ' <b data-cd="' + Math.min(...r.live.map((s) => s.e)) + '">…</b> · <b>' + r.live.length + '</b> ' + t('citiesLive') + '</div>'
           : '<div class="cd">' + t('startsIn') + ' <b data-cd="' + r.upcoming[0].s + '">…</b> · ' + fmtWin(r.upcoming[0].s, r.upcoming[0].e, getUserTZ()) + ' ' + t('yourTime') + '</div>')
@@ -256,7 +261,7 @@ function renderWave() {
   $('#waveList').innerHTML = '<div class="wavehead">'
     + '<span class="tag">' + esc(ev.type.replace(/-/g, ' ')) + '</span>'
     + '<h3>' + esc(ev.name) + '</h3>'
-    + (ev.summary ? '<p class="evsum-full">ℹ️ ' + esc(ev.summary) + '</p>' : '')
+    + (sum(ev) ? '<p class="evsum-full">ℹ️ ' + esc(sum(ev)) + '</p>' : '')
     + (ev.local_time ? '<p class="note">' + t('localNote') + '</p>' : '<p class="note">' + t('globalNote') + '</p>')
     + '</div>'
     + '<div class="wavetable">' + states.map((s) => {

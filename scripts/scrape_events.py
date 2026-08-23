@@ -93,11 +93,12 @@ def main():
         slug = ev["slug"]
         if slug not in summaries:
             ev["summary"] = get_summary(slug)
-            summaries[slug] = {"summary": ev["summary"], "fetched_at": now}
+            summaries[slug] = {"summary": ev["summary"], "summary_ms": None, "fetched_at": now}
             new_fetched += 1
             time.sleep(0.4)
         else:
             ev["summary"] = summaries[slug].get("summary")
+        ev["summary_ms"] = summaries[slug].get("summary_ms")
     data = {"fetched_at": now, "source": URL, "events": events}
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
