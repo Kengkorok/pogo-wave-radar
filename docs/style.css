@@ -21,7 +21,14 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
 }
 .top { padding: 18px 16px 10px; max-width: 760px; margin: 0 auto; }
+.toprow { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 h1 { margin: 0; font-size: 1.5rem; letter-spacing: .3px; }
+.langbtn {
+  background: var(--card2); color: var(--accent); border: 1px solid var(--line);
+  border-radius: 999px; padding: 6px 14px; font-size: .82rem; font-weight: 700; cursor: pointer;
+  flex-shrink: 0;
+}
+.langbtn:hover { border-color: var(--accent); }
 .tagline { margin: 2px 0 10px; color: var(--muted); font-size: .9rem; }
 .tzbar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: .9rem; }
 .tzbar label { color: var(--muted); }

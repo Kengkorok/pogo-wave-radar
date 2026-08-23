@@ -1,4 +1,4 @@
-/* PoGo Wave Radar — core app */
+/* PoGo Wave Radar — core app (i18n EN/BM) */
 /* eslint-env browser */
 const $ = (s, r) => (r || document).querySelector(s);
 const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
@@ -9,7 +9,70 @@ let FETCHED_AT = null;
 const PVPTYPES = new Set(['go-battle-league']);
 const TZ_STORAGE = 'pwr-tz';
 const PVP_STORAGE = 'pwr-pvp';
+const LANG_STORAGE = 'pwr-lang';
 let USER_TZ = null;
+let LANG = 'en';
+
+/* ---------- i18n ---------- */
+const I18N = {
+  en: {
+    title: 'PoGo Wave Radar',
+    tagline: 'Never miss a Pokémon GO event again — chase the wave across time zones',
+    tzLabel: 'Your timezone',
+    pvpLabel: 'Show PvP / GBL (hidden by default)',
+    tabLive: '🔥 Live Now', tabWave: '🌊 Wave Tracker', tabAll: '📅 All Events',
+    loading: 'Loading…', pickEvent: 'Pick an event:',
+    footerData: 'Event data from <a href="https://leekduck.com/events/" target="_blank" rel="noopener">leekduck.com</a> · updated <span id="fetched">—</span>',
+    disclaimer: 'For spoofers: use the coords in GPS Joystick at your own risk. Respect cooldown &amp; fair play.',
+    noEvents: 'No events right now. Try enabling PvP or wait for the next event. 🌊',
+    loadError: 'Could not load data. Refresh — if it persists, GitHub Actions will update soon.',
+    endedArea: 'Ended in your area', notStartedArea: 'Not started in your area',
+    endsIn: 'Ends in', startsIn: 'Starts in', citiesLive: 'cities live',
+    startsSoon: 'Starts in', in_: 'in', // "Starts in 2h · 6:00 pm in Tokyo"
+    viewFullWave: '🌊 View full wave', viewWave: 'View wave',
+    local: 'local', yourTime: 'your time',
+    startsLbl: 'STARTS', endsLbl: 'ENDS', liveLbl: 'LIVE', yourArea: 'your area',
+    localNote: '🕐 Local-time event — the wave moves east to west. Pick a city, copy coords, spoof!',
+    globalNote: '🕐 Global event — simultaneous worldwide (UTC).',
+    suggestion: '⭐ Suggestion:', stillLive: 'still live, ends',
+    grpLive: '🔥 Live now', grpUp: '🟡 Upcoming', grpEnd: '⚫ Ended',
+    startsShort: 'starts',
+    copyToast: 'paste into GPS Joystick',
+    buyCoffee: '☕ Buy me a coffee', scanDonate: '🇲🇾 Scan to donate (MY)',
+    qrTitle: 'Scan with TNG eWallet or any DuitNow app. Thank you! 🙏',
+    qrName: 'Maybank DuitNow QR',
+  },
+  ms: {
+    title: 'Radar Ombak PoGo',
+    tagline: 'Jangan terlepas event Pokémon GO lagi — chase ombak ikut zon waktu',
+    tzLabel: 'Zon kau',
+    pvpLabel: 'Tunjuk PvP / GBL (disorok secara default)',
+    tabLive: '🔥 Live Sekarang', tabWave: '🌊 Wave Tracker', tabAll: '📅 Semua Event',
+    loading: 'Memuatkan…', pickEvent: 'Pilih event:',
+    footerData: 'Data event dari <a href="https://leekduck.com/events/" target="_blank" rel="noopener">leekduck.com</a> · dikemas kini <span id="fetched">—</span>',
+    disclaimer: 'Buat spoofer: guna koordinat kat GPS Joystick ikut risiko sendiri. Hormati cooldown &amp; fair play.',
+    noEvents: 'Tiada event sekarang. Cuba aktifkan PvP atau tunggu event seterusnya. 🌊',
+    loadError: 'Tak dapat load data. Cuba refresh — kalau masih rosak, GitHub Actions akan update.',
+    endedArea: 'Dah habis kat tempat kau', notStartedArea: 'Belum start kat tempat kau',
+    endsIn: 'Tamat dalam', startsIn: 'Bermula dalam', citiesLive: 'bandar live',
+    startsSoon: 'Mula dalam', in_: 'waktu',
+    viewFullWave: '🌊 Lihat wave penuh', viewWave: 'Lihat wave',
+    local: 'tempatan', yourTime: 'waktu kau',
+    startsLbl: 'MULA', endsLbl: 'HABIS', liveLbl: 'LIVE', yourArea: 'tempat kau',
+    localNote: '🕐 Event ikut waktu tempatan — ombak bergerak dari timur ke barat. Pilih bandar, salin koordinat, spoof!',
+    globalNote: '🕐 Event global — serentak seluruh dunia (UTC).',
+    suggestion: '⭐ Cadangan:', stillLive: 'masih live, tamat',
+    grpLive: '🔥 Live sekarang', grpUp: '🟡 Akan datang', grpEnd: '⚫ Dah tamat',
+    startsShort: 'mula',
+    copyToast: 'paste kat GPS Joystick',
+    buyCoffee: '☕ Belanja aku kopi', scanDonate: '🇲🇾 Scan untuk derma (MY)',
+    qrTitle: 'Scan dengan TNG eWallet atau mana-mana app DuitNow. Terima kasih! 🙏',
+    qrName: 'Maybank DuitNow QR',
+  },
+};
+function t(key) {
+  return (I18N[LANG] && I18N[LANG][key]) || I18N.en[key] || key;
+}
 
 /* ---------- timezone helpers ---------- */
 function tzOffsetMs(tz, date) {
@@ -123,30 +186,30 @@ function renderLive() {
     });
 
   if (!rows.length) {
-    box.innerHTML = '<div class="empty">No events right now. Try enabling PvP or wait for the next event. 🌊</div>';
+    box.innerHTML = '<div class="empty">' + t('noEvents') + '</div>';
     return;
   }
   box.innerHTML = rows.map((r) => {
     const isLive = r.live.length > 0;
     const tag = r.ev.type.replace(/-/g, ' ');
-    const myBadge = r.my.st === 'ended' ? ' <span class="badge ended">Ended in your area</span>'
-      : r.my.st === 'upcoming' ? ' <span class="badge soon">Not started in your area</span>'
-      : isLive ? ' <span class="badge live">LIVE</span>' : '';
+    const myBadge = r.my.st === 'ended' ? ' <span class="badge ended">' + t('endedArea') + '</span>'
+      : r.my.st === 'upcoming' ? ' <span class="badge soon">' + t('notStartedArea') + '</span>'
+      : isLive ? ' <span class="badge live">' + t('liveLbl') + '</span>' : '';
     const liveChips = isLive
       ? '<div class="chips">' + r.live.map((s) => chip(s, r.ev)).join('') + '</div>'
-      : '<div class="nextline">Starts in <b>' + fmtDur(r.upcoming[0].s - now.getTime()) + '</b> · ' +
-        fmtTime(r.upcoming[0].s, r.upcoming[0].city.tz) + ' in ' + r.upcoming[0].city.name + '</div>';
+      : '<div class="nextline">' + t('startsSoon') + ' <b>' + fmtDur(r.upcoming[0].s - now.getTime()) + '</b> · ' +
+        fmtTime(r.upcoming[0].s, r.upcoming[0].city.tz) + ' ' + t('in_') + ' ' + r.upcoming[0].city.name + '</div>';
     const cta = isLive
-      ? '<button class="btn" data-wave="' + r.ev.slug + '">🌊 View full wave</button>'
-      : '<button class="btn ghost" data-wave="' + r.ev.slug + '">View wave</button>';
+      ? '<button class="btn" data-wave="' + r.ev.slug + '">' + t('viewFullWave') + '</button>'
+      : '<button class="btn ghost" data-wave="' + r.ev.slug + '">' + t('viewWave') + '</button>';
     return '<article class="card' + (isLive ? ' live' : '') + '" id="ev-' + r.ev.slug + '">'
       + (r.ev.img ? '<img class="thumb" loading="lazy" src="' + r.ev.img + '" alt="">' : '')
       + '<div class="body">'
       + '<div class="row1"><span class="tag">' + esc(tag) + '</span>' + myBadge + '</div>'
       + '<h3>' + esc(r.ev.name) + '</h3>'
       + (isLive
-          ? '<div class="cd">Ends in <b data-cd="' + Math.min(...r.live.map((s) => s.e)) + '">…</b> · <b>' + r.live.length + '</b> cities live</div>'
-          : '<div class="cd">Starts in <b data-cd="' + r.upcoming[0].s + '">…</b></div>')
+          ? '<div class="cd">' + t('endsIn') + ' <b data-cd="' + Math.min(...r.live.map((s) => s.e)) + '">…</b> · <b>' + r.live.length + '</b> ' + t('citiesLive') + '</div>'
+          : '<div class="cd">' + t('startsIn') + ' <b data-cd="' + r.upcoming[0].s + '">…</b></div>')
       + liveChips
       + cta
       + '</div></article>';
@@ -156,12 +219,10 @@ function renderLive() {
   startTicker();
 }
 
-function flagHtml(c) { return c.flag && c.flag.indexOf('.svg') > -1 ? '<img class="flag" src="' + c.flag + '" alt="">' : (c.flag || ''); }
-
 function chip(s, ev) {
   const c = s.city;
   const coords = c.lat.toFixed(4) + ', ' + c.lng.toFixed(4);
-  const until = s.e === Infinity ? '' : ' · ends ' + fmtTime(s.e, c.tz);
+  const until = s.e === Infinity ? '' : ' · ' + t('endsLbl').toLowerCase() + ' ' + fmtTime(s.e, getUserTZ()) + ' ' + t('yourTime');
   return '<button class="chip" data-coords="' + coords + '" data-name="' + esc(c.name) + '">'
     + '<span class="dot"></span>' + flagHtml(c) + ' ' + esc(c.name) + until + '</button>';
 }
@@ -194,30 +255,28 @@ function renderWave() {
   $('#waveList').innerHTML = '<div class="wavehead">'
     + '<span class="tag">' + esc(ev.type.replace(/-/g, ' ')) + '</span>'
     + '<h3>' + esc(ev.name) + '</h3>'
-    + (ev.local_time ? '<p class="note">🕐 Local-time event — the wave moves east to west. Pick a city, copy coords, spoof!</p>'
-        : '<p class="note">🕐 Global event — simultaneous worldwide (UTC).</p>')
+    + (ev.local_time ? '<p class="note">' + t('localNote') + '</p>' : '<p class="note">' + t('globalNote') + '</p>')
     + '</div>'
     + '<div class="wavetable">' + states.map((s) => {
       const icon = s.st === 'live' ? '🟢' : s.st === 'upcoming' ? '🟡' : '⚫';
-      const lbl = s.st === 'live' ? 'LIVE' : s.st === 'upcoming' ? 'STARTS ' + fmtTime(s.s, s.city.tz) : 'ENDS ' + fmtTime(s.e, s.city.tz);
-      const isMy = s.city.tz === myTZ ? ' <span class="badge mine">your area</span>' : '';
+      const lbl = s.st === 'live' ? t('liveLbl') : s.st === 'upcoming' ? t('startsLbl') + ' ' + fmtTime(s.s, s.city.tz) : t('endsLbl') + ' ' + fmtTime(s.e, s.city.tz);
+      const isMy = s.city.tz === myTZ ? ' <span class="badge mine">' + t('yourArea') + '</span>' : '';
       const suggest = suggestion && s.city.tz === suggestion.city.tz ? ' ⭐' : '';
       return '<div class="wrow st-' + s.st + '">'
         + '<div class="wcity">' + icon + ' ' + flagHtml(s.city) + ' <b>' + esc(s.city.name) + '</b>' + isMy + suggest + '</div>'
         + '<div class="wtime">' + (ev.local_time
-            ? '<span class="locwin">' + fmtWin(s.s, s.e, s.city.tz) + ' local</span><br><b class="yourwin">' + fmtWin(s.s, s.e, myTZ) + ' your time</b>'
+            ? '<span class="locwin">' + fmtWin(s.s, s.e, s.city.tz) + ' ' + t('local') + '</span><br><b class="yourwin">' + fmtWin(s.s, s.e, myTZ) + ' ' + t('yourTime') + '</b>'
             : lbl) + '</div>'
         + '<div class="wact"><button class="chip" data-coords="' + s.coords + '" data-name="' + esc(s.city.name) + '">📋 ' + s.coords + '</button></div>'
         + '</div>';
     }).join('') + '</div>'
-    + (suggestion ? '<div class="hint">⭐ Suggestion: <b>' + suggestion.city.name + '</b> — still live, ends ' + fmtTime(suggestion.e, suggestion.city.tz) + ' local time.</div>' : '');
+    + (suggestion ? '<div class="hint">' + t('suggestion') + ' <b>' + suggestion.city.name + '</b> — ' + t('stillLive') + ' ' + fmtTime(suggestion.e, suggestion.city.tz) + ' ' + t('local') + '.</div>' : '');
   bindChips();
 }
 
 /* ---------- render: all events ---------- */
 function renderAll() {
   const box = $('#all');
-  const now = new Date();
   const rows = EVENTS
     .filter((ev) => (APP_CONFIG.show_pvp_default || $('#pvp').checked) || !isPvP(ev))
     .map((ev) => {
@@ -229,20 +288,20 @@ function renderAll() {
     })
     .sort((a, b) => (a.ev.start || '').localeCompare(b.ev.start || ''));
   const groups = [
-    ['live', '🔥 Live now'],
-    ['up', '🟡 Upcoming'],
-    ['end', '⚫ Ended'],
+    ['live', t('grpLive')],
+    ['up', t('grpUp')],
+    ['end', t('grpEnd')],
   ];
   box.innerHTML = groups.map(([g, title]) => {
     const items = rows.filter((r) => r.group === g);
     if (!items.length) return '';
     return '<h2 class="group-title">' + title + ' <span class="cnt">' + items.length + '</span></h2>'
       + '<div class="alllist">' + items.map((r) => {
-        const badge = r.group === 'live' ? '<span class="badge live">' + r.live + ' cities live</span>'
-          : r.group === 'up' ? '<span class="badge soon">starts ' + fmtTime(new Date(r.ev.start).getTime(), getUserTZ()) + '</span>' : '';
+        const badge = r.group === 'live' ? '<span class="badge live">' + r.live + ' ' + t('citiesLive') + '</span>'
+          : r.group === 'up' ? '<span class="badge soon">' + t('startsShort') + ' ' + fmtTime(new Date(r.ev.start).getTime(), getUserTZ()) + '</span>' : '';
         return '<div class="allrow" data-wave="' + r.ev.slug + '">'
           + '<div><span class="tag">' + esc(r.ev.type.replace(/-/g, ' ')) + '</span> <b>' + esc(r.ev.name) + '</b></div>'
-          + '<div class="sub">' + (r.ev.local_time ? 'local time' : 'UTC') + ' · ' + esc(r.ev.start || '?') + ' → ' + esc(r.ev.end || '?') + ' ' + badge + '</div>'
+          + '<div class="sub">' + (r.ev.local_time ? t('local') : 'UTC') + ' · ' + esc(r.ev.start || '?') + ' → ' + esc(r.ev.end || '?') + ' ' + badge + '</div>'
           + '</div>';
       }).join('') + '</div>';
   }).join('');
@@ -261,16 +320,16 @@ function goWave(slug) {
 function bindChips() {
   $$('.chip[data-coords]').forEach((el) => el.addEventListener('click', async () => {
     const txt = el.dataset.coords;
-    try { await navigator.clipboard.writeText(txt); toast('📋 ' + el.dataset.name + ': ' + txt + ' — paste into GPS Joystick'); }
+    try { await navigator.clipboard.writeText(txt); toast('📋 ' + el.dataset.name + ': ' + txt + ' — ' + t('copyToast')); }
     catch (e) { toast('📋 ' + el.dataset.name + ': ' + txt); }
   }));
 }
 function toast(msg) {
-  const t = $('#toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  clearTimeout(t._h);
-  t._h = setTimeout(() => t.classList.remove('show'), 2600);
+  const tEl = $('#toast');
+  tEl.textContent = msg;
+  tEl.classList.add('show');
+  clearTimeout(tEl._h);
+  tEl._h = setTimeout(() => tEl.classList.remove('show'), 2600);
 }
 function switchTab(name) {
   $$('.tabs button').forEach((b) => b.classList.toggle('active', b.dataset.tab === name));
@@ -283,8 +342,8 @@ function startTicker() {
   startTicker._on = true;
   setInterval(() => {
     $$('[data-cd]').forEach((el) => {
-      const t = +el.dataset.cd - Date.now();
-      el.textContent = t > 0 ? fmtDur(t) : 'ended';
+      const v = +el.dataset.cd - Date.now();
+      el.textContent = v > 0 ? fmtDur(v) : '0m';
     });
   }, 1000);
 }
@@ -294,21 +353,26 @@ function renderTZ() {
   if (!tzs.includes(getUserTZ())) tzs.unshift(getUserTZ());
   sel.innerHTML = tzs.map((tz) => '<option value="' + tz + '">' + tz + '</option>').join('');
   sel.value = getUserTZ();
-  $('#tzclock').textContent = '🕐 ' + fmtTime(Date.now(), getUserTZ(), { dateStyle: 'medium' });
+  const clk = $('#tzclock');
+  if (clk) clk.textContent = '🕐 ' + fmtTime(Date.now(), getUserTZ(), { dateStyle: 'medium' });
 }
 function esc(s) {
   return String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function flagHtml(c) {
+  return c.flag && c.flag.indexOf('.svg') > -1 ? '<img class="flag" src="' + c.flag + '" alt="">' : (c.flag || '');
 }
 
 /* ---------- donate ---------- */
 function renderDonate() {
   const d = APP_CONFIG.donate || {};
   const btns = [];
-  if (d.kofi) btns.push('<a class="donate-btn kofi" href="' + d.kofi + '" target="_blank" rel="noopener">☕ Buy me a coffee</a>');
+  if (d.kofi) btns.push('<a class="donate-btn kofi" href="' + d.kofi + '" target="_blank" rel="noopener">' + t('buyCoffee') + '</a>');
   if (d.buymeacoffee) btns.push('<a class="donate-btn" href="' + d.buymeacoffee + '" target="_blank" rel="noopener">🧋 Support</a>');
   if (d.paypal) btns.push('<a class="donate-btn" href="' + d.paypal + '" target="_blank" rel="noopener">💛 PayPal</a>');
-  if (d.duitnow_qr) btns.push('<button class="donate-btn qr" id="qrbtn" type="button">🇲🇾 Scan to donate (MY)</button>');
-  $('#donateTop').innerHTML = btns.join(' ');
+  if (d.duitnow_qr) btns.push('<button class="donate-btn qr" id="qrbtn" type="button">' + t('scanDonate') + '</button>');
+  const el = $('#donateTop');
+  if (el) el.innerHTML = btns.join(' ');
 }
 function showQR() {
   const d = APP_CONFIG.donate || {};
@@ -319,46 +383,63 @@ function showQR() {
   overlay.id = 'qroverlay';
   overlay.innerHTML = '<div class="qrbox">'
     + '<button class="qrclose" aria-label="Close" type="button">✕</button>'
-    + '<h3>🇲🇾 ' + esc(d.duitnow_qr_name || 'DuitNow / TNG eWallet') + '</h3>'
+    + '<h3>🇲🇾 ' + esc(d.duitnow_qr_name || t('qrName')) + '</h3>'
     + '<img src="' + d.duitnow_qr + '" alt="DuitNow QR">'
-    + '<p>Scan with <b>TNG eWallet</b> or any <b>DuitNow</b> app. Thank you! 🙏</p>'
+    + '<p>' + t('qrTitle') + '</p>'
     + '</div>';
   document.body.appendChild(overlay);
 }
 
+/* ---------- language ---------- */
+function renderLang() {
+  document.documentElement.lang = LANG;
+  document.title = t('title');
+  $$('[data-i18n]').forEach((el) => { el.innerHTML = t(el.dataset.i18n); });
+  const btn = $('#langbtn');
+  if (btn) btn.textContent = LANG === 'en' ? '🌐 BM' : '🌐 EN';
+  const f = $('#fetched');
+  if (f) f.textContent = FETCHED_AT ? timeAgo(FETCHED_AT) : '—';
+  renderTZ();
+  renderLive();
+  renderWaveSelect();
+  renderWave();
+  renderAll();
+  renderDonate();
+}
+
 /* ---------- init ---------- */
 async function init() {
+  LANG = localStorage.getItem(LANG_STORAGE) === 'ms' ? 'ms' : 'en';
   USER_TZ = localStorage.getItem(TZ_STORAGE) || Intl.DateTimeFormat().resolvedOptions().timeZone || 'Asia/Kuala_Lumpur';
   $('#pvp').checked = localStorage.getItem(PVP_STORAGE) === '1';
   try {
     const [c, e] = await Promise.all([fetch('cities.json').then((r) => r.json()), fetch('events.json').then((r) => r.json())]);
     CITIES = c; EVENTS = e.events || []; FETCHED_AT = e.fetched_at;
   } catch (err) {
-    $('#live').innerHTML = '<div class="empty">Could not load data. Refresh — if it persists, GitHub Actions will update soon.</div>';
+    $('#live').innerHTML = '<div class="empty">' + t('loadError') + '</div>';
     return;
   }
-  $('#fetched').textContent = FETCHED_AT ? timeAgo(FETCHED_AT) : '—';
-  renderTZ();
+  $('#langbtn').addEventListener('click', () => {
+    LANG = LANG === 'en' ? 'ms' : 'en';
+    localStorage.setItem(LANG_STORAGE, LANG);
+    renderLang();
+  });
   $('#tz').addEventListener('change', (ev) => { USER_TZ = ev.target.value; localStorage.setItem(TZ_STORAGE, USER_TZ); renderTZ(); renderLive(); renderAll(); });
   $('#pvp').addEventListener('change', () => { localStorage.setItem(PVP_STORAGE, $('#pvp').checked ? '1' : '0'); renderLive(); renderWaveSelect(); renderWave(); renderAll(); });
   $$('.tabs button').forEach((b) => b.addEventListener('click', () => switchTab(b.dataset.tab)));
   $('#waveSel').addEventListener('change', renderWave);
-  renderLive();
-  renderWaveSelect();
+  renderLang();
   const w = new URLSearchParams(location.search).get('wave');
-  if (w && EVENTS.some((e) => e.slug === w)) { $('#waveSel').value = w; switchTab('wave'); }
-  renderWave();
-  renderAll();
-  renderDonate();
+  if (w && EVENTS.some((e) => e.slug === w)) { $('#waveSel').value = w; switchTab('wave'); renderWave(); }
   document.addEventListener('click', (e) => {
-    const t = e.target;
-    if (t && t.id === 'qrbtn') { showQR(); return; }
-    if (t && (t.classList && t.classList.contains('qrclose'))) {
+    const tEl = e.target;
+    if (tEl && tEl.id === 'qrbtn') { showQR(); return; }
+    if (tEl && (tEl.classList && tEl.classList.contains('qrclose'))) {
       const ov = document.getElementById('qroverlay');
       if (ov) ov.remove();
       return;
     }
-    if (t && t.id === 'qroverlay') t.remove();
+    if (tEl && tEl.id === 'qroverlay') tEl.remove();
   });
 }
 document.addEventListener('DOMContentLoaded', init);

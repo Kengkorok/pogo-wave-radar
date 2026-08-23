@@ -5,38 +5,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b1220">
 <meta name="description" content="PoGo Wave Radar — never miss a Pokémon GO event. Chase the event wave across time zones, pick a city, copy coords, spoof!">
-<title> PoGo Wave Radar</title>
+<title>PoGo Wave Radar</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="img/icon.svg">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
-  <h1>🌊 PoGo Wave Radar</h1>
-  <p class="tagline">Never miss a Pokémon GO event again — chase the wave across time zones</p>
+  <div class="toprow">
+    <h1>🌊 PoGo Wave Radar</h1>
+    <button id="langbtn" class="langbtn" type="button">🌐 BM</button>
+  </div>
+  <p class="tagline" data-i18n="tagline">Never miss a Pokémon GO event again — chase the wave across time zones</p>
   <div class="tzbar">
-    <label for="tz">Your timezone</label>
+    <label for="tz" data-i18n="tzLabel">Your timezone</label>
     <select id="tz" title="Timezone"></select>
     <span id="tzclock"></span>
   </div>
   <div class="filters">
-    <label class="switch"><input type="checkbox" id="pvp"> Show PvP / GBL (hidden by default)</label>
+    <label class="switch"><input type="checkbox" id="pvp"> <span data-i18n="pvpLabel">Show PvP / GBL (hidden by default)</span></label>
   </div>
   <div id="donateTop"></div>
 </header>
 
 <nav class="tabs">
-  <button data-tab="live" class="active">🔥 Live Now</button>
-  <button data-tab="wave">🌊 Wave Tracker</button>
-  <button data-tab="all">📅 All Events</button>
+  <button data-tab="live" class="active" data-i18n="tabLive">🔥 Live Now</button>
+  <button data-tab="wave" data-i18n="tabWave">🌊 Wave Tracker</button>
+  <button data-tab="all" data-i18n="tabAll">📅 All Events</button>
 </nav>
 
 <main>
-  <section id="live"><div class="empty">Loading…</div></section>
+  <section id="live"><div class="empty" data-i18n="loading">Loading…</div></section>
 
   <section id="wave" hidden>
     <div class="wavebar">
-      <label for="waveSel">Pick an event:</label>
+      <label for="waveSel" data-i18n="pickEvent">Pick an event:</label>
       <select id="waveSel"></select>
     </div>
     <div id="waveList"></div>
@@ -46,8 +49,8 @@
 </main>
 
 <footer>
-  <p>Event data from <a href="https://leekduck.com/events/" target="_blank" rel="noopener">leekduck.com</a> · updated <span id="fetched">—</span></p>
-  <p class="tiny">For spoofers: use the coords in GPS Joystick at your own risk. Respect cooldown &amp; fair play.</p>
+  <p data-i18n="footerData">Event data from <a href="https://leekduck.com/events/" target="_blank" rel="noopener">leekduck.com</a> · updated <span id="fetched">—</span></p>
+  <p class="tiny" data-i18n="disclaimer">For spoofers: use the coords in GPS Joystick at your own risk. Respect cooldown &amp; fair play.</p>
 </footer>
 
 <div id="toast"></div>
