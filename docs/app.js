@@ -198,7 +198,7 @@ function renderLive() {
     const liveChips = isLive
       ? '<div class="chips">' + r.live.map((s) => chip(s, r.ev)).join('') + '</div>'
       : '<div class="nextline">' + t('startsSoon') + ' <b>' + fmtDur(r.upcoming[0].s - now.getTime()) + '</b> · ' +
-        fmtTime(r.upcoming[0].s, r.upcoming[0].city.tz) + ' ' + t('in_') + ' ' + r.upcoming[0].city.name + '</div>';
+        fmtWin(r.upcoming[0].s, r.upcoming[0].e, getUserTZ()) + ' ' + t('yourTime') + '</div>';
     const cta = isLive
       ? '<button class="btn" data-wave="' + r.ev.slug + '">' + t('viewFullWave') + '</button>'
       : '<button class="btn ghost" data-wave="' + r.ev.slug + '">' + t('viewWave') + '</button>';
@@ -207,9 +207,10 @@ function renderLive() {
       + '<div class="body">'
       + '<div class="row1"><span class="tag">' + esc(tag) + '</span>' + myBadge + '</div>'
       + '<h3>' + esc(r.ev.name) + '</h3>'
+      + (r.ev.summary ? '<div class="evsum">ℹ️ ' + esc(r.ev.summary) + '</div>' : '')
       + (isLive
           ? '<div class="cd">' + t('endsIn') + ' <b data-cd="' + Math.min(...r.live.map((s) => s.e)) + '">…</b> · <b>' + r.live.length + '</b> ' + t('citiesLive') + '</div>'
-          : '<div class="cd">' + t('startsIn') + ' <b data-cd="' + r.upcoming[0].s + '">…</b></div>')
+          : '<div class="cd">' + t('startsIn') + ' <b data-cd="' + r.upcoming[0].s + '">…</b> · ' + fmtWin(r.upcoming[0].s, r.upcoming[0].e, getUserTZ()) + ' ' + t('yourTime') + '</div>')
       + liveChips
       + cta
       + '</div></article>';
@@ -255,6 +256,7 @@ function renderWave() {
   $('#waveList').innerHTML = '<div class="wavehead">'
     + '<span class="tag">' + esc(ev.type.replace(/-/g, ' ')) + '</span>'
     + '<h3>' + esc(ev.name) + '</h3>'
+    + (ev.summary ? '<p class="evsum-full">ℹ️ ' + esc(ev.summary) + '</p>' : '')
     + (ev.local_time ? '<p class="note">' + t('localNote') + '</p>' : '<p class="note">' + t('globalNote') + '</p>')
     + '</div>'
     + '<div class="wavetable">' + states.map((s) => {
