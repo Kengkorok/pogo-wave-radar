@@ -5,6 +5,8 @@ const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
 
 let CITIES = [];
 let EVENTS = [];
+let DETAILS = {};      // lazy-loaded from details.json (full LeekDuck detail HTML)
+let DETAILS_LOADED = false;
 let FETCHED_AT = null;
 const PVPTYPES = new Set(['go-battle-league']);
 const TZ_STORAGE = 'pwr-tz';
@@ -32,6 +34,8 @@ const I18N = {
     endsIn: 'Ends in', startsIn: 'Starts in', citiesLive: 'cities live',
     startsSoon: 'Starts in', in_: 'in', // "Starts in 2h · 6:00 pm in Tokyo"
     viewFullWave: '🌊 View full wave', viewWave: 'View wave',
+    readFull: '📖 Read full details', sourceLink: 'View on LeekDuck ↗',
+    detailLoading: 'Loading full details…', detailMissing: 'Full details not available yet.',
     local: 'local', yourTime: 'your time',
     startsLbl: 'STARTS', endsLbl: 'ENDS', liveLbl: 'LIVE', yourArea: 'your area',
     localNote: '🕐 Local-time event — the wave moves east to west. Pick a city, copy coords, spoof!',
@@ -61,6 +65,8 @@ const I18N = {
     endsIn: 'Tamat dalam', startsIn: 'Bermula dalam', citiesLive: 'bandar live',
     startsSoon: 'Mula dalam', in_: 'waktu',
     viewFullWave: '🌊 Lihat wave penuh', viewWave: 'Lihat wave',
+    readFull: '📖 Baca butiran penuh', sourceLink: 'Buka kat LeekDuck ↗',
+    detailLoading: 'Memuatkan butiran penuh…', detailMissing: 'Butiran penuh belum tersedia.',
     local: 'tempatan', yourTime: 'waktu kau',
     startsLbl: 'MULA', endsLbl: 'HABIS', liveLbl: 'LIVE', yourArea: 'tempat kau',
     localNote: '🕐 Event ikut waktu tempatan — ombak bergerak dari timur ke barat. Pilih bandar, salin koordinat, spoof!',
@@ -81,6 +87,21 @@ function t(key) {
 function sum(ev) {
   if (!ev) return null;
   return LANG === 'ms' ? (ev.summary_ms || ev.summary) : ev.summary;
+}
+/* Full LeekDuck detail HTML in current language; fallback to English */
+function detailHtml(ev) {
+  const d = DETAILS[ev.slug] || {};
+  return LANG === 'ms' ? (d.detail_ms || d.detail || '') : (d.detail || d.detail_ms || '');
+}
+async function ensureDetails() {
+  if (DETAILS_LOADED) return;
+  DETAILS_LOADED = true;
+  try {
+    const r = await fetch('details.json');
+    DETAILS = (await r.json()) || {};
+  } catch (e) {
+    DETAILS = {};
+  }
 }
 
 /* ---------- timezone helpers ---------- */
@@ -252,11 +273,13 @@ function chip(s, ev) {
 /* ---------- render: wave tracker ---------- */
 function renderWaveSelect() {
   const sel = $('#waveSel');
+  const prev = sel.value;
   const opts = EVENTS
     .filter((ev) => (APP_CONFIG.show_pvp_default || $('#pvp').checked) || !isPvP(ev))
     .map((ev) => '<option value="' + ev.slug + '">' + esc(ev.name) + '</option>')
     .join('');
   sel.innerHTML = opts;
+  if (prev && EVENTS.some((e) => e.slug === prev)) sel.value = prev;
 }
 function renderWave() {
   const sel = $('#waveSel');
@@ -279,7 +302,9 @@ function renderWave() {
     + '<h3>' + esc(ev.name) + '</h3>'
     + (sum(ev) ? '<p class="evsum-full">ℹ️ ' + esc(sum(ev)) + '</p>' : '')
     + (ev.local_time ? '<p class="note">' + t('localNote') + '</p>' : '<p class="note">' + t('globalNote') + '</p>')
+    + (ev.url ? '<a class="src-link" href="' + esc(ev.url) + '" target="_blank" rel="noopener">' + t('sourceLink') + '</a>' : '')
     + '</div>'
+    + detailBlock(ev)
     + '<div class="wavetable">' + states.map((s) => {
       const icon = s.st === 'live' ? '🟢' : s.st === 'upcoming' ? '🟡' : '⚫';
       const lbl = s.st === 'live' ? t('liveLbl') : s.st === 'upcoming' ? t('startsLbl') + ' ' + fmtTime(s.s, s.city.tz) : t('endsLbl') + ' ' + fmtTime(s.e, s.city.tz);
@@ -295,6 +320,20 @@ function renderWave() {
     }).join('') + '</div>'
     + (suggestion ? '<div class="hint">' + t('suggestion') + ' <b>' + suggestion.city.name + '</b> — ' + t('stillLive') + ' ' + fmtTime(suggestion.e, suggestion.city.tz) + ' ' + t('local') + '.</div>' : '');
   bindChips();
+}
+
+/* Full LeekDuck detail (collapsible) in the wave view */
+function detailBlock(ev) {
+  const html = detailHtml(ev);
+  if (html) {
+    return '<details class="fulldetail"><summary>' + t('readFull') + '</summary>'
+      + '<div class="fulldetail-body">' + html + '</div></details>';
+  }
+  if (!DETAILS_LOADED) {
+    ensureDetails().then(renderWave);
+    return '<p class="note detail-note">' + t('detailLoading') + '</p>';
+  }
+  return '<p class="note detail-note">' + t('detailMissing') + '</p>';
 }
 
 /* ---------- render: all events ---------- */
@@ -359,6 +398,7 @@ function switchTab(name) {
   $('#live').hidden = name !== 'live';
   $('#wave').hidden = name !== 'wave';
   $('#all').hidden = name !== 'all';
+  if (name === 'wave') renderWave(); // fresh render (details may have loaded since init)
 }
 function startTicker() {
   if (startTicker._on) return;
@@ -438,6 +478,7 @@ async function init() {
   try {
     const [c, e] = await Promise.all([fetch('cities.json').then((r) => r.json()), fetch('events.json').then((r) => r.json())]);
     CITIES = c; EVENTS = e.events || []; FETCHED_AT = e.fetched_at;
+    ensureDetails().then(() => { if (!$('#wave').hidden) renderWave(); });
   } catch (err) {
     $('#live').innerHTML = '<div class="empty">' + t('loadError') + '</div>';
     return;

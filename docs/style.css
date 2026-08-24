@@ -130,6 +130,43 @@ main { max-width: 760px; margin: 0 auto; padding: 12px 12px 40px; }
 .yourwin { color: var(--accent); font-weight: 700; }
 .wact .chip { font-size: .75rem; padding: 4px 8px; }
 .hint { margin-top: 10px; background: rgba(56,189,248,.08); border: 1px solid rgba(56,189,248,.25); border-radius: 12px; padding: 10px 12px; font-size: .85rem; }
+.src-link { display: inline-block; margin-top: 6px; color: var(--accent); font-size: .8rem; text-decoration: none; }
+.src-link:hover { text-decoration: underline; }
+.detail-note { margin: 8px 0; }
+
+/* Full LeekDuck detail (collapsible) */
+.fulldetail {
+  margin: 10px 0 12px; background: var(--card); border: 1px solid var(--line);
+  border-radius: 12px; overflow: hidden;
+}
+.fulldetail summary {
+  cursor: pointer; padding: 10px 14px; font-weight: 700; font-size: .88rem;
+  color: var(--accent); list-style: none; display: flex; align-items: center; gap: 6px;
+  user-select: none; -webkit-user-select: none;
+}
+.fulldetail summary::-webkit-details-marker { display: none; }
+.fulldetail summary::after { content: '▾'; margin-left: auto; color: var(--muted); transition: transform .2s; }
+.fulldetail[open] summary::after { transform: rotate(180deg); }
+.fulldetail summary:hover { background: var(--card2); }
+.fulldetail-body {
+  padding: 6px 14px 14px; font-size: .88rem; color: var(--text);
+  line-height: 1.55; border-top: 1px solid var(--line); overflow-wrap: break-word;
+}
+.fulldetail-body h2, .fulldetail-body h3, .fulldetail-body h4 {
+  font-size: .95rem; margin: 14px 0 6px; color: var(--text); text-transform: uppercase; letter-spacing: .4px;
+}
+.fulldetail-body h2:first-child, .fulldetail-body h3:first-child { margin-top: 10px; }
+.fulldetail-body p { margin: 6px 0; }
+.fulldetail-body ul, .fulldetail-body ol { margin: 6px 0; padding-left: 20px; }
+.fulldetail-body li { margin: 3px 0; }
+.fulldetail-body img { max-width: 100%; height: auto; border-radius: 10px; margin: 4px 0; }
+.fulldetail-body a { color: var(--accent); }
+.fulldetail-body strong { color: var(--text); }
+.fulldetail-body table { border-collapse: collapse; width: 100%; font-size: .82rem; margin: 8px 0; }
+.fulldetail-body th, .fulldetail-body td { border: 1px solid var(--line); padding: 5px 8px; text-align: left; vertical-align: top; }
+.fulldetail-body th { background: var(--card2); }
+.fulldetail-body hr { border: 0; border-top: 1px solid var(--line); margin: 12px 0; }
+.fulldetail-body div { margin: 2px 0; }
 
 .group-title { font-size: .95rem; color: var(--muted); margin: 18px 0 8px; }
 .cnt { background: var(--card2); border-radius: 999px; padding: 1px 8px; font-size: .75rem; }
