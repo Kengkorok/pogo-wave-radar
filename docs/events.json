@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-08-25T17:07:05.000179+00:00",
+ "fetched_at": "2026-08-25T17:59:12.561981+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -243,6 +243,18 @@
    "summary_ms": "Berkumpullah dengan Trainer seluruh dunia untuk kemuncak mega Pokémon GO Fest 2026! Pokémon GO Fest 2026: Mega Finale membawakan habitat berputar, Mega Raids berkuasa, dan Super Mega Raids featuring Mega Mewtwo X dan Mega Mewtwo Y. Bersedia semasa event pendahulunya Mega Ascension, kemudian sertai kemuncak event ini."
   },
   {
+   "slug": "go-pass-september-2026",
+   "name": "GO Pass: September",
+   "type": "go-pass",
+   "start": "2026-09-08T10:00:00",
+   "end": "2026-10-06T10:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-08-go-pass-september-2026/go-pass-september-2026.jpg",
+   "summary": "Latios soars in faster than a jet for GO Pass: September! The GO Pass and GO Pass Deluxe for September will be available from September 8, 2026 at 10:00 am to October 6, 2026 at 10:00 am local time.",
+   "url": "https://leekduck.com/events/go-pass-september-2026/",
+   "summary_ms": null
+  },
+  {
    "slug": "season-24-twilight-trails",
    "name": "Twilight Trails",
    "type": "season",
@@ -252,7 +264,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-08-season-24-twilight-trails/season-24-twilight-trails.jpg",
    "summary": "Welcome to Pokémon GO: Twilight Trails! In Pokémon GO, Seasons are periods of time that feature new events, Pokémon debuts, and surprises that all follow a certain theme. As the Seasons change, you may find different Pokémon appearing in your area and hatching from Eggs. Make sure to explore during each in-game Season to collect and train as many different Pokémon as you can! You’ll also enjoy special bonuses as you do.",
    "url": "https://leekduck.com/events/season-24-twilight-trails/",
-   "summary_ms": null
+   "summary_ms": "Selamat datang ke Pokémon GO: Twilight Trails! Dalam Pokémon GO, Seasons ialah tempoh masa yang menampilkan acara baharu, kemunculan sulung Pokémon, dan kejutan yang semuanya mengikut tema tertentu. Apabila Seasons berubah, anda mungkin akan menemui Pokémon berbeza muncul di kawasan anda dan menetas dari Eggs. Pastikan anda meneroka semasa setiap Season dalam permainan untuk mengumpul dan melatih seberapa banyak Pokémon berbeza yang anda boleh! Anda juga akan menikmati bonus istimewa semasa melakukannya."
   },
   {
    "slug": "september-communitydayclassic2026",
