@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-08-25T22:34:46.511650+00:00",
+ "fetched_at": "2026-08-25T23:30:57.356381+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -243,6 +243,42 @@
    "summary_ms": "Berkumpullah dengan Trainer seluruh dunia untuk kemuncak mega Pokémon GO Fest 2026! Pokémon GO Fest 2026: Mega Finale membawakan habitat berputar, Mega Raids berkuasa, dan Super Mega Raids featuring Mega Mewtwo X dan Mega Mewtwo Y. Bersedia semasa event pendahulunya Mega Ascension, kemudian sertai kemuncak event ini."
   },
   {
+   "slug": "max-mondays-2026-09-07",
+   "name": "Dynamax Ralts during Max Monday",
+   "type": "max-mondays",
+   "start": "2026-09-07T06:00:00",
+   "end": "2026-09-07T21:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
+   "summary": "These Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokémon. On September 7, 2026 , the featured Dynamax Pokémon is Ralts . Ralts",
+   "url": "https://leekduck.com/events/max-mondays-2026-09-07/",
+   "summary_ms": null
+  },
+  {
+   "slug": "mega-beedrill-in-mega-raids-september-2026",
+   "name": "Mega Beedrill in Mega Raids",
+   "type": "raid-battles",
+   "start": "2026-09-08T06:00:00",
+   "end": "2026-09-15T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
+   "summary": "Mega Beedrill will be in Mega Raids from September 8, 2026 at 6 am to September 15, 2026 at 10 pm local time.",
+   "url": "https://leekduck.com/events/mega-beedrill-in-mega-raids-september-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "mega-squads-2026",
+   "name": "Mega Squads",
+   "type": "event",
+   "start": "2026-09-08T10:00:00",
+   "end": "2026-09-14T20:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
+   "summary": "The Mega Squads event will take place from September 8, 2026 at 10 am to September 14, 2026 at 8 pm. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/mega-squads-2026/",
+   "summary_ms": null
+  },
+  {
    "slug": "go-pass-september-2026",
    "name": "GO Pass: September",
    "type": "go-pass",
@@ -267,6 +303,66 @@
    "summary_ms": "Selamat datang ke Pokémon GO: Twilight Trails! Dalam Pokémon GO, Seasons ialah tempoh masa yang menampilkan acara baharu, kemunculan sulung Pokémon, dan kejutan yang semuanya mengikut tema tertentu. Apabila Seasons berubah, anda mungkin akan menemui Pokémon berbeza muncul di kawasan anda dan menetas dari Eggs. Pastikan anda meneroka semasa setiap Season dalam permainan untuk mengumpul dan melatih seberapa banyak Pokémon berbeza yang anda boleh! Anda juga akan menikmati bonus istimewa semasa melakukannya."
   },
   {
+   "slug": "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+   "name": "Zacian (Hero of Many Battles) in 5-star Raid Battles",
+   "type": "raid-battles",
+   "start": "2026-09-09T06:00:00",
+   "end": "2026-09-15T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "Zacian (Hero of Many Battles) will be in five-star raid battles from September 9, 2026 to September 15, 2026. Raid Hours There will also be a Raid Hour featuring Zacian (Hero of Many Battles) from 6:00 p.m. to 7:00 p.m. local time on September 9.",
+   "url": "https://leekduck.com/events/zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
+   "name": "Shadow Thundurus (Incarnate Forme) in Shadow Raids",
+   "type": "raid-battles",
+   "start": "2026-09-09T06:00:00",
+   "end": "2026-10-06T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "Shadow Thundurus (Incarnate Forme) will appear in five-star Shadow Raids every weekend from September 9, 2026 to October 6, 2026. If you’re lucky, you may encounter Shiny Shadow Thundurus (Incarnate Forme)!",
+   "url": "https://leekduck.com/events/shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "raidhour20260909",
+   "name": "Zacian (Hero of Many Battles) Raid Hour",
+   "type": "raid-hour",
+   "start": "2026-09-09T18:00:00",
+   "end": "2026-09-09T19:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/raidhour.jpg",
+   "summary": "A Raid Hour featuring Zacian (Hero of Many Battles) is scheduled from 6:00 p.m. to 7:00 p.m. local time. During this hour there will be an increased number of five-star raids.",
+   "url": "https://leekduck.com/events/raidhour20260909/",
+   "summary_ms": null
+  },
+  {
+   "slug": "pokemonspotlighthour2026-09-10",
+   "name": "Weedle, Kakuna, and Beedrill Spotlight Hour",
+   "type": "pokémon-spotlight-hour",
+   "start": "2026-09-10T18:00:00",
+   "end": "2026-09-10T19:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/pokemonspotlighthour.jpg",
+   "summary": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time. September 10 : The featured Pokémon are Weedle, Kakuna, and Beedrill and the special bonus is 2× Transfer Candy .",
+   "url": "https://leekduck.com/events/pokemonspotlighthour2026-09-10/",
+   "summary_ms": null
+  },
+  {
+   "slug": "mega-houndoom-in-mega-raids-september-2026",
+   "name": "Mega Houndoom in Mega Raids",
+   "type": "raid-battles",
+   "start": "2026-09-11T06:00:00",
+   "end": "2026-09-15T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
+   "summary": "Mega Houndoom will be in Mega Raids from September 11, 2026 at 6 am to September 15, 2026 at 10 pm local time.",
+   "url": "https://leekduck.com/events/mega-houndoom-in-mega-raids-september-2026/",
+   "summary_ms": null
+  },
+  {
    "slug": "september-communitydayclassic2026",
    "name": "September Community Day Classic",
    "type": "community-day",
@@ -277,6 +373,90 @@
    "summary": "The September Community Day Classic event will take place on September 12, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
    "url": "https://leekduck.com/events/september-communitydayclassic2026/",
    "summary_ms": "Event September Community Day Classic akan berlangsung pada 12 September 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
+  },
+  {
+   "slug": "pokemonspotlighthour2026-09-13",
+   "name": "Houndour and Houndoom Spotlight Hour",
+   "type": "pokémon-spotlight-hour",
+   "start": "2026-09-13T18:00:00",
+   "end": "2026-09-13T19:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/pokemonspotlighthour.jpg",
+   "summary": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time. September 13 : The featured Pokémon are Houndour and Houndoom and the special bonus is 2× Transfer Candy .",
+   "url": "https://leekduck.com/events/pokemonspotlighthour2026-09-13/",
+   "summary_ms": null
+  },
+  {
+   "slug": "max-mondays-2026-09-14",
+   "name": "Dynamax Rhyhorn during Max Monday",
+   "type": "max-mondays",
+   "start": "2026-09-14T06:00:00",
+   "end": "2026-09-14T21:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
+   "summary": "These Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokémon. On September 14, 2026 , the featured Dynamax Pokémon is Rhyhorn . Rhyhorn",
+   "url": "https://leekduck.com/events/max-mondays-2026-09-14/",
+   "summary_ms": null
+  },
+  {
+   "slug": "mega-venusaur-in-mega-raids-september-2026",
+   "name": "Mega Venusaur in Mega Raids",
+   "type": "raid-battles",
+   "start": "2026-09-16T06:00:00",
+   "end": "2026-09-22T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
+   "summary": "Mega Venusaur will be in Mega Raids from September 16, 2026 at 6 am to September 22, 2026 at 10 pm local time.",
+   "url": "https://leekduck.com/events/mega-venusaur-in-mega-raids-september-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
+   "name": "Zamazenta (Hero of Many Battles) in 5-star Raid Battles",
+   "type": "raid-battles",
+   "start": "2026-09-16T06:00:00",
+   "end": "2026-09-22T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "Zamazenta (Hero of Many Battles) will be in five-star raid battles from September 16, 2026 to September 22, 2026. Raid Hours There will also be a Raid Hour featuring Zamazenta (Hero of Many Battles) from 6:00 p.m. to 7:00 p.m. local time on September 16.",
+   "url": "https://leekduck.com/events/zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "unannounced-september-event-season-24",
+   "name": "Unannounced Event",
+   "type": "event",
+   "start": "2026-09-16T10:00:00",
+   "end": "2026-09-22T20:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "This unannounced event will take place from September 16, 2026 at 10 am to September 22, 2026 at 8 pm. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/unannounced-september-event-season-24/",
+   "summary_ms": null
+  },
+  {
+   "slug": "raidhour20260916",
+   "name": "Zamazenta (Hero of Many Battles) Raid Hour",
+   "type": "raid-hour",
+   "start": "2026-09-16T18:00:00",
+   "end": "2026-09-16T19:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/raidhour.jpg",
+   "summary": "A Raid Hour featuring Zamazenta (Hero of Many Battles) is scheduled from 6:00 p.m. to 7:00 p.m. local time. During this hour there will be an increased number of five-star raids.",
+   "url": "https://leekduck.com/events/raidhour20260916/",
+   "summary_ms": null
+  },
+  {
+   "slug": "pokemonspotlighthour2026-09-17",
+   "name": "Mystery Pokémon Spotlight Hour",
+   "type": "pokémon-spotlight-hour",
+   "start": "2026-09-17T18:00:00",
+   "end": "2026-09-17T19:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/pokemonspotlighthour.jpg",
+   "summary": "Pokémon Spotlight Hour will feature an unannounced Pokémon and a special bonus for one hour at 6:00 p.m. local time. September 17 : The featured Pokémon has not yet been announced, and the special bonus is 2× Catch Stardust .",
+   "url": "https://leekduck.com/events/pokemonspotlighthour2026-09-17/",
+   "summary_ms": null
   },
   {
    "slug": "super-mega-raid-day-september-2026",
@@ -291,6 +471,66 @@
    "summary_ms": "Event Super Mega Raid Day akan berlangsung pada 19 September 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
   },
   {
+   "slug": "max-mondays-2026-09-21",
+   "name": "Dynamax Articuno, Zapdos, and Moltres during Max Monday",
+   "type": "max-mondays",
+   "start": "2026-09-21T06:00:00",
+   "end": "2026-09-21T21:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
+   "summary": "These Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokémon. On September 21, 2026 , the featured Dynamax Pokémon are Articuno, Zapdos, and Moltres . Articuno Zapdos Moltres",
+   "url": "https://leekduck.com/events/max-mondays-2026-09-21/",
+   "summary_ms": null
+  },
+  {
+   "slug": "mega-malamar-in-mega-raids-september-2026",
+   "name": "Mega Malamar in Mega Raids",
+   "type": "raid-battles",
+   "start": "2026-09-23T06:00:00",
+   "end": "2026-09-29T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
+   "summary": "Mega Malamar will be in Mega Raids from September 23, 2026 at 6 am to September 29, 2026 at 10 pm local time.",
+   "url": "https://leekduck.com/events/mega-malamar-in-mega-raids-september-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
+   "name": "Xurkitree, Pheromosa, and Buzzwole in 5-star Raid Battles",
+   "type": "raid-battles",
+   "start": "2026-09-23T06:00:00",
+   "end": "2026-09-29T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "Xurkitree, Pheromosa, and Buzzwole will be in five-star raid battles from September 23, 2026 to September 29, 2026. Xurkitree will appear in the Asia-Pacific region, Pheromosa will appear in Europe, the Middle East, Africa, and India, and Buzzwole will appear in the Americas and Greenland. Raid Hours There will also be a Raid Hour featuring these regional raid bosses from 6:00 p.m. to 7:00 p.m. local time on September 23.",
+   "url": "https://leekduck.com/events/xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "raidhour20260923",
+   "name": "Xurkitree, Pheromosa, and Buzzwole Raid Hour",
+   "type": "raid-hour",
+   "start": "2026-09-23T18:00:00",
+   "end": "2026-09-23T19:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/raidhour.jpg",
+   "summary": "A Raid Hour featuring Xurkitree (Asia-Pacific), Pheromosa (Europe, the Middle East, Africa, and India), and Buzzwole (the Americas and Greenland) is scheduled from 6:00 p.m. to 7:00 p.m. local time. During this hour there will be an increased number of five-star raids.",
+   "url": "https://leekduck.com/events/raidhour20260923/",
+   "summary_ms": null
+  },
+  {
+   "slug": "pokemonspotlighthour2026-09-24",
+   "name": "Rattata Spotlight Hour",
+   "type": "pokémon-spotlight-hour",
+   "start": "2026-09-24T18:00:00",
+   "end": "2026-09-24T19:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/pokemonspotlighthour.jpg",
+   "summary": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time. There will be an increased chance to encounter XXS Rattata. September 24 : The featured Pokémon is Rattata and the special bonus is 2× Evolution XP .",
+   "url": "https://leekduck.com/events/pokemonspotlighthour2026-09-24/",
+   "summary_ms": null
+  },
+  {
    "slug": "catch-mastery-september-2026",
    "name": "Catch Mastery",
    "type": "event",
@@ -301,6 +541,66 @@
    "summary": "The Catch Mastery event will take place on September 26, 2026 from 10 am to 8 pm. Stay tuned for more details.",
    "url": "https://leekduck.com/events/catch-mastery-september-2026/",
    "summary_ms": "Event Catch Mastery akan berlangsung pada 26 September 2026 dari 10 pagi hingga 8 malam. Nantikan butiran lanjut."
+  },
+  {
+   "slug": "max-mondays-2026-09-28",
+   "name": "Dynamax Sobble during Max Monday",
+   "type": "max-mondays",
+   "start": "2026-09-28T06:00:00",
+   "end": "2026-09-28T21:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
+   "summary": "These Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokémon. On September 28, 2026 , the featured Dynamax Pokémon is Sobble . Sobble",
+   "url": "https://leekduck.com/events/max-mondays-2026-09-28/",
+   "summary_ms": null
+  },
+  {
+   "slug": "harvest-festival-2026",
+   "name": "Harvest Festival",
+   "type": "event",
+   "start": "2026-09-29T10:00:00",
+   "end": "2026-10-05T20:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "The Harvest Festival event will take place from September 29, 2026 at 10 am to October 5, 2026 at 8 pm. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/harvest-festival-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "mega-victreebel-in-mega-raids-september-2026",
+   "name": "Mega Victreebel in Mega Raids",
+   "type": "raid-battles",
+   "start": "2026-09-30T06:00:00",
+   "end": "2026-10-06T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
+   "summary": "Mega Victreebel will be in Mega Raids from September 30, 2026 at 6 am to October 6, 2026 at 10 pm local time.",
+   "url": "https://leekduck.com/events/mega-victreebel-in-mega-raids-september-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "xerneas-in-5-star-raid-battles-september-2026",
+   "name": "Xerneas in 5-star Raid Battles",
+   "type": "raid-battles",
+   "start": "2026-09-30T06:00:00",
+   "end": "2026-10-06T22:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "Xerneas will be in five-star raid battles from September 30, 2026 to October 6, 2026. Raid Hours There will also be a Raid Hour featuring Xerneas from 6:00 p.m. to 7:00 p.m. local time on September 30.",
+   "url": "https://leekduck.com/events/xerneas-in-5-star-raid-battles-september-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "raidhour20260930",
+   "name": "Xerneas Raid Hour",
+   "type": "raid-hour",
+   "start": "2026-09-30T18:00:00",
+   "end": "2026-09-30T19:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/raidhour.jpg",
+   "summary": "A Raid Hour featuring Xerneas is scheduled from 6:00 p.m. to 7:00 p.m. local time. During this hour there will be an increased number of five-star raids.",
+   "url": "https://leekduck.com/events/raidhour20260930/",
+   "summary_ms": null
   },
   {
    "slug": "max-battle-day-october-2026",
