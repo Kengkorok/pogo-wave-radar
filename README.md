@@ -73,22 +73,22 @@ Data auto-update dari [leekduck.com/events](https://leekduck.com/events/) setiap
 
 1. Buka [kengkorok.github.io/pogo-wave-radar](https://kengkorok.github.io/pogo-wave-radar/)
 2. Chrome/Android: **Add to Home screen** → install sebagai app
-3. Set zon kau (auto-detect biasanya dah betul)
-4. Event live → tekan bandar → **📋 salin koordinat** → paste kat GPS Joystick, Teleport PGS
+3. Set zon anda (auto-detect biasanya dah betul)
+4. Event live → tekan bandar → **📋 copy koordinat** → paste kat GPS Joystick, Teleport PGS
 
 **Bandar utama (19):** Kiribati · Auckland · Sydney · Tokyo · Nagoya · Osaka · Seoul · KLCC · Marina Bay Sands · Dubai · Izmir · Larissa · Budapest · Seville · Zaragoza · São Paulo · Chancay · New York · California (LA)
 
 
-### ☕ Derma
+### ☕ Belanje Kopi
 
-App ni free & takde iklan. Kalau app ni membantu korang tak terlepas event, boleh belanja aku kopi:
+App ni free & takde iklan. Kalau app ni membantu anda boleh payung aku kopi:
 
-- **Ko-fi** ⭐ — terbaik untuk penyokong luar negara, payout via PayPal: [ko-fi.com/kengkorok](https://ko-fi.com/kengkorok)
+- **Ko-fi** ⭐ — terbaik untuk penyokong luar negara, worldwide, payout via PayPal: [ko-fi.com/kengkorok](https://ko-fi.com/kengkorok)
 - **DuitNow QR (Malaysia)** — zero fee, scan terus guna TNG eWallet / mana-mana app DuitNow: [duitnow-qr.png](https://kengkorok.github.io/pogo-wave-radar/img/duitnow-qr.png)
 
 ### ⚠️ Disclaimer
 
-Guna atas risiko sendiri, kami tidak bertanggungjawab sekiranya akaun anda soft-banned, permanently banned, suspended etc. Respect cooldown & syarat Niantic/Scopely. App ni bukan dari Niantic, hanya untuk rujukan supaya memudahkan anda spoofing. 
+Guna atas risiko sendiri, kami tidak bertanggungjawab sekiranya akaun anda kena soft-banned, permanently banned, suspended etc. Respect cooldown & syarat Niantic/Scopely. App ni bukan dari Niantic, hanya untuk rujukan supaya memudahkan anda spoofing. 
 
 ---
 
