@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-08-25T10:03:00.975118+00:00",
+ "fetched_at": "2026-08-25T11:01:30.039996+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -63,18 +63,6 @@
    "summary_ms": "Semua Trainer boleh sambut ulang tahun ke-10 Pokémon GO dengan Mewtwo istimewa! Timed Research Perfect Mewtwo akan tersedia dari 12 Ogos 2026, 4:00 petang PDT hingga 6 September 2026, 11 malam waktu tempatan."
   },
   {
-   "slug": "water-festival-2026",
-   "name": "Ultra Unlock: Water Festival",
-   "type": "event",
-   "start": "2026-08-18T10:00:00",
-   "end": "2026-08-24T20:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-18-water-festival-2026/water-festival-2026.jpg?v2",
-   "summary": "Arrokuda and Cramorant splash into Pokémon GO during Ultra Unlock: Water Festival! The Ultra Unlock: Water Festival event will take place from August 18, 2026 at 10 am to August 24, 2026 at 8 pm local time.",
-   "url": "https://leekduck.com/events/water-festival-2026/",
-   "summary_ms": "Arrokuda dan Cramorant melompat masuk ke Pokémon GO semasa Ultra Unlock: Water Festival! Event Ultra Unlock: Water Festival akan berlangsung dari 18 Ogos 2026, 10 pagi hingga 24 Ogos 2026, 8 malam waktu tempatan."
-  },
-  {
    "slug": "gbl-forever-forward_great-league_scroll-cup-great-league-edition",
    "name": "Great League and Scroll Cup: Great League Edition | Forever Forward",
    "type": "go-battle-league",
@@ -109,18 +97,6 @@
    "summary": "Mega Swampert will be in Mega Raids from August 19, 2026 at 6 am to August 25, 2026 at 10 pm local time.",
    "url": "https://leekduck.com/events/mega-swampert-in-mega-raids-august-2026/",
    "summary_ms": "Mega Swampert akan berada dalam Mega Raids dari 19 Ogos 2026, 6 pagi hingga 25 Ogos 2026, 10 malam waktu tempatan."
-  },
-  {
-   "slug": "max-mondays-2026-08-24",
-   "name": "Dynamax Hitmontop during Max Monday",
-   "type": "max-mondays",
-   "start": "2026-08-24T06:00:00",
-   "end": "2026-08-24T21:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
-   "summary": "These Dynamax Pokemon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokemon. On August 24, 2026 , the featured Dynamax Pokemon is Hitmontop . Hitmontop",
-   "url": "https://leekduck.com/events/max-mondays-2026-08-24/",
-   "summary_ms": "Dynamax Pokemon ini mungkin muncul dalam Max Battles sepanjang season ini. Max Battles tersedia dari 6:00 pagi hingga 9:00 malam waktu tempatan pada hari Isnin. Power Spots akan refresh lebih kerap, dan lebih banyak Power Spots aktif pada hari Isnin berbanding hari lain. Max Battles akan berputar secara berkala."
   },
   {
    "slug": "pokemon-xp-2026-worlds",
