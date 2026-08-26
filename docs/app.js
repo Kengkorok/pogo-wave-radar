@@ -43,6 +43,7 @@ const I18N = {
     suggestion: '⭐ Suggestion:', stillLive: 'still live, ends',
     grpLive: '🔥 Live now', grpUp: '🟡 Upcoming', grpEnd: '⚫ Ended',
     startsShort: 'starts',
+    upNextLbl: 'Up next — starts in', liveNowLbl: 'Live now — ends in',
     copyToast: 'paste into GPS Joystick',
     buyCoffee: '☕ Buy me a coffee', scanDonate: '🇲🇾 Scan to donate (MY)',
     qrTitle: 'Scan with TNG eWallet or any DuitNow app. Thank you! 🙏',
@@ -74,6 +75,7 @@ const I18N = {
     suggestion: '⭐ Cadangan:', stillLive: 'masih live, tamat',
     grpLive: '🔥 Live sekarang', grpUp: '🟡 Akan datang', grpEnd: '⚫ Dah tamat',
     startsShort: 'mula',
+    upNextLbl: 'Seterusnya — mula dalam', liveNowLbl: 'Live sekarang — tamat dalam',
     copyToast: 'paste kat GPS Joystick',
     buyCoffee: '☕ Belanja aku kopi', scanDonate: '🇲🇾 Scan untuk derma (MY)',
     qrTitle: 'Scan dengan TNG eWallet atau mana-mana app DuitNow. Terima kasih! 🙏',
@@ -134,7 +136,8 @@ function fmtTime(ms, tz, opts) {
 }
 function fmtDur(ms) {
   if (ms < 0) ms = 0;
-  const h = Math.floor(ms / 3600000), m = Math.floor((ms % 3600000) / 60000);
+  const d = Math.floor(ms / 86400000), h = Math.floor((ms % 86400000) / 3600000), m = Math.floor((ms % 3600000) / 60000);
+  if (d > 0) return `${d}d ${h}h`;
   return h > 0 ? `${h}h ${m}m` : `${m}m`;
 }
 /* Format a window [s,e] in a given timezone; adds the date when it isn't today there */
@@ -194,6 +197,39 @@ function cityStates(ev) {
   return CITIES.map((c) => ({ city: c, ...statusFor(ev, c, now) }));
 }
 function isPvP(ev) { return PVPTYPES.has(ev.type); }
+
+/* ---------- next event banner ---------- */
+/* Pick the most relevant event for the user's own timezone:
+   a live event ending soonest wins; otherwise the next upcoming one. */
+function nextEventPick() {
+  const my = { tz: getUserTZ() };
+  const now = new Date();
+  const rows = EVENTS
+    .filter((ev) => (APP_CONFIG.show_pvp_default || $('#pvp').checked) || !isPvP(ev))
+    .map((ev) => ({ ev, st: statusFor(ev, my, now) }))
+    .filter((r) => r.st.st === 'live' || r.st.st === 'upcoming');
+  const live = rows.filter((r) => r.st.st === 'live').sort((a, b) => a.st.e - b.st.e);
+  if (live.length) return { ...live[0], isLive: true };
+  const up = rows.filter((r) => r.st.st === 'upcoming').sort((a, b) => a.st.s - b.st.s);
+  if (up.length) return { ...up[0], isLive: false };
+  return null;
+}
+function renderNextBar() {
+  const bar = $('#nextbar');
+  if (!bar) return;
+  const p = nextEventPick();
+  if (!p) { bar.hidden = true; return; }
+  const target = p.isLive ? p.st.e : p.st.s;
+  bar.hidden = false;
+  bar.className = 'nextbar' + (p.isLive ? ' live' : '');
+  bar.innerHTML = '<button class="nextbtn" data-wave="' + p.ev.slug + '" type="button">'
+    + (p.isLive ? '🔥' : '⏳') + ' <b>' + esc(p.ev.name) + '</b>'
+    + ' <span class="nextlabel">' + (p.isLive ? t('liveNowLbl') : t('upNextLbl')) + '</span>'
+    + ' <span class="nextcd" data-cd="' + target + '">' + fmtDur(target - Date.now()) + '</span>'
+    + ' →</button>';
+  const btn = bar.querySelector('.nextbtn');
+  if (btn) btn.addEventListener('click', () => goWave(p.ev.slug));
+}
 
 /* ---------- render: live now ---------- */
 function cardHtml(r) {
@@ -409,6 +445,8 @@ function startTicker() {
       el.textContent = v > 0 ? fmtDur(v) : '0m';
     });
   }, 1000);
+  // re-pick the "next event" every 30s so the banner follows status transitions
+  setInterval(renderNextBar, 30000);
 }
 function renderTZ() {
   const sel = $('#tz');
@@ -463,6 +501,7 @@ function renderLang() {
   const f = $('#fetched');
   if (f) f.textContent = FETCHED_AT ? timeAgo(FETCHED_AT) : '—';
   renderTZ();
+  renderNextBar();
   renderLive();
   renderWaveSelect();
   renderWave();
@@ -494,8 +533,8 @@ async function init() {
     toolsBtn.addEventListener('click', (e) => { e.stopPropagation(); toolsNav.classList.toggle('open'); });
     document.addEventListener('click', (e) => { if (!toolsNav.contains(e.target)) toolsNav.classList.remove('open'); });
   }
-  $('#tz').addEventListener('change', (ev) => { USER_TZ = ev.target.value; localStorage.setItem(TZ_STORAGE, USER_TZ); renderTZ(); renderLive(); renderAll(); });
-  $('#pvp').addEventListener('change', () => { localStorage.setItem(PVP_STORAGE, $('#pvp').checked ? '1' : '0'); renderLive(); renderWaveSelect(); renderWave(); renderAll(); });
+  $('#tz').addEventListener('change', (ev) => { USER_TZ = ev.target.value; localStorage.setItem(TZ_STORAGE, USER_TZ); renderTZ(); renderNextBar(); renderLive(); renderAll(); });
+  $('#pvp').addEventListener('change', () => { localStorage.setItem(PVP_STORAGE, $('#pvp').checked ? '1' : '0'); renderNextBar(); renderLive(); renderWaveSelect(); renderWave(); renderAll(); });
   $$('.tabs button').forEach((b) => b.addEventListener('click', () => switchTab(b.dataset.tab)));
   $('#waveSel').addEventListener('change', renderWave);
   renderLang();
