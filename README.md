@@ -10,7 +10,7 @@
 ![Last Scrape](https://img.shields.io/github/last-commit/kengkorok/pogo-wave-radar?style=for-the-badge&label=Event+Update)
 [![License](https://img.shields.io/github/license/kengkorok/pogo-wave-radar?style=for-the-badge)](LICENSE)
 
-**Support:** ☕ [Buy me a coffee](https://ko-fi.com/kengkorok) · 🇲🇾 [Scan DuitNow QR](https://kengkorok.github.io/pogo-wave-radar/img/duitnow-qr.png)
+**Support:** ☕ [Buy me a coffee](https://ko-fi.com/kengkorok) · [Scan DuitNow QR](https://kengkorok.github.io/pogo-wave-radar/img/duitnow-qr.png)
 
 </div>
 
