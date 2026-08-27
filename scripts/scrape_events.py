@@ -244,9 +244,40 @@ def fetch_page_details(slug):
     return summary, detail
 
 
+# Guard thresholds (issue #2): leekduck normally lists 30+ events.
+# A scrape below MIN_EVENTS, or one that would drop most known events,
+# almost certainly means the page layout changed — abort and keep old data.
+MIN_EVENTS = 10
+MAX_DROP_RATIO = 0.5
+
+
+def sanity_check(events):
+    """Exit non-zero (before writing anything) if the scrape looks broken."""
+    if len(events) < MIN_EVENTS:
+        print(f"ABORT: only {len(events)} events scraped (threshold {MIN_EVENTS}) "
+              f"— leekduck layout may have changed. Keeping existing data.")
+        return False
+    if os.path.exists(OUT):
+        try:
+            old = json.load(open(OUT, encoding="utf-8"))
+            old_slugs = {e["slug"] for e in old.get("events", [])}
+            new_slugs = {e["slug"] for e in events}
+            lost = old_slugs - new_slugs
+            if old_slugs and len(lost) > len(old_slugs) * MAX_DROP_RATIO:
+                print(f"ABORT: {len(lost)}/{len(old_slugs)} events would disappear "
+                      f"— suspicious mass drop, leekduck layout may have changed. "
+                      f"Keeping existing data.")
+                return False
+        except Exception as e:
+            print(f"WARN: could not compare with previous events.json ({e})")
+    return True
+
+
 def main():
     raw = fetch(URL)
     events = parse(raw)
+    if not sanity_check(events):
+        return 1
     summaries = {}
     details = {}
     if os.path.exists(SUM):

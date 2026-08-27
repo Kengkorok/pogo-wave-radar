@@ -18,6 +18,9 @@ jobs:
           python-version: '3.12'
       - name: Scrape leekduck events + details
         run: python scripts/scrape_events.py
+      - name: Notify on scrape failure
+        if: failure()
+        run: echo "::error::Scrape gagal / sanity check tercetus — data lama dikekalkan. Kemungkinan leekduck tukar layout, periksa scripts/scrape_events.py."
       - name: Translate EN -> BM (DeepSeek, best-effort)
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
