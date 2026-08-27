@@ -1,21 +1,154 @@
 [
-  {"name": "Kiribati (Tarawa)", "flag": "img/flags/ki.svg", "tz": "Pacific/Tarawa", "lat": -0.8820, "lng": 169.5340, "note": "UTC+12/+13 — wave pertama dunia"},
-  {"name": "Auckland", "flag": "img/flags/nz.svg", "tz": "Pacific/Auckland", "lat": -36.8509, "lng": 174.7645, "note": "UTC+12/+13"},
-  {"name": "Sydney", "flag": "img/flags/au.svg", "tz": "Australia/Sydney", "lat": -33.8688, "lng": 151.2093, "note": "UTC+10/+11"},
-  {"name": "Tokyo", "flag": "img/flags/jp.svg", "tz": "Asia/Tokyo", "lat": 35.6762, "lng": 139.6503, "note": "UTC+9"},
-  {"name": "Nagoya", "flag": "img/flags/jp.svg", "tz": "Asia/Tokyo", "lat": 35.1815, "lng": 136.9066, "note": "UTC+9"},
-  {"name": "Osaka", "flag": "img/flags/jp.svg", "tz": "Asia/Tokyo", "lat": 34.6937, "lng": 135.5023, "note": "UTC+9"},
-  {"name": "Seoul", "flag": "img/flags/kr.svg", "tz": "Asia/Seoul", "lat": 37.5665, "lng": 126.9780, "note": "UTC+9"},
-  {"name": "KLCC Kuala Lumpur", "flag": "img/flags/my.svg", "tz": "Asia/Kuala_Lumpur", "lat": 3.1579, "lng": 101.7120, "note": "UTC+8 — home base korok"},
-  {"name": "Marina Bay Sands", "flag": "img/flags/sg.svg", "tz": "Asia/Singapore", "lat": 1.2834, "lng": 103.8607, "note": "UTC+8"},
-  {"name": "Dubai", "flag": "img/flags/ae.svg", "tz": "Asia/Dubai", "lat": 25.2048, "lng": 55.2708, "note": "UTC+4"},
-  {"name": "Izmir", "flag": "img/flags/tr.svg", "tz": "Europe/Istanbul", "lat": 38.4237, "lng": 27.1428, "note": "UTC+3"},
-  {"name": "Larissa", "flag": "img/flags/gr.svg", "tz": "Europe/Athens", "lat": 39.6390, "lng": 22.4200, "note": "UTC+2/+3"},
-  {"name": "Budapest", "flag": "img/flags/hu.svg", "tz": "Europe/Budapest", "lat": 47.4979, "lng": 19.0402, "note": "UTC+1/+2"},
-  {"name": "Seville", "flag": "img/flags/es.svg", "tz": "Europe/Madrid", "lat": 37.3891, "lng": -5.9845, "note": "UTC+1/+2"},
-  {"name": "Zaragoza", "flag": "img/flags/es.svg", "tz": "Europe/Madrid", "lat": 41.6488, "lng": -0.8891, "note": "UTC+1/+2"},
-  {"name": "Sao Paulo", "flag": "img/flags/br.svg", "tz": "America/Sao_Paulo", "lat": -23.5505, "lng": -46.6333, "note": "UTC-3"},
-  {"name": "Chancay", "flag": "img/flags/pe.svg", "tz": "America/Lima", "lat": -11.5714, "lng": -77.2672, "note": "UTC-5"},
-  {"name": "New York", "flag": "img/flags/us.svg", "tz": "America/New_York", "lat": 40.7128, "lng": -74.0060, "note": "UTC-4/-5"},
-  {"name": "California (LA)", "flag": "img/flags/us.svg", "tz": "America/Los_Angeles", "lat": 34.0522, "lng": -118.2437, "note": "UTC-7/-8 — wave terakhir"}
+  {
+    "name": "Kiribati (Kiritimati)",
+    "flag": "img/flags/ki.svg",
+    "tz": "Pacific/Kiritimati",
+    "lat": 1.985106,
+    "lng": -157.477259,
+    "note": "UTC+14 — wave pertama dunia (Christmas Island)"
+  },
+  {
+    "name": "Auckland",
+    "flag": "img/flags/nz.svg",
+    "tz": "Pacific/Auckland",
+    "lat": -36.8509,
+    "lng": 174.7645,
+    "note": "UTC+12/+13"
+  },
+  {
+    "name": "Sydney",
+    "flag": "img/flags/au.svg",
+    "tz": "Australia/Sydney",
+    "lat": -33.8688,
+    "lng": 151.2093,
+    "note": "UTC+10/+11"
+  },
+  {
+    "name": "Tokyo",
+    "flag": "img/flags/jp.svg",
+    "tz": "Asia/Tokyo",
+    "lat": 35.6762,
+    "lng": 139.6503,
+    "note": "UTC+9"
+  },
+  {
+    "name": "Nagoya",
+    "flag": "img/flags/jp.svg",
+    "tz": "Asia/Tokyo",
+    "lat": 35.1815,
+    "lng": 136.9066,
+    "note": "UTC+9"
+  },
+  {
+    "name": "Osaka",
+    "flag": "img/flags/jp.svg",
+    "tz": "Asia/Tokyo",
+    "lat": 34.6937,
+    "lng": 135.5023,
+    "note": "UTC+9"
+  },
+  {
+    "name": "Seoul",
+    "flag": "img/flags/kr.svg",
+    "tz": "Asia/Seoul",
+    "lat": 37.5665,
+    "lng": 126.978,
+    "note": "UTC+9"
+  },
+  {
+    "name": "KLCC Kuala Lumpur",
+    "flag": "img/flags/my.svg",
+    "tz": "Asia/Kuala_Lumpur",
+    "lat": 3.1579,
+    "lng": 101.712,
+    "note": "UTC+8 — home base korok"
+  },
+  {
+    "name": "Marina Bay Sands",
+    "flag": "img/flags/sg.svg",
+    "tz": "Asia/Singapore",
+    "lat": 1.2834,
+    "lng": 103.8607,
+    "note": "UTC+8"
+  },
+  {
+    "name": "Dubai",
+    "flag": "img/flags/ae.svg",
+    "tz": "Asia/Dubai",
+    "lat": 25.2048,
+    "lng": 55.2708,
+    "note": "UTC+4"
+  },
+  {
+    "name": "Izmir",
+    "flag": "img/flags/tr.svg",
+    "tz": "Europe/Istanbul",
+    "lat": 38.4237,
+    "lng": 27.1428,
+    "note": "UTC+3"
+  },
+  {
+    "name": "Larissa",
+    "flag": "img/flags/gr.svg",
+    "tz": "Europe/Athens",
+    "lat": 39.639,
+    "lng": 22.42,
+    "note": "UTC+2/+3"
+  },
+  {
+    "name": "Budapest",
+    "flag": "img/flags/hu.svg",
+    "tz": "Europe/Budapest",
+    "lat": 47.4979,
+    "lng": 19.0402,
+    "note": "UTC+1/+2"
+  },
+  {
+    "name": "Seville",
+    "flag": "img/flags/es.svg",
+    "tz": "Europe/Madrid",
+    "lat": 37.3891,
+    "lng": -5.9845,
+    "note": "UTC+1/+2"
+  },
+  {
+    "name": "Zaragoza",
+    "flag": "img/flags/es.svg",
+    "tz": "Europe/Madrid",
+    "lat": 41.6488,
+    "lng": -0.8891,
+    "note": "UTC+1/+2"
+  },
+  {
+    "name": "Sao Paulo",
+    "flag": "img/flags/br.svg",
+    "tz": "America/Sao_Paulo",
+    "lat": -23.5505,
+    "lng": -46.6333,
+    "note": "UTC-3"
+  },
+  {
+    "name": "Chancay",
+    "flag": "img/flags/pe.svg",
+    "tz": "America/Lima",
+    "lat": -11.5714,
+    "lng": -77.2672,
+    "note": "UTC-5"
+  },
+  {
+    "name": "New York",
+    "flag": "img/flags/us.svg",
+    "tz": "America/New_York",
+    "lat": 40.7128,
+    "lng": -74.006,
+    "note": "UTC-4/-5"
+  },
+  {
+    "name": "California (LA)",
+    "flag": "img/flags/us.svg",
+    "tz": "America/Los_Angeles",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "note": "UTC-7/-8 — wave terakhir"
+  }
 ]
