@@ -24,7 +24,7 @@ const I18N = {
     pvpLabel: 'Show PvP / GBL (hidden by default)',
     tabLive: '🔥 Live Now', tabWave: '🌊 Wave Tracker', tabAll: '📅 All Events',
     sectionLive: '🔥 Live Now', sectionUpcoming: '🟡 Upcoming Events',
-    tools: '🧰 Tools', iosNote: 'supports iOS',
+    tools: '🧰 Tools', iosNote: 'supports iOS', moreCities: 'more cities',
     loading: 'Loading…', pickEvent: 'Pick an event:',
     footerData: 'Event data from <a href="https://leekduck.com/events/" target="_blank" rel="noopener">leekduck.com</a> · updated <span id="fetched">—</span>',
     disclaimer: 'For spoofers: use the coords in GPS Joystick at your own risk. Respect cooldown &amp; fair play.',
@@ -56,7 +56,7 @@ const I18N = {
     pvpLabel: 'Tunjuk PvP / GBL (disorok secara default)',
     tabLive: '🔥 Live Sekarang', tabWave: '🌊 Wave Tracker', tabAll: '📅 Semua Event',
     sectionLive: '🔥 Live Sekarang', sectionUpcoming: '🟡 Event Akan Datang',
-    tools: '🧰 Tools', iosNote: 'sokong iOS',
+    tools: '🧰 Tools', iosNote: 'sokong iOS', moreCities: 'bandar lagi',
     loading: 'Memuatkan…', pickEvent: 'Pilih event:',
     footerData: 'Data event dari <a href="https://leekduck.com/events/" target="_blank" rel="noopener">leekduck.com</a> · dikemas kini <span id="fetched">—</span>',
     disclaimer: 'Buat spoofer: guna koordinat kat GPS Joystick ikut risiko sendiri. Hormati cooldown &amp; fair play.',
@@ -239,7 +239,9 @@ function cardHtml(r) {
     : r.my.st === 'upcoming' ? ' <span class="badge soon">' + t('notStartedArea') + '</span>'
     : isLive ? ' <span class="badge live">' + t('liveLbl') + '</span>' : '';
   const chips = isLive
-    ? '<div class="chips">' + r.live.map((s) => chip(s, r.ev)).join('') + '</div>'
+    ? '<div class="chips">' + chip(r.live[0], r.ev)
+      + (r.live.length > 1 ? '<span class="chip-more">+' + (r.live.length - 1) + ' ' + t('moreCities') + '</span>' : '')
+      + '</div>'
     : '';
   const cta = isLive
     ? '<button class="btn" data-wave="' + r.ev.slug + '">' + t('viewFullWave') + '</button>'

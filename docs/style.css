@@ -102,6 +102,7 @@ main { max-width: 760px; margin: 0 auto; padding: 12px 12px 40px; }
   border-radius: 999px; padding: 5px 10px; font-size: .8rem;
 }
 .chip:hover { border-color: var(--accent); }
+.chip-more { display: inline-flex; align-items: center; color: var(--muted); font-size: .8rem; padding: 5px 4px; white-space: nowrap; }
 .flag { width: 1.15em; height: 1.15em; border-radius: 2px; vertical-align: -0.18em; display: inline-block; }
 .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--live); display: inline-block; animation: pulse 1.6s infinite; }
 @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
