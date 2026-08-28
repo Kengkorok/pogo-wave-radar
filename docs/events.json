@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-08-28T05:34:56.211243+00:00",
+ "fetched_at": "2026-08-28T18:30:25.297262+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -109,18 +109,6 @@
    "summary": "Regirock, Regice, and Registeel will be in five-star raid battles from August 26, 2026 to September 8, 2026. Raid Hours There will also be a Raid Hour featuring Regirock, Regice, and Registeel from 6:00 pm to 7:00 pm local time on the following dates: August 26 September 2",
    "url": "https://leekduck.com/events/regirock-regice-registeel-in-5-star-raid-battles-august-2026/",
    "summary_ms": "Regirock, Regice, dan Registeel akan berada dalam raid 5 bintang dari 26 Ogos 2026 hingga 8 September 2026. Ada juga Raid Hour featuring mereka dari 6:00 petang hingga 7:00 petang waktu tempatan pada tarikh: 26 Ogos, 2 September, dan seterusnya."
-  },
-  {
-   "slug": "pokemonspotlighthour2026-08-27",
-   "name": "Mankey Spotlight Hour",
-   "type": "pokémon-spotlight-hour",
-   "start": "2026-08-27T18:00:00",
-   "end": "2026-08-27T19:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/pokemonspotlighthour.jpg",
-   "summary": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time on Thursday. August 27 : The featured Pokémon is Mankey and the special bonus is 2× Catch Candy .",
-   "url": "https://leekduck.com/events/pokemonspotlighthour2026-08-27/",
-   "summary_ms": "Jam Spotlight Pokémon akan menampilkan Pokémon dan bonus istimewa berbeza selama satu jam pada 6:00 petang waktu tempatan hari Khamis. 27 Ogos: Pokémon featured ialah Mankey dan bonus istimewanya 2× Catch Candy."
   },
   {
    "slug": "pokemon-world-championships-2026-timed-research-twitch-drops",
@@ -492,7 +480,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-catch-mastery-phantump-2026/phantump-catch-mastery.jpg?v2",
    "summary": "Get ready for a Catch Mastery event featuring Phantump, the Stump Pokémon!",
    "url": "https://leekduck.com/events/catch-mastery-phantump-2026/",
-   "summary_ms": null
+   "summary_ms": "Bersedia untuk acara Catch Mastery yang menampilkan Phantump, Pokémon Stump!"
   },
   {
    "slug": "max-mondays-2026-09-28",
