@@ -158,5 +158,13 @@
     "lat": 21.30649,
     "lng": -157.8587,
     "note": "UTC-10 — wave paling akhir"
+  },
+  {
+    "name": "San Francisco",
+    "flag": "img/flags/us.svg",
+    "tz": "America/Los_Angeles",
+    "lat": 37.7844,
+    "lng": -122.401,
+    "note": "UTC-7/-8 — venue Worlds/event fizikal"
   }
 ]
