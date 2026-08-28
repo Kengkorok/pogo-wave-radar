@@ -194,7 +194,9 @@ function statusFor(ev, city, date) {
 }
 function cityStates(ev) {
   const now = new Date();
-  return CITIES.map((c) => ({ city: c, ...statusFor(ev, c, now) }));
+  let cities = CITIES;
+  if (ev.city_only) cities = CITIES.filter((c) => c.name === ev.city_only);
+  return cities.map((c) => ({ city: c, ...statusFor(ev, c, now) }));
 }
 function isPvP(ev) { return PVPTYPES.has(ev.type); }
 
@@ -517,8 +519,12 @@ async function init() {
   USER_TZ = localStorage.getItem(TZ_STORAGE) || Intl.DateTimeFormat().resolvedOptions().timeZone || 'Asia/Kuala_Lumpur';
   $('#pvp').checked = localStorage.getItem(PVP_STORAGE) === '1';
   try {
-    const [c, e] = await Promise.all([fetch('cities.json').then((r) => r.json()), fetch('events.json').then((r) => r.json())]);
-    CITIES = c; EVENTS = e.events || []; FETCHED_AT = e.fetched_at;
+    const [c, e, m] = await Promise.all([
+      fetch('cities.json').then((r) => r.json()),
+      fetch('events.json').then((r) => r.json()),
+      fetch('manual_events.json').then((r) => r.json()).catch(() => []),
+    ]);
+    CITIES = c; EVENTS = (e.events || []).concat(m); FETCHED_AT = e.fetched_at;
     ensureDetails().then(() => { if (!$('#wave').hidden) renderWave(); });
   } catch (err) {
     $('#live').innerHTML = '<div class="empty">' + t('loadError') + '</div>';
