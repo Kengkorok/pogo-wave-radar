@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-08-27T21:07:21.718501+00:00",
+ "fetched_at": "2026-08-28T05:34:56.211243+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -483,16 +483,16 @@
    "summary_ms": "Jam Spotlight Hour Pokémon akan menampilkan Pokémon yang berbeza dan bonus istimewa selama satu jam pada pukul 6:00 petang waktu tempatan. Akan ada peluang yang lebih tinggi untuk bertemu dengan XXS Rattata. 24 September : Pokémon yang ditampilkan ialah Rattata dan bonus istimewanya ialah 2× Evolution XP ."
   },
   {
-   "slug": "catch-mastery-september-2026",
-   "name": "Catch Mastery",
+   "slug": "catch-mastery-phantump-2026",
+   "name": "Phantump Catch Mastery",
    "type": "event",
    "start": "2026-09-26T10:00:00",
    "end": "2026-09-26T20:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
-   "summary": "The Catch Mastery event will take place on September 26, 2026 from 10 am to 8 pm. Stay tuned for more details.",
-   "url": "https://leekduck.com/events/catch-mastery-september-2026/",
-   "summary_ms": "Event Catch Mastery akan berlangsung pada 26 September 2026 dari 10 pagi hingga 8 malam. Nantikan butiran lanjut."
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-catch-mastery-phantump-2026/phantump-catch-mastery.jpg?v2",
+   "summary": "Get ready for a Catch Mastery event featuring Phantump, the Stump Pokémon!",
+   "url": "https://leekduck.com/events/catch-mastery-phantump-2026/",
+   "summary_ms": null
   },
   {
    "slug": "max-mondays-2026-09-28",
