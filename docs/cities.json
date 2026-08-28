@@ -149,6 +149,14 @@
     "tz": "America/Los_Angeles",
     "lat": 34.0522,
     "lng": -118.2437,
-    "note": "UTC-7/-8 — wave terakhir"
+    "note": "UTC-7/-8"
+  },
+  {
+    "name": "Hawaii (Honolulu)",
+    "flag": "img/flags/us.svg",
+    "tz": "Pacific/Honolulu",
+    "lat": 21.30649,
+    "lng": -157.8587,
+    "note": "UTC-10 — wave paling akhir"
   }
 ]
