@@ -36,7 +36,7 @@ const I18N = {
     viewFullWave: '🌊 View full wave', viewWave: 'View wave',
     readFull: '📖 Read full details', sourceLink: 'View on LeekDuck ↗',
     detailLoading: 'Loading full details…', detailMissing: 'Full details not available yet.',
-    local: 'local', yourTime: 'your time', now: 'now',
+    local: 'local', yourTime: 'your time', cityNow: 'time now',
     startsLbl: 'STARTS', endsLbl: 'ENDS', liveLbl: 'LIVE', yourArea: 'your area',
     localNote: '🕐 Local-time event — the wave moves east to west. Pick a city, copy coords, spoof!',
     globalNote: '🕐 Global event — simultaneous worldwide (UTC).',
@@ -68,7 +68,7 @@ const I18N = {
     viewFullWave: '🌊 Lihat wave penuh', viewWave: 'Lihat wave',
     readFull: '📖 Baca butiran penuh', sourceLink: 'Buka kat LeekDuck ↗',
     detailLoading: 'Memuatkan butiran penuh…', detailMissing: 'Butiran penuh belum tersedia.',
-    local: 'tempatan', yourTime: 'waktu kau', now: 'sekarang',
+    local: 'tempatan', yourTime: 'waktu kau', cityNow: 'masa sekarang',
     startsLbl: 'MULA', endsLbl: 'HABIS', liveLbl: 'LIVE', yourArea: 'tempat kau',
     localNote: '🕐 Event ikut waktu tempatan — ombak bergerak dari timur ke barat. Pilih bandar, salin koordinat, spoof!',
     globalNote: '🕐 Event global — serentak seluruh dunia (UTC).',
@@ -360,11 +360,11 @@ function renderWave() {
       const lbl = s.st === 'live' ? t('liveLbl') : s.st === 'upcoming' ? t('startsLbl') + ' ' + fmtTime(s.s, s.city.tz) : t('endsLbl') + ' ' + fmtTime(s.e, s.city.tz);
       const isMy = s.city.tz === myTZ ? ' <span class="badge mine">' + t('yourArea') + '</span>' : '';
       const suggest = suggestion && s.city.tz === suggestion.city.tz ? ' ⭐' : '';
-      const wnow = '<span class="wnow">🕐 ' + t('now') + ' ' + nowIn(s.city.tz) + '</span>';
+      const wnow = '<span class="wnow">' + esc(s.city.name) + ' ' + t('cityNow') + ' ' + nowIn(s.city.tz) + '</span>';
       return '<div class="wrow st-' + s.st + '">'
         + '<div class="wcity">' + icon + ' ' + flagHtml(s.city) + ' <b>' + esc(s.city.name) + '</b>' + isMy + suggest + '</div>'
         + '<div class="wtime">' + (ev.local_time
-            ? '<span class="locwin">' + fmtWin(s.s, s.e, s.city.tz) + ' ' + t('local') + ' · ' + wnow + '</span><br><b class="yourwin">' + fmtWin(s.s, s.e, myTZ) + ' ' + t('yourTime') + '</b>'
+            ? wnow + '<br><b class="yourwin">' + fmtWin(s.s, s.e, myTZ) + ' ' + t('yourTime') + '</b>'
             : lbl + ' · ' + wnow) + '</div>'
         + '<div class="wact"><button class="chip" data-coords="' + s.coords + '" data-name="' + esc(s.city.name) + '">📋 ' + s.coords + '</button></div>'
         + '</div>';
