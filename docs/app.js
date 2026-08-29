@@ -36,7 +36,7 @@ const I18N = {
     viewFullWave: '🌊 View full wave', viewWave: 'View wave',
     readFull: '📖 Read full details', sourceLink: 'View on LeekDuck ↗',
     detailLoading: 'Loading full details…', detailMissing: 'Full details not available yet.',
-    local: 'local', yourTime: 'your time',
+    local: 'local', yourTime: 'your time', now: 'now',
     startsLbl: 'STARTS', endsLbl: 'ENDS', liveLbl: 'LIVE', yourArea: 'your area',
     localNote: '🕐 Local-time event — the wave moves east to west. Pick a city, copy coords, spoof!',
     globalNote: '🕐 Global event — simultaneous worldwide (UTC).',
@@ -68,7 +68,7 @@ const I18N = {
     viewFullWave: '🌊 Lihat wave penuh', viewWave: 'Lihat wave',
     readFull: '📖 Baca butiran penuh', sourceLink: 'Buka kat LeekDuck ↗',
     detailLoading: 'Memuatkan butiran penuh…', detailMissing: 'Butiran penuh belum tersedia.',
-    local: 'tempatan', yourTime: 'waktu kau',
+    local: 'tempatan', yourTime: 'waktu kau', now: 'sekarang',
     startsLbl: 'MULA', endsLbl: 'HABIS', liveLbl: 'LIVE', yourArea: 'tempat kau',
     localNote: '🕐 Event ikut waktu tempatan — ombak bergerak dari timur ke barat. Pilih bandar, salin koordinat, spoof!',
     globalNote: '🕐 Event global — serentak seluruh dunia (UTC).',
@@ -152,6 +152,16 @@ function fmtWin(s, e, tz) {
     return dshort(s) + ' · ' + tm(s) + ' – ' + tm(e);
   }
   return dshort(s) + ' ' + tm(s) + ' – ' + dshort(e) + ' ' + tm(e);
+}
+/* Current local time at tz; shows the date too when it differs from your area */
+function nowIn(tz) {
+  const ms = Date.now();
+  const offT = tzOffsetMs(tz, new Date(ms));
+  const offU = tzOffsetMs(getUserTZ(), new Date(ms));
+  const sameDay = Math.floor((ms + offT) / 86400000) === Math.floor((ms + offU) / 86400000);
+  const tm = fmtTime(ms, tz);
+  if (sameDay) return tm;
+  return new Intl.DateTimeFormat('en-MY', { day: 'numeric', month: 'short', timeZone: tz }).format(new Date(ms)) + ' ' + tm;
 }
 function timeAgo(iso) {
   const d = new Date(iso);
@@ -350,11 +360,12 @@ function renderWave() {
       const lbl = s.st === 'live' ? t('liveLbl') : s.st === 'upcoming' ? t('startsLbl') + ' ' + fmtTime(s.s, s.city.tz) : t('endsLbl') + ' ' + fmtTime(s.e, s.city.tz);
       const isMy = s.city.tz === myTZ ? ' <span class="badge mine">' + t('yourArea') + '</span>' : '';
       const suggest = suggestion && s.city.tz === suggestion.city.tz ? ' ⭐' : '';
+      const wnow = '<span class="wnow">🕐 ' + t('now') + ' ' + nowIn(s.city.tz) + '</span>';
       return '<div class="wrow st-' + s.st + '">'
         + '<div class="wcity">' + icon + ' ' + flagHtml(s.city) + ' <b>' + esc(s.city.name) + '</b>' + isMy + suggest + '</div>'
         + '<div class="wtime">' + (ev.local_time
-            ? '<span class="locwin">' + fmtWin(s.s, s.e, s.city.tz) + ' ' + t('local') + '</span><br><b class="yourwin">' + fmtWin(s.s, s.e, myTZ) + ' ' + t('yourTime') + '</b>'
-            : lbl) + '</div>'
+            ? '<span class="locwin">' + fmtWin(s.s, s.e, s.city.tz) + ' ' + t('local') + ' · ' + wnow + '</span><br><b class="yourwin">' + fmtWin(s.s, s.e, myTZ) + ' ' + t('yourTime') + '</b>'
+            : lbl + ' · ' + wnow) + '</div>'
         + '<div class="wact"><button class="chip" data-coords="' + s.coords + '" data-name="' + esc(s.city.name) + '">📋 ' + s.coords + '</button></div>'
         + '</div>';
     }).join('') + '</div>'
