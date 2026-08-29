@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-08-29T02:01:55.975307+00:00",
+ "fetched_at": "2026-08-29T09:19:14.958162+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -121,6 +121,18 @@
    "summary": "Get codes for exclusive Timed Research, a Worlds Tee avatar item, and special Pikachu encounters by tuning in to the 2026 Pokémon World Championships and PokémonXP livestreams. Trainers can earn up to five Pokémon GO rewards across the official Pokémon GO broadcast, the Pokémon World Championships finals stream, official co-streamers, and the PokémonXP Pokémon GO panel. Here’s everything you can unlock.",
    "url": "https://leekduck.com/events/pokemon-world-championships-2026-timed-research-twitch-drops/",
    "summary_ms": "Dapatkan kod untuk Timed Research eksklusif, avatar item Worlds Tee, dan encounter Pikachu istimewa dengan menonton livestream Kejohanan Dunia Pokémon 2026 dan PokémonXP. Trainer boleh peroleh sehingga lima ganjaran Pokémon GO sepanjang siaran rasmi."
+  },
+  {
+   "slug": "pokemon-world-championships-2026-san-francisco",
+   "name": "[San Francisco] 2026 Pokémon World Championships",
+   "type": "event",
+   "start": "2026-08-28T17:00:00+00:00",
+   "end": "2026-08-31T03:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-28-pokemon-world-championships-2026-san-francisco/2026-worlds-san-francisco.png",
+   "summary": "Special in-person Pokémon GO activities are available around San Francisco during the 2026 Pokémon World Championships. Explore the city for a Stamp Rally, location-themed raids with guaranteed Location Backgrounds, and exclusive research. The event runs from Friday, August 28, at 10:00 a.m. to Sunday, August 30, 2026, at 8:00 p.m. PDT.",
+   "url": "https://leekduck.com/events/pokemon-world-championships-2026-san-francisco/",
+   "summary_ms": null
   },
   {
    "slug": "max-mondays-2026-08-31",
