@@ -153,14 +153,10 @@ function fmtWin(s, e, tz) {
   }
   return dshort(s) + ' ' + tm(s) + ' – ' + dshort(e) + ' ' + tm(e);
 }
-/* Current local time at tz; shows the date too when it differs from your area */
+/* Current local time at tz, always with that place's local date (e.g. "28 Aug 6:45 pm") */
 function nowIn(tz) {
   const ms = Date.now();
-  const offT = tzOffsetMs(tz, new Date(ms));
-  const offU = tzOffsetMs(getUserTZ(), new Date(ms));
-  const sameDay = Math.floor((ms + offT) / 86400000) === Math.floor((ms + offU) / 86400000);
   const tm = fmtTime(ms, tz);
-  if (sameDay) return tm;
   return new Intl.DateTimeFormat('en-MY', { day: 'numeric', month: 'short', timeZone: tz }).format(new Date(ms)) + ' ' + tm;
 }
 function timeAgo(iso) {
