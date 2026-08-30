@@ -1,0 +1,35 @@
+name: scrape-nests
+
+on:
+  schedule:
+    # Nests change every ~14 days (migration) — daily is plenty.
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Scrape nest locations (pokecoord)
+        run: python scripts/scrape_nests.py
+      - name: Notify on scrape failure
+        if: failure()
+        run: echo "::error::Nest scrape gagal / sanity check tercetus — data lama dikekalkan. Kemungkinan upstream pokecoord API tukar, periksa scripts/scrape_nests.py."
+      - name: Commit changes if any
+        run: |
+          git config user.name "Kengkorok"
+          git config user.email "292285727+Kengkorok@users.noreply.github.com"
+          git add docs/nests.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update nests ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          else
+            echo "nests unchanged — nothing to commit"
+          fi

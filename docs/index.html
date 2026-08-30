@@ -44,6 +44,7 @@
   <button data-tab="live" class="active" data-i18n="tabLive">🔥 Live Now</button>
   <button data-tab="wave" data-i18n="tabWave">🌊 Wave Tracker</button>
   <button data-tab="all" data-i18n="tabAll">📅 All Events</button>
+  <button data-tab="nests" data-i18n="tabNests">🐝 Nests</button>
 </nav>
 
 <main>
@@ -59,6 +60,19 @@
   </section>
 
   <section id="all" hidden></section>
+
+  <section id="nests" hidden>
+    <div id="nestMigrate" class="nestbar" hidden></div>
+    <div class="nestfilters">
+      <div class="nestchips" role="group" aria-label="Nest filters">
+        <button class="nchip active" data-nestfilter="star" type="button" data-i18n="nestFilterStar">⭐ Stardust</button>
+        <button class="nchip" data-nestfilter="all" type="button" data-i18n="nestFilterAll">All</button>
+      </div>
+      <input id="nestSearch" type="search" autocomplete="off" placeholder="Search nest…">
+    </div>
+    <p class="nestnote" data-i18n="nestNote">Combee &amp; friends give bonus stardust per catch — the fastest farm for new spoofers. Pick a nest, copy coords, spoof!</p>
+    <div id="nestList"><div class="empty" data-i18n="loading">Loading…</div></div>
+  </section>
 </main>
 
 <footer>

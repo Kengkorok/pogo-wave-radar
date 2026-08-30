@@ -231,7 +231,47 @@ footer a { color: var(--accent); }
 }
 #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
+/* nests */
+.nestbar { margin: 0 0 10px; }
+.nestbar-inner {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: linear-gradient(135deg, rgba(250,204,21,.12), rgba(56,189,248,.08));
+  border: 1px solid rgba(250,204,21,.35); border-radius: 14px;
+  color: var(--text); padding: 10px 14px; font-size: .9rem; font-weight: 600;
+  text-align: center;
+}
+.nestbar-inner b { color: var(--soon); font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+.nestfilters { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; flex-wrap: wrap; }
+.nestchips { display: flex; gap: 6px; }
+.nchip {
+  background: var(--card2); border: 1px solid var(--line); color: var(--muted);
+  border-radius: 999px; padding: 6px 12px; font-size: .82rem; font-weight: 700; cursor: pointer;
+}
+.nchip:hover { border-color: var(--accent); }
+.nchip.active { background: rgba(250,204,21,.14); border-color: rgba(250,204,21,.5); color: var(--soon); }
+#nestSearch {
+  flex: 1; min-width: 150px; background: var(--card2); color: var(--text);
+  border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: .85rem;
+}
+#nestSearch:focus { outline: none; border-color: var(--accent); }
+.nestnote { color: var(--muted); font-size: .8rem; margin: 0 0 10px; line-height: 1.4; }
+.nestcard {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+  padding: 10px 12px; margin-bottom: 8px;
+}
+.nestcard.sd { border-color: rgba(250,204,21,.35); }
+.nsprite { width: 44px; height: 44px; flex-shrink: 0; image-rendering: pixelated; }
+.nbody { flex: 1; min-width: 0; }
+.nrow1 { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.nrow1 b { font-size: .95rem; }
+.nsub { color: var(--muted); font-size: .78rem; margin-top: 2px; }
+.badge.sd { background: rgba(250,204,21,.15); color: var(--soon); }
+.nestcard .chip { font-size: .72rem; padding: 5px 8px; white-space: nowrap; flex-shrink: 0; }
+
 @media (max-width: 520px) {
   .wrow { grid-template-columns: 1fr auto; }
   .wtime { grid-column: 1 / -1; text-align: left; }
+  .nestcard { flex-wrap: wrap; }
+  .nestcard .chip { margin-left: 54px; }
 }

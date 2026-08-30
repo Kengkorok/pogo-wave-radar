@@ -1,0 +1,966 @@
+{
+  "fetched_at": "2026-08-30T07:31:59Z",
+  "migration": "2026-09-09T14:18:00Z",
+  "nests": [
+    {
+      "pokemon": "Combee",
+      "dex": 415,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 51.0651,
+      "lng": 13.795,
+      "stardust": 500,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Combee",
+      "dex": 415,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 40.7586,
+      "lng": -73.7539,
+      "stardust": 500,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Combee",
+      "dex": 415,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 34.6829,
+      "lng": 135.8473,
+      "stardust": 500,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Combee",
+      "dex": 415,
+      "country": "UNITED KINGDOM",
+      "flag": "🇬🇧",
+      "lat": 51.4165,
+      "lng": -0.3357,
+      "stardust": 500,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Combee",
+      "dex": 415,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 39.0554,
+      "lng": -95.728,
+      "stardust": 500,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Foongus",
+      "dex": 590,
+      "country": "FRANCE",
+      "flag": "🇫🇷",
+      "lat": 49.1077,
+      "lng": 6.1851,
+      "stardust": 150,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Foongus",
+      "dex": 590,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 39.1445,
+      "lng": -77.252,
+      "stardust": 150,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Abra",
+      "dex": 63,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 35.1731,
+      "lng": 137.0903,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Abra",
+      "dex": 63,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 34.8464,
+      "lng": 137.7795,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Blitzle",
+      "dex": 522,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 51.1551,
+      "lng": 6.8704,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Blitzle",
+      "dex": 522,
+      "country": "UNITED KINGDOM",
+      "flag": "🇬🇧",
+      "lat": 51.506,
+      "lng": -0.1794,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Blitzle",
+      "dex": 522,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 47.6815,
+      "lng": -122.2501,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Caterpie",
+      "dex": 10,
+      "country": "AUSTRALIA",
+      "flag": "🇦🇺",
+      "lat": -37.8984,
+      "lng": 145.2001,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Clefairy",
+      "dex": 35,
+      "country": "CHINA",
+      "flag": "🇨🇳",
+      "lat": 43.8193,
+      "lng": 125.3302,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Clefairy",
+      "dex": 35,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 35.789,
+      "lng": 139.8704,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Clefairy",
+      "dex": 35,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 39.5597,
+      "lng": -75.7187,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Drilbur",
+      "dex": 529,
+      "country": "FRANCE",
+      "flag": "🇫🇷",
+      "lat": 50.6404,
+      "lng": 3.0426,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Drilbur",
+      "dex": 529,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 39.609,
+      "lng": -76.1536,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Drilbur",
+      "dex": 529,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 47.6359,
+      "lng": -117.4115,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Drowzee",
+      "dex": 96,
+      "country": "CANADA",
+      "flag": "🇨🇦",
+      "lat": 43.2904,
+      "lng": -79.8754,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Drowzee",
+      "dex": 96,
+      "country": "INDIA",
+      "flag": "🇮🇳",
+      "lat": 12.9751,
+      "lng": 77.5923,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Dunsparce",
+      "dex": 206,
+      "country": "AUSTRALIA",
+      "flag": "🇦🇺",
+      "lat": -33.896,
+      "lng": 151.2349,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Dunsparce",
+      "dex": 206,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 42.3383,
+      "lng": -82.9854,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Electrike",
+      "dex": 309,
+      "country": "INDONESIA",
+      "flag": "🇮🇩",
+      "lat": -7.2517,
+      "lng": 112.8036,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Emolga",
+      "dex": 587,
+      "country": "CANADA",
+      "flag": "🇨🇦",
+      "lat": 49.8697,
+      "lng": -97.239,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Emolga",
+      "dex": 587,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 48.1587,
+      "lng": 11.5975,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Emolga",
+      "dex": 587,
+      "country": "INDONESIA",
+      "flag": "🇮🇩",
+      "lat": -6.3027,
+      "lng": 106.8947,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Emolga",
+      "dex": 587,
+      "country": "INDONESIA",
+      "flag": "🇮🇩",
+      "lat": -6.3027,
+      "lng": 106.8946,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Exeggcute",
+      "dex": 102,
+      "country": "KOREA",
+      "flag": "🇰🇷",
+      "lat": 37.517,
+      "lng": 127.1209,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Grubbin",
+      "dex": 736,
+      "country": "DENMARK",
+      "flag": "🇩🇰",
+      "lat": 53.5959,
+      "lng": 10.0152,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Grubbin",
+      "dex": 736,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 49.3841,
+      "lng": 8.5635,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Grubbin",
+      "dex": 736,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 35.7082,
+      "lng": 139.3946,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Grubbin",
+      "dex": 736,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 39.696,
+      "lng": -104.9699,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Houndour",
+      "dex": 228,
+      "country": "ITALY",
+      "flag": "🇮🇹",
+      "lat": 41.9138,
+      "lng": 12.486,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Houndour",
+      "dex": 228,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 36.164,
+      "lng": 137.9233,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Lickitung",
+      "dex": 108,
+      "country": "CANADA",
+      "flag": "🇨🇦",
+      "lat": 45.0146,
+      "lng": -74.7273,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Litten",
+      "dex": 725,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 53.5959,
+      "lng": 10.0152,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Machop",
+      "dex": 66,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 34.9337,
+      "lng": 134.9405,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Magnemite",
+      "dex": 81,
+      "country": "CHINA",
+      "flag": "🇨🇳",
+      "lat": 43.7928,
+      "lng": 87.6006,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Magnemite",
+      "dex": 81,
+      "country": "INDONESIA",
+      "flag": "🇮🇩",
+      "lat": -6.5982,
+      "lng": 106.7994,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Makuhita",
+      "dex": 296,
+      "country": "INDIA",
+      "flag": "🇮🇳",
+      "lat": 47.5273,
+      "lng": 19.05,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Makuhita",
+      "dex": 296,
+      "country": "UNITED KINGDOM",
+      "flag": "🇬🇧",
+      "lat": 52.5626,
+      "lng": -1.8407,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Minccino",
+      "dex": 572,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 35.1553,
+      "lng": 136.982,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Natu",
+      "dex": 177,
+      "country": "CHINA",
+      "flag": "🇨🇳",
+      "lat": 43.8528,
+      "lng": 125.3003,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Natu",
+      "dex": 177,
+      "country": "FRANCE",
+      "flag": "🇫🇷",
+      "lat": 48.8063,
+      "lng": 2.1151,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Natu",
+      "dex": 177,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 39.3222,
+      "lng": -76.6413,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Nidoran♀",
+      "dex": 29,
+      "country": "ARGENTINA",
+      "flag": "🇦🇷",
+      "lat": -32.8921,
+      "lng": -68.8693,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Nidoran♀",
+      "dex": 29,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 34.8091,
+      "lng": 135.5324,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Nidoran♀",
+      "dex": 29,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 35.7171,
+      "lng": 139.5234,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Nidoran♀",
+      "dex": 29,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 39.7898,
+      "lng": -89.6844,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Nidoran♂",
+      "dex": 32,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 43.1792,
+      "lng": -89.3144,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Numel",
+      "dex": 322,
+      "country": "FRANCE",
+      "flag": "🇫🇷",
+      "lat": 45.7802,
+      "lng": 4.8497,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Numel",
+      "dex": 322,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 35.6516,
+      "lng": 139.8299,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Numel",
+      "dex": 322,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 42.3754,
+      "lng": -83.911,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Numel",
+      "dex": 322,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 39.8723,
+      "lng": -75.1894,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Oddish",
+      "dex": 43,
+      "country": "AUSTRALIA",
+      "flag": "🇦🇺",
+      "lat": -34.8605,
+      "lng": 138.7081,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Oddish",
+      "dex": 43,
+      "country": "COLOMBIA",
+      "flag": "🇨🇴",
+      "lat": 4.5723,
+      "lng": -74.1303,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Oddish",
+      "dex": 43,
+      "country": "FRANCE",
+      "flag": "🇫🇷",
+      "lat": 49.9264,
+      "lng": 4.5214,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Oddish",
+      "dex": 43,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 52.3882,
+      "lng": 9.6967,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Oddish",
+      "dex": 43,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 36.0841,
+      "lng": 139.3691,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Oddish",
+      "dex": 43,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 42.7077,
+      "lng": -83.4917,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Pidgey",
+      "dex": 16,
+      "country": "AUSTRALIA",
+      "flag": "🇦🇺",
+      "lat": -31.9616,
+      "lng": 115.842,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Pidgey",
+      "dex": 16,
+      "country": "CANADA",
+      "flag": "🇨🇦",
+      "lat": 49.013,
+      "lng": -122.4574,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Pidgey",
+      "dex": 16,
+      "country": "FRANCE",
+      "flag": "🇫🇷",
+      "lat": 48.8772,
+      "lng": 2.265,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Poochyena",
+      "dex": 261,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 35.3705,
+      "lng": 137.0293,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Psyduck",
+      "dex": 54,
+      "country": "ARGENTINA",
+      "flag": "🇦🇷",
+      "lat": -33.4253,
+      "lng": -70.6333,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Psyduck",
+      "dex": 54,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 52.4011,
+      "lng": 13.0283,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Psyduck",
+      "dex": 54,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 34.6828,
+      "lng": 135.5321,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Rhyhorn",
+      "dex": 111,
+      "country": "AUSTRALIA",
+      "flag": "🇦🇺",
+      "lat": -37.9957,
+      "lng": 145.1278,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Rhyhorn",
+      "dex": 111,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 50.7064,
+      "lng": 7.1478,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Rhyhorn",
+      "dex": 111,
+      "country": "INDONESIA",
+      "flag": "🇮🇩",
+      "lat": -6.1255,
+      "lng": 106.8364,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Sandygast",
+      "dex": 769,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 39.653,
+      "lng": -84.2254,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Sewaddle",
+      "dex": 540,
+      "country": "CANADA",
+      "flag": "🇨🇦",
+      "lat": 48.4903,
+      "lng": -123.3411,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Sewaddle",
+      "dex": 540,
+      "country": "FRANCE",
+      "flag": "🇫🇷",
+      "lat": 48.8946,
+      "lng": 2.3893,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Snover",
+      "dex": 459,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 51.3138,
+      "lng": 9.4101,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Snover",
+      "dex": 459,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 51.4278,
+      "lng": 6.9869,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Snover",
+      "dex": 459,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 51.3139,
+      "lng": 9.4102,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Snover",
+      "dex": 459,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 44.975,
+      "lng": -92.9045,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Snover",
+      "dex": 459,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 39.7778,
+      "lng": -75.5,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Snubbull",
+      "dex": 209,
+      "country": "CANADA",
+      "flag": "🇨🇦",
+      "lat": 49.3015,
+      "lng": -123.1334,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Snubbull",
+      "dex": 209,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 35.2702,
+      "lng": 136.9892,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Spoink",
+      "dex": 325,
+      "country": "ARGENTINA",
+      "flag": "🇦🇷",
+      "lat": -34.5838,
+      "lng": -58.4084,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Spoink",
+      "dex": 325,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 37.72,
+      "lng": 140.3603,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Spoink",
+      "dex": 325,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 44.9807,
+      "lng": -93.1472,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Spritzee",
+      "dex": 682,
+      "country": "AUSTRALIA",
+      "flag": "🇦🇺",
+      "lat": -37.637,
+      "lng": 144.8444,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Stunky",
+      "dex": 434,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 36.402,
+      "lng": 140.5968,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Swablu",
+      "dex": 333,
+      "country": "CANADA",
+      "flag": "🇨🇦",
+      "lat": 35.5288,
+      "lng": 129.2947,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Swablu",
+      "dex": 333,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 39.2417,
+      "lng": -76.8582,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Taillow",
+      "dex": 276,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 51.668,
+      "lng": 6.4408,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Taillow",
+      "dex": 276,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 45.3373,
+      "lng": -93.5945,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Wooper",
+      "dex": 194,
+      "country": "CANADA",
+      "flag": "🇨🇦",
+      "lat": 49.3015,
+      "lng": -123.1334,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Wooper",
+      "dex": 194,
+      "country": "HUNGARY",
+      "flag": "🌍",
+      "lat": 47.5157,
+      "lng": 19.0771,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Wooper",
+      "dex": 194,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 35.3479,
+      "lng": 136.988,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Wurmple",
+      "dex": 265,
+      "country": "CHILE",
+      "flag": "🇨🇱",
+      "lat": -33.4406,
+      "lng": -70.6432,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Wurmple",
+      "dex": 265,
+      "country": "FRANCE",
+      "flag": "🇫🇷",
+      "lat": 48.8282,
+      "lng": 2.4194,
+      "stardust": null,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Yanma",
+      "dex": 193,
+      "country": "GERMANY",
+      "flag": "🇩🇪",
+      "lat": 51.4708,
+      "lng": 7.4709,
+      "stardust": null,
+      "source": "pokecoord"
+    }
+  ]
+}

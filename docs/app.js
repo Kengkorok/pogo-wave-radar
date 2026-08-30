@@ -14,6 +14,17 @@ const PVP_STORAGE = 'pwr-pvp';
 const LANG_STORAGE = 'pwr-lang';
 let USER_TZ = null;
 let LANG = 'en';
+let NESTS = [];           // nest feed from nests.json
+let NESTS_META = null;    // { fetched_at, migration }
+let NEST_FILTER = 'star'; // 'star' (default, Combee & friends) | 'all'
+let NEST_QUERY = '';
+/* Base stardust per catch for boosted species (dex -> SD).
+   Combee 415 = 500 (5x), Audino 531 = 2100 (21x), Chimecho 358 = 500.
+   Tune as Niantic changes things. */
+const STARDUST = { 46: 150, 52: 250, 90: 150, 120: 150, 191: 150, 241: 150, 285: 150, 302: 150, 358: 500, 415: 500, 506: 150, 531: 2100, 590: 150 };
+function nestSprite(dex) {
+  return 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + dex + '.png';
+}
 
 /* ---------- i18n ---------- */
 const I18N = {
@@ -22,7 +33,7 @@ const I18N = {
     tagline: 'Never miss a Pokémon GO event again — chase the wave across time zones',
     tzLabel: 'Your timezone',
     pvpLabel: 'Show PvP / GBL (hidden by default)',
-    tabLive: '🔥 Live Now', tabWave: '🌊 Wave Tracker', tabAll: '📅 All Events',
+    tabLive: '🔥 Live Now', tabWave: '🌊 Wave Tracker', tabAll: '📅 All Events', tabNests: '🐝 Nests',
     sectionLive: '🔥 Live Now', sectionUpcoming: '🟡 Upcoming Events',
     tools: '🧰 Tools', iosNote: 'supports iOS', moreCities: 'more cities',
     loading: 'Loading…', pickEvent: 'Pick an event:',
@@ -45,6 +56,12 @@ const I18N = {
     startsShort: 'starts',
     upNextLbl: 'Up next — starts in', liveNowLbl: 'Live now — ends in',
     copyToast: 'paste into GPS Joystick',
+    nestMigrateLbl: '⌛ Next nest migration in',
+    nestFilterStar: '⭐ Stardust', nestFilterAll: 'All',
+    nestSearchPh: 'Search nest…',
+    nestNote: 'Combee &amp; friends give bonus stardust per catch — the fastest farm for new spoofers. Pick a nest, copy coords, spoof!',
+    nestEmpty: 'No nests found. Check back after the next migration! 🐝',
+    nestSdUnit: 'SD',
     buyCoffee: '☕ Buy me a coffee', scanDonate: '🇲🇾 Scan to donate (MY)',
     qrTitle: 'Scan with TNG eWallet or any DuitNow app. Thank you! 🙏',
     qrName: 'Maybank DuitNow QR',
@@ -54,7 +71,7 @@ const I18N = {
     tagline: 'Jangan terlepas event Pokémon GO lagi — chase ombak ikut zon waktu',
     tzLabel: 'Zon kau',
     pvpLabel: 'Tunjuk PvP / GBL (disorok secara default)',
-    tabLive: '🔥 Live Sekarang', tabWave: '🌊 Wave Tracker', tabAll: '📅 Semua Event',
+    tabLive: '🔥 Live Sekarang', tabWave: '🌊 Wave Tracker', tabAll: '📅 Semua Event', tabNests: '🐝 Sarang',
     sectionLive: '🔥 Live Sekarang', sectionUpcoming: '🟡 Event Akan Datang',
     tools: '🧰 Tools', iosNote: 'sokong iOS', moreCities: 'bandar lagi',
     loading: 'Memuatkan…', pickEvent: 'Pilih event:',
@@ -77,6 +94,12 @@ const I18N = {
     startsShort: 'mula',
     upNextLbl: 'Seterusnya — mula dalam', liveNowLbl: 'Live sekarang — tamat dalam',
     copyToast: 'paste kat GPS Joystick',
+    nestMigrateLbl: '⌛ Migrasi sarang seterusnya dalam',
+    nestFilterStar: '⭐ Stardust', nestFilterAll: 'Semua',
+    nestSearchPh: 'Cari sarang…',
+    nestNote: 'Combee &amp; kawan-kawan bagi stardust bonus setiap tangkapan — farm terpantas untuk spoofer baru. Pilih sarang, salin koordinat, spoof!',
+    nestEmpty: 'Tiada sarang dijumpai. Check balik lepas migration seterusnya! 🐝',
+    nestSdUnit: 'SD',
     buyCoffee: '☕ Belanja aku kopi', scanDonate: '🇲🇾 Scan untuk derma (MY)',
     qrTitle: 'Scan dengan TNG eWallet atau mana-mana app DuitNow. Terima kasih! 🙏',
     qrName: 'Maybank DuitNow QR',
@@ -417,6 +440,47 @@ function renderAll() {
   $$('#all [data-wave]').forEach((el) => el.addEventListener('click', () => { goWave(el.dataset.wave); }));
 }
 
+/* ---------- render: nests ---------- */
+function renderNests() {
+  const bar = $('#nestMigrate');
+  if (bar) {
+    const mig = NESTS_META && NESTS_META.migration;
+    if (mig) {
+      const ms = new Date(mig).getTime();
+      bar.hidden = false;
+      bar.innerHTML = '<div class="nestbar-inner"><span>' + t('nestMigrateLbl') + ' <b data-cd="' + ms + '">' + fmtDur(ms - Date.now()) + '</b></span></div>';
+    } else {
+      bar.hidden = true;
+    }
+  }
+  const box = $('#nestList');
+  if (!box) return;
+  const q = NEST_QUERY.trim().toLowerCase();
+  const rows = NESTS
+    .filter((n) => NEST_FILTER === 'all' || n.stardust)
+    .filter((n) => !q || n.pokemon.toLowerCase().includes(q) || n.country.toLowerCase().includes(q))
+    .sort((a, b) => (b.stardust || 0) - (a.stardust || 0) || a.pokemon.localeCompare(b.pokemon));
+  if (!rows.length) {
+    box.innerHTML = '<div class="empty">' + t('nestEmpty') + '</div>';
+    return;
+  }
+  box.innerHTML = rows.map(nestCardHtml).join('');
+  bindChips();
+}
+function nestCardHtml(n) {
+  const coords = n.lat.toFixed(4) + ', ' + n.lng.toFixed(4);
+  const sd = n.stardust ? ' <span class="badge sd">⭐ ' + n.stardust + ' ' + t('nestSdUnit') + '</span>' : '';
+  const flag = n.flag || '🌍';
+  return '<article class="nestcard' + (n.stardust ? ' sd' : '') + '">'
+    + '<img class="nsprite" loading="lazy" src="' + nestSprite(n.dex) + '" alt="" onerror="this.remove()">'
+    + '<div class="nbody">'
+    + '<div class="nrow1"><b>' + esc(n.pokemon) + '</b><span class="tag">#' + n.dex + '</span>' + sd + '</div>'
+    + '<div class="nsub">' + flag + ' ' + esc(n.country || '') + '</div>'
+    + '</div>'
+    + '<button class="chip" data-coords="' + coords + '" data-name="' + esc(n.pokemon) + '">📋 ' + coords + '</button>'
+    + '</article>';
+}
+
 /* ---------- interactions ---------- */
 function bindWaveButtons() {
   $$('[data-wave]').forEach((el) => el.addEventListener('click', () => goWave(el.dataset.wave)));
@@ -445,7 +509,9 @@ function switchTab(name) {
   $('#live').hidden = name !== 'live';
   $('#wave').hidden = name !== 'wave';
   $('#all').hidden = name !== 'all';
+  $('#nests').hidden = name !== 'nests';
   if (name === 'wave') renderWave(); // fresh render (details may have loaded since init)
+  if (name === 'nests') renderNests();
 }
 function startTicker() {
   if (startTicker._on) return;
@@ -511,12 +577,15 @@ function renderLang() {
   if (btn) btn.textContent = LANG === 'en' ? '🌐 BM' : '🌐 EN';
   const f = $('#fetched');
   if (f) f.textContent = FETCHED_AT ? timeAgo(FETCHED_AT) : '—';
+  const s = $('#nestSearch');
+  if (s) s.placeholder = t('nestSearchPh');
   renderTZ();
   renderNextBar();
   renderLive();
   renderWaveSelect();
   renderWave();
   renderAll();
+  renderNests();
   renderDonate();
 }
 
@@ -526,13 +595,16 @@ async function init() {
   USER_TZ = localStorage.getItem(TZ_STORAGE) || Intl.DateTimeFormat().resolvedOptions().timeZone || 'Asia/Kuala_Lumpur';
   $('#pvp').checked = localStorage.getItem(PVP_STORAGE) === '1';
   try {
-    const [c, e, m] = await Promise.all([
+    const [c, e, m, n] = await Promise.all([
       fetch('cities.json').then((r) => r.json()),
       fetch('events.json').then((r) => r.json()),
       fetch('manual_events.json').then((r) => r.json()).catch(() => []),
+      fetch('nests.json').then((r) => r.json()).catch(() => ({ nests: [], migration: null })),
     ]);
     CITIES = c; EVENTS = (e.events || []).concat(m); FETCHED_AT = e.fetched_at;
+    NESTS = (n && n.nests) || []; NESTS_META = n || null;
     ensureDetails().then(() => { if (!$('#wave').hidden) renderWave(); });
+    if (!$('#nests').hidden) renderNests();
   } catch (err) {
     $('#live').innerHTML = '<div class="empty">' + t('loadError') + '</div>';
     return;
@@ -552,6 +624,13 @@ async function init() {
   $('#pvp').addEventListener('change', () => { localStorage.setItem(PVP_STORAGE, $('#pvp').checked ? '1' : '0'); renderNextBar(); renderLive(); renderWaveSelect(); renderWave(); renderAll(); });
   $$('.tabs button').forEach((b) => b.addEventListener('click', () => switchTab(b.dataset.tab)));
   $('#waveSel').addEventListener('change', renderWave);
+  $$('.nchip').forEach((b) => b.addEventListener('click', () => {
+    NEST_FILTER = b.dataset.nestfilter;
+    $$('.nchip').forEach((x) => x.classList.toggle('active', x === b));
+    renderNests();
+  }));
+  const nestSearch = $('#nestSearch');
+  if (nestSearch) nestSearch.addEventListener('input', (e) => { NEST_QUERY = e.target.value; renderNests(); });
   renderLang();
   const w = new URLSearchParams(location.search).get('wave');
   if (w && EVENTS.some((e) => e.slug === w)) { $('#waveSel').value = w; switchTab('wave'); renderWave(); }

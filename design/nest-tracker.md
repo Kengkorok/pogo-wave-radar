@@ -1,7 +1,7 @@
 # Nest Tracker — Design
 
 > Issue: #9 · Branch: `feat/nest-tracker`
-> Status: design accepted, implementation in progress (manual commits)
+> Status: Phase 1 (MVP) implemented on this branch — see commits below the doc.
 
 Track Pokémon nests so spoofers can farm **stardust (Combee)** and **candy (any nest species)** — inside the same wave-radar flow: *pick a nest → copy coords → spoof*.
 
