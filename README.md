@@ -28,7 +28,7 @@ If an event has ended in your area, **it's probably still live somewhere else.**
 - 🌊 **Wave Tracker** — pick one event, watch the wave move city by city, with local window times + coordinates. Tap **📖 Read full details** for the complete LeekDuck event page (Bonuses, Spawns, Raids, Research, GO Pass…)
 - 📅 **All Events** — full schedule from leekduck
 
-Data auto-updates from [leekduck.com/events](https://leekduck.com/events/) every **30 minutes** via GitHub Actions. Full event details are scraped from each event page into `docs/details.json` (sanitized HTML, refreshed weekly) and auto-translated to Bahasa Melayu via the DeepSeek API (`DEEPSEEK_API_KEY` repo secret) — missing translations fall back to English automatically.
+Data auto-updates from [leekduck.com/events](https://leekduck.com/events/) every **30 minutes** via GitHub Actions. 
 
 ### 📲 Use on your phone
 
@@ -67,7 +67,7 @@ Kalau event dah habis kat tempat kau, **kemungkinan besar masih live kat tempat 
 - 🌊 **Wave Tracker** — pilih satu event, nampak ombak bergerak bandar demi bandar, masa window tempatan + koordinat. Tekan **📖 Baca butiran penuh** untuk detail penuh event dari LeekDuck (Bonuses, Spawns, Raids, Research, GO Pass…)
 - 📅 **All Events** — full schedule dari leekduck
 
-Data auto-update dari [leekduck.com/events](https://leekduck.com/events/) setiap **30 minit** melalui GitHub Actions. Detail penuh event di-scrape dari setiap halaman event ke `docs/details.json` (HTML bersih, refresh mingguan) dan auto-terjemah ke Bahasa Melayu melalui DeepSeek API (secret `DEEPSEEK_API_KEY`) — kalau terjemahan takde, fallback ke English automatik.
+Data auto-update dari [leekduck.com/events](https://leekduck.com/events/) setiap **30 minit** melalui GitHub Actions. 
 
 ### 📲 Guna kat phone
 
