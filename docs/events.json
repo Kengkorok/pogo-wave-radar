@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-08-31T05:59:01.564294+00:00",
+ "fetched_at": "2026-08-31T13:33:45.583197+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -63,18 +63,6 @@
    "summary_ms": "Semua Trainer boleh sambut ulang tahun ke-10 Pokémon GO dengan Mewtwo istimewa! Timed Research Perfect Mewtwo akan tersedia dari 12 Ogos 2026, 4:00 petang PDT hingga 6 September 2026, 11 malam waktu tempatan."
   },
   {
-   "slug": "pokemon-xp-2026-worlds",
-   "name": "PokémonXP & 2026 Worlds",
-   "type": "event",
-   "start": "2026-08-25T10:00:00",
-   "end": "2026-08-30T20:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-25-pokemon-xp-2026-worlds/pokemon-xp-2026-worlds.jpg",
-   "summary": "Celebrate PokémonXP and the 2026 Pokémon World Championships in Pokémon GO! The PokémonXP & 2026 Worlds event will take place from August 25, 2026 at 10 am to August 30, 2026 at 8 pm local time. PokémonXP: Tuesday, August 25, at 10:00 a.m. to Friday, August 28, 2026, at 10:00 a.m. local time. 2026 Pokémon World Championships: Friday, August 28, at 10:00 a.m. to Sunday, August 30, at 8:00 p.m. local time.",
-   "url": "https://leekduck.com/events/pokemon-xp-2026-worlds/",
-   "summary_ms": "Sambut PokémonXP dan Kejohanan Dunia Pokémon 2026 dalam Pokémon GO! Event PokémonXP & 2026 Worlds akan berlangsung dari 25 Ogos 2026, 10 pagi hingga 30 Ogos 2026, 8 malam waktu tempatan. PokémonXP: Selasa, 25 Ogos, 10:00 pagi hingga Jumaat, 28 Ogos 2026, 10:00 pagi waktu tempatan. Bahagian 2026 Worlds turut disertakan."
-  },
-  {
    "slug": "gbl-forever-forward_great-league_ultra-league_master-league-split-3",
    "name": "Great League, Ultra League, and Master League | Forever Forward",
    "type": "go-battle-league",
@@ -94,7 +82,7 @@
    "end": "2026-09-08T22:00:00",
    "local_time": true,
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
-   "summary": "Mega Gyarados will be in Mega Raids from August 26, 2026 at 6 am to September 8, 2026 at 10 pm local time.",
+   "summary": "Mega Gyarados will be in Mega Raids from August 26, 2026 at 6 am to September 8, 2026 at 10 pm local time. Mega Gyarados will not be available from August 31 to September 4 during Mega Ascension, but it will return to the raid rotation from September 5 to 6 during Pokémon GO Fest 2026: Mega Finale.",
    "url": "https://leekduck.com/events/mega-gyarados-in-mega-raids-august-2026/",
    "summary_ms": "Mega Gyarados akan berada dalam Mega Raids dari 26 Ogos 2026, 6 pagi hingga 8 September 2026, 10 malam waktu tempatan."
   },
@@ -166,7 +154,7 @@
    "end": "2026-09-06T18:00:00",
    "local_time": true,
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-05-pokemon-go-fest-2026-mega-finale/pokemon-go-fest-2026-mega-finale.jpg",
-   "summary": "Rally with Trainers around the world for the mega conclusion of Pokémon GO Fest 2026! Pokémon GO Fest 2026: Mega Finale brings rotating habitats, powerful Mega Raids, and Super Mega Raids featuring Mega Mewtwo X and Mega Mewtwo Y. Prepare during the lead-up event Mega Ascension , then join this unticketed worldwide weekend finale. The Pokémon GO Fest 2026: Mega Finale event will take place from September 5, 2026 at 10 am to September 6, 2026 at 6 pm local time.",
+   "summary": "Rally with Trainers around the world for the mega conclusion of Pokémon GO Fest 2026! Pokémon GO Fest 2026: Mega Finale brings Armored Mewtwo in five-star raids, rotating habitats, powerful Mega Raids, and Super Mega Raids featuring Mega Mewtwo X and Mega Mewtwo Y. Prepare during the lead-up event Mega Ascension , then join this unticketed worldwide weekend finale. The Pokémon GO Fest 2026: Mega Finale event will take place from September 5, 2026 at 10 am to September 6, 2026 at 6 pm local time.",
    "url": "https://leekduck.com/events/pokemon-go-fest-2026-mega-finale/",
    "summary_ms": "Berkumpullah dengan Trainer seluruh dunia untuk kemuncak mega Pokémon GO Fest 2026! Pokémon GO Fest 2026: Mega Finale membawakan habitat berputar, Mega Raids berkuasa, dan Super Mega Raids featuring Mega Mewtwo X dan Mega Mewtwo Y. Bersedia semasa event pendahulunya Mega Ascension, kemudian sertai kemuncak event ini."
   },
@@ -180,7 +168,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/armored-mewtwo-mega-finale-2026.png",
    "summary": "Armored Mewtwo is back! Last seen in 2020, Armored Mewtwo will return to five-star Raid Battles for a limited time during Pokémon GO Fest 2026: Mega Finale . Armored Mewtwo will appear in five-star raids on both Saturday, September 5, and Sunday, September 6, 2026, from 10:00 a.m. to 6:00 p.m. local time. Shiny Armored Mewtwo will not be available during this event.",
    "url": "https://leekduck.com/events/armored-mewtwo-in-5-star-raid-battles-september-2026/",
-   "summary_ms": null
+   "summary_ms": "Armored Mewtwo kembali! Kali terakhir dilihat pada 2020, Armored Mewtwo akan kembali ke Pertempuran Raid lima bintang untuk masa terhad semasa Pokémon GO Fest 2026: Mega Finale. Armored Mewtwo akan muncul dalam raid lima bintang pada Sabtu, 5 September, dan Ahad, 6 September 2026, dari 10:00 pagi hingga 6:00 petang waktu tempatan. Shiny Armored Mewtwo tidak akan tersedia semasa acara ini."
   },
   {
    "slug": "max-mondays-2026-09-07",
