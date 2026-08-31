@@ -249,11 +249,12 @@ footer a { color: var(--accent); }
 }
 .nchip:hover { border-color: var(--accent); }
 .nchip.active { background: rgba(250,204,21,.14); border-color: rgba(250,204,21,.5); color: var(--soon); }
-#nestSearch {
+.searchinput {
   flex: 1; min-width: 150px; background: var(--card2); color: var(--text);
   border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: .85rem;
 }
-#nestSearch:focus { outline: none; border-color: var(--accent); }
+.searchinput:focus { outline: none; border-color: var(--accent); }
+#evSearch { width: 100%; margin-bottom: 10px; }
 .nestnote { color: var(--muted); font-size: .8rem; margin: 0 0 10px; line-height: 1.4; }
 .nestcard {
   display: flex; align-items: center; gap: 10px;

@@ -18,6 +18,7 @@ let NESTS = [];           // nest feed from nests.json
 let NESTS_META = null;    // { fetched_at, migration }
 let NEST_FILTER = 'star'; // 'star' (default, Combee & friends) | 'all'
 let NEST_QUERY = '';
+let EVENT_QUERY = '';     // All Events search
 /* Base stardust per catch for boosted species (dex -> SD).
    Combee 415 = 500 (5x), Audino 531 = 2100 (21x), Chimecho 358 = 500.
    Tune as Niantic changes things. */
@@ -62,6 +63,7 @@ const I18N = {
     nestNote: 'Combee &amp; friends give bonus stardust per catch — the fastest farm for new spoofers. Pick a nest, copy coords, spoof!',
     nestEmpty: 'No nests found. Check back after the next migration! 🐝',
     nestSdUnit: 'SD',
+    evSearchPh: 'Search events…', evEmpty: 'No events match your search. 🔍',
     buyCoffee: '☕ Buy me a coffee', scanDonate: '🇲🇾 Scan to donate (MY)',
     qrTitle: 'Scan with TNG eWallet or any DuitNow app. Thank you! 🙏',
     qrName: 'Maybank DuitNow QR',
@@ -100,6 +102,7 @@ const I18N = {
     nestNote: 'Combee &amp; kawan-kawan bagi stardust bonus setiap tangkapan — farm terpantas untuk spoofer baru. Pilih sarang, salin koordinat, spoof!',
     nestEmpty: 'Tiada sarang dijumpai. Check balik lepas migration seterusnya! 🐝',
     nestSdUnit: 'SD',
+    evSearchPh: 'Cari event…', evEmpty: 'Tiada event sepadan dengan carian kau. 🔍',
     buyCoffee: '☕ Belanja aku kopi', scanDonate: '🇲🇾 Scan untuk derma (MY)',
     qrTitle: 'Scan dengan TNG eWallet atau mana-mana app DuitNow. Terima kasih! 🙏',
     qrName: 'Maybank DuitNow QR',
@@ -408,9 +411,12 @@ function detailBlock(ev) {
 
 /* ---------- render: all events ---------- */
 function renderAll() {
-  const box = $('#all');
+  const box = $('#allList');
+  if (!box) return;
+  const q = EVENT_QUERY.trim().toLowerCase();
   const rows = EVENTS
     .filter((ev) => (APP_CONFIG.show_pvp_default || $('#pvp').checked) || !isPvP(ev))
+    .filter((ev) => !q || ev.name.toLowerCase().includes(q) || ev.type.toLowerCase().includes(q) || (sum(ev) || '').toLowerCase().includes(q))
     .map((ev) => {
       const states = cityStates(ev);
       const live = states.filter((s) => s.st === 'live').length;
@@ -419,6 +425,10 @@ function renderAll() {
       return { ev, group, live, up };
     })
     .sort((a, b) => (a.ev.start || '').localeCompare(b.ev.start || ''));
+  if (!rows.length) {
+    box.innerHTML = q ? '<div class="empty">' + t('evEmpty') + '</div>' : '';
+    return;
+  }
   const groups = [
     ['live', t('grpLive')],
     ['up', t('grpUp')],
@@ -579,6 +589,8 @@ function renderLang() {
   if (f) f.textContent = FETCHED_AT ? timeAgo(FETCHED_AT) : '—';
   const s = $('#nestSearch');
   if (s) s.placeholder = t('nestSearchPh');
+  const es = $('#evSearch');
+  if (es) es.placeholder = t('evSearchPh');
   renderTZ();
   renderNextBar();
   renderLive();
@@ -631,6 +643,8 @@ async function init() {
   }));
   const nestSearch = $('#nestSearch');
   if (nestSearch) nestSearch.addEventListener('input', (e) => { NEST_QUERY = e.target.value; renderNests(); });
+  const evSearch = $('#evSearch');
+  if (evSearch) evSearch.addEventListener('input', (e) => { EVENT_QUERY = e.target.value; renderAll(); });
   renderLang();
   const w = new URLSearchParams(location.search).get('wave');
   if (w && EVENTS.some((e) => e.slug === w)) { $('#waveSel').value = w; switchTab('wave'); renderWave(); }
