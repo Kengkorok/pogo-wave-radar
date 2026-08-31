@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-08-31T19:55:28.582265+00:00",
+ "fetched_at": "2026-08-31T23:43:07.352555+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -63,18 +63,6 @@
    "summary_ms": "Semua Trainer boleh sambut ulang tahun ke-10 Pokémon GO dengan Mewtwo istimewa! Timed Research Perfect Mewtwo akan tersedia dari 12 Ogos 2026, 4:00 petang PDT hingga 6 September 2026, 11 malam waktu tempatan."
   },
   {
-   "slug": "gbl-forever-forward_great-league_ultra-league_master-league-split-3",
-   "name": "Great League, Ultra League, and Master League | Forever Forward",
-   "type": "go-battle-league",
-   "start": "2026-08-25T20:00:00+00:00",
-   "end": "2026-09-01T20:00:00+00:00",
-   "local_time": false,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/go-battle-league-season-27-forever-forward.jpg",
-   "summary": "The Great League, Ultra League, and Master League will run from August 25, 2026, at 1:00 p.m. to September 1, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Great League Pokémon must be at or below 1,500 CP to enter. Ultra League Pokémon must be at or below 2,500 CP to enter. Master League All Pokémon are eligible.",
-   "url": "https://leekduck.com/events/gbl-forever-forward_great-league_ultra-league_master-league-split-3/",
-   "summary_ms": "Great League, Ultra League, dan Master League akan berjalan dari 25 Ogos 2026, 1:00 petang hingga 1 September 2026, 1:00 petang PT. Trainer juga akan dapat 4× Stardust dari win rewards (tidak termasuk end-of-set rewards). Pokémon Great League mesti CP 1,500 ke bawah. Ultra League mesti CP 2,500 ke bawah."
-  },
-  {
    "slug": "mega-gyarados-in-mega-raids-august-2026",
    "name": "Mega Gyarados in Mega Raids",
    "type": "raid-battles",
@@ -121,18 +109,6 @@
    "summary": "Signs of an extraordinary mega-powered week are beginning to appear. Join Mega Ascension to prepare for Pokémon GO Fest 2026: Mega Finale with Mega Raids, Kalos first partner Pokémon, and GO Pass: Mega Finale! The Mega Ascension event will take place from August 31, 2026 at 10 am to September 4, 2026 at 11 pm local time.",
    "url": "https://leekduck.com/events/mega-ascension/",
    "summary_ms": "Tanda-tanda minggu mega yang luar biasa mula muncul. Sertai Mega Ascension untuk bersedia ke Pokémon GO Fest 2026: Mega Finale dengan Mega Raids, Pokémon partner pertama Kalos, dan GO Pass: Mega Finale! Event Mega Ascension akan berlangsung dari 31 Ogos 2026, 10 pagi hingga 4 September 2026."
-  },
-  {
-   "slug": "gbl-forever-forward_great-league_ultra-league_master-league-mega-edition",
-   "name": "Great League, Ultra League, and Master League: Mega Edition | Forever Forward",
-   "type": "go-battle-league",
-   "start": "2026-09-01T20:00:00+00:00",
-   "end": "2026-09-08T20:00:00+00:00",
-   "local_time": false,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/go-battle-league-season-27-forever-forward.jpg",
-   "summary": "The Great League, Ultra League, and Master League: Mega Edition will run from September 1, 2026, at 1:00 p.m. to September 8, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Great League Pokémon must be at or below 1,500 CP to enter. Ultra League Pokémon must be at or below 2,500 CP to enter. Master League: Mega Edition No CP limit. Mega-Evolved Pokémon are allowed.",
-   "url": "https://leekduck.com/events/gbl-forever-forward_great-league_ultra-league_master-league-mega-edition/",
-   "summary_ms": "Great League, Ultra League, dan Master League: Mega Edition akan berjalan dari 1 September 2026, 1:00 petang hingga 8 September 2026, 1:00 petang PT. Trainer juga akan dapat 4× Stardust dari win rewards (tidak termasuk end-of-set rewards). Pokémon Great League mesti CP 1,500 ke bawah."
   },
   {
    "slug": "raidhour20260902",
@@ -195,16 +171,16 @@
    "summary_ms": "Mega Beedrill akan berada dalam Mega Raids dari 8 September 2026, 6 pagi hingga 15 September 2026, 10 malam waktu tempatan."
   },
   {
-   "slug": "mega-squads-2026",
+   "slug": "mega-squads",
    "name": "Mega Squads",
    "type": "event",
    "start": "2026-09-08T10:00:00",
    "end": "2026-09-14T20:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
-   "summary": "The Mega Squads event will take place from September 8, 2026 at 10 am to September 14, 2026 at 8 pm. Stay tuned for more details.",
-   "url": "https://leekduck.com/events/mega-squads-2026/",
-   "summary_ms": "Acara Mega Squads akan berlangsung dari 8 September 2026, jam 10 pagi hingga 14 September 2026, jam 8 malam. Nantikan maklumat lanjut."
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-08-mega-squads/mega-squads.jpg",
+   "summary": "Pick up where Mega Finale leaves off, and get energized for the Mega Squads event! The Mega Squads event will take place from September 8, 2026 at 10 am to September 14, 2026 at 8 pm local time.",
+   "url": "https://leekduck.com/events/mega-squads/",
+   "summary_ms": null
   },
   {
    "slug": "go-pass-september-2026",
@@ -229,6 +205,18 @@
    "summary": "Welcome to Pokémon GO: Twilight Trails! In Pokémon GO, Seasons are periods of time that feature new events, Pokémon debuts, and surprises that all follow a certain theme. As the Seasons change, you may find different Pokémon appearing in your area and hatching from Eggs. Make sure to explore during each in-game Season to collect and train as many different Pokémon as you can! You’ll also enjoy special bonuses as you do.",
    "url": "https://leekduck.com/events/season-24-twilight-trails/",
    "summary_ms": "Selamat datang ke Pokémon GO: Twilight Trails! Dalam Pokémon GO, Seasons ialah tempoh masa yang menampilkan acara baharu, kemunculan sulung Pokémon, dan kejutan yang semuanya mengikut tema tertentu. Apabila Seasons berubah, anda mungkin akan menemui Pokémon berbeza muncul di kawasan anda dan menetas dari Eggs. Pastikan anda meneroka semasa setiap Season dalam permainan untuk mengumpul dan melatih seberapa banyak Pokémon berbeza yang anda boleh! Anda juga akan menikmati bonus istimewa semasa melakukannya."
+  },
+  {
+   "slug": "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1",
+   "name": "Great League: Mega Edition, Ultra League: Mega Edition, and Master League: Mega Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "start": "2026-09-08T20:00:00+00:00",
+   "end": "2026-09-15T20:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/go-battle-league-season-28-twilight-trails.png",
+   "summary": "The Great League: Mega Edition, Ultra League: Mega Edition, and Master League: Mega Edition will run from September 8, 2026, at 1:00 p.m. to September 15, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Great League: Mega Edition Pokémon must be at or below 1,500 CP to enter. Mega-Evolved Pokémon are allowed. Ultra League: Mega Edition Pokémon must be at or below 2,500 CP to enter. Mega-Evolved Pokémon are allowed. Master League: Mega Edition No CP limit. Mega-Evolved Pokémon are allowed.",
+   "url": "https://leekduck.com/events/gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-1/",
+   "summary_ms": null
   },
   {
    "slug": "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
@@ -292,12 +280,12 @@
   },
   {
    "slug": "september-communitydayclassic2026",
-   "name": "September Community Day Classic",
+   "name": "Gible Community Day Classic",
    "type": "community-day",
    "start": "2026-09-12T14:00:00",
    "end": "2026-09-12T17:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/cd-default.jpg",
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-12-september-communitydayclassic2026/gible-community-day-classic.jpg",
    "summary": "The September Community Day Classic event will take place on September 12, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
    "url": "https://leekduck.com/events/september-communitydayclassic2026/",
    "summary_ms": "Event September Community Day Classic akan berlangsung pada 12 September 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
@@ -325,6 +313,18 @@
    "summary": "These Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokémon. On September 14, 2026 , the featured Dynamax Pokémon is Rhyhorn . Rhyhorn",
    "url": "https://leekduck.com/events/max-mondays-2026-09-14/",
    "summary_ms": "Dynamax Pokémon ini mungkin muncul dalam Max Battles sepanjang musim ini. Max Battles akan tersedia dari 6:00 pagi hingga 9:00 malam waktu tempatan pada hari Isnin. Power Spots akan segar semula dengan lebih kerap. Power Spots tambahan akan aktif pada hari Isnin berbanding hari lain dalam minggu. Max Battles akan berputar untuk menampilkan Dynamax Pokémon yang berbeza. Pada 14 September 2026, Dynamax Pokémon yang ditampilkan ialah Rhyhorn. Rhyhorn"
+  },
+  {
+   "slug": "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
+   "name": "Great League, Ultra League: Mega Edition, and Willpower Cup: Great League Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "start": "2026-09-15T20:00:00+00:00",
+   "end": "2026-09-22T20:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/gobattle-greatleague-key.jpg",
+   "summary": "The Great League, Ultra League: Mega Edition, and Willpower Cup: Great League Edition will run from September 15, 2026, at 1:00 p.m. to September 22, 2026, at 1:00 p.m. PT. Great League Pokémon must be at or below 1,500 CP to enter. Ultra League: Mega Edition Pokémon must be at or below 2,500 CP to enter. Mega-Evolved Pokémon are allowed. Willpower Cup: Great League Edition Pokémon must be at or below 1,500 CP to enter. Only Fighting-, Psychic-, and Dark-type Pokémon are eligible. The following Pokémon will not be allowed. Gardevoir Zorua Zoroark",
+   "url": "https://leekduck.com/events/gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition/",
+   "summary_ms": null
   },
   {
    "slug": "mega-venusaur-in-mega-raids-september-2026",
@@ -411,6 +411,18 @@
    "summary_ms": "Dynamax Pokémon ini mungkin muncul dalam Max Battles sepanjang musim ini. Max Battles akan tersedia dari 6:00 pagi hingga 9:00 malam waktu tempatan pada hari Isnin. Power Spots akan segar semula dengan lebih kerap. Power Spots tambahan akan aktif pada hari Isnin berbanding hari lain dalam minggu itu. Max Battles akan berputar untuk menampilkan Dynamax Pokémon yang berbeza. Pada 21 September 2026, Dynamax Pokémon yang ditampilkan ialah Articuno, Zapdos, dan Moltres. Articuno Zapdos Moltres"
   },
   {
+   "slug": "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
+   "name": "Ultra League, Master League: Mega Edition, and Retro Cup: Great League Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "start": "2026-09-22T20:00:00+00:00",
+   "end": "2026-09-29T20:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/go-battle-league-ultra-league-machamp-swampert.jpg",
+   "summary": "The Ultra League, Master League: Mega Edition, and Retro Cup: Great League Edition will run from September 22, 2026, at 1:00 p.m. to September 29, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Ultra League Pokémon must be at or below 2,500 CP to enter. Master League: Mega Edition No CP limit. Mega-Evolved Pokémon are allowed. Retro Cup: Great League Edition Pokémon must be at or below 1,500 CP to enter. Dark-, Steel-, and Fairy-type Pokémon are not eligible.",
+   "url": "https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition/",
+   "summary_ms": null
+  },
+  {
    "slug": "mega-malamar-in-mega-raids-september-2026",
    "name": "Mega Malamar in Mega Raids",
    "type": "raid-battles",
@@ -495,6 +507,18 @@
    "summary_ms": "Acara Harvest Festival akan berlangsung dari 29 September 2026, jam 10 pagi hingga 5 Oktober 2026, jam 8 malam. Nantikan maklumat lanjut."
   },
   {
+   "slug": "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
+   "name": "Master League and Mega Color Cup: Great League Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "start": "2026-09-29T20:00:00+00:00",
+   "end": "2026-10-06T20:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/gobattleleague-master-key.jpg",
+   "summary": "The Master League and Mega Color Cup: Great League Edition will run from September 29, 2026, at 1:00 p.m. to October 6, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Master League All Pokémon are eligible. Mega Color Cup: Great League Edition Pokémon must be at or below 1,500 CP to enter. Mega-Evolved Pokémon are allowed. Only Fire-, Water-, Grass-, and Electric-type Pokémon are eligible.",
+   "url": "https://leekduck.com/events/gbl-twilight-trails_master-league_mega-color-cup-great-league-edition/",
+   "summary_ms": null
+  },
+  {
    "slug": "mega-victreebel-in-mega-raids-september-2026",
    "name": "Mega Victreebel in Mega Raids",
    "type": "raid-battles",
@@ -543,6 +567,18 @@
    "summary_ms": "Event Max Battle Day akan berlangsung pada 3 Oktober 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
   },
   {
+   "slug": "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
+   "name": "Great League: Mega Edition, Ultra League: Mega Edition, and Master League: Mega Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "start": "2026-10-06T20:00:00+00:00",
+   "end": "2026-10-13T20:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/go-battle-league-season-28-twilight-trails.png",
+   "summary": "The Great League: Mega Edition, Ultra League: Mega Edition, and Master League: Mega Edition will run from October 6, 2026, at 1:00 p.m. to October 13, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Great League: Mega Edition Pokémon must be at or below 1,500 CP to enter. Mega-Evolved Pokémon are allowed. Ultra League: Mega Edition Pokémon must be at or below 2,500 CP to enter. Mega-Evolved Pokémon are allowed. Master League: Mega Edition No CP limit. Mega-Evolved Pokémon are allowed.",
+   "url": "https://leekduck.com/events/gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2/",
+   "summary_ms": null
+  },
+  {
    "slug": "october-communityday2026",
    "name": "October Community Day",
    "type": "community-day",
@@ -553,6 +589,18 @@
    "summary": "The October Community Day event will take place on October 10, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
    "url": "https://leekduck.com/events/october-communityday2026/",
    "summary_ms": "Event October Community Day akan berlangsung pada 10 Oktober 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
+  },
+  {
+   "slug": "gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup",
+   "name": "Great League, Ultra League: Mega Edition, and Little Cup | Twilight Trails",
+   "type": "go-battle-league",
+   "start": "2026-10-13T20:00:00+00:00",
+   "end": "2026-10-20T20:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/gobattle-greatleague-key.jpg",
+   "summary": "The Great League, Ultra League: Mega Edition, and Little Cup will run from October 13, 2026, at 1:00 p.m. to October 20, 2026, at 1:00 p.m. PT. Great League Pokémon must be at or below 1,500 CP to enter. Ultra League: Mega Edition Pokémon must be at or below 2,500 CP to enter. Mega-Evolved Pokémon are allowed. Little Cup Pokémon must be at or below 500 CP to enter. Only Pokémon that are able to evolve and have not evolved even once are eligible.",
+   "url": "https://leekduck.com/events/gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup/",
+   "summary_ms": null
   },
   {
    "slug": "hatch-day-october-2026",
@@ -567,6 +615,18 @@
    "summary_ms": "Event Hatch Day akan berlangsung pada 17 Oktober 2026 dari 11 pagi hingga 5 petang. Nantikan butiran lanjut."
   },
   {
+   "slug": "gbl-twilight-trails_ultra-league_master-league-mega-edition_fantasy-cup-great-league-edition",
+   "name": "Ultra League, Master League: Mega Edition, and Fantasy Cup: Great League Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "start": "2026-10-20T20:00:00+00:00",
+   "end": "2026-10-27T20:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/go-battle-league-ultra-league-machamp-swampert.jpg",
+   "summary": "The Ultra League, Master League: Mega Edition, and Fantasy Cup: Great League Edition will run from October 20, 2026, at 1:00 p.m. to October 27, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Ultra League Pokémon must be at or below 2,500 CP to enter. Master League: Mega Edition No CP limit. Mega-Evolved Pokémon are allowed. Fantasy Cup: Great League Edition Pokémon must be at or below 1,500 CP to enter. Only Dragon-, Steel-, and Fairy-type Pokémon are eligible.",
+   "url": "https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_fantasy-cup-great-league-edition/",
+   "summary_ms": null
+  },
+  {
    "slug": "max-battle-day-october-24-2026",
    "name": "Max Battle Day",
    "type": "max-battles",
@@ -577,6 +637,18 @@
    "summary": "The Max Battle Day event will take place on October 24, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
    "url": "https://leekduck.com/events/max-battle-day-october-24-2026/",
    "summary_ms": "Event Max Battle Day akan berlangsung pada 24 Oktober 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
+  },
+  {
+   "slug": "gbl-twilight-trails_master-league_mega-halloween-cup-great-league-edition",
+   "name": "Master League and Mega Halloween Cup: Great League Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "start": "2026-10-27T20:00:00+00:00",
+   "end": "2026-11-03T21:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/gobattleleague-master-key.jpg",
+   "summary": "The Master League and Mega Halloween Cup: Great League Edition will run from October 27, 2026, at 1:00 p.m. to November 3, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Master League All Pokémon are eligible. Mega Halloween Cup: Great League Edition Pokémon must be at or below 1,500 CP to enter. Mega-Evolved Pokémon are allowed. Only Bug-, Poison-, Ghost-, Dark-, and Fairy-type Pokémon are eligible.",
+   "url": "https://leekduck.com/events/gbl-twilight-trails_master-league_mega-halloween-cup-great-league-edition/",
+   "summary_ms": null
   },
   {
    "slug": "super-mega-raid-day-october-2026",
@@ -591,6 +663,42 @@
    "summary_ms": "Event Super Mega Raid Day akan berlangsung pada 31 Oktober 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
   },
   {
+   "slug": "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-3",
+   "name": "Great League: Mega Edition, Ultra League: Mega Edition, and Master League: Mega Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "start": "2026-11-03T21:00:00+00:00",
+   "end": "2026-11-10T21:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/go-battle-league-season-28-twilight-trails.png",
+   "summary": "The Great League: Mega Edition, Ultra League: Mega Edition, and Master League: Mega Edition will run from November 3, 2026, at 1:00 p.m. to November 10, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Great League: Mega Edition Pokémon must be at or below 1,500 CP to enter. Mega-Evolved Pokémon are allowed. Ultra League: Mega Edition Pokémon must be at or below 2,500 CP to enter. Mega-Evolved Pokémon are allowed. Master League: Mega Edition No CP limit. Mega-Evolved Pokémon are allowed.",
+   "url": "https://leekduck.com/events/gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-3/",
+   "summary_ms": null
+  },
+  {
+   "slug": "gbl-twilight-trails_great-league_ultra-league-mega-edition_2026-go-laic-cup",
+   "name": "Great League, Ultra League: Mega Edition, and 2026 GO LAIC Cup | Twilight Trails",
+   "type": "go-battle-league",
+   "start": "2026-11-10T21:00:00+00:00",
+   "end": "2026-11-17T21:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/gobattle-greatleague-key.jpg",
+   "summary": "The Great League, Ultra League: Mega Edition, and 2026 GO LAIC Cup will run from November 10, 2026, at 1:00 p.m. to November 17, 2026, at 1:00 p.m. PT. Great League Pokémon must be at or below 1,500 CP to enter. Ultra League: Mega Edition Pokémon must be at or below 2,500 CP to enter. Mega-Evolved Pokémon are allowed. 2026 GO LAIC Cup Pokémon must be at or below 1,500 CP to enter. Fire-, Dark-, Steel-, and Fairy-type Pokémon are not eligible. Legendary Pokémon, Mythical Pokémon, and Ultra Beasts are not eligible. Mega-Evolved Pokémon are not eligible for the GO Battle League version of this Cup. However, Mega-Evolved Pokémon will be eligible for the Pokémon Latin America International Championships 2026 in-person competition. The following Pokémon will not be allowed. Chansey Snorlax Furret Wobbuffet Galarian Corsola Kingdra Medicham Altaria Dusclops Jellicent Jellicent Araquanid Oranguru Annihilape Clodsire",
+   "url": "https://leekduck.com/events/gbl-twilight-trails_great-league_ultra-league-mega-edition_2026-go-laic-cup/",
+   "summary_ms": null
+  },
+  {
+   "slug": "gbl-twilight-trails_ultra-league_master-league-mega-edition_2026-go-laic-cup",
+   "name": "Ultra League, Master League: Mega Edition, and 2026 GO LAIC Cup | Twilight Trails",
+   "type": "go-battle-league",
+   "start": "2026-11-18T21:00:00+00:00",
+   "end": "2026-11-25T21:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/go-battle-league-ultra-league-machamp-swampert.jpg",
+   "summary": "The Ultra League, Master League: Mega Edition, and 2026 GO LAIC Cup will run from November 18, 2026, at 1:00 p.m. to November 25, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Ultra League Pokémon must be at or below 2,500 CP to enter. Master League: Mega Edition No CP limit. Mega-Evolved Pokémon are allowed. 2026 GO LAIC Cup Pokémon must be at or below 1,500 CP to enter. Fire-, Dark-, Steel-, and Fairy-type Pokémon are not eligible. Legendary Pokémon, Mythical Pokémon, and Ultra Beasts are not eligible. Mega-Evolved Pokémon are not eligible for the GO Battle League version of this Cup. However, Mega-Evolved Pokémon will be eligible for the Pokémon Latin America International Championships 2026 in-person competition. The following Pokémon will not be allowed. Chansey Snorlax Furret Wobbuffet Galarian Corsola Kingdra Medicham Altaria Dusclops Jellicent Jellicent Araquanid Oranguru Annihilape Clodsire",
+   "url": "https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_2026-go-laic-cup/",
+   "summary_ms": null
+  },
+  {
    "slug": "november-communityday2026",
    "name": "November Community Day",
    "type": "community-day",
@@ -601,6 +709,18 @@
    "summary": "The November Community Day event will take place on November 21, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
    "url": "https://leekduck.com/events/november-communityday2026/",
    "summary_ms": "Event November Community Day akan berlangsung pada 21 November 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
+  },
+  {
+   "slug": "gbl-twilight-trails_master-league_mega-catch-cup-great-league-edition",
+   "name": "Master League and Mega Catch Cup: Great League Edition | Twilight Trails",
+   "type": "go-battle-league",
+   "start": "2026-11-24T21:00:00+00:00",
+   "end": "2026-12-01T21:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/gobattleleague-master-key.jpg",
+   "summary": "The Master League and Mega Catch Cup: Great League Edition will run from November 24, 2026, at 1:00 p.m. to December 1, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Master League All Pokémon are eligible. Mega Catch Cup: Great League Edition Pokémon must be at or below 1,500 CP to enter. Mega-Evolved Pokémon are allowed. Only Pokémon caught during the Twilight Trails Season are eligible.* Mythical Pokémon are not eligible. *Pokémon must be caught between September 8, 2026, at 1:00 p.m. and December 1, 2026, at 1:00 p.m. PST.",
+   "url": "https://leekduck.com/events/gbl-twilight-trails_master-league_mega-catch-cup-great-league-edition/",
+   "summary_ms": null
   },
   {
    "slug": "super-mega-raid-day-november-2026",
