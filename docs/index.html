@@ -59,7 +59,10 @@
     <div id="waveList"></div>
   </section>
 
-  <section id="all" hidden></section>
+  <section id="all" hidden>
+    <input id="evSearch" class="searchinput" type="search" autocomplete="off" placeholder="Search events…">
+    <div id="allList"></div>
+  </section>
 
   <section id="nests" hidden>
     <div id="nestMigrate" class="nestbar" hidden></div>
@@ -68,7 +71,7 @@
         <button class="nchip active" data-nestfilter="star" type="button" data-i18n="nestFilterStar">⭐ Stardust</button>
         <button class="nchip" data-nestfilter="all" type="button" data-i18n="nestFilterAll">All</button>
       </div>
-      <input id="nestSearch" type="search" autocomplete="off" placeholder="Search nest…">
+      <input id="nestSearch" class="searchinput" type="search" autocomplete="off" placeholder="Search nest…">
     </div>
     <p class="nestnote" data-i18n="nestNote">Combee &amp; friends give bonus stardust per catch — the fastest farm for new spoofers. Pick a nest, copy coords, spoof!</p>
     <div id="nestList"><div class="empty" data-i18n="loading">Loading…</div></div>

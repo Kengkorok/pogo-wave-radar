@@ -1,6 +1,6 @@
 # Event Search — Design
 
-> Branch: `feat/event-search` — implementation commits to follow (manual).
+> Branch: `feat/event-search` — Phase 1 implemented on this branch (see commits).
 
 ## Why
 
