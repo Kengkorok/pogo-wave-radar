@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-01T14:41:47.632815+00:00",
+ "fetched_at": "2026-09-01T18:19:53.161775+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -85,18 +85,6 @@
    "summary": "Regirock, Regice, and Registeel will be in five-star raid battles from August 26, 2026 to September 8, 2026. Raid Hours There will also be a Raid Hour featuring Regirock, Regice, and Registeel from 6:00 pm to 7:00 pm local time on the following dates: August 26 September 2",
    "url": "https://leekduck.com/events/regirock-regice-registeel-in-5-star-raid-battles-august-2026/",
    "summary_ms": "Regirock, Regice, dan Registeel akan berada dalam raid 5 bintang dari 26 Ogos 2026 hingga 8 September 2026. Ada juga Raid Hour featuring mereka dari 6:00 petang hingga 7:00 petang waktu tempatan pada tarikh: 26 Ogos, 2 September, dan seterusnya."
-  },
-  {
-   "slug": "max-mondays-2026-08-31",
-   "name": "Dynamax Eevee during Max Monday",
-   "type": "max-mondays",
-   "start": "2026-08-31T06:00:00",
-   "end": "2026-08-31T21:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
-   "summary": "These Dynamax Pokemon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokemon. On August 31, 2026 , the featured Dynamax Pokemon is Eevee . Eevee",
-   "url": "https://leekduck.com/events/max-mondays-2026-08-31/",
-   "summary_ms": "Dynamax Pokemon ini mungkin muncul dalam Max Battles sepanjang season ini. Max Battles tersedia dari 6:00 pagi hingga 9:00 malam waktu tempatan pada hari Isnin. Power Spots akan refresh lebih kerap, dan lebih banyak Power Spots aktif pada hari Isnin berbanding hari lain. Max Battles akan berputar secara berkala."
   },
   {
    "slug": "mega-ascension",
@@ -387,16 +375,16 @@
    "summary_ms": "Pokémon Spotlight Hour akan menampilkan Pokémon yang belum diumumkan dan bonus istimewa selama satu jam pada pukul 6:00 petang waktu tempatan. 17 September : Pokémon yang ditampilkan belum diumumkan lagi, dan bonus istimewa ialah 2× Catch Stardust ."
   },
   {
-   "slug": "super-mega-raid-day-september-2026",
-   "name": "Super Mega Raid Day",
+   "slug": "staraptor-super-mega-raid-day-2026",
+   "name": "Staraptor Super Mega Raid Day",
    "type": "raid-day",
    "start": "2026-09-19T14:00:00",
    "end": "2026-09-19T17:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
-   "summary": "The Super Mega Raid Day event will take place on September 19, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
-   "url": "https://leekduck.com/events/super-mega-raid-day-september-2026/",
-   "summary_ms": "Event Super Mega Raid Day akan berlangsung pada 19 September 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-19-staraptor-super-mega-raid-day-2026/staraptor-super-mega-raid-day-2026.jpg",
+   "summary": "Ready yourself to courageously challenge Staraptor Super Mega Raid Day!",
+   "url": "https://leekduck.com/events/staraptor-super-mega-raid-day-2026/",
+   "summary_ms": null
   },
   {
    "slug": "max-mondays-2026-09-21",
