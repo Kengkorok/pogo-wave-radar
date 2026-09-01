@@ -1,0 +1,77 @@
+name: auto-release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Create release on code/feature changes only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+
+          # ---- Skip rule: data-only pushes never produce a release ----
+          HEAD_MSG="$(git log -1 --pretty=%s)"
+          if [[ "$HEAD_MSG" =~ ^chore:\ update\ (events|nests) ]]; then
+            echo "data-only push — no release"
+            exit 0
+          fi
+
+          DATA_FILES="docs/events.json docs/details.json docs/event_summaries.json docs/nests.json"
+          changed="$(git diff --name-only HEAD~1..HEAD)"
+          all_data=1
+          for f in $changed; do
+            case " $DATA_FILES " in
+              *" $f "*) ;;
+              *) all_data=0 ;;
+            esac
+          done
+          if [ "$all_data" = 1 ]; then
+            echo "data-only push — no release"
+            exit 0
+          fi
+
+          # ---- Tag: vYYYY.MM.DD (UTC), bump .1/.2/... if taken ----
+          BASE_TAG="v$(date -u +%Y.%m.%d)"
+          TAG="$BASE_TAG"
+          N=0
+          while git rev-parse -q --verify "refs/tags/$TAG" >/dev/null; do
+            N=$((N + 1))
+            TAG="$BASE_TAG.$N"
+          done
+
+          # ---- Notes: commits since previous tag (full history if none yet) ----
+          PREV_TAG="$(git describe --tags --abbrev=0 HEAD~1 2>/dev/null || true)"
+          if [ -n "$PREV_TAG" ]; then
+            RANGE="$PREV_TAG..HEAD"
+          else
+            RANGE="HEAD"
+          fi
+
+          NOTES="$(git log --no-merges --pretty=format:'%s' "$RANGE" \
+            | grep -E '^(feat|fix|docs|perf)(\(|:)' \
+            | sed -E 's/^feat[:(] */🆕 /; s/^fix[:(] */🐛 /; s/^docs[:(] */📝 /; s/^perf[:(] */⚡ /' \
+            | sed 's/^/- /' || true)"
+
+          if [ -z "$NOTES" ]; then
+            NOTES="No feature changes in this release."
+          fi
+
+          echo "=== Creating release $TAG ==="
+          printf '%s\n' "$NOTES"
+          gh release create "$TAG" \
+            --title "$TAG" \
+            --notes "$NOTES"
