@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-02T08:58:19.697469+00:00",
+ "fetched_at": "2026-09-02T13:33:17.147241+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -339,16 +339,16 @@
    "summary_ms": "Zamazenta (Hero of Many Battles) akan berada dalam pertempuran raid lima bintang dari 16 September 2026 hingga 22 September 2026. Waktu Raid Akan ada juga Waktu Raid yang menampilkan Zamazenta (Hero of Many Battles) dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan pada 16 September."
   },
   {
-   "slug": "unannounced-september-event-season-24",
-   "name": "Unannounced Event",
+   "slug": "pokemon-horizons-the-series-celebration-event-2026",
+   "name": "Pokémon Horizons: The Series Celebration Event",
    "type": "event",
    "start": "2026-09-16T10:00:00",
    "end": "2026-09-22T20:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
-   "summary": "This unannounced event will take place from September 16, 2026 at 10 am to September 22, 2026 at 8 pm. Stay tuned for more details.",
-   "url": "https://leekduck.com/events/unannounced-september-event-season-24/",
-   "summary_ms": "This unannounced event akan berlangsung dari 16 September 2026, jam 10 pagi hingga 22 September 2026, jam 8 malam. Nantikan maklumat lanjut."
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-16-pokemon-horizons-the-series-celebration-event-2026/pokemon-horizons-celebration-event-2026.jpg",
+   "summary": "The Pokémon Horizons: The Series Celebration Event returns to Pokémon GO with the debut of Charmander wearing Friede’s goggles and its Evolutions! US fans can watch Pokémon Horizons: Season 3—Rising Hope on Netflix now. For more information, visit the Pokémon Horizons website . UK fans can watch Pokémon Horizons: Season 3—Rising Hope on BBC iPlayer. For more information, visit the Pokémon animation website . For fans in other regions, please check availability with your local providers.",
+   "url": "https://leekduck.com/events/pokemon-horizons-the-series-celebration-event-2026/",
+   "summary_ms": null
   },
   {
    "slug": "raidhour20260916",
