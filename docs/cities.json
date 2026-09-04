@@ -11,16 +11,16 @@
     "name": "Auckland",
     "flag": "img/flags/nz.svg",
     "tz": "Pacific/Auckland",
-    "lat": -36.8509,
-    "lng": 174.7645,
+    "lat": -36.852095,
+    "lng": 174.76318,
     "note": "UTC+12/+13"
   },
   {
     "name": "Sydney",
     "flag": "img/flags/au.svg",
     "tz": "Australia/Sydney",
-    "lat": -33.8688,
-    "lng": 151.2093,
+    "lat": -33.8624,
+    "lng": 151.2107,
     "note": "UTC+10/+11"
   },
   {
@@ -99,8 +99,8 @@
     "name": "Budapest",
     "flag": "img/flags/hu.svg",
     "tz": "Europe/Budapest",
-    "lat": 47.4979,
-    "lng": 19.0402,
+    "lat": 47.5313,
+    "lng": 19.0528,
     "note": "UTC+1/+2"
   },
   {
@@ -115,8 +115,8 @@
     "name": "Zaragoza",
     "flag": "img/flags/es.svg",
     "tz": "Europe/Madrid",
-    "lat": 41.6488,
-    "lng": -0.8891,
+    "lat": 41.661012,
+    "lng": -0.893407,
     "note": "UTC+1/+2"
   },
   {
