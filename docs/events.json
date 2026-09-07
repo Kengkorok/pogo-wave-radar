@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-07T09:37:32.649164+00:00",
+ "fetched_at": "2026-09-07T15:42:33.319905+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -49,18 +49,6 @@
    "summary": "Shadow Giratina (Altered Forme) will make its Shadow Raid debut in Pokémon GO! If you’re lucky you’ll be able to encounter Shiny Shadow Giratina (Altered Forme)! Shadow Giratina (Altered Forme) will appear in five-star Shadow Raids every weekend from August 5 to September 8.",
    "url": "https://leekduck.com/events/shadow-giratina-altered-in-shadow-raids-august-2026/",
    "summary_ms": "Shadow Giratina (Altered Forme) bakal buat debut Shadow Raid dalam Pokémon GO! Kalau bernasib baik, anda boleh jumpa Shiny Shadow Giratina (Altered Forme)! Shadow Giratina (Altered Forme) akan muncul dalam Shadow Raid 5 bintang setiap hujung minggu dari 5 Ogos hingga 8 September."
-  },
-  {
-   "slug": "10th-anniversary-celebration",
-   "name": "10th Anniversary Celebration - Perfect Mewtwo Timed Research",
-   "type": "event",
-   "start": "2026-08-12T16:00:00",
-   "end": "2026-09-06T23:59:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-12-10th-anniversary-celebration/10th-anniversary-celebration-2026.jpg",
-   "summary": "Every Trainer can celebrate 10 years of Pokémon GO with a special Mewtwo! The Perfect Mewtwo Timed Research will be available from August 12, 2026 at 4:00 p.m. PDT to September 6, 2026 at 11 pm local time.",
-   "url": "https://leekduck.com/events/10th-anniversary-celebration/",
-   "summary_ms": "Semua Trainer boleh sambut ulang tahun ke-10 Pokémon GO dengan Mewtwo istimewa! Timed Research Perfect Mewtwo akan tersedia dari 12 Ogos 2026, 4:00 petang PDT hingga 6 September 2026, 11 malam waktu tempatan."
   },
   {
    "slug": "mega-gyarados-in-mega-raids-august-2026",
@@ -226,7 +214,7 @@
    "end": "2026-09-12T17:00:00",
    "local_time": true,
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-12-september-communitydayclassic2026/gible-community-day-classic.jpg",
-   "summary": "The September Community Day Classic event will take place on September 12, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
+   "summary": "Gible, the Land Shark Pokémon, will be featured during September Community Day Classic!",
    "url": "https://leekduck.com/events/september-communitydayclassic2026/",
    "summary_ms": "Event September Community Day Classic akan berlangsung pada 12 September 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
   },
