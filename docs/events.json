@@ -1,19 +1,7 @@
 {
- "fetched_at": "2026-09-08T22:31:11.681987+00:00",
+ "fetched_at": "2026-09-09T01:09:21.174686+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
-  {
-   "slug": "season-23-forever-forward",
-   "name": "Forever Forward",
-   "type": "season",
-   "start": "2026-06-02T10:00:00",
-   "end": "2026-09-08T10:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-06-02-season-23-forever-forward/season-23-forever-forward.jpg",
-   "summary": "Welcome to Pokémon GO: Forever Forward! In Pokémon GO, Seasons are periods of time that feature new events, Pokémon debuts, and surprises that all follow a certain theme. As the Seasons change, you may find different Pokémon appearing in your area and hatching from Eggs. Make sure to explore during each in-game Season to collect and train as many different Pokémon as you can! You’ll also enjoy special bonuses as you do.",
-   "url": "https://leekduck.com/events/season-23-forever-forward/",
-   "summary_ms": "Selamat datang ke Pokémon GO: Forever Forward! Season ialah tempoh yang membawakan event baru, debut Pokémon, dan kejutan bertema. Bila season bertukar, Pokémon berbeza akan muncul di kawasan anda dan menetas dari Telur. Pastikan anda meneroka sepanjang season ini."
-  },
   {
    "slug": "lego-pokemon-go-2026",
    "name": "LEGO Stores and Pokémon GO",
@@ -25,18 +13,6 @@
    "summary": "The Pokémon GO and LEGO Group partnership continues for Trainers in the US, UK, Poland, France, Germany, and Australia! Visit participating LEGO Store locations for raids, a LEGO-themed stamp rally, event stickers, and LEGO Pokémon SMART Play. The LEGO Stores and Pokémon GO event will take place from August 3, 2026 at 10 am to September 30, 2026 at 11 pm.",
    "url": "https://leekduck.com/events/lego-pokemon-go-2026/",
    "summary_ms": "Kerjasama Pokémon GO dan LEGO Group diteruskan untuk Trainer di US, UK, Poland, Perancis, Jerman, dan Australia! Kunjungi kedai LEGO yang menyertai untuk raid, stamp rally bertema LEGO, sticker event, dan LEGO Pokémon SMART Play. Event LEGO Stores dan Pokémon GO akan berlangsung dari tarikh tersebut."
-  },
-  {
-   "slug": "go-pass-august-2026",
-   "name": "GO Pass: August",
-   "type": "go-pass",
-   "start": "2026-08-04T10:00:00",
-   "end": "2026-09-08T10:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-04-go-pass-august-2026/go-pass-august-2026.jpg",
-   "summary": "The Lucky Trinket returns and Latias soars into GO Pass: August! The GO Pass and GO Pass Deluxe for August will be available from August 4, 2026 at 10:00 am to September 8, 2026 at 10:00 am local time.",
-   "url": "https://leekduck.com/events/go-pass-august-2026/",
-   "summary_ms": "Lucky Trinket kembali dan Latias terbang masuk ke GO Pass: August! GO Pass dan GO Pass Deluxe untuk Ogos tersedia dari 4 Ogos 2026, 10:00 pagi hingga 8 September 2026, 10:00 pagi waktu tempatan."
   },
   {
    "slug": "shadow-giratina-altered-in-shadow-raids-august-2026",
