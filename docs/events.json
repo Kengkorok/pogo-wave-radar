@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-11T09:04:12.529793+00:00",
+ "fetched_at": "2026-09-11T13:44:32.365985+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -97,18 +97,6 @@
    "summary": "Shadow Thundurus (Incarnate Forme) will appear in five-star Shadow Raids every weekend from September 9, 2026 to October 6, 2026. If you’re lucky, you may encounter Shiny Shadow Thundurus (Incarnate Forme)!",
    "url": "https://leekduck.com/events/shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026/",
    "summary_ms": "Shadow Thundurus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari 9 September 2026 hingga 6 Oktober 2026. Jika anda bernasib baik, anda mungkin akan bertemu dengan Shiny Shadow Thundurus (Incarnate Forme)!"
-  },
-  {
-   "slug": "pokemonspotlighthour2026-09-10",
-   "name": "Weedle, Kakuna, and Beedrill Spotlight Hour",
-   "type": "pokémon-spotlight-hour",
-   "start": "2026-09-10T18:00:00",
-   "end": "2026-09-10T19:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/pokemonspotlighthour.jpg",
-   "summary": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time. September 10 : The featured Pokémon are Weedle, Kakuna, and Beedrill and the special bonus is 2× Transfer Candy .",
-   "url": "https://leekduck.com/events/pokemonspotlighthour2026-09-10/",
-   "summary_ms": "Pokémon Spotlight Hour akan menampilkan Pokémon yang berbeza dan bonus istimewa selama satu jam pada pukul 6:00 petang waktu tempatan. 10 September : Pokémon yang ditampilkan ialah Weedle, Kakuna, dan Beedrill dan bonus istimewanya ialah 2× Transfer Candy ."
   },
   {
    "slug": "mega-houndoom-in-mega-raids-september-2026",
@@ -409,6 +397,18 @@
    "summary": "Rescue Shadow Zekrom as Team GO Rocket takes over the Harvest Festival! The Harvest Festival: Taken Over event will take place from October 2, 2026 at 12 am to October 5, 2026 at 8 pm local time.",
    "url": "https://leekduck.com/events/harvest-festival-taken-over-2026/",
    "summary_ms": "Rescue Shadow Zekrom semasa Team GO Rocket mengambil alih Pesta Menuai! Acara Pesta Menuai: Taken Over akan berlangsung dari 2 Oktober 2026, 12 pagi hingga 5 Oktober 2026, 8 malam waktu tempatan."
+  },
+  {
+   "slug": "patterns-of-the-wild-2026",
+   "name": "Patterns of the Wild",
+   "type": "event",
+   "start": "2026-10-02T10:00:00",
+   "end": "2026-10-02T20:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-02-patterns-of-the-wild-2026/patterns-of-the-wild-2026.jpg",
+   "summary": "This event is available only in Indonesia. Note: The original announcement was updated to say this event is exclusive to Indonesia. It originally gave no indication that it was not a global event. Patterns of the Wild brings a Special Background for Pikachu wearing a batik shirt, along with boosted wild encounters, Incense bonuses, and research rewards! The event takes place on Friday, October 2, 2026, from 10:00 a.m. to 8:00 p.m. local time . Timed Research is available for a longer period, from September 28 through October 7.",
+   "url": "https://leekduck.com/events/patterns-of-the-wild-2026/",
+   "summary_ms": null
   },
   {
    "slug": "gigantamax-cinderace-max-battle-day-2026",
