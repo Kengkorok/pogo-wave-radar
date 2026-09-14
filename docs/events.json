@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-14T19:14:18.240518+00:00",
+ "fetched_at": "2026-09-14T22:41:33.270549+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -265,6 +265,18 @@
    "summary": "Xurkitree, Pheromosa, and Buzzwole will be in five-star raid battles from September 23, 2026 to September 29, 2026. Xurkitree will appear in the Asia-Pacific region, Pheromosa will appear in Europe, the Middle East, Africa, and India, and Buzzwole will appear in the Americas and Greenland. Raid Hours There will also be a Raid Hour featuring these regional raid bosses from 6:00 p.m. to 7:00 p.m. local time on September 23.",
    "url": "https://leekduck.com/events/xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026/",
    "summary_ms": "Xurkitree, Pheromosa, dan Buzzwole akan berada dalam pertarungan raid bintang lima dari 23 September 2026 hingga 29 September 2026. Xurkitree akan muncul di rantau Asia-Pasifik, Pheromosa akan muncul di Eropah, Timur Tengah, Afrika, dan India, dan Buzzwole akan muncul di Amerika dan Greenland. Waktu Raid Akan ada juga Waktu Raid yang menampilkan bos raid serantau ini dari 6:00 petang hingga 7:00 malam waktu tempatan pada 23 September."
+  },
+  {
+   "slug": "choose-your-path-twilight-trails-2026",
+   "name": "Choose Your Path: Twilight Trails",
+   "type": "choose-your-path",
+   "start": "2026-09-23T10:00:00",
+   "end": "2026-09-28T20:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/choose-your-path-twilight-trails-2026.jpg",
+   "summary": "Choose Your Path Timed Research gives you the freedom to explore Pokémon GO your way during non-event weeks! During a Choose Your Path Timed Research week, you’ll be able to select one of three paths: Explore , Catch , or Battle . Your choice will shape the Timed Research tasks and bonuses throughout the week. You may have different research opportunities than other Trainers.",
+   "url": "https://leekduck.com/events/choose-your-path-twilight-trails-2026/",
+   "summary_ms": null
   },
   {
    "slug": "raidhour20260923",
