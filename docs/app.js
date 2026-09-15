@@ -16,6 +16,7 @@ let USER_TZ = null;
 let LANG = 'en';
 let NESTS = [];           // nest feed from nests.json
 let NESTS_META = null;    // { fetched_at, migration }
+let SAFARI = [];          // City Safari in-person events from citysafari.json
 let NEST_FILTER = 'star'; // 'star' (default, Combee & friends) | 'all'
 let NEST_QUERY = '';
 let EVENT_QUERY = '';     // All Events search
@@ -64,6 +65,20 @@ const I18N = {
     nestEmpty: 'No nests found. Check back after the next migration! 🐝',
     nestSdUnit: 'SD',
     evSearchPh: 'Search events…', evEmpty: 'No events match your search. 🔍',
+    tabSafari: '🏙️ City Safari',
+    safariNote: 'In-person ticketed events — times shown in the host city\'s local time AND in your own timezone.',
+    safariHdrCity: 'Host city',
+    sameDay: 'same day',
+    safariHdrLocal: 'Host city local time', safariHdrYours: 'Your time',
+    safariCompareTitle: 'Schedule compare',
+    safariHotspots: '📡 Player hotspots',
+    safariHotspotNote: 'POI density (shops, stops, parks, landmarks) = best public proxy for PokéStop/gym density. Copy coords, spoof!',
+    safariPois: 'POI',
+    safariBuy: 'Buy ticket',
+    safariAddons: 'Add-ons',
+    safariBothDays: 'Sat 26 + Sun 27 Sep',
+    safariTicketNote: 'One-day ticket — pick Saturday OR Sunday',
+    safariMap: 'map',
     buyCoffee: '☕ Buy me a coffee', scanDonate: '🇲🇾 Scan to donate (MY)',
     qrTitle: 'Scan with TNG eWallet or any DuitNow app. Thank you! 🙏',
     qrName: 'Maybank DuitNow QR',
@@ -103,6 +118,20 @@ const I18N = {
     nestEmpty: 'Tiada sarang dijumpai. Check balik lepas migration seterusnya! 🐝',
     nestSdUnit: 'SD',
     evSearchPh: 'Cari event…', evEmpty: 'Tiada event sepadan dengan carian kau. 🔍',
+    tabSafari: '🏙️ City Safari',
+    safariNote: 'Event berbayar & kena hadir sendiri — masa ditunjuk dalam waktu tempatan bandar tu AND waktu zon kau.',
+    safariHdrCity: 'Bandar tuan rumah',
+    sameDay: 'sama hari',
+    safariHdrLocal: 'Waktu tempatan bandar', safariHdrYours: 'Waktu kau',
+    safariCompareTitle: 'Jadual bandingan',
+    safariHotspots: '📡 Hotspot player',
+    safariHotspotNote: 'Kepadatan POI (kedai, stop, taman, landmark) = proxi terbaik untuk kepadatan PokéStop/gym. Salin koordinat, spoof!',
+    safariPois: 'POI',
+    safariBuy: 'Beli tiket',
+    safariAddons: 'Add-on',
+    safariBothDays: 'Sabtu 26 + Ahad 27 Sep',
+    safariTicketNote: 'Tiket sehari — pilih Sabtu ATAU Ahad',
+    safariMap: 'peta',
     buyCoffee: '☕ Belanja aku kopi', scanDonate: '🇲🇾 Scan untuk derma (MY)',
     qrTitle: 'Scan dengan TNG eWallet atau mana-mana app DuitNow. Terima kasih! 🙏',
     qrName: 'Maybank DuitNow QR',
@@ -491,6 +520,118 @@ function nestCardHtml(n) {
     + '</article>';
 }
 
+/* ---------- render: City Safari (in-person events) ---------- */
+/* Naive wall-clock time in a timezone -> epoch ms (2 passes handle DST) */
+function wallMs(tz, iso) {
+  const target = Date.parse(iso + 'Z');
+  let guess = target;
+  for (let i = 0; i < 3; i += 1) {
+    const next = target - tzOffsetMs(tz, new Date(guess));
+    if (next === guess) break;
+    guess = next;
+  }
+  return guess;
+}
+function safariDays(ev) {
+  return (ev.days || []).map((d) => ({
+    day: d,
+    s: wallMs(ev.tz, d + 'T' + (ev.start || '10:00') + ':00'),
+    e: wallMs(ev.tz, d + 'T' + (ev.end || '18:00') + ':00'),
+  }));
+}
+function safariStatus(ev) {
+  const days = safariDays(ev);
+  const now = Date.now();
+  const live = days.find((w) => now >= w.s && now < w.e);
+  if (live) return { st: 'live', w: live, days };
+  const up = days.filter((w) => now < w.s).sort((a, b) => a.s - b.s)[0];
+  if (up) return { st: 'upcoming', w: up, days };
+  return { st: 'ended', w: days[days.length - 1], days };
+}
+/* Wall-clock window in the host city vs the same window in the user's timezone,
+   with the day shift the user actually feels (e.g. Boston 10 am = 10 pm MYT,
+   ending 6 am the next day). */
+function safariCompare(s, e, cityTZ) {
+  const myTZ = getUserTZ();
+  const dayIdx = (ms, tz) => Math.floor((ms + tzOffsetMs(tz, new Date(ms))) / 86400000);
+  const startShift = dayIdx(s, myTZ) - dayIdx(s, cityTZ);
+  const endShift = dayIdx(e, myTZ) - dayIdx(e, cityTZ);
+  const short = (ms) => new Intl.DateTimeFormat('en-MY', { day: 'numeric', month: 'short', timeZone: myTZ }).format(new Date(ms));
+  const start = fmtTime(s, myTZ) + (startShift !== 0 ? ' (' + short(s) + ')' : '');
+  const tailEnd = endShift > 0 ? ' +' + endShift + 'd' : endShift < 0 ? ' ' + endShift + 'd' : '';
+  const tail = (startShift === 0 && endShift === 0) ? ' ' + t('sameDay') : tailEnd;
+  return { city: fmtTime(s, cityTZ) + ' – ' + fmtTime(e, cityTZ), you: start + ' – ' + fmtTime(e, myTZ) + tail };
+}
+function safariDayLbl(ms, tz) {
+  return new Intl.DateTimeFormat('en-MY', { weekday: 'short', day: 'numeric', month: 'short', timeZone: tz }).format(new Date(ms));
+}
+function safariTable(rows) {
+  return '<h2 class="group-title">' + t('safariCompareTitle') + ' <span class="cnt">26–27 Sep</span></h2>'
+    + '<table class="scmptable"><thead><tr><th>' + t('safariHdrCity') + '</th><th>' + t('safariHdrLocal') + '</th><th>' + t('safariHdrYours') + ' · ' + esc(getUserTZ()) + '</th></tr></thead><tbody>'
+    + rows.map((r) => {
+      const c = safariCompare(r.w.s, r.w.e, r.ev.tz);
+      return '<tr><td>' + flagHtml(r.ev) + ' ' + esc(r.ev.city) + '</td><td>' + esc(c.city + ' ' + (r.ev.tzAbbr || '')) + '</td><td class="you">' + esc(c.you) + '</td></tr>';
+    }).join('')
+    + '</tbody></table>'
+    + '<p class="note">' + t('safariNote') + '</p>';
+}
+function safariHotspots(ev) {
+  return (ev.hotspots || []).map((h) => {
+    const coords = h.lat.toFixed(4) + ', ' + h.lng.toFixed(4);
+    const tip = LANG === 'ms' ? (h.tip_ms || h.tip) : h.tip;
+    return '<div class="hotrow">'
+      + '<div class="hotname"><b>' + esc(h.name) + '</b>' + (h.pois ? ' <span class="pois">' + h.pois + ' ' + t('safariPois') + '</span>' : '') + (tip ? '<span class="hottip">' + esc(tip) + '</span>' : '') + '</div>'
+      + '<div class="hotact">'
+      + '<button class="chip" data-coords="' + coords + '" data-name="' + esc(ev.city + ' — ' + h.name) + '">📋 ' + coords + '</button>'
+      + '<a class="maplink" href="https://www.google.com/maps?q=' + h.lat + ',' + h.lng + '" target="_blank" rel="noopener" title="' + t('safariMap') + '">🗺️</a>'
+      + '</div></div>';
+  }).join('');
+}
+function safariCardHtml(ev) {
+  const { st, w, days } = safariStatus(ev);
+  const badge = st === 'live' ? '<span class="badge live">' + t('liveLbl') + '</span>'
+    : st === 'upcoming' ? '<span class="badge soon">' + t('startsIn') + ' <b data-cd="' + w.s + '">' + fmtDur(w.s - Date.now()) + '</b></span>'
+      : '<span class="badge ended">' + t('grpEnd') + '</span>';
+  const cdRow = st === 'ended' ? ''
+    : '<div class="cd">' + (st === 'live' ? t('endsIn') : t('startsIn')) + ' <b data-cd="' + (st === 'live' ? w.e : w.s) + '">' + fmtDur((st === 'live' ? w.e : w.s) - Date.now()) + '</b>'
+      + ' · ' + fmtWin(w.s, w.e, getUserTZ()) + ' ' + t('yourTime') + '</div>';
+  const dayRows = days.map((d) => {
+    const c = safariCompare(d.s, d.e, ev.tz);
+    return '<div class="swrow"><span class="swday">' + esc(safariDayLbl(d.s, ev.tz)) + '</span>'
+      + '<span class="swlocal">' + esc(c.city) + ' <small>' + esc(ev.tzAbbr || '') + '</small></span>'
+      + '<span class="swyour">' + esc(c.you) + '</span></div>';
+  }).join('');
+  const addons = (ev.addons || []).map((a) => esc(a.name) + ' <b>' + esc(a.price) + '</b>').join(' · ');
+  return '<article class="safaricard' + (st === 'live' ? ' live' : '') + '" id="sf-' + ev.slug + '">'
+    + '<div class="shead">'
+    + (ev.img ? '<img class="sthumb" loading="lazy" src="' + esc(ev.img) + '" alt="" onerror="this.remove()">' : '')
+    + '<div class="sheadtext">'
+    + '<div class="row1"><span class="tag">city safari</span>' + badge + '</div>'
+    + '<h3>' + flagHtml(ev) + ' ' + esc(ev.city) + ', ' + esc(ev.country) + '</h3>'
+    + '<div class="ssub">📅 ' + t('safariBothDays') + ' 2026 · 🎟️ <b>' + esc(ev.price) + '</b> ' + t('safariTicketNote') + '</div>'
+    + '</div></div>'
+    + '<div class="scmp">' + dayRows + '</div>'
+    + cdRow
+    + (sum(ev) ? '<div class="evsum">ℹ️ ' + esc(sum(ev)) + '</div>' : '')
+    + '<h4 class="hothead">' + t('safariHotspots') + '</h4>'
+    + '<div class="hots">' + safariHotspots(ev) + '</div>'
+    + '<p class="note tiny">' + t('safariHotspotNote') + '</p>'
+    + (addons ? '<div class="addons"><span>' + t('safariAddons') + ':</span> ' + addons + '</div>' : '')
+    + '<div class="sact">'
+    + '<a class="btn" href="' + esc(ev.url) + '" target="_blank" rel="noopener">🎟️ ' + t('safariBuy') + ' · ' + esc(ev.price) + '</a>'
+    + '<button class="chip" data-coords="' + ev.lat.toFixed(4) + ', ' + ev.lng.toFixed(4) + '" data-name="' + esc(ev.city + ' (city centre)') + '">📋 ' + ev.lat.toFixed(4) + ', ' + ev.lng.toFixed(4) + '</button>'
+    + '</div></article>';
+}
+function renderSafari() {
+  const box = $('#safariList');
+  if (!box) return;
+  if (!SAFARI.length) { box.innerHTML = '<div class="empty">' + t('loading') + '</div>'; return; }
+  const rows = SAFARI.map((ev) => ({ ev, ...safariStatus(ev) }))
+    .sort((a, b) => a.w.s - b.w.s);
+  box.innerHTML = safariTable(rows) + rows.map((r) => safariCardHtml(r.ev)).join('');
+  bindChips();
+}
+
 /* ---------- interactions ---------- */
 function bindWaveButtons() {
   $$('[data-wave]').forEach((el) => el.addEventListener('click', () => goWave(el.dataset.wave)));
@@ -520,8 +661,10 @@ function switchTab(name) {
   $('#wave').hidden = name !== 'wave';
   $('#all').hidden = name !== 'all';
   $('#nests').hidden = name !== 'nests';
+  if ($('#safari')) $('#safari').hidden = name !== 'safari';
   if (name === 'wave') renderWave(); // fresh render (details may have loaded since init)
   if (name === 'nests') renderNests();
+  if (name === 'safari') renderSafari();
 }
 function startTicker() {
   if (startTicker._on) return;
@@ -598,6 +741,7 @@ function renderLang() {
   renderWave();
   renderAll();
   renderNests();
+  renderSafari();
   renderDonate();
 }
 
@@ -607,16 +751,19 @@ async function init() {
   USER_TZ = localStorage.getItem(TZ_STORAGE) || Intl.DateTimeFormat().resolvedOptions().timeZone || 'Asia/Kuala_Lumpur';
   $('#pvp').checked = localStorage.getItem(PVP_STORAGE) === '1';
   try {
-    const [c, e, m, n] = await Promise.all([
+    const [c, e, m, n, sf] = await Promise.all([
       fetch('cities.json').then((r) => r.json()),
       fetch('events.json').then((r) => r.json()),
       fetch('manual_events.json').then((r) => r.json()).catch(() => []),
       fetch('nests.json').then((r) => r.json()).catch(() => ({ nests: [], migration: null })),
+      fetch('citysafari.json').then((r) => r.json()).catch(() => ({ events: [] })),
     ]);
     CITIES = c; EVENTS = (e.events || []).concat(m); FETCHED_AT = e.fetched_at;
     NESTS = (n && n.nests) || []; NESTS_META = n || null;
+    SAFARI = (sf && sf.events) || [];
     ensureDetails().then(() => { if (!$('#wave').hidden) renderWave(); });
     if (!$('#nests').hidden) renderNests();
+    if ($('#safari') && !$('#safari').hidden) renderSafari();
   } catch (err) {
     $('#live').innerHTML = '<div class="empty">' + t('loadError') + '</div>';
     return;
@@ -632,7 +779,7 @@ async function init() {
     toolsBtn.addEventListener('click', (e) => { e.stopPropagation(); toolsNav.classList.toggle('open'); });
     document.addEventListener('click', (e) => { if (!toolsNav.contains(e.target)) toolsNav.classList.remove('open'); });
   }
-  $('#tz').addEventListener('change', (ev) => { USER_TZ = ev.target.value; localStorage.setItem(TZ_STORAGE, USER_TZ); renderTZ(); renderNextBar(); renderLive(); renderAll(); });
+  $('#tz').addEventListener('change', (ev) => { USER_TZ = ev.target.value; localStorage.setItem(TZ_STORAGE, USER_TZ); renderTZ(); renderNextBar(); renderLive(); renderAll(); renderSafari(); });
   $('#pvp').addEventListener('change', () => { localStorage.setItem(PVP_STORAGE, $('#pvp').checked ? '1' : '0'); renderNextBar(); renderLive(); renderWaveSelect(); renderWave(); renderAll(); });
   $$('.tabs button').forEach((b) => b.addEventListener('click', () => switchTab(b.dataset.tab)));
   $('#waveSel').addEventListener('change', renderWave);

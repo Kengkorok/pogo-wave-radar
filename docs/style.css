@@ -270,9 +270,63 @@ footer a { color: var(--accent); }
 .badge.sd { background: rgba(250,204,21,.15); color: var(--soon); }
 .nestcard .chip { font-size: .72rem; padding: 5px 8px; white-space: nowrap; flex-shrink: 0; }
 
+/* ---------- City Safari (in-person events) ---------- */
+.tabs { flex-wrap: wrap; }
+.tabs button { min-width: 88px; }
+.scmptable { width: 100%; border-collapse: collapse; font-size: .82rem; margin-bottom: 10px; }
+.scmptable th {
+  text-align: left; color: var(--muted); font-weight: 600; font-size: .72rem;
+  padding: 6px 6px; border-bottom: 1px solid var(--line); white-space: nowrap;
+}
+.scmptable td { padding: 7px 6px; border-bottom: 1px solid rgba(36,52,84,.55); vertical-align: middle; }
+.scmptable td.you { color: var(--accent); font-weight: 700; }
+.scmptable img.flag, .sheadtext img.flag { width: 18px; height: 12px; vertical-align: -1px; }
+.safaricard {
+  background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+  padding: 12px; margin-bottom: 12px;
+}
+.safaricard.live { border-color: rgba(34,197,94,.45); box-shadow: 0 0 0 1px rgba(34,197,94,.12); }
+.shead { display: flex; gap: 10px; align-items: flex-start; }
+.sthumb { width: 62px; height: 62px; border-radius: 12px; object-fit: cover; flex-shrink: 0; }
+.sheadtext { min-width: 0; flex: 1; }
+.sheadtext h3 { margin: 3px 0 4px; font-size: 1.02rem; display: flex; align-items: center; gap: 6px; }
+.ssub { color: var(--muted); font-size: .76rem; line-height: 1.35; }
+.ssub b { color: var(--text); }
+.scmp { display: flex; flex-direction: column; gap: 5px; margin: 10px 0 6px; }
+.swrow {
+  display: grid; grid-template-columns: 78px minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2px 8px; align-items: center; background: var(--card2);
+  border-radius: 10px; padding: 6px 9px; font-size: .79rem;
+}
+.swday { color: var(--muted); font-size: .72rem; }
+.swlocal { color: var(--muted); }
+.swlocal small { font-size: .68rem; }
+.swyour { color: var(--accent); font-weight: 700; }
+.hothead { margin: 10px 0 6px; font-size: .85rem; color: var(--text); }
+.hots { display: flex; flex-direction: column; gap: 6px; }
+.hotrow {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  background: var(--card2); border-radius: 10px; padding: 7px 9px; flex-wrap: wrap;
+}
+.hotname { min-width: 0; display: flex; flex-direction: column; gap: 1px; flex: 1; }
+.hotname b { font-size: .85rem; }
+.pois { font-size: .68rem; color: var(--soon); font-weight: 700; }
+.hottip { font-size: .72rem; color: var(--muted); }
+.hotact { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.hotact .chip { font-size: .72rem; padding: 5px 8px; white-space: nowrap; }
+.maplink { text-decoration: none; font-size: 1rem; line-height: 1; }
+.addons { font-size: .75rem; color: var(--muted); margin-top: 8px; }
+.sact { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 10px; }
+.sact .btn { text-decoration: none; }
+.note.tiny { font-size: .72rem; }
+
 @media (max-width: 520px) {
   .wrow { grid-template-columns: 1fr auto; }
   .wtime { grid-column: 1 / -1; text-align: left; }
   .nestcard { flex-wrap: wrap; }
   .nestcard .chip { margin-left: 54px; }
+  .swrow { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .swday { grid-column: 1 / -1; }
+  .hotrow { flex-direction: column; align-items: flex-start; gap: 5px; }
+  .scmptable { font-size: .78rem; }
 }
