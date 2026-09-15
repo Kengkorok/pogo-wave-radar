@@ -5,6 +5,16 @@
    Run from repo root:
      npm install jsdom --no-save
      node scripts/test-harness.js
+
+   Covers: next-event banner, Nests tab, All-Events search, City Safari tab
+   (6 cards / compare table / hotspot chips / countdowns / timezone switch /
+   expired-edition auto-hide).
+
+   REALM GOTCHA: app.js is evaluated with window.eval(), so its `let`/`const`
+   (SAFARI, EVENTS, USER_TZ…) are NOT reachable from a later window.eval — a later
+   `SAFARI = [...]` silently creates window.SAFARI while the app keeps its own
+   binding. Test the app's *functions* (they are global object properties) instead:
+   stub window.safariStatus, window.renderSafari, etc.
 */
 const { JSDOM } = require('jsdom');
 const fs = require('fs');
@@ -61,14 +71,12 @@ setTimeout(async () => {
   console.log('combee cards:', Array.from(document.querySelectorAll('#nestList .nestcard')).filter((c) => c.textContent.includes('Combee')).length);
   console.log('stardust badges:', document.querySelectorAll('#nestList .badge.sd').length);
   console.log('coords chips:', document.querySelectorAll('#nestList .chip[data-coords]').length);
-  console.log('first card:', document.querySelector('#nestList .nestcard') && document.querySelector('#nestList .nestcard').innerHTML.slice(0, 220));
   console.log('nest cd text:', mig && mig.querySelector('[data-cd]') && mig.querySelector('[data-cd]').textContent);
 
   // ---- EVENT SEARCH (All Events tab) ----
   const allBtn = Array.from(document.querySelectorAll('.tabs button')).find((b) => b.dataset.tab === 'all');
   if (allBtn) allBtn.click();
   await sleep(150);
-  const allList = document.getElementById('allList');
   const total = document.querySelectorAll('#allList .allrow').length;
   const input = document.getElementById('evSearch');
   console.log('\n=== EVENT SEARCH ===');
@@ -78,8 +86,7 @@ setTimeout(async () => {
     input.value = 'mewtwo';
     input.dispatchEvent(new window.Event('input', { bubbles: true }));
     await sleep(100);
-    const filtered = document.querySelectorAll('#allList .allrow').length;
-    console.log('rows after "mewtwo":', filtered);
+    console.log('rows after "mewtwo":', document.querySelectorAll('#allList .allrow').length);
     console.log('sample:', Array.from(document.querySelectorAll('#allList .allrow')).slice(0, 3).map((r) => r.textContent.trim().replace(/\s+/g, ' ').slice(0, 60)));
     input.value = 'zzz-no-such-event';
     input.dispatchEvent(new window.Event('input', { bubbles: true }));
@@ -93,21 +100,24 @@ setTimeout(async () => {
   }
 
   // ---- CITY SAFARI TAB (in-person events) ----
-  const sfBtn = Array.from(document.querySelectorAll('.tabs button')).find((b) => b.dataset.tab === 'safari');
+  const sfBtn = document.querySelector('.tabs button[data-tab="safari"]');
   if (sfBtn) sfBtn.click();
   await sleep(250);
-  const sf = document.getElementById('safari');
   console.log('\n=== CITY SAFARI TAB ===');
-  console.log('section hidden:', sf && sf.hidden);
+  console.log('section hidden:', document.getElementById('safari').hidden);
   console.log('cards:', document.querySelectorAll('#safariList .safaricard').length);
   console.log('compare rows:', document.querySelectorAll('#safariList .scmptable tbody tr').length);
   console.log('hotspot chips:', document.querySelectorAll('#safariList .hotrow .chip[data-coords]').length);
+  console.log('tab button hidden:', sfBtn && sfBtn.hidden);
   console.log('countdowns:', document.querySelectorAll('#safariList [data-cd]').length);
   console.log('addon blocks:', document.querySelectorAll('#safariList .addons').length);
   const sfTable = document.querySelector('#safariList .scmptable');
   console.log('compare table:', sfTable && sfTable.textContent.replace(/\s+/g, ' ').slice(0, 420));
   const sfFirst = document.querySelector('#safariList .safaricard');
   console.log('first card:', sfFirst && sfFirst.textContent.replace(/\s+/g, ' ').slice(0, 260));
+  // status maths: a finished edition must read 'ended' (that is what the filter uses)
+  console.log('past edition status:', window.safariStatus({ days: ['2026-09-01', '2026-09-02'], tz: 'Asia/Kuala_Lumpur', start: '10:00', end: '18:00' }).st);
+
   const tzSel = document.getElementById('tz');
   if (tzSel) {
     tzSel.value = 'Asia/Kuala_Lumpur';
@@ -119,6 +129,20 @@ setTimeout(async () => {
     const rows2 = tbl2 ? Array.from(tbl2.querySelectorAll('tbody tr')) : [];
     rows2.slice(0, 3).forEach((r) => console.log('  ', r.textContent.replace(/\s+/g, ' ')));
   }
+
+  // simulate every edition finished -> tab hides itself and falls back to Live Now
+  const realStatus = window.safariStatus;
+  window.safariStatus = () => ({ st: 'ended', w: { s: 0, e: 0 }, days: [] });
+  window.renderSafari();
+  await sleep(150);
+  console.log('\n=== after all editions ended ===');
+  console.log('tab button hidden:', sfBtn && sfBtn.hidden);
+  console.log('safari section hidden:', document.getElementById('safari').hidden);
+  console.log('active tab:', document.querySelector('.tabs button.active').dataset.tab);
+  window.safariStatus = realStatus;
+  window.renderSafari();
+  await sleep(120);
+  console.log('restored -> tab hidden:', sfBtn && sfBtn.hidden, '| cards:', document.querySelectorAll('.safaricard').length);
 
   // click banner -> should switch to wave view
   const btn = bar && bar.querySelector('.nextbtn');
@@ -137,6 +161,5 @@ setTimeout(async () => {
 }, 300);
 
 // NOTE: assigning window.localStorage does NOT work in jsdom (native getter wins).
-// To test i18n/BM, extract the I18N object from app.js source and eval it directly,
-// or drive the language via the real localStorage value using Object.defineProperty:
+// To test i18n/BM, extract and eval the I18N object from app.js source directly, or use:
 //   Object.defineProperty(window, 'localStorage', { value: { getItem: () => 'ms', setItem: () => {} } });

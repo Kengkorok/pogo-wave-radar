@@ -625,9 +625,21 @@ function safariCardHtml(ev) {
 function renderSafari() {
   const box = $('#safariList');
   if (!box) return;
-  if (!SAFARI.length) { box.innerHTML = '<div class="empty">' + t('loading') + '</div>'; return; }
+  const tabBtn = $('.tabs button[data-tab="safari"]');
+  const sec = $('#safari');
+  /* A City Safari only lives until its last in-game hour is over: finished editions
+     are dropped, and the tab disappears once nothing is left (until a new edition
+     lands in citysafari.json). */
   const rows = SAFARI.map((ev) => ({ ev, ...safariStatus(ev) }))
+    .filter((r) => r.st !== 'ended')
     .sort((a, b) => a.w.s - b.w.s);
+  if (tabBtn) tabBtn.hidden = rows.length === 0;
+  if (!rows.length) {
+    if (sec && !sec.hidden) switchTab('live'); // was open -> leave before hiding
+    if (sec) sec.hidden = true;
+    box.innerHTML = '';
+    return;
+  }
   box.innerHTML = safariTable(rows) + rows.map((r) => safariCardHtml(r.ev)).join('');
   bindChips();
 }
@@ -677,6 +689,8 @@ function startTicker() {
   }, 1000);
   // re-pick the "next event" every 30s so the banner follows status transitions
   setInterval(renderNextBar, 30000);
+  // drop City Safari editions as soon as they finish (tab hides itself when none left)
+  setInterval(() => { if (SAFARI.length) renderSafari(); }, 60000);
 }
 function renderTZ() {
   const sel = $('#tz');
@@ -763,7 +777,7 @@ async function init() {
     SAFARI = (sf && sf.events) || [];
     ensureDetails().then(() => { if (!$('#wave').hidden) renderWave(); });
     if (!$('#nests').hidden) renderNests();
-    if ($('#safari') && !$('#safari').hidden) renderSafari();
+    if ($('#safari')) renderSafari();
   } catch (err) {
     $('#live').innerHTML = '<div class="empty">' + t('loadError') + '</div>';
     return;
