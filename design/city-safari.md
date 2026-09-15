@@ -73,6 +73,14 @@ in Kuala Lumpur. The comparison table sorts rows by absolute start time, so it d
 "wave" order: **Brisbane → Munich/Marseille → Lisbon → Rio → Boston**. Everything re-renders when
 the user changes the timezone picker, same as the other tabs.
 
+## Lifecycle (editions expire)
+
+A City Safari edition only lives until its last in-game hour ends. `renderSafari()` filters out
+finished editions (`st === 'ended'`), so once 26–27 Sep 2026 passes the six cards disappear; when
+nothing is left the tab button hides itself and the app falls back to Live Now. The tab reappears
+automatically as soon as a new edition lands in `docs/citysafari.json`. A 60 s interval inside
+`startTicker()` re-checks, so the tab drops without needing a reload.
+
 ## Not done / next
 
 - The pages are curated by hand; a scraper (`scripts/scrape_citysafari.py`) could extract
