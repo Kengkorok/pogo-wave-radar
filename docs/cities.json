@@ -144,6 +144,14 @@
     "note": "UTC-4/-5"
   },
   {
+    "name": "Mexico City",
+    "flag": "img/flags/mx.svg",
+    "tz": "America/Mexico_City",
+    "lat": 19.4361,
+    "lng": -99.1414,
+    "note": "UTC-6 — lokasi event exclusive Mexico (Zócalo)"
+  },
+  {
     "name": "California (LA)",
     "flag": "img/flags/us.svg",
     "tz": "America/Los_Angeles",
