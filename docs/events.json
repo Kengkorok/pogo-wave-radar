@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-15T01:20:18.882062+00:00",
+ "fetched_at": "2026-09-15T06:36:19.489713+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -172,7 +172,7 @@
   },
   {
    "slug": "pokemon-horizons-the-series-celebration-event-2026",
-   "name": "Pokémon Horizons: The Series Celebration Event",
+   "name": "Pokémon Horizons: The Series Celebration Event 2026",
    "type": "event",
    "start": "2026-09-16T10:00:00",
    "end": "2026-09-22T20:00:00",
@@ -436,12 +436,12 @@
   },
   {
    "slug": "october-communityday2026",
-   "name": "October Community Day",
+   "name": "Zorua Community Day",
    "type": "community-day",
    "start": "2026-10-10T14:00:00",
    "end": "2026-10-10T17:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/cd-default.jpg",
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-10-october-communityday2026/zorua-october-cd-2026.png",
    "summary": "The October Community Day event will take place on October 10, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
    "url": "https://leekduck.com/events/october-communityday2026/",
    "summary_ms": "Event October Community Day akan berlangsung pada 10 Oktober 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
