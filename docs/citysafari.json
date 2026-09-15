@@ -1,0 +1,510 @@
+{
+ "fetched_at": "2026-09-15T08:18:01Z",
+ "source": "https://pokemongo.com/en/featured-in-person-events/citysafari/",
+ "poi_radius_m": 330,
+ "poi_note": "pois = OSM POIs within 330 m (proxy for Pokestop/gym density)",
+ "events": [
+  {
+   "slug": "city-safari-boston-2026",
+   "city": "Boston",
+   "country": "USA",
+   "flag": "img/flags/us.svg",
+   "tz": "America/New_York",
+   "tzAbbr": "EDT",
+   "lat": 42.3601,
+   "lng": -71.0589,
+   "days": [
+    "2026-09-26",
+    "2026-09-27"
+   ],
+   "start": "10:00",
+   "end": "18:00",
+   "price": "US$10.00",
+   "addons": [
+    {
+     "name": "Raid Lover",
+     "price": "US$6.00"
+    },
+    {
+     "name": "Egg-thusiast",
+     "price": "US$6.00"
+    },
+    {
+     "name": "Extra Day",
+     "price": "US$8.00"
+    }
+   ],
+   "img": "https://lh3.googleusercontent.com/5SAHXmMPUCpY_TUiDA81oiN00LXrIbsOXN9CTFtZbjI4pz_0RbQr0tmSACr1JErfEvZqM131RfCU8-LA2uskPRaP7YAom1uS216jhW_JpQ",
+   "url": "https://pokemongo.com/en/featured-in-person-events/citysafari/boston",
+   "summary": "Pokémon GO City Safari Boston, USA: 26-27 Sep 2026, 10:00-18:00 EDT, citywide (ticket only). Explorer-hat Eevee from the City Safari Special Research (evolves into any Eeveelution), an 8-stamp City Safari Stamp Rally at highlighted Pokestops (one Eevee per stamp), event-only wild spawns (Mudbray debut, Unown B/L/M/R, Hawlucha, Oranguru, Komala, Flamigo) plus 7 km eggs (Flabébé Orange Flower, Hawlucha, Mudbray, Komala) and exclusive Field Research. Ticket perks: boosted shiny odds, 4-hour Lures, 5 special trades a day at half Stardust, Tiny Compass buddy souvenir, 8-hour Party Play.",
+   "summary_ms": "Pokémon GO City Safari Boston, USA: 26-27 Sep 2026, 10:00-18:00 EDT, seluruh bandar (kena tiket). Eevee bertopi explorer dari Special Research (boleh evolve jadi mana-mana Eeveelution), Stamp Rally 8 stamp kat Pokestop bertanda (1 Eevee setiap stamp), spawn eksklusif (Mudbray debut, Unown B/L/M/R, Hawlucha, Oranguru, Komala, Flamigo), telur 7 km, dan Field Research khas. Bonus tiket: shiny rate naik, Lure 4 jam, 5 special trade sehari separuh Stardust, souvenir Tiny Compass, Party Play 8 jam.",
+   "hotspots": [
+    {
+     "name": "Downtown Crossing",
+     "lat": 42.354,
+     "lng": -71.063,
+     "tip": "Washington St shopping core — densest stop cluster in downtown.",
+     "tip_ms": "Terus Washington St shopping — cluster stop paling padat di downtown.",
+     "pois": 441
+    },
+    {
+     "name": "Boston Common & Public Garden",
+     "lat": 42.355,
+     "lng": -71.072,
+     "tip": "Park loops full of stops, spawns + gyms, spawn-heavy in the morning.",
+     "tip_ms": "Loop taman penuh stop, spawn & gym, paling padat pagi.",
+     "pois": 353
+    },
+    {
+     "name": "Faneuil Hall / Quincy Market",
+     "lat": 42.361,
+     "lng": -71.054,
+     "tip": "Historic market halls, tourist crowd = heavy lures.",
+     "tip_ms": "Dewan pasar bersejarah, crowd pelancong = lure banyak.",
+     "pois": 409
+    },
+    {
+     "name": "Copley Square / Back Bay",
+     "lat": 42.349,
+     "lng": -71.079,
+     "tip": "Trinity Church, library, Newbury St — prime downtown grind.",
+     "tip_ms": "Trinity Church, library, Newbury St — grind downtown terbaik.",
+     "pois": 432
+    },
+    {
+     "name": "Harvard Square (Cambridge)",
+     "lat": 42.375,
+     "lng": -71.119,
+     "tip": "Legendary stop/gym density, most reliable hotspot in Greater Boston.",
+     "tip_ms": "Kepadatan stop/gym legenda, hotspot paling reliable di Greater Boston.",
+     "pois": 251
+    },
+    {
+     "name": "Kendall Square / MIT (Cambridge)",
+     "lat": 42.362,
+     "lng": -71.087,
+     "tip": "MIT campus edge + Kendall labs, high stop & gym count.",
+     "tip_ms": "Tepi kampus MIT + Kendall lab, stop & gym banyak.",
+     "pois": 209
+    }
+   ]
+  },
+  {
+   "slug": "city-safari-brisbane-2026",
+   "city": "Brisbane",
+   "country": "Australia",
+   "flag": "img/flags/au.svg",
+   "tz": "Australia/Brisbane",
+   "tzAbbr": "AEST",
+   "lat": -27.4698,
+   "lng": 153.0251,
+   "days": [
+    "2026-09-26",
+    "2026-09-27"
+   ],
+   "start": "10:00",
+   "end": "18:00",
+   "price": "AU$17.00",
+   "addons": [
+    {
+     "name": "Raid Lover",
+     "price": "AU$8.00"
+    },
+    {
+     "name": "Egg-thusiast",
+     "price": "AU$8.00"
+    },
+    {
+     "name": "Extra Day",
+     "price": "AU$12.00"
+    }
+   ],
+   "img": "https://lh3.googleusercontent.com/pfmQwowEancYRhhAC8W9PnYllGycWzZxU3tvtZOAhe2prk4cu0bKVTbY4NWBgFCnyByzJINEPG7lvPJHsEeGF83m2QJotvZe-pyGZWxl95fO",
+   "url": "https://pokemongo.com/en/featured-in-person-events/citysafari/brisbane",
+   "summary": "Pokémon GO City Safari Brisbane, Australia: 26-27 Sep 2026, 10:00-18:00 AEST, citywide (ticket only). Explorer-hat Eevee from the City Safari Special Research (evolves into any Eeveelution), an 8-stamp City Safari Stamp Rally at highlighted Pokestops (one Eevee per stamp), event-only wild spawns (Mudbray debut, Unown B/L/M/R, Hawlucha, Oranguru, Komala, Flamigo) plus 7 km eggs (Flabébé Orange Flower, Hawlucha, Mudbray, Komala) and exclusive Field Research. Ticket perks: boosted shiny odds, 4-hour Lures, 5 special trades a day at half Stardust, Tiny Compass buddy souvenir, 8-hour Party Play.",
+   "summary_ms": "Pokémon GO City Safari Brisbane, Australia: 26-27 Sep 2026, 10:00-18:00 AEST, seluruh bandar (kena tiket). Eevee bertopi explorer dari Special Research (boleh evolve jadi mana-mana Eeveelution), Stamp Rally 8 stamp kat Pokestop bertanda (1 Eevee setiap stamp), spawn eksklusif (Mudbray debut, Unown B/L/M/R, Hawlucha, Oranguru, Komala, Flamigo), telur 7 km, dan Field Research khas. Bonus tiket: shiny rate naik, Lure 4 jam, 5 special trade sehari separuh Stardust, souvenir Tiny Compass, Party Play 8 jam.",
+   "hotspots": [
+    {
+     "name": "Queen Street Mall / Brisbane CBD",
+     "lat": -27.469,
+     "lng": 153.026,
+     "tip": "Central Pokestop wall — mall + King George Square, best all-day lure cluster.",
+     "tip_ms": "Pusat Pokestop — mall + King George Square, cluster lure terbaik.",
+     "pois": 427
+    },
+    {
+     "name": "University of Queensland (St Lucia)",
+     "lat": -27.4975,
+     "lng": 153.0134,
+     "tip": "Campus-wide gym/stop density — the classic Brisbane grind spot.",
+     "tip_ms": "Seluruh kampus padat gym/stop — spot grind klasik Brisbane.",
+     "pois": 321
+    },
+    {
+     "name": "Fortitude Valley (Brunswick Street)",
+     "lat": -27.4575,
+     "lng": 153.0345,
+     "tip": "Chinatown + Brunswick St strip, dense stops and gyms.",
+     "tip_ms": "Chinatown + jalur Brunswick St, stop & gym padat.",
+     "pois": 178
+    },
+    {
+     "name": "South Bank Parklands (Grey St & Streets Beach)",
+     "lat": -27.478,
+     "lng": 153.019,
+     "tip": "Riverside gardens, beach and Cultural Centre — walkable loop.",
+     "tip_ms": "Taman tepi sungai, beach & Cultural Centre — loop senang jalan.",
+     "pois": 168
+    },
+    {
+     "name": "West End (Boundary Street)",
+     "lat": -27.48,
+     "lng": 153.007,
+     "tip": "Cafes, markets, Boundary St stops — relaxed grind + good coffee.",
+     "tip_ms": "Kafe, market, stop Boundary St — grind santai + kopi sedap.",
+     "pois": 107
+    }
+   ]
+  },
+  {
+   "slug": "city-safari-lisbon-2026",
+   "city": "Lisbon",
+   "country": "Portugal",
+   "flag": "img/flags/pt.svg",
+   "tz": "Europe/Lisbon",
+   "tzAbbr": "WEST",
+   "lat": 38.7223,
+   "lng": -9.1393,
+   "days": [
+    "2026-09-26",
+    "2026-09-27"
+   ],
+   "start": "10:00",
+   "end": "18:00",
+   "price": "€10.00",
+   "addons": [
+    {
+     "name": "Raid Lover",
+     "price": "€6.00"
+    },
+    {
+     "name": "Egg-thusiast",
+     "price": "€6.00"
+    },
+    {
+     "name": "Extra Day",
+     "price": "€8.00"
+    }
+   ],
+   "img": "https://lh3.googleusercontent.com/OM6SsjLLeDXEFU9WeJV5mgRhfNeN93NhtA98dvUbWn08auFfoPxVwMpe3eYmNz306ZLH9lRlNA1FjYgSXa7FxgbXORo4LJJL2CE1zkeLatw",
+   "url": "https://pokemongo.com/en/featured-in-person-events/citysafari/lisbon",
+   "summary": "Pokémon GO City Safari Lisbon, Portugal: 26-27 Sep 2026, 10:00-18:00 WEST, citywide (ticket only). Explorer-hat Eevee from the City Safari Special Research (evolves into any Eeveelution), an 8-stamp City Safari Stamp Rally at highlighted Pokestops (one Eevee per stamp), event-only wild spawns (Mudbray debut, Unown B/L/M/R, Hawlucha, Oranguru, Komala, Flamigo) plus 7 km eggs (Flabébé Orange Flower, Hawlucha, Mudbray, Komala) and exclusive Field Research. Ticket perks: boosted shiny odds, 4-hour Lures, 5 special trades a day at half Stardust, Tiny Compass buddy souvenir, 8-hour Party Play.",
+   "summary_ms": "Pokémon GO City Safari Lisbon, Portugal: 26-27 Sep 2026, 10:00-18:00 WEST, seluruh bandar (kena tiket). Eevee bertopi explorer dari Special Research (boleh evolve jadi mana-mana Eeveelution), Stamp Rally 8 stamp kat Pokestop bertanda (1 Eevee setiap stamp), spawn eksklusif (Mudbray debut, Unown B/L/M/R, Hawlucha, Oranguru, Komala, Flamigo), telur 7 km, dan Field Research khas. Bonus tiket: shiny rate naik, Lure 4 jam, 5 special trade sehari separuh Stardust, souvenir Tiny Compass, Party Play 8 jam.",
+   "hotspots": [
+    {
+     "name": "Baixa–Chiado (Rua Augusta & Rua do Carmo)",
+     "lat": 38.7115,
+     "lng": -9.1395,
+     "tip": "Densest stop cluster in Lisbon — pedestrian shopping grid, lures everywhere.",
+     "tip_ms": "Cluster stop paling padat di Lisbon — grid shopping pedestrian, lure merata.",
+     "pois": 976
+    },
+    {
+     "name": "Alfama / Castelo de São Jorge",
+     "lat": 38.7139,
+     "lng": -9.1335,
+     "tip": "Old-town hillside, viewpoints and tram stops — big spawn volume.",
+     "tip_ms": "Bandar lama atas bukit, miradouro & stop tram — spawn banyak.",
+     "pois": 425
+    },
+    {
+     "name": "Bairro Alto / Príncipe Real",
+     "lat": 38.715,
+     "lng": -9.147,
+     "tip": "Night-life + garden stops, strong evening cluster.",
+     "tip_ms": "Hiburan malam + taman, cluster petang/malam kuat.",
+     "pois": 383
+    },
+    {
+     "name": "Cais do Sodré / Time Out Market",
+     "lat": 38.7067,
+     "lng": -9.1458,
+     "tip": "Riverfront market & ferry terminal, busy all day.",
+     "tip_ms": "Market tepi sungai & terminal feri, ramai sepanjang hari.",
+     "pois": 375
+    },
+    {
+     "name": "Praça do Comércio (Terreiro do Paço)",
+     "lat": 38.7077,
+     "lng": -9.1364,
+     "tip": "Iconic square by the river, easy walking loop to Alfama.",
+     "tip_ms": "Dataran ikonik tepi sungai, senang loop jalan ke Alfama.",
+     "pois": 350
+    },
+    {
+     "name": "Belém (Mosteiro dos Jerónimos)",
+     "lat": 38.6979,
+     "lng": -9.2065,
+     "tip": "Monastery + tower + pastéis — tourist cluster, thinner stops but worth a pass.",
+     "tip_ms": "Monasteri + menara + pastel — cluster pelancong, stop kurang tapi berbaloi.",
+     "pois": 138
+    }
+   ]
+  },
+  {
+   "slug": "city-safari-marseille-2026",
+   "city": "Marseille",
+   "country": "France",
+   "flag": "img/flags/fr.svg",
+   "tz": "Europe/Paris",
+   "tzAbbr": "CEST",
+   "lat": 43.2965,
+   "lng": 5.3698,
+   "days": [
+    "2026-09-26",
+    "2026-09-27"
+   ],
+   "start": "10:00",
+   "end": "18:00",
+   "price": "€10.00",
+   "addons": [
+    {
+     "name": "Raid Lover",
+     "price": "€6.00"
+    },
+    {
+     "name": "Egg-thusiast",
+     "price": "€6.00"
+    },
+    {
+     "name": "Extra Day",
+     "price": "€8.00"
+    }
+   ],
+   "img": "https://lh3.googleusercontent.com/y8H0LP2rL5dOxzgrQ3JI0MtULQDWCADx97DGeRcO8TM_fqI9ft93DKdiO4meMIkx-Fbqd6coqwto0dYH9hUg6G3hJLIBS1DoU4WNDjGc-Mo",
+   "url": "https://pokemongo.com/en/featured-in-person-events/citysafari/marseille",
+   "summary": "Pokémon GO City Safari Marseille, France: 26-27 Sep 2026, 10:00-18:00 CEST, citywide (ticket only). Explorer-hat Eevee from the City Safari Special Research (evolves into any Eeveelution), an 8-stamp City Safari Stamp Rally at highlighted Pokestops (one Eevee per stamp), event-only wild spawns (Mudbray debut, Unown B/L/M/R, Hawlucha, Oranguru, Komala, Flamigo) plus 7 km eggs (Flabébé Orange Flower, Hawlucha, Mudbray, Komala) and exclusive Field Research. Ticket perks: boosted shiny odds, 4-hour Lures, 5 special trades a day at half Stardust, Tiny Compass buddy souvenir, 8-hour Party Play.",
+   "summary_ms": "Pokémon GO City Safari Marseille, France: 26-27 Sep 2026, 10:00-18:00 CEST, seluruh bandar (kena tiket). Eevee bertopi explorer dari Special Research (boleh evolve jadi mana-mana Eeveelution), Stamp Rally 8 stamp kat Pokestop bertanda (1 Eevee setiap stamp), spawn eksklusif (Mudbray debut, Unown B/L/M/R, Hawlucha, Oranguru, Komala, Flamigo), telur 7 km, dan Field Research khas. Bonus tiket: shiny rate naik, Lure 4 jam, 5 special trade sehari separuh Stardust, souvenir Tiny Compass, Party Play 8 jam.",
+   "hotspots": [
+    {
+     "name": "Vieux-Port / Quai des Belges",
+     "lat": 43.2951,
+     "lng": 5.3744,
+     "tip": "Old harbour quays — densest cluster in Marseille, fish market + ferry stops.",
+     "tip_ms": "Kes tepi pelabuhan lama — cluster paling padat di Marseille, pasar ikan + stop feri.",
+     "pois": 664
+    },
+    {
+     "name": "Cours Julien / Noailles",
+     "lat": 43.2945,
+     "lng": 5.3815,
+     "tip": "Street-art quarter, cafes and market streets — second-densest cluster.",
+     "tip_ms": "Kawasan street-art, kafe & jalan pasar — cluster kedua padat.",
+     "pois": 659
+    },
+    {
+     "name": "La Canebière / Réformés",
+     "lat": 43.2975,
+     "lng": 5.379,
+     "tip": "Main avenue between Vieux-Port and station, non-stop stops.",
+     "tip_ms": "Jalan utama antara Vieux-Port & stesen, stop tak putus.",
+     "pois": 495
+    },
+    {
+     "name": "Le Panier / Vieux-Port north quay",
+     "lat": 43.2965,
+     "lng": 5.371,
+     "tip": "Oldest quarter, narrow lanes full of stops and gyms.",
+     "tip_ms": "Kawasan tertua, lorong sempit penuh stop & gym.",
+     "pois": 381
+    },
+    {
+     "name": "La Joliette / Les Docks",
+     "lat": 43.3045,
+     "lng": 5.367,
+     "tip": "Waterfront redevelopment + MuCEM walk, quieter but steady.",
+     "tip_ms": "Tepi air baru + jalan ke MuCEM, sunyi sikit tapi stabil.",
+     "pois": 294
+    },
+    {
+     "name": "Castellane / Cours Pierre Puget",
+     "lat": 43.288,
+     "lng": 5.3825,
+     "tip": "Roundabout hub linking Prado, beaches and Notre-Dame de la Garde.",
+     "tip_ms": "Hub bulatan sambung Prado, pantai & Notre-Dame de la Garde.",
+     "pois": 210
+    }
+   ]
+  },
+  {
+   "slug": "city-safari-munich-2026",
+   "city": "Munich",
+   "country": "Germany",
+   "flag": "img/flags/de.svg",
+   "tz": "Europe/Berlin",
+   "tzAbbr": "CEST",
+   "lat": 48.1374,
+   "lng": 11.5755,
+   "days": [
+    "2026-09-26",
+    "2026-09-27"
+   ],
+   "start": "10:00",
+   "end": "18:00",
+   "price": "€10.00",
+   "addons": [
+    {
+     "name": "Raid Lover",
+     "price": "€6.00"
+    },
+    {
+     "name": "Egg-thusiast",
+     "price": "€6.00"
+    },
+    {
+     "name": "Extra Day",
+     "price": "€8.00"
+    }
+   ],
+   "img": "https://lh3.googleusercontent.com/-yL57uAK3PNb2YrfNtHuqAA85NzRiXDUtk3s4hktZz_9EDjFJLea0IpVk0J7n7eFmw0STTJvOaTEUJ5zNy10rsvp-Ppyprqisk1ckji82z8",
+   "url": "https://pokemongo.com/en/featured-in-person-events/citysafari/munich",
+   "summary": "Pokémon GO City Safari Munich, Germany: 26-27 Sep 2026, 10:00-18:00 CEST, citywide (ticket only). Explorer-hat Eevee from the City Safari Special Research (evolves into any Eeveelution), an 8-stamp City Safari Stamp Rally at highlighted Pokestops (one Eevee per stamp), event-only wild spawns (Mudbray debut, Unown B/L/M/R, Hawlucha, Oranguru, Komala, Flamigo) plus 7 km eggs (Flabébé Orange Flower, Hawlucha, Mudbray, Komala) and exclusive Field Research. Ticket perks: boosted shiny odds, 4-hour Lures, 5 special trades a day at half Stardust, Tiny Compass buddy souvenir, 8-hour Party Play.",
+   "summary_ms": "Pokémon GO City Safari Munich, Germany: 26-27 Sep 2026, 10:00-18:00 CEST, seluruh bandar (kena tiket). Eevee bertopi explorer dari Special Research (boleh evolve jadi mana-mana Eeveelution), Stamp Rally 8 stamp kat Pokestop bertanda (1 Eevee setiap stamp), spawn eksklusif (Mudbray debut, Unown B/L/M/R, Hawlucha, Oranguru, Komala, Flamigo), telur 7 km, dan Field Research khas. Bonus tiket: shiny rate naik, Lure 4 jam, 5 special trade sehari separuh Stardust, souvenir Tiny Compass, Party Play 8 jam.",
+   "hotspots": [
+    {
+     "name": "Marienplatz / Viktualienmarkt",
+     "lat": 48.1374,
+     "lng": 11.5755,
+     "tip": "Highest density in Munich — old-town core, lures + gyms all day.",
+     "tip_ms": "Kepadatan tertinggi di Munich — pusat bandar lama, lure & gym sepanjang hari.",
+     "pois": 879
+    },
+    {
+     "name": "Gärtnerplatz / Isarvorstadt",
+     "lat": 48.1314,
+     "lng": 11.5755,
+     "tip": "Cafe-packed quarter just south of the old town.",
+     "tip_ms": "Kawasan penuh kafe di selatan bandar lama.",
+     "pois": 499
+    },
+    {
+     "name": "Odeonsplatz / Hofgarten",
+     "lat": 48.1423,
+     "lng": 11.5773,
+     "tip": "Gate to the Englischer Garten — big stop field, easy loops.",
+     "tip_ms": "Pintu masuk Englischer Garten — medan stop luas, senang loop.",
+     "pois": 491
+    },
+    {
+     "name": "Hauptbahnhof / Stachus",
+     "lat": 48.1402,
+     "lng": 11.561,
+     "tip": "Station + Karlsplatz shopping strip, constant traffic of players.",
+     "tip_ms": "Stesen + jalur shopping Karlsplatz, player lalu-lalang.",
+     "pois": 440
+    },
+    {
+     "name": "Schwabing / Münchner Freiheit",
+     "lat": 48.16,
+     "lng": 11.587,
+     "tip": "Student quarter + Englischer Garten north — long grind route.",
+     "tip_ms": "Kawasan pelajar + Englischer Garten utara — route grind panjang.",
+     "pois": 383
+    },
+    {
+     "name": "Theresienwiese (Oktoberfest grounds)",
+     "lat": 48.132,
+     "lng": 11.549,
+     "tip": "Only a few stops, but if Oktoberfest 2026 is still running (19 Sep–4 Oct) the Wiesn crowd makes it the liveliest lure spot in town.",
+     "tip_ms": "Stop sikit je, tapi kalau Oktoberfest 2026 masih jalan (19 Sep–4 Okt) crowd Wiesn buat tempat ni paling meriah.",
+     "pois": 98
+    }
+   ]
+  },
+  {
+   "slug": "city-safari-rio-de-janeiro-2026",
+   "city": "Rio de Janeiro",
+   "country": "Brazil",
+   "flag": "img/flags/br.svg",
+   "tz": "America/Sao_Paulo",
+   "tzAbbr": "BRT",
+   "lat": -22.9068,
+   "lng": -43.1729,
+   "days": [
+    "2026-09-26",
+    "2026-09-27"
+   ],
+   "start": "10:00",
+   "end": "18:00",
+   "price": "R$38.00",
+   "addons": [
+    {
+     "name": "Raid Lover",
+     "price": "R$23.00"
+    },
+    {
+     "name": "Egg-thusiast",
+     "price": "R$23.00"
+    },
+    {
+     "name": "Extra Day",
+     "price": "R$30.00"
+    }
+   ],
+   "img": "https://lh3.googleusercontent.com/v4ipgzZkv2FsEUCH_7xW6ecciRiBHgddJfqQmhhXT9hWXsWbkWmW2e-RGhUm6n2_ve6U6Jipmeutbq8AVIDhKCaHHYjJRL8HxOvzRmEw26s",
+   "url": "https://pokemongo.com/en/featured-in-person-events/citysafari/rio-de-janeiro",
+   "summary": "Pokémon GO City Safari Rio de Janeiro, Brazil: 26-27 Sep 2026, 10:00-18:00 BRT, citywide (ticket only). Explorer-hat Eevee from the City Safari Special Research (evolves into any Eeveelution), an 8-stamp City Safari Stamp Rally at highlighted Pokestops (one Eevee per stamp), event-only wild spawns (Mudbray debut, Unown B/L/M/R, Hawlucha, Oranguru, Komala, Flamigo) plus 7 km eggs (Flabébé Orange Flower, Hawlucha, Mudbray, Komala) and exclusive Field Research. Ticket perks: boosted shiny odds, 4-hour Lures, 5 special trades a day at half Stardust, Tiny Compass buddy souvenir, 8-hour Party Play.",
+   "summary_ms": "Pokémon GO City Safari Rio de Janeiro, Brazil: 26-27 Sep 2026, 10:00-18:00 BRT, seluruh bandar (kena tiket). Eevee bertopi explorer dari Special Research (boleh evolve jadi mana-mana Eeveelution), Stamp Rally 8 stamp kat Pokestop bertanda (1 Eevee setiap stamp), spawn eksklusif (Mudbray debut, Unown B/L/M/R, Hawlucha, Oranguru, Komala, Flamigo), telur 7 km, dan Field Research khas. Bonus tiket: shiny rate naik, Lure 4 jam, 5 special trade sehari separuh Stardust, souvenir Tiny Compass, Party Play 8 jam.",
+   "hotspots": [
+    {
+     "name": "Cinelândia / Av. Rio Branco (Centro)",
+     "lat": -22.908,
+     "lng": -43.176,
+     "tip": "Top density in Rio — theatre square, museums, wide avenue of stops.",
+     "tip_ms": "Kepadatan tertinggi di Rio — dataran teater, muzium, avenue penuh stop.",
+     "pois": 404
+    },
+    {
+     "name": "Candelária / Praça XV (Centro histórico)",
+     "lat": -22.9025,
+     "lng": -43.175,
+     "tip": "Colonial streets, ferry terminal, pack of gyms.",
+     "tip_ms": "Jalan kolonial, terminal feri, banyak gym.",
+     "pois": 312
+    },
+    {
+     "name": "Uruguaiana / Saara market",
+     "lat": -22.906,
+     "lng": -43.182,
+     "tip": "Busy market grid — cheap grind with constant spawns.",
+     "tip_ms": "Grid pasar sibuk — grind murah, spawn tak berhenti.",
+     "pois": 204
+    },
+    {
+     "name": "Flamengo / Aterro do Flamengo",
+     "lat": -22.928,
+     "lng": -43.175,
+     "tip": "Park strip along the bay — walkable stop/gym chain.",
+     "tip_ms": "Taman sepanjang teluk — rantaian stop/gym senang jalan.",
+     "pois": 227
+    },
+    {
+     "name": "Lapa / Escadaria Selarón",
+     "lat": -22.9135,
+     "lng": -43.1795,
+     "tip": "Arches + famous steps, night crowd with heavy lures.",
+     "tip_ms": "Arcos + tangga terkenal, crowd malam dengan lure banyak.",
+     "pois": 191
+    },
+    {
+     "name": "Copacabana & Leme beach",
+     "lat": -22.9645,
+     "lng": -43.178,
+     "tip": "Posto 1–4 promenade — iconic beach loop, gyms at every posto.",
+     "tip_ms": "Promenade Posto 1–4 — loop pantai ikonik, gym di setiap posto.",
+     "pois": 202
+    }
+   ]
+  }
+ ]
+}

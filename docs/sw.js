@@ -1,6 +1,6 @@
 /* PoGo Wave Radar — simple offline cache */
-const CACHE = 'pwr-v1';
-const SHELL = ['./', './index.html', './style.css', './app.js', './config.js', './cities.json', './manifest.webmanifest'];
+const CACHE = 'pwr-v2';
+const SHELL = ['./', './index.html', './style.css', './app.js', './config.js', './cities.json', './citysafari.json', './manifest.webmanifest'];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
 });

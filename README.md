@@ -27,6 +27,7 @@ If an event has ended in your area, **it's probably still live somewhere else.**
 - 🔥 **Live Now** — which events are live right now and which cities to spoof to (with coordinates ready to copy)
 - 🌊 **Wave Tracker** — pick one event, watch the wave move city by city, with local window times + coordinates. Tap **📖 Read full details** for the complete LeekDuck event page (Bonuses, Spawns, Raids, Research, GO Pass…)
 - 📅 **All Events** — full schedule from leekduck
+- 🏙️ **City Safari** — in-person paid events (Brisbane, Boston, Lisbon, Marseille, Munich, Rio, 26–27 Sep 2026): date/time window in the host city's local time **and** converted to your own timezone, plus the densest player hotspots per city (coordinates ready to copy)
 
 Data auto-updates from [leekduck.com/events](https://leekduck.com/events/) every **30 minutes** via GitHub Actions. 
 
@@ -66,6 +67,7 @@ Kalau event dah habis kat tempat kau, **kemungkinan besar masih live kat tempat 
 - 🔥 **Live Now** — event mana tengah live & bandar mana nak spoof (koordinat siap-siap)
 - 🌊 **Wave Tracker** — pilih satu event, nampak ombak bergerak bandar demi bandar, masa window tempatan + koordinat. Tekan **📖 Baca butiran penuh** untuk detail penuh event dari LeekDuck (Bonuses, Spawns, Raids, Research, GO Pass…)
 - 📅 **All Events** — full schedule dari leekduck
+- 🏙️ **City Safari** — event fizikal berbayar (Brisbane, Boston, Lisbon, Marseille, Munich, Rio, 26–27 Sep 2026): jadual waktu tempatan bandar tu **dan** tukar ke zon waktu kau, plus hotspot player paling padat setiap bandar (koordinat siap copy)
 
 Data auto-update dari [leekduck.com/events](https://leekduck.com/events/) setiap **30 minit** melalui GitHub Actions. 
 

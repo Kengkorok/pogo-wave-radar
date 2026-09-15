@@ -92,6 +92,34 @@ setTimeout(async () => {
     console.log('rows after clearing:', document.querySelectorAll('#allList .allrow').length);
   }
 
+  // ---- CITY SAFARI TAB (in-person events) ----
+  const sfBtn = Array.from(document.querySelectorAll('.tabs button')).find((b) => b.dataset.tab === 'safari');
+  if (sfBtn) sfBtn.click();
+  await sleep(250);
+  const sf = document.getElementById('safari');
+  console.log('\n=== CITY SAFARI TAB ===');
+  console.log('section hidden:', sf && sf.hidden);
+  console.log('cards:', document.querySelectorAll('#safariList .safaricard').length);
+  console.log('compare rows:', document.querySelectorAll('#safariList .scmptable tbody tr').length);
+  console.log('hotspot chips:', document.querySelectorAll('#safariList .hotrow .chip[data-coords]').length);
+  console.log('countdowns:', document.querySelectorAll('#safariList [data-cd]').length);
+  console.log('addon blocks:', document.querySelectorAll('#safariList .addons').length);
+  const sfTable = document.querySelector('#safariList .scmptable');
+  console.log('compare table:', sfTable && sfTable.textContent.replace(/\s+/g, ' ').slice(0, 420));
+  const sfFirst = document.querySelector('#safariList .safaricard');
+  console.log('first card:', sfFirst && sfFirst.textContent.replace(/\s+/g, ' ').slice(0, 260));
+  const tzSel = document.getElementById('tz');
+  if (tzSel) {
+    tzSel.value = 'Asia/Kuala_Lumpur';
+    tzSel.dispatchEvent(new window.Event('change', { bubbles: true }));
+    await sleep(200);
+    const tbl2 = document.querySelector('#safariList .scmptable');
+    console.log('\n=== after tz -> Asia/Kuala_Lumpur ===');
+    console.log('header:', tbl2 && tbl2.querySelector('thead tr').textContent.replace(/\s+/g, ' '));
+    const rows2 = tbl2 ? Array.from(tbl2.querySelectorAll('tbody tr')) : [];
+    rows2.slice(0, 3).forEach((r) => console.log('  ', r.textContent.replace(/\s+/g, ' ')));
+  }
+
   // click banner -> should switch to wave view
   const btn = bar && bar.querySelector('.nextbtn');
   if (btn) {
