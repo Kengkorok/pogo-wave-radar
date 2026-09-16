@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-16T09:48:32.235298+00:00",
+ "fetched_at": "2026-09-16T14:46:07.912908+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -25,18 +25,6 @@
    "summary": "Mega Beedrill will be in Mega Raids from September 8, 2026 at 6 am to September 15, 2026 at 10 pm local time.",
    "url": "https://leekduck.com/events/mega-beedrill-in-mega-raids-september-2026/",
    "summary_ms": "Mega Beedrill akan berada dalam Mega Raids dari 8 September 2026, 6 pagi hingga 15 September 2026, 10 malam waktu tempatan."
-  },
-  {
-   "slug": "mega-squads",
-   "name": "Mega Squads",
-   "type": "event",
-   "start": "2026-09-08T10:00:00",
-   "end": "2026-09-14T20:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-08-mega-squads/mega-squads.jpg",
-   "summary": "Pick up where Mega Finale leaves off, and get energized for the Mega Squads event! The Mega Squads event will take place from September 8, 2026 at 10 am to September 14, 2026 at 8 pm local time.",
-   "url": "https://leekduck.com/events/mega-squads/",
-   "summary_ms": "Sambung dari tempat Mega Finale berakhir, dan bersiap untuk acara Mega Squads! Acara Mega Squads akan berlangsung dari 8 September 2026, jam 10 pagi hingga 14 September 2026, jam 8 malam waktu tempatan."
   },
   {
    "slug": "go-pass-september-2026",
@@ -109,18 +97,6 @@
    "summary": "Mega Houndoom will be in Mega Raids from September 11, 2026 at 6 am to September 15, 2026 at 10 pm local time.",
    "url": "https://leekduck.com/events/mega-houndoom-in-mega-raids-september-2026/",
    "summary_ms": "Mega Houndoom akan berada dalam Mega Raids dari 11 September 2026, jam 6 pagi hingga 15 September 2026, jam 10 malam waktu tempatan."
-  },
-  {
-   "slug": "max-mondays-2026-09-14",
-   "name": "Dynamax Rhyhorn during Max Monday",
-   "type": "max-mondays",
-   "start": "2026-09-14T06:00:00",
-   "end": "2026-09-14T21:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
-   "summary": "These Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokémon. On September 14, 2026 , the featured Dynamax Pokémon is Rhyhorn . Rhyhorn",
-   "url": "https://leekduck.com/events/max-mondays-2026-09-14/",
-   "summary_ms": "Dynamax Pokémon ini mungkin muncul dalam Max Battles sepanjang musim ini. Max Battles akan tersedia dari 6:00 pagi hingga 9:00 malam waktu tempatan pada hari Isnin. Power Spots akan segar semula dengan lebih kerap. Power Spots tambahan akan aktif pada hari Isnin berbanding hari lain dalam minggu. Max Battles akan berputar untuk menampilkan Dynamax Pokémon yang berbeza. Pada 14 September 2026, Dynamax Pokémon yang ditampilkan ialah Rhyhorn. Rhyhorn"
   },
   {
    "slug": "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
