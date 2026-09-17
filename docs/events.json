@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-17T05:58:46.984846+00:00",
+ "fetched_at": "2026-09-17T11:32:28.009656+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -13,18 +13,6 @@
    "summary": "The Pokémon GO and LEGO Group partnership continues for Trainers in the US, UK, Poland, France, Germany, and Australia! Visit participating LEGO Store locations for raids, a LEGO-themed stamp rally, event stickers, and LEGO Pokémon SMART Play. The LEGO Stores and Pokémon GO event will take place from August 3, 2026 at 10 am to September 30, 2026 at 11 pm.",
    "url": "https://leekduck.com/events/lego-pokemon-go-2026/",
    "summary_ms": "Kerjasama Pokémon GO dan LEGO Group diteruskan untuk Trainer di US, UK, Poland, Perancis, Jerman, dan Australia! Kunjungi kedai LEGO yang menyertai untuk raid, stamp rally bertema LEGO, sticker event, dan LEGO Pokémon SMART Play. Event LEGO Stores dan Pokémon GO akan berlangsung dari tarikh tersebut."
-  },
-  {
-   "slug": "mega-beedrill-in-mega-raids-september-2026",
-   "name": "Mega Beedrill in Mega Raids",
-   "type": "raid-battles",
-   "start": "2026-09-08T06:00:00",
-   "end": "2026-09-15T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
-   "summary": "Mega Beedrill will be in Mega Raids from September 8, 2026 at 6 am to September 15, 2026 at 10 pm local time.",
-   "url": "https://leekduck.com/events/mega-beedrill-in-mega-raids-september-2026/",
-   "summary_ms": "Mega Beedrill akan berada dalam Mega Raids dari 8 September 2026, 6 pagi hingga 15 September 2026, 10 malam waktu tempatan."
   },
   {
    "slug": "go-pass-september-2026",
@@ -51,18 +39,6 @@
    "summary_ms": "Selamat datang ke Pokémon GO: Twilight Trails! Dalam Pokémon GO, Seasons ialah tempoh masa yang menampilkan acara baharu, kemunculan sulung Pokémon, dan kejutan yang semuanya mengikut tema tertentu. Apabila Seasons berubah, anda mungkin akan menemui Pokémon berbeza muncul di kawasan anda dan menetas dari Eggs. Pastikan anda meneroka semasa setiap Season dalam permainan untuk mengumpul dan melatih seberapa banyak Pokémon berbeza yang anda boleh! Anda juga akan menikmati bonus istimewa semasa melakukannya."
   },
   {
-   "slug": "zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026",
-   "name": "Zacian (Hero of Many Battles) in 5-star Raid Battles",
-   "type": "raid-battles",
-   "start": "2026-09-09T06:00:00",
-   "end": "2026-09-15T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/zacian-and-zamazenta-2.jpg",
-   "summary": "Zacian (Hero of Many Battles) will be in five-star raid battles from September 9, 2026 to September 15, 2026. Raid Hours There will also be a Raid Hour featuring Zacian (Hero of Many Battles) from 6:00 p.m. to 7:00 p.m. local time on September 9.",
-   "url": "https://leekduck.com/events/zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026/",
-   "summary_ms": "Zacian (Hero of Many Battles) akan berada dalam pertarungan raid lima bintang dari 9 September 2026 hingga 15 September 2026. Waktu Raid Akan ada juga Raid Hour yang menampilkan Zacian (Hero of Many Battles) dari 6:00 petang hingga 7:00 malam waktu tempatan pada 9 September."
-  },
-  {
    "slug": "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
    "name": "Shadow Thundurus (Incarnate Forme) in Shadow Raids",
    "type": "raid-battles",
@@ -73,18 +49,6 @@
    "summary": "Shadow Thundurus (Incarnate Forme) will appear in five-star Shadow Raids every weekend from September 9, 2026 to October 6, 2026. If you’re lucky, you may encounter Shiny Shadow Thundurus (Incarnate Forme)!",
    "url": "https://leekduck.com/events/shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026/",
    "summary_ms": "Shadow Thundurus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari 9 September 2026 hingga 6 Oktober 2026. Jika anda bernasib baik, anda mungkin akan bertemu dengan Shiny Shadow Thundurus (Incarnate Forme)!"
-  },
-  {
-   "slug": "mega-houndoom-in-mega-raids-september-2026",
-   "name": "Mega Houndoom in Mega Raids",
-   "type": "raid-battles",
-   "start": "2026-09-11T06:00:00",
-   "end": "2026-09-15T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
-   "summary": "Mega Houndoom will be in Mega Raids from September 11, 2026 at 6 am to September 15, 2026 at 10 pm local time.",
-   "url": "https://leekduck.com/events/mega-houndoom-in-mega-raids-september-2026/",
-   "summary_ms": "Mega Houndoom akan berada dalam Mega Raids dari 11 September 2026, jam 6 pagi hingga 15 September 2026, jam 10 malam waktu tempatan."
   },
   {
    "slug": "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
