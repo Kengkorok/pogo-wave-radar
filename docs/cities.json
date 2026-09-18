@@ -128,20 +128,20 @@
     "note": "UTC-3"
   },
   {
-    "name": "Chancay",
-    "flag": "img/flags/pe.svg",
-    "tz": "America/Lima",
-    "lat": -11.5714,
-    "lng": -77.2672,
-    "note": "UTC-5"
-  },
-  {
     "name": "New York",
     "flag": "img/flags/us.svg",
     "tz": "America/New_York",
     "lat": 40.7128,
     "lng": -74.006,
     "note": "UTC-4/-5"
+  },
+  {
+    "name": "Chancay",
+    "flag": "img/flags/pe.svg",
+    "tz": "America/Lima",
+    "lat": -11.5714,
+    "lng": -77.2672,
+    "note": "UTC-5"
   },
   {
     "name": "Mexico City",
@@ -160,19 +160,19 @@
     "note": "UTC-7/-8"
   },
   {
-    "name": "Hawaii (Honolulu)",
-    "flag": "img/flags/us.svg",
-    "tz": "Pacific/Honolulu",
-    "lat": 21.30649,
-    "lng": -157.8587,
-    "note": "UTC-10 — wave paling akhir"
-  },
-  {
     "name": "San Francisco",
     "flag": "img/flags/us.svg",
     "tz": "America/Los_Angeles",
     "lat": 37.7844,
     "lng": -122.401,
     "note": "UTC-7/-8 — venue Worlds/event fizikal"
+  },
+  {
+    "name": "Hawaii (Honolulu)",
+    "flag": "img/flags/us.svg",
+    "tz": "Pacific/Honolulu",
+    "lat": 21.30649,
+    "lng": -157.8587,
+    "note": "UTC-10 — wave paling akhir"
   }
 ]

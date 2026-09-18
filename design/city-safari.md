@@ -81,6 +81,22 @@ nothing is left the tab button hides itself and the app falls back to Live Now. 
 automatically as soon as a new edition lands in `docs/citysafari.json`. A 60 s interval inside
 `startTicker()` re-checks, so the tab drops without needing a reload.
 
+## Ordering — everything runs east → west
+
+The whole app is built around one ladder: **Kiribati (UTC+14) first, Hawaii (UTC−10) last**.
+
+- **`docs/cities.json`** is the ladder itself. `scripts/sort_cities.py` re-sorts it by UTC offset
+  (descending, stable so same-offset groups keep their order) whenever a city is added — it also
+  drops any hand-edit inversion (San Francisco used to sit *after* Hawaii, Chancay before New York).
+- **Wave Tracker** rows are sorted by that ladder only (no status grouping): the 🟢/🟡/⚫ icons show
+  where the wave is right now, so the live band visibly slides down a clean east → west list.
+  `sortCitiesByWave()` in app.js applies the same order client-side, so the view stays correct even
+  if the JSON is edited out of order.
+- **City Safari** host cities follow the same rule: UTC offset descending, then longitude descending
+  (`safariOffset()` + `-lng`), i.e. Brisbane → Munich → Marseille → Lisbon → Rio → Boston.
+- **Live Now** still groups live vs upcoming (that view answers "what can I jump into now"); the
+  chips inside a card follow the ladder.
+
 ## Not done / next
 
 - The pages are curated by hand; a scraper (`scripts/scrape_citysafari.py`) could extract

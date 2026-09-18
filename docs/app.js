@@ -183,6 +183,16 @@ function getUserTZ() {
   if (USER_TZ) return USER_TZ;
   return Intl.DateTimeFormat().resolvedOptions().timeZone || 'Asia/Kuala_Lumpur';
 }
+/* Wave order guard: easternmost city first (Kiribati → Hawaii), even when cities.json is
+   hand-edited out of order. Stable: same-offset cities keep their file order.
+   Keep the file itself tidy with scripts/sort_cities.py. */
+function sortCitiesByWave(list) {
+  const now = new Date();
+  return list
+    .map((c, i) => ({ c, i }))
+    .sort((a, b) => (tzOffsetMs(b.c.tz, now) - tzOffsetMs(a.c.tz, now)) || (a.i - b.i))
+    .map((x) => x.c);
+}
 function fmtTime(ms, tz, opts) {
   const base = (opts && (opts.dateStyle || opts.timeStyle))
     ? opts
@@ -386,16 +396,16 @@ function renderWave() {
   const sel = $('#waveSel');
   const ev = EVENTS.find((e) => e.slug === sel.value);
   if (!ev) { $('#waveList').innerHTML = ''; return; }
-  const now = new Date();
+  /* Wave order: always the timezone ladder from cities.json (Kiribati → Hawaii), never
+     grouped by status — the 🟢/🟡/⚫ icons show where the wave is right now, so the list
+     itself stays a clean east → west sweep. */
+  const waveIdx = (city) => {
+    const i = CITIES.findIndex((c) => c.name === city.name);
+    return i === -1 ? CITIES.length : i;
+  };
   const states = cityStates(ev)
     .map((s) => ({ ...s, coords: s.city.lat.toFixed(4) + ', ' + s.city.lng.toFixed(4) }))
-    .sort((a, b) => {
-      const order = { live: 0, upcoming: 1, ended: 2 };
-      if (order[a.st] !== order[b.st]) return order[a.st] - order[b.st];
-      if (a.st === 'live') return b.e - a.e; // most time left first
-      if (a.st === 'upcoming') return a.s - b.s;
-      return 0;
-    });
+    .sort((a, b) => waveIdx(a.city) - waveIdx(b.city));
   const suggestion = states.find((s) => s.st === 'live');
   const myTZ = getUserTZ();
   $('#waveList').innerHTML = '<div class="wavehead">'
@@ -565,6 +575,13 @@ function safariCompare(s, e, cityTZ) {
 function safariDayLbl(ms, tz) {
   return new Intl.DateTimeFormat('en-MY', { weekday: 'short', day: 'numeric', month: 'short', timeZone: tz }).format(new Date(ms));
 }
+/* Wave order for the host cities: UTC offset first (east → west, like cities.json),
+   then longitude so same-offset neighbours still run east → west. */
+function safariOffset(ev) {
+  if (typeof ev.utcOffsetMin === 'number') return ev.utcOffsetMin;
+  const day = (ev.days && ev.days[0]) || '2026-01-01';
+  return Math.round(tzOffsetMs(ev.tz, new Date(wallMs(ev.tz, day + 'T12:00:00'))) / 60000);
+}
 function safariTable(rows) {
   return '<h2 class="group-title">' + t('safariCompareTitle') + ' <span class="cnt">26–27 Sep</span></h2>'
     + '<table class="scmptable"><thead><tr><th>' + t('safariHdrCity') + '</th><th>' + t('safariHdrLocal') + '</th><th>' + t('safariHdrYours') + ' · ' + esc(getUserTZ()) + '</th></tr></thead><tbody>'
@@ -632,7 +649,7 @@ function renderSafari() {
      lands in citysafari.json). */
   const rows = SAFARI.map((ev) => ({ ev, ...safariStatus(ev) }))
     .filter((r) => r.st !== 'ended')
-    .sort((a, b) => a.w.s - b.w.s);
+    .sort((a, b) => (safariOffset(b.ev) - safariOffset(a.ev)) || (b.ev.lng - a.ev.lng));
   if (tabBtn) tabBtn.hidden = rows.length === 0;
   if (!rows.length) {
     if (sec && !sec.hidden) switchTab('live'); // was open -> leave before hiding
@@ -772,7 +789,7 @@ async function init() {
       fetch('nests.json').then((r) => r.json()).catch(() => ({ nests: [], migration: null })),
       fetch('citysafari.json').then((r) => r.json()).catch(() => ({ events: [] })),
     ]);
-    CITIES = c; EVENTS = (e.events || []).concat(m); FETCHED_AT = e.fetched_at;
+    CITIES = sortCitiesByWave(c); EVENTS = (e.events || []).concat(m); FETCHED_AT = e.fetched_at;
     NESTS = (n && n.nests) || []; NESTS_META = n || null;
     SAFARI = (sf && sf.events) || [];
     ensureDetails().then(() => { if (!$('#wave').hidden) renderWave(); });
