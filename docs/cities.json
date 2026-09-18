@@ -56,6 +56,14 @@
     "note": "UTC+9"
   },
   {
+    "name": "Taipei (Main Station)",
+    "flag": "img/flags/tw.svg",
+    "tz": "Asia/Taipei",
+    "lat": 25.048323,
+    "lng": 121.517228,
+    "note": "UTC+8 — Taipei Main Station (Zhongzheng)"
+  },
+  {
     "name": "KLCC Kuala Lumpur",
     "flag": "img/flags/my.svg",
     "tz": "Asia/Kuala_Lumpur",
@@ -70,6 +78,30 @@
     "lat": 1.2834,
     "lng": 103.8607,
     "note": "UTC+8"
+  },
+  {
+    "name": "Jakarta (Blok M)",
+    "flag": "img/flags/id.svg",
+    "tz": "Asia/Jakarta",
+    "lat": -6.2441,
+    "lng": 106.8006,
+    "note": "UTC+7 — Blok M (Kebayoran Baru)"
+  },
+  {
+    "name": "Bangkok (Khao San)",
+    "flag": "img/flags/th.svg",
+    "tz": "Asia/Bangkok",
+    "lat": 13.761,
+    "lng": 100.497,
+    "note": "UTC+7 — Khao San / Banglamphu"
+  },
+  {
+    "name": "Malé (Maldives)",
+    "flag": "img/flags/mv.svg",
+    "tz": "Indian/Maldives",
+    "lat": 4.175,
+    "lng": 73.515,
+    "note": "UTC+5 — Malé (Henveiru)"
   },
   {
     "name": "Dubai",
@@ -104,6 +136,14 @@
     "note": "UTC+1/+2"
   },
   {
+    "name": "Paris (Les Halles)",
+    "flag": "img/flags/fr.svg",
+    "tz": "Europe/Paris",
+    "lat": 48.863,
+    "lng": 2.347,
+    "note": "UTC+2/+1 — Châtelet–Les Halles"
+  },
+  {
     "name": "Seville",
     "flag": "img/flags/es.svg",
     "tz": "Europe/Madrid",
@@ -118,6 +158,14 @@
     "lat": 41.661012,
     "lng": -0.893407,
     "note": "UTC+1/+2"
+  },
+  {
+    "name": "London (Leicester Square)",
+    "flag": "img/flags/gb.svg",
+    "tz": "Europe/London",
+    "lat": 51.512,
+    "lng": -0.129,
+    "note": "UTC+1/+0 — Leicester Square / Chinatown"
   },
   {
     "name": "Sao Paulo",
