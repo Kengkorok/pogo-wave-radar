@@ -38,9 +38,9 @@ Data auto-updates from [leekduck.com/events](https://leekduck.com/events/) every
 3. Set your timezone (auto-detect is usually correct)
 4. Event live → tap a city → **📋 copy coords** → paste into GPS Joystick
 
-**Major cities (19):** Kiribati · Auckland · Sydney · Tokyo · Nagoya · Osaka · Seoul · KLCC · Marina Bay Sands · Dubai · Izmir · Larissa · Budapest · Seville · Zaragoza · São Paulo · Chancay · New York · California (LA)
+**Major cities (22, in wave order — Kiribati first, Hawaii last):** Kiribati · Auckland · Sydney · Tokyo · Nagoya · Osaka · Seoul · KLCC · Marina Bay Sands · Dubai · Izmir · Larissa · Budapest · Seville · Zaragoza · São Paulo · New York · Chancay · Mexico City · California (LA) · San Francisco · Hawaii (Honolulu)
 
-Want to add/change a city? Edit `docs/cities.json` (name, IANA timezone, lat/lng).
+Want to add/change a city? Edit `docs/cities.json` (name, IANA timezone, lat/lng), then run `python scripts/sort_cities.py` — it re-sorts the file into wave order (UTC offset, east → west), so the list always starts with Kiribati and ends with Hawaii.
 
 ### ☕ Donations
 
@@ -78,7 +78,7 @@ Data auto-update dari [leekduck.com/events](https://leekduck.com/events/) setiap
 3. Set zon anda (auto-detect biasanya dah betul)
 4. Event live → tekan bandar → **📋 copy koordinat** → paste kat GPS Joystick, Teleport PGS
 
-**Bandar utama (19):** Kiribati · Auckland · Sydney · Tokyo · Nagoya · Osaka · Seoul · KLCC · Marina Bay Sands · Dubai · Izmir · Larissa · Budapest · Seville · Zaragoza · São Paulo · Chancay · New York · California (LA)
+**Bandar utama (22, ikut turutan ombak — Kiribati dulu, Hawaii last):** Kiribati · Auckland · Sydney · Tokyo · Nagoya · Osaka · Seoul · KLCC · Marina Bay Sands · Dubai · Izmir · Larissa · Budapest · Seville · Zaragoza · São Paulo · New York · Chancay · Mexico City · California (LA) · San Francisco · Hawaii (Honolulu)
 
 
 ### ☕ Belanje Kopi

@@ -113,6 +113,7 @@ setTimeout(async () => {
   console.log('addon blocks:', document.querySelectorAll('#safariList .addons').length);
   const sfTable = document.querySelector('#safariList .scmptable');
   console.log('compare table:', sfTable && sfTable.textContent.replace(/\s+/g, ' ').slice(0, 420));
+  console.log('safari city order:', Array.from(document.querySelectorAll('#safariList .scmptable tbody tr td:first-child')).map((e) => e.textContent.trim()).join(' → '));
   const sfFirst = document.querySelector('#safariList .safaricard');
   console.log('first card:', sfFirst && sfFirst.textContent.replace(/\s+/g, ' ').slice(0, 260));
   // status maths: a finished edition must read 'ended' (that is what the filter uses)
@@ -153,6 +154,18 @@ setTimeout(async () => {
     console.log('\n=== after banner click ===');
     console.log('wave hidden:', wave.hidden);
     console.log('waveSel:', document.getElementById('waveSel').value);
+    // ---- WAVE CITY ORDER (must run east → west: Kiribati … Hawaii) ----
+    const wsel = document.getElementById('waveSel');
+    if (wsel) {
+      for (const opt of Array.from(wsel.options).slice(0, 12)) {
+        wsel.value = opt.value;
+        wsel.dispatchEvent(new window.Event('change', { bubbles: true }));
+        await sleep(80);
+        if (document.querySelectorAll('#waveList .wcity').length > 3) break;
+      }
+    }
+    console.log('\n=== WAVE CITY ORDER (' + (wsel && wsel.value) + ') ===');
+    console.log(Array.from(document.querySelectorAll('#waveList .wcity')).map((e) => e.textContent.trim().replace(/\s+/g, ' ')).join(' | '));
     process.exit(0);
   } else {
     console.log('NO BANNER BUTTON!');

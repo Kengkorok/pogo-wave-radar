@@ -25,6 +25,7 @@ import urllib.parse
 import urllib.request
 import collections
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "docs", "citysafari.json")
@@ -226,6 +227,12 @@ def poi_counts(cache_dir: str, slug: str, hotspots) -> list:
     return out
 
 
+def utc_offset_min(tz: str) -> int:
+    """UTC offset of a host city at the event start (DST-correct)."""
+    ref = datetime(2026, 9, 26, 10, 0, tzinfo=ZoneInfo(tz))
+    return int(ref.utcoffset().total_seconds() // 60)
+
+
 def verify(cache_dir: str, keys=None) -> None:
     """Exact per-hotspot POI count: one small `out count` query per hotspot."""
     os.makedirs(cache_dir, exist_ok=True)
@@ -275,6 +282,7 @@ def build(cache_dir: str, keys=None):
             "lat": meta["lat"], "lng": meta["lng"],
             "days": EVENT_DAYS, "start": EVENT_START, "end": EVENT_END,
             "price": meta["price"], "addons": [{"name": n, "price": p} for n, p in meta["addons"]],
+            "utcOffsetMin": utc_offset_min(meta["tz"]),
             "img": IMAGES.get(slug), "url": SOURCE_BASE + slug,
             "summary": "Pokémon GO City Safari %s, %s: 26-27 Sep 2026, 10:00-18:00 %s, citywide (ticket only). %s" % (
                 meta["city"], "Australia" if slug == "brisbane" else meta["country"], meta["tzAbbr"], SUMMARY_COMMON_EN),
@@ -282,7 +290,7 @@ def build(cache_dir: str, keys=None):
                 meta["city"], meta["country"], meta["tzAbbr"], SUMMARY_COMMON_MS),
             "hotspots": hotspots,
         })
-    events.sort(key=lambda e: e["slug"])
+    events.sort(key=lambda e: (-e["utcOffsetMin"], -e["lng"]))  # wave order: east -> west
     doc = {
         "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "source": SOURCE_BASE,
