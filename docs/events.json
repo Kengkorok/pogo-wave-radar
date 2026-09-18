@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-18T11:45:10.532629+00:00",
+ "fetched_at": "2026-09-18T16:15:23.632326+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -109,6 +109,18 @@
    "summary": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time. September 17 : The featured Pokémon is Charmander wearing Friede’s goggles and the special bonus is 2× Catch Stardust .",
    "url": "https://leekduck.com/events/pokemonspotlighthour2026-09-17/",
    "summary_ms": "Pokémon Spotlight Hour akan menampilkan Pokémon yang belum diumumkan dan bonus istimewa selama satu jam pada pukul 6:00 petang waktu tempatan. 17 September : Pokémon yang ditampilkan belum diumumkan lagi, dan bonus istimewa ialah 2× Catch Stardust ."
+  },
+  {
+   "slug": "pokemon-horizons-bonus-timed-research-2026",
+   "name": "Pokémon Horizons Bonus Timed Research",
+   "type": "research",
+   "start": "2026-09-18T00:00:00",
+   "end": "2026-09-22T20:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-18-pokemon-horizons-bonus-timed-research-2026/pokemon-horizons-bonus-timed-research-2026.png",
+   "summary": "Celebrate Pokémon Horizons: The Series with bonus Timed Research! Redeem the code shared during the anime’s September 18 broadcast in Japan to encounter Charmander wearing Friede’s goggles with a Special Background . Code: 0004POKEMONGO Quick Redeem: Redeem on the Pokémon GO Web Store Redeem the code, complete the tasks, and claim all rewards by Tuesday, September 22, 2026, at 8:00 p.m. local time . This research is part of the Pokémon Horizons: The Series Celebration Event .",
+   "url": "https://leekduck.com/events/pokemon-horizons-bonus-timed-research-2026/",
+   "summary_ms": null
   },
   {
    "slug": "staraptor-super-mega-raid-day-2026",
