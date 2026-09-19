@@ -31,7 +31,12 @@ function nestSprite(dex) {
 /* ---------- i18n ---------- */
 const I18N = {
   en: {
-    title: 'PoGo Wave Radar',
+    aboutTitle: "About PoGo Wave Radar",
+    aboutIntro: "PoGo Wave Radar is a free Pokémon GO event tracker. Check live and upcoming events, compare city time zones and follow local-time events as they move around the world.",
+    aboutFeatures: "Use Live Now for active events, Wave Tracker for city-by-city start and end times, and All Events for the schedule. You can also explore Pokémon nests and City Safari schedules. The interface supports English and Bahasa Melayu.",
+    aboutWave: "Community Day, Raid Hour and Spotlight Hour often follow local time, so an event can finish in one city while it is still running in another. Choose your timezone to compare event times. Global events start at the same moment worldwide.",
+    aboutSource: "PoGo Wave Radar is an independent, open-source project by <a href=\"https://github.com/Kengkorok\">Kengkorok</a>. <a href=\"https://github.com/Kengkorok/pogo-wave-radar\">View the PoGo Wave Radar GitHub repository</a>. Event information comes from <a href=\"https://leekduck.com/events/\">LeekDuck</a>; check the event details for ticket and participation requirements.",
+    title: 'PoGo Wave Radar — Pokémon GO Event & Time Zone Tracker',
     tagline: 'Never miss a Pokémon GO event again — chase the wave across time zones',
     tzLabel: 'Your timezone',
     pvpLabel: 'Show PvP / GBL (hidden by default)',
@@ -84,7 +89,12 @@ const I18N = {
     qrName: 'Maybank DuitNow QR',
   },
   ms: {
-    title: 'Radar Ombak PoGo',
+    aboutTitle: "Tentang PoGo Wave Radar",
+    aboutIntro: "PoGo Wave Radar ialah penjejak event Pokémon GO percuma. Semak event yang sedang berlangsung dan akan datang, bandingkan zon waktu bandar dan ikuti event waktu tempatan di seluruh dunia.",
+    aboutFeatures: "Guna Live Sekarang untuk event aktif, Wave Tracker untuk masa mula dan tamat mengikut bandar, serta Semua Event untuk jadual. Anda juga boleh semak sarang Pokémon dan jadual City Safari. Antara muka menyokong English dan Bahasa Melayu.",
+    aboutWave: "Community Day, Raid Hour dan Spotlight Hour selalunya mengikut waktu tempatan. Jadi, event boleh tamat di satu bandar tetapi masih berlangsung di bandar lain. Pilih zon waktu anda untuk membandingkan masa event. Event global pula bermula serentak di seluruh dunia.",
+    aboutSource: "PoGo Wave Radar ialah projek bebas dan sumber terbuka oleh <a href=\"https://github.com/Kengkorok\">Kengkorok</a>. <a href=\"https://github.com/Kengkorok/pogo-wave-radar\">Lihat repositori GitHub PoGo Wave Radar</a>. Maklumat event bersumberkan <a href=\"https://leekduck.com/events/\">LeekDuck</a>; semak butiran event untuk syarat tiket dan penyertaan.",
+    title: 'PoGo Wave Radar — Penjejak Event & Zon Waktu Pokémon GO',
     tagline: 'Jangan terlepas event Pokémon GO lagi — chase ombak ikut zon waktu',
     tzLabel: 'Zon kau',
     pvpLabel: 'Tunjuk PvP / GBL (disorok secara default)',

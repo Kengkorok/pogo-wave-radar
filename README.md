@@ -4,6 +4,8 @@
 
 # 🌊 PoGo Wave Radar
 
+[**PoGo Wave Radar — Pokémon GO Event & Time Zone Tracker**](https://kengkorok.github.io/pogo-wave-radar/)
+
 **Never miss a Pokémon GO event again.** Chase the event wave across time zones — pick a city, copy coords, spoof!
 
 [![Live Site](https://img.shields.io/badge/🌊-Open_App-blueviolet?style=for-the-badge)](https://kengkorok.github.io/pogo-wave-radar/)

@@ -4,8 +4,38 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b1220">
-<meta name="description" content="PoGo Wave Radar — never miss a Pokémon GO event. Chase the event wave across time zones, pick a city, copy coords, spoof!">
-<title>PoGo Wave Radar</title>
+<meta name="description" content="Track Pokémon GO events with PoGo Wave Radar. Follow live events across time zones, Community Days, Raid Hours, Spotlight Hours, nests and City Safari schedules.">
+<title>PoGo Wave Radar — Pokémon GO Event &amp; Time Zone Tracker</title>
+<link rel="canonical" href="https://kengkorok.github.io/pogo-wave-radar/">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PoGo Wave Radar">
+<meta property="og:title" content="PoGo Wave Radar — Pokémon GO Event &amp; Time Zone Tracker">
+<meta property="og:description" content="Track Pokémon GO events with PoGo Wave Radar. Follow live events across time zones, Community Days, Raid Hours, Spotlight Hours, nests and City Safari schedules.">
+<meta property="og:url" content="https://kengkorok.github.io/pogo-wave-radar/">
+<meta property="og:image" content="https://kengkorok.github.io/pogo-wave-radar/img/1-app-home.png">
+<meta property="og:image:alt" content="PoGo Wave Radar showing Pokémon GO events and city time zones">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PoGo Wave Radar",
+  "alternateName": "Pogo Wave Radar",
+  "url": "https://kengkorok.github.io/pogo-wave-radar/",
+  "description": "Track Pokémon GO events with PoGo Wave Radar. Follow live events across time zones, Community Days, Raid Hours, Spotlight Hours, nests and City Safari schedules.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript for live event tracking",
+  "inLanguage": ["en", "ms"],
+  "isAccessibleForFree": true,
+  "creator": {
+    "@type": "Person",
+    "name": "Kengkorok",
+    "url": "https://github.com/Kengkorok"
+  }
+}
+</script>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/svg+xml" href="img/icon.svg">
 <link rel="stylesheet" href="style.css">
@@ -82,6 +112,15 @@
     <div id="safariList"><div class="empty" data-i18n="loading">Loading…</div></div>
   </section>
 </main>
+
+<section class="about" aria-labelledby="about-title">
+  <h2 id="about-title" data-i18n="aboutTitle">About PoGo Wave Radar</h2>
+  <p data-i18n="aboutIntro">PoGo Wave Radar is a free Pokémon GO event tracker. Check live and upcoming events, compare city time zones and follow local-time events as they move around the world.</p>
+  <p data-i18n="aboutFeatures">Use Live Now for active events, Wave Tracker for city-by-city start and end times, and All Events for the schedule. You can also explore Pokémon nests and City Safari schedules. The interface supports English and Bahasa Melayu.</p>
+  <p data-i18n="aboutWave">Community Day, Raid Hour and Spotlight Hour often follow local time, so an event can finish in one city while it is still running in another. Choose your timezone to compare event times. Global events start at the same moment worldwide.</p>
+  <p data-i18n="aboutSource">PoGo Wave Radar is an independent, open-source project by <a href="https://github.com/Kengkorok">Kengkorok</a>. <a href="https://github.com/Kengkorok/pogo-wave-radar">View the PoGo Wave Radar GitHub repository</a>. Event information comes from <a href="https://leekduck.com/events/">LeekDuck</a>; check the event details for ticket and participation requirements.</p>
+  <noscript><p>Enable JavaScript to use the live event tracker. You can still read about PoGo Wave Radar here and browse the GitHub repository or LeekDuck event schedule above.</p></noscript>
+</section>
 
 <footer>
   <p data-i18n="footerData">Event data from <a href="https://leekduck.com/events/" target="_blank" rel="noopener">leekduck.com</a> · updated <span id="fetched">—</span></p>
