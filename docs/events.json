@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-21T14:29:05.649635+00:00",
+ "fetched_at": "2026-09-21T19:42:29.337244+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -336,7 +336,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-04-world-space-week-2026/world-space-week-2026.jpg",
    "summary": "Blast off with Astronaut Pikachu during World Space Week! This new costumed Pokémon makes its Pokémon GO debut in raids and free Timed Research. World Space Week takes place from Sunday, October 4, 2026, at 12:00 a.m. to Saturday, October 10, 2026, at 11:59 p.m. local time .",
    "url": "https://leekduck.com/events/world-space-week-2026/",
-   "summary_ms": null
+   "summary_ms": "Berlepas dengan Astronaut Pikachu semasa World Space Week! Pokémon berkostum baharu ini membuat penampilan sulungnya dalam Pokémon GO melalui raid dan Timed Research percuma. World Space Week berlangsung dari Ahad, 4 Oktober 2026, 12:00 a.m. hingga Sabtu, 10 Oktober 2026, 11:59 p.m. waktu tempatan ."
   },
   {
    "slug": "max-mondays-2026-10-05",
@@ -430,7 +430,7 @@
    "end": "2026-10-10T17:00:00",
    "local_time": true,
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-10-october-communityday2026/zorua-october-cd-2026.png",
-   "summary": "The October Community Day event will take place on October 10, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
+   "summary": "Zorua, the Tricky Fox Pokémon, will be featured during October Community Day!",
    "url": "https://leekduck.com/events/october-communityday2026/",
    "summary_ms": "Event October Community Day akan berlangsung pada 10 Oktober 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
   },
@@ -610,7 +610,7 @@
    "end": "2026-10-24T17:00:00",
    "local_time": true,
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
-   "summary": "The Max Battle Day event will take place on October 24, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
+   "summary": "The Dynamax Max Battle Day event will take place on October 24, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
    "url": "https://leekduck.com/events/max-battle-day-october-24-2026/",
    "summary_ms": "Event Max Battle Day akan berlangsung pada 24 Oktober 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
   },
