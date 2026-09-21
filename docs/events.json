@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-21T07:03:40.264581+00:00",
+ "fetched_at": "2026-09-21T14:29:05.649635+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -109,18 +109,6 @@
    "summary": "Celebrate Pokémon Horizons: The Series with bonus Timed Research! Redeem the code shared during the anime’s September 18 broadcast in Japan to encounter Charmander wearing Friede’s goggles with a Special Background . Code: 0004POKEMONGO Quick Redeem: Redeem on the Pokémon GO Web Store Redeem the code, complete the tasks, and claim all rewards by Tuesday, September 22, 2026, at 8:00 p.m. local time . This research is part of the Pokémon Horizons: The Series Celebration Event .",
    "url": "https://leekduck.com/events/pokemon-horizons-bonus-timed-research-2026/",
    "summary_ms": "Sambut Pokémon Horizons: The Series dengan Timed Research bonus! Tebus kod yang dikongsi semasa siaran anime pada 18 September di Jepun untuk bertemu Charmander yang memakai gogal Friede dengan Special Background . Kod: 0004POKEMONGO Tebus Pantas: Tebus di Pokémon GO Web Store Tebus kod, selesaikan tugasan, dan tuntut semua ganjaran menjelang Selasa, 22 September 2026, pada 8:00 p.m. waktu tempatan . Research ini adalah sebahagian daripada Pokémon Horizons: The Series Celebration Event ."
-  },
-  {
-   "slug": "staraptor-super-mega-raid-day-2026",
-   "name": "Staraptor Super Mega Raid Day",
-   "type": "raid-day",
-   "start": "2026-09-19T14:00:00",
-   "end": "2026-09-19T17:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-19-staraptor-super-mega-raid-day-2026/staraptor-super-mega-raid-day-2026.jpg",
-   "summary": "Ready yourself to courageously challenge Staraptor Super Mega Raid Day!",
-   "url": "https://leekduck.com/events/staraptor-super-mega-raid-day-2026/",
-   "summary_ms": "Bersedialah untuk mencabar Hari Raid Super Mega Staraptor dengan berani!"
   },
   {
    "slug": "max-mondays-2026-09-21",
@@ -339,16 +327,16 @@
    "summary_ms": "Event Gigantamax Cinderace Max Battle Day akan berlangsung pada October 3, 2026 dari 2 pm hingga 5 pm waktu tempatan."
   },
   {
-   "slug": "unannounced-event-october-2026",
-   "name": "???",
+   "slug": "world-space-week-2026",
+   "name": "World Space Week 2026",
    "type": "event",
-   "start": "2026-10-04T10:00:00",
-   "end": "2026-10-10T20:00:00",
+   "start": "2026-10-04T00:00:00",
+   "end": "2026-10-10T23:59:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
-   "summary": "An unannounced event will take place from October 4, 2026 through October 10, 2026. Event times and further details have not been announced. Stay tuned for more details.",
-   "url": "https://leekduck.com/events/unannounced-event-october-2026/",
-   "summary_ms": "Satu acara yang belum diumumkan akan berlangsung dari 4 Oktober 2026 hingga 10 Oktober 2026. Waktu acara dan butiran lanjut belum diumumkan. Nantikan maklumat lanjut."
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-04-world-space-week-2026/world-space-week-2026.jpg",
+   "summary": "Blast off with Astronaut Pikachu during World Space Week! This new costumed Pokémon makes its Pokémon GO debut in raids and free Timed Research. World Space Week takes place from Sunday, October 4, 2026, at 12:00 a.m. to Saturday, October 10, 2026, at 11:59 p.m. local time .",
+   "url": "https://leekduck.com/events/world-space-week-2026/",
+   "summary_ms": null
   },
   {
    "slug": "max-mondays-2026-10-05",
