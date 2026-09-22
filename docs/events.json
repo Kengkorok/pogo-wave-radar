@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-22T13:19:31.724770+00:00",
+ "fetched_at": "2026-09-22T17:43:49.615240+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -349,6 +349,18 @@
    "summary": "Dynamax Sizzlipede may appear in Max Battles from October 5, 2026 through October 11, 2026 . These Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokémon. On October 5, 2026 , the featured Dynamax Pokémon is Sizzlipede . Sizzlipede",
    "url": "https://leekduck.com/events/max-mondays-2026-10-05/",
    "summary_ms": "Dynamax Sizzlipede mungkin muncul dalam Max Battles dari October 5, 2026 hingga October 11, 2026 . Dynamax Pokémon ini mungkin muncul dalam Max Battles sepanjang musim ini. Max Battles akan tersedia dari 6:00 a.m. hingga 9:00 p.m. waktu tempatan pada hari Isnin. Power Spots akan dikemas kini dengan lebih kerap. Lebih banyak Power Spots akan aktif pada hari Isnin berbanding hari-hari lain dalam minggu ini. Max Battles akan berputar untuk menampilkan Dynamax Pokémon yang berbeza. Pada October 5, 2026 , Dynamax Pokémon yang ditampilkan ialah Sizzlipede . Sizzlipede"
+  },
+  {
+   "slug": "go-pass-october-2026",
+   "name": "GO Pass: October",
+   "type": "go-pass",
+   "start": "2026-10-06T10:00:00",
+   "end": "2026-11-03T10:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-06-go-pass-october-2026/go-pass-october-2026.jpg",
+   "summary": "Kyogre makes waves and the Lucky Trinket returns in GO Pass: October! The GO Pass and GO Pass Deluxe for October will be available from October 6, 2026 at 10:00 am to November 3, 2026 at 10:00 am local time.",
+   "url": "https://leekduck.com/events/go-pass-october-2026/",
+   "summary_ms": null
   },
   {
    "slug": "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-2",
