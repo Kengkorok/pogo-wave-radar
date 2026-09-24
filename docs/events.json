@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-24T06:00:45.665089+00:00",
+ "fetched_at": "2026-09-24T12:06:55.753319+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -75,30 +75,6 @@
    "summary_ms": "Zamazenta (Hero of Many Battles) akan berada dalam pertempuran raid lima bintang dari 16 September 2026 hingga 22 September 2026. Waktu Raid Akan ada juga Waktu Raid yang menampilkan Zamazenta (Hero of Many Battles) dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan pada 16 September."
   },
   {
-   "slug": "pokemon-horizons-the-series-celebration-event-2026",
-   "name": "Pokémon Horizons: The Series Celebration Event 2026",
-   "type": "event",
-   "start": "2026-09-16T10:00:00",
-   "end": "2026-09-22T20:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-16-pokemon-horizons-the-series-celebration-event-2026/pokemon-horizons-celebration-event-2026.jpg",
-   "summary": "The Pokémon Horizons: The Series Celebration Event returns to Pokémon GO with the debut of Charmander wearing Friede’s goggles and its Evolutions! US fans can watch Pokémon Horizons: Season 3—Rising Hope on Netflix now. For more information, visit the Pokémon Horizons website . UK fans can watch Pokémon Horizons: Season 3—Rising Hope on BBC iPlayer. For more information, visit the Pokémon animation website . For fans in other regions, please check availability with your local providers.",
-   "url": "https://leekduck.com/events/pokemon-horizons-the-series-celebration-event-2026/",
-   "summary_ms": "Acara Sambutan Siri Pokémon Horizons kembali ke Pokémon GO dengan kemunculan pertama Charmander yang memakai cermin mata Friede dan Evolusinya! Peminat di AS boleh menonton Pokémon Horizons: Season 3—Rising Hope di Netflix sekarang. Untuk maklumat lanjut, layari laman web Pokémon Horizons . Peminat di UK boleh menonton Pokémon Horizons: Season 3—Rising Hope di BBC iPlayer. Untuk maklumat lanjut, layari laman web animasi Pokémon . Untuk peminat di kawasan lain, sila semak ketersediaan dengan penyedia tempatan anda."
-  },
-  {
-   "slug": "pokemon-horizons-bonus-timed-research-2026",
-   "name": "Pokémon Horizons Bonus Timed Research",
-   "type": "research",
-   "start": "2026-09-18T10:00:00",
-   "end": "2026-09-22T20:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-18-pokemon-horizons-bonus-timed-research-2026/pokemon-horizons-bonus-timed-research-2026.png",
-   "summary": "Celebrate Pokémon Horizons: The Series with bonus Timed Research! Redeem the code shared during the anime’s September 18 broadcast in Japan to encounter Charmander wearing Friede’s goggles with a Special Background . Code: 0004POKEMONGO Quick Redeem: Redeem on the Pokémon GO Web Store Redeem the code, complete the tasks, and claim all rewards by Tuesday, September 22, 2026, at 8:00 p.m. local time . This research is part of the Pokémon Horizons: The Series Celebration Event .",
-   "url": "https://leekduck.com/events/pokemon-horizons-bonus-timed-research-2026/",
-   "summary_ms": "Sambut Pokémon Horizons: The Series dengan Timed Research bonus! Tebus kod yang dikongsi semasa siaran anime pada 18 September di Jepun untuk bertemu Charmander yang memakai gogal Friede dengan Special Background . Kod: 0004POKEMONGO Tebus Pantas: Tebus di Pokémon GO Web Store Tebus kod, selesaikan tugasan, dan tuntut semua ganjaran menjelang Selasa, 22 September 2026, pada 8:00 p.m. waktu tempatan . Research ini adalah sebahagian daripada Pokémon Horizons: The Series Celebration Event ."
-  },
-  {
    "slug": "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
    "name": "Ultra League, Master League: Mega Edition, and Retro Cup: Great League Edition | Twilight Trails",
    "type": "go-battle-league",
@@ -169,6 +145,18 @@
    "summary": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time. There will be an increased chance to encounter XXS Rattata. September 24 : The featured Pokémon is Rattata and the special bonus is 2× Evolution XP .",
    "url": "https://leekduck.com/events/pokemonspotlighthour2026-09-24/",
    "summary_ms": "Jam Spotlight Hour Pokémon akan menampilkan Pokémon yang berbeza dan bonus istimewa selama satu jam pada pukul 6:00 petang waktu tempatan. Akan ada peluang yang lebih tinggi untuk bertemu dengan XXS Rattata. 24 September : Pokémon yang ditampilkan ialah Rattata dan bonus istimewanya ialah 2× Evolution XP ."
+  },
+  {
+   "slug": "pokemon-x-adidas-2026",
+   "name": "adidas × Pokémon Timed Research",
+   "type": "research",
+   "start": "2026-09-25T00:00:00",
+   "end": "2027-01-15T20:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/pokemon-x-adidas-2026.jpg",
+   "summary": "Celebrate the adidas × Pokémon collection with Timed Research at participating adidas and retail stores worldwide! Research is available starting September 25, 2026 , through January 15, 2027, at 8:00 p.m. local time . The exact start time has not been announced.",
+   "url": "https://leekduck.com/events/pokemon-x-adidas-2026/",
+   "summary_ms": null
   },
   {
    "slug": "catch-mastery-phantump-2026",
@@ -828,7 +816,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
    "summary": "Pokémon GO Tour returns in February 2027 to celebrate the Alola region from Pokémon Sun, Pokémon Moon, Pokémon Ultra Sun, and Pokémon Ultra Moon. Dates: February 19–21, 2027 Location: Kaohsiung, Taiwan Event hours: To be announced Join fellow Trainers for a real-world Pokémon GO Tour event with special in-person gameplay. Tickets for the in-person experiences and the global in-game event will be available next Season, along with more event details. Stay tuned! Read the official announcement .",
    "url": "https://leekduck.com/events/pokemon-go-tour-alola-kaohsiung-2027/",
-   "summary_ms": null
+   "summary_ms": "Pokémon GO Tour kembali pada Februari 2027 untuk meraikan wilayah Alola daripada Pokémon Sun, Pokémon Moon, Pokémon Ultra Sun, dan Pokémon Ultra Moon. Tarikh: 19–21 Februari 2027 Lokasi: Kaohsiung, Taiwan Waktu acara: Akan diumumkan Sertai rakan Trainer untuk acara Pokémon GO Tour dunia sebenar dengan permainan khas secara bersemuka. Tiket untuk pengalaman bersemuka dan acara dalam permainan global akan tersedia pada Musim seterusnya, bersama butiran acara yang lebih lanjut. Nantikan! Baca pengumuman rasmi ."
   },
   {
    "slug": "pokemon-go-tour-alola-los-angeles-2027",
@@ -840,7 +828,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
    "summary": "Pokémon GO Tour returns in February 2027 to celebrate the Alola region from Pokémon Sun, Pokémon Moon, Pokémon Ultra Sun, and Pokémon Ultra Moon. Dates: February 19–21, 2027 Location: Los Angeles, California Event hours: To be announced Join fellow Trainers for a real-world Pokémon GO Tour event with special in-person gameplay. Tickets for the in-person experiences and the global in-game event will be available next Season, along with more event details. Stay tuned! Read the official announcement .",
    "url": "https://leekduck.com/events/pokemon-go-tour-alola-los-angeles-2027/",
-   "summary_ms": null
+   "summary_ms": "Pokémon GO Tour kembali pada Februari 2027 untuk meraikan wilayah Alola daripada Pokémon Sun, Pokémon Moon, Pokémon Ultra Sun, dan Pokémon Ultra Moon. Tarikh: 19–21 Februari 2027 Lokasi: Los Angeles, California Waktu acara: Akan diumumkan Sertai rakan Trainer lain untuk acara Pokémon GO Tour dunia sebenar dengan gameplay khas secara in-person. Tiket untuk pengalaman in-person dan acara global dalam permainan akan tersedia pada Season seterusnya, bersama lebih banyak butiran acara. Nantikan! Baca pengumuman rasmi ."
   },
   {
    "slug": "pokemon-go-tour-alola-global-2027",
@@ -852,7 +840,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
    "summary": "Pokémon GO Tour returns in February 2027 to celebrate the Alola region from Pokémon Sun, Pokémon Moon, Pokémon Ultra Sun, and Pokémon Ultra Moon. Dates: February 27–28, 2027 Location: Worldwide Event hours: To be announced Trainers around the world can join the global finale of Pokémon GO Tour 2027. Tickets for the in-person experiences and the global in-game event will be available next Season, along with more event details. Stay tuned! Read the official announcement .",
    "url": "https://leekduck.com/events/pokemon-go-tour-alola-global-2027/",
-   "summary_ms": null
+   "summary_ms": "Pokémon GO Tour kembali pada Februari 2027 untuk meraikan wilayah Alola daripada Pokémon Sun, Pokémon Moon, Pokémon Ultra Sun, dan Pokémon Ultra Moon. Tarikh: 27–28 Februari 2027 Lokasi: Seluruh dunia Waktu acara: Akan diumumkan Trainer di seluruh dunia boleh menyertai final global Pokémon GO Tour 2027. Tiket untuk pengalaman secara in-person dan acara dalam permainan global akan tersedia pada Season seterusnya, bersama butiran acara yang lebih lanjut. Nantikan! Baca pengumuman rasmi ."
   }
  ]
 }
