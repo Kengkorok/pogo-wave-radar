@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-24T00:48:00.853901+00:00",
+ "fetched_at": "2026-09-24T06:00:45.665089+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -49,18 +49,6 @@
    "summary": "Shadow Thundurus (Incarnate Forme) will appear in five-star Shadow Raids every weekend from September 9, 2026 to October 6, 2026. If you’re lucky, you may encounter Shiny Shadow Thundurus (Incarnate Forme)!",
    "url": "https://leekduck.com/events/shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026/",
    "summary_ms": "Shadow Thundurus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari 9 September 2026 hingga 6 Oktober 2026. Jika anda bernasib baik, anda mungkin akan bertemu dengan Shiny Shadow Thundurus (Incarnate Forme)!"
-  },
-  {
-   "slug": "gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition",
-   "name": "Great League, Ultra League: Mega Edition, and Willpower Cup: Great League Edition | Twilight Trails",
-   "type": "go-battle-league",
-   "start": "2026-09-15T20:00:00+00:00",
-   "end": "2026-09-22T20:00:00+00:00",
-   "local_time": false,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/gobattle-greatleague-key.jpg",
-   "summary": "The Great League, Ultra League: Mega Edition, and Willpower Cup: Great League Edition will run from September 15, 2026, at 1:00 p.m. to September 22, 2026, at 1:00 p.m. PT. Great League Pokémon must be at or below 1,500 CP to enter. Ultra League: Mega Edition Pokémon must be at or below 2,500 CP to enter. Mega-Evolved Pokémon are allowed. Willpower Cup: Great League Edition Pokémon must be at or below 1,500 CP to enter. Only Fighting-, Psychic-, and Dark-type Pokémon are eligible. The following Pokémon will not be allowed. Gardevoir Zorua Zoroark",
-   "url": "https://leekduck.com/events/gbl-twilight-trails_great-league_ultra-league-mega-edition_willpower-cup-great-league-edition/",
-   "summary_ms": "Liga Hebat, Liga Ultra: Edisi Mega, dan Piala Kemahuan: Edisi Liga Hebat akan berlangsung dari 15 September 2026, 1:00 p.m. hingga 22 September 2026, 1:00 p.m. PT. Pokémon Liga Hebat mesti berada pada atau di bawah 1,500 CP untuk masuk. Pokémon Liga Ultra: Edisi Mega mesti berada pada atau di bawah 2,500 CP untuk masuk. Pokémon yang telah Mega-Evolve dibenarkan. Pokémon Piala Kemahuan: Edisi Liga Hebat mesti berada pada atau di bawah 1,500 CP untuk masuk. Hanya Pokémon jenis Fighting-, Psychic-, dan Dark- yang layak. Pokémon berikut tidak akan dibenarkan. Gardevoir Zorua Zoroark"
   },
   {
    "slug": "mega-venusaur-in-mega-raids-september-2026",
@@ -829,6 +817,42 @@
    "summary": "The Super Mega Raid Day event will take place on November 28, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
    "url": "https://leekduck.com/events/super-mega-raid-day-november-2026/",
    "summary_ms": "Event Super Mega Raid Day akan berlangsung pada 28 November 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
+  },
+  {
+   "slug": "pokemon-go-tour-alola-kaohsiung-2027",
+   "name": "Pokémon GO Tour: Alola - Kaohsiung 2027",
+   "type": "pokémon-go-tour",
+   "start": "2027-02-18T16:00:00+00:00",
+   "end": "2027-02-21T15:59:59+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "Pokémon GO Tour returns in February 2027 to celebrate the Alola region from Pokémon Sun, Pokémon Moon, Pokémon Ultra Sun, and Pokémon Ultra Moon. Dates: February 19–21, 2027 Location: Kaohsiung, Taiwan Event hours: To be announced Join fellow Trainers for a real-world Pokémon GO Tour event with special in-person gameplay. Tickets for the in-person experiences and the global in-game event will be available next Season, along with more event details. Stay tuned! Read the official announcement .",
+   "url": "https://leekduck.com/events/pokemon-go-tour-alola-kaohsiung-2027/",
+   "summary_ms": null
+  },
+  {
+   "slug": "pokemon-go-tour-alola-los-angeles-2027",
+   "name": "Pokémon GO Tour: Alola - Los Angeles 2027",
+   "type": "pokémon-go-tour",
+   "start": "2027-02-19T08:00:00+00:00",
+   "end": "2027-02-22T07:59:59+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "Pokémon GO Tour returns in February 2027 to celebrate the Alola region from Pokémon Sun, Pokémon Moon, Pokémon Ultra Sun, and Pokémon Ultra Moon. Dates: February 19–21, 2027 Location: Los Angeles, California Event hours: To be announced Join fellow Trainers for a real-world Pokémon GO Tour event with special in-person gameplay. Tickets for the in-person experiences and the global in-game event will be available next Season, along with more event details. Stay tuned! Read the official announcement .",
+   "url": "https://leekduck.com/events/pokemon-go-tour-alola-los-angeles-2027/",
+   "summary_ms": null
+  },
+  {
+   "slug": "pokemon-go-tour-alola-global-2027",
+   "name": "Pokémon GO Tour: Alola - Global 2027",
+   "type": "pokémon-go-tour",
+   "start": "2027-02-27T00:00:00",
+   "end": "2027-02-28T23:59:59",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "Pokémon GO Tour returns in February 2027 to celebrate the Alola region from Pokémon Sun, Pokémon Moon, Pokémon Ultra Sun, and Pokémon Ultra Moon. Dates: February 27–28, 2027 Location: Worldwide Event hours: To be announced Trainers around the world can join the global finale of Pokémon GO Tour 2027. Tickets for the in-person experiences and the global in-game event will be available next Season, along with more event details. Stay tuned! Read the official announcement .",
+   "url": "https://leekduck.com/events/pokemon-go-tour-alola-global-2027/",
+   "summary_ms": null
   }
  ]
 }
