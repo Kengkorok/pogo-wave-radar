@@ -96,6 +96,22 @@
     "note": "UTC+7 — Khao San / Banglamphu"
   },
   {
+    "name": "Dhaka (New Market)",
+    "flag": "img/flags/bd.svg",
+    "tz": "Asia/Dhaka",
+    "lat": 23.7349,
+    "lng": 90.3853,
+    "note": "UTC+6 — New Market / Katabon"
+  },
+  {
+    "name": "Delhi (Connaught Place)",
+    "flag": "img/flags/in.svg",
+    "tz": "Asia/Kolkata",
+    "lat": 28.6321,
+    "lng": 77.219,
+    "note": "UTC+5:30 — Connaught Place (Inner Circle)"
+  },
+  {
     "name": "Malé (Maldives)",
     "flag": "img/flags/mv.svg",
     "tz": "Indian/Maldives",
