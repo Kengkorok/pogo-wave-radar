@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-24T23:49:43.291472+00:00",
+ "fetched_at": "2026-09-25T04:37:10.297493+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -49,30 +49,6 @@
    "summary": "Shadow Thundurus (Incarnate Forme) will appear in five-star Shadow Raids every weekend from September 9, 2026 to October 6, 2026. If you’re lucky, you may encounter Shiny Shadow Thundurus (Incarnate Forme)!",
    "url": "https://leekduck.com/events/shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026/",
    "summary_ms": "Shadow Thundurus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari 9 September 2026 hingga 6 Oktober 2026. Jika anda bernasib baik, anda mungkin akan bertemu dengan Shiny Shadow Thundurus (Incarnate Forme)!"
-  },
-  {
-   "slug": "mega-venusaur-in-mega-raids-september-2026",
-   "name": "Mega Venusaur in Mega Raids",
-   "type": "raid-battles",
-   "start": "2026-09-16T06:00:00",
-   "end": "2026-09-22T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
-   "summary": "Mega Venusaur will be in Mega Raids from September 16, 2026 at 6 am to September 22, 2026 at 10 pm local time.",
-   "url": "https://leekduck.com/events/mega-venusaur-in-mega-raids-september-2026/",
-   "summary_ms": "Mega Venusaur akan berada dalam Mega Raids dari 16 September 2026, 6 pagi hingga 22 September 2026, 10 malam waktu tempatan."
-  },
-  {
-   "slug": "zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026",
-   "name": "Zamazenta (Hero of Many Battles) in 5-star Raid Battles",
-   "type": "raid-battles",
-   "start": "2026-09-16T06:00:00",
-   "end": "2026-09-22T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/zacian-and-zamazenta-2.jpg",
-   "summary": "Zamazenta (Hero of Many Battles) will be in five-star raid battles from September 16, 2026 to September 22, 2026. Raid Hours There will also be a Raid Hour featuring Zamazenta (Hero of Many Battles) from 6:00 p.m. to 7:00 p.m. local time on September 16.",
-   "url": "https://leekduck.com/events/zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026/",
-   "summary_ms": "Zamazenta (Hero of Many Battles) akan berada dalam pertempuran raid lima bintang dari 16 September 2026 hingga 22 September 2026. Waktu Raid Akan ada juga Waktu Raid yang menampilkan Zamazenta (Hero of Many Battles) dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan pada 16 September."
   },
   {
    "slug": "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
@@ -495,16 +471,16 @@
    "summary_ms": "Pokémon Spotlight Hour akan menampilkan Pokémon yang berbeza dan bonus istimewa selama satu jam pada 6:00 p.m. waktu tempatan. October 15 : Pokémon yang ditampilkan ialah Stufful dan bonus istimewa ialah 2× Transfer Candy ."
   },
   {
-   "slug": "hatch-day-october-2026",
-   "name": "Hatch Day",
+   "slug": "sandile-hatch-day-2026",
+   "name": "Sandile Hatch Day",
    "type": "event",
    "start": "2026-10-17T11:00:00",
    "end": "2026-10-17T17:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
-   "summary": "The Hatch Day event will take place on October 17, 2026 from 11 am to 5 pm. Stay tuned for more details.",
-   "url": "https://leekduck.com/events/hatch-day-october-2026/",
-   "summary_ms": "Event Hatch Day akan berlangsung pada 17 Oktober 2026 dari 11 pagi hingga 5 petang. Nantikan butiran lanjut."
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-17-sandile-hatch-day-2026/sandile-hatch-day-2026.jpg",
+   "summary": "Sandile Hatch Day features more Sandile hatching from 2 km Eggs and an increased chance of hatching Shiny Sandile! The Sandile Hatch Day event will take place on October 17, 2026 from 11 am to 5 pm local time.",
+   "url": "https://leekduck.com/events/sandile-hatch-day-2026/",
+   "summary_ms": null
   },
   {
    "slug": "max-mondays-2026-10-19",
