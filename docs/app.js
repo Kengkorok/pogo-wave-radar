@@ -17,6 +17,7 @@ let LANG = 'en';
 let NESTS = [];           // nest feed from nests.json
 let NESTS_META = null;    // { fetched_at, migration }
 let SAFARI = [];          // City Safari in-person events from citysafari.json
+let MOON = null;          // Dancing in the Moonlight edition from moonlight.json
 let NEST_FILTER = 'star'; // 'star' (default, Combee & friends) | 'all'
 let NEST_QUERY = '';
 let EVENT_QUERY = '';     // All Events search
@@ -33,7 +34,7 @@ const I18N = {
   en: {
     aboutTitle: "About PoGo Wave Radar",
     aboutIntro: "PoGo Wave Radar is a free Pokémon GO event tracker. Check live and upcoming events, compare city time zones and follow local-time events as they move around the world.",
-    aboutFeatures: "Use Live Now for active events, Wave Tracker for city-by-city start and end times, and All Events for the schedule. You can also explore Pokémon nests and City Safari schedules. The interface supports English and Bahasa Melayu.",
+    aboutFeatures: 'Use Live Now for active events, Wave Tracker for city-by-city start and end times, and All Events for the schedule. You can also explore Pokémon nests, City Safari schedules and the Moonlight burst timetable. The interface supports English and Bahasa Melayu.',
     aboutWave: "Community Day, Raid Hour and Spotlight Hour often follow local time, so an event can finish in one city while it is still running in another. Choose your timezone to compare event times. Global events start at the same moment worldwide.",
     aboutSource: "PoGo Wave Radar is an independent, open-source project by <a href=\"https://github.com/Kengkorok\">Kengkorok</a>. <a href=\"https://github.com/Kengkorok/pogo-wave-radar\">View the PoGo Wave Radar GitHub repository</a>. Event information comes from <a href=\"https://leekduck.com/events/\">LeekDuck</a>; check the event details for ticket and participation requirements.",
     title: 'PoGo Wave Radar — Pokémon GO Event & Time Zone Tracker',
@@ -84,6 +85,21 @@ const I18N = {
     safariBothDays: 'Sat 26 + Sun 27 Sep',
     safariTicketNote: 'One-day ticket — pick Saturday OR Sunday',
     safariMap: 'map',
+    tabMoon: '🌙 Moonlight',
+    moonTitle: '🌙 Dancing in the Moonlight — four bursts a day',
+    moonNote: 'Regional event: Japan, Korea, Taiwan, Indonesia, Singapore, Hong Kong &amp; Malaysia. Each burst lasts only <b>5 minutes</b> — miss one and the next is hours away.',
+    moonHdrCountry: 'Country',
+    moonHdrBursts: 'Bursts (local time) ★ = Clefairy featured',
+    moonHdrNext: 'Status',
+    moonLiveLbl: '🔴 LIVE',
+    moonNextIn: 'next in',
+    moonWaveLbl: 'Next burst',
+    moonSpawns: 'Spawns in each burst',
+    moonBonus: 'Event bonus',
+    moonResearch: 'Timed Research expires',
+    moonDays: '23–27 Sep 2026',
+    moonEnded: 'ended',
+    moonSource: 'Schedule',
     buyCoffee: '☕ Buy me a coffee', scanDonate: '🇲🇾 Scan to donate (MY)',
     qrTitle: 'Scan with TNG eWallet or any DuitNow app. Thank you! 🙏',
     qrName: 'Maybank DuitNow QR',
@@ -91,7 +107,7 @@ const I18N = {
   ms: {
     aboutTitle: "Tentang PoGo Wave Radar",
     aboutIntro: "PoGo Wave Radar ialah penjejak event Pokémon GO percuma. Semak event yang sedang berlangsung dan akan datang, bandingkan zon waktu bandar dan ikuti event waktu tempatan di seluruh dunia.",
-    aboutFeatures: "Guna Live Sekarang untuk event aktif, Wave Tracker untuk masa mula dan tamat mengikut bandar, serta Semua Event untuk jadual. Anda juga boleh semak sarang Pokémon dan jadual City Safari. Antara muka menyokong English dan Bahasa Melayu.",
+    aboutFeatures: "Guna Live Sekarang untuk event aktif, Wave Tracker untuk masa mula dan tamat mengikut bandar, serta Semua Event untuk jadual. Anda juga boleh semak sarang Pokémon, jadual City Safari dan waktu burst Moonlight. Antara muka menyokong English dan Bahasa Melayu.",
     aboutWave: "Community Day, Raid Hour dan Spotlight Hour selalunya mengikut waktu tempatan. Jadi, event boleh tamat di satu bandar tetapi masih berlangsung di bandar lain. Pilih zon waktu anda untuk membandingkan masa event. Event global pula bermula serentak di seluruh dunia.",
     aboutSource: "PoGo Wave Radar ialah projek bebas dan sumber terbuka oleh <a href=\"https://github.com/Kengkorok\">Kengkorok</a>. <a href=\"https://github.com/Kengkorok/pogo-wave-radar\">Lihat repositori GitHub PoGo Wave Radar</a>. Maklumat event bersumberkan <a href=\"https://leekduck.com/events/\">LeekDuck</a>; semak butiran event untuk syarat tiket dan penyertaan.",
     title: 'PoGo Wave Radar — Penjejak Event & Zon Waktu Pokémon GO',
@@ -142,6 +158,21 @@ const I18N = {
     safariBothDays: 'Sabtu 26 + Ahad 27 Sep',
     safariTicketNote: 'Tiket sehari — pilih Sabtu ATAU Ahad',
     safariMap: 'peta',
+    tabMoon: '🌙 Moonlight',
+    moonTitle: '🌙 Dancing in the Moonlight — empat burst sehari',
+    moonNote: 'Event serantau: Jepun, Korea, Taiwan, Indonesia, Singapura, Hong Kong &amp; Malaysia. Setiap burst cuma <b>5 minit</b> — terlepas satu, kena tunggu berjam untuk yang seterusnya.',
+    moonHdrCountry: 'Negara',
+    moonHdrBursts: 'Burst (waktu tempatan) ★ = Clefairy di-feature',
+    moonHdrNext: 'Status',
+    moonLiveLbl: '🔴 LIVE',
+    moonNextIn: 'lagi',
+    moonWaveLbl: 'Burst seterusnya',
+    moonSpawns: 'Muncul dalam setiap burst',
+    moonBonus: 'Bonus event',
+    moonResearch: 'Timed Research tamat',
+    moonDays: '23–27 Sep 2026',
+    moonEnded: 'tamat',
+    moonSource: 'Jadual',
     buyCoffee: '☕ Belanja aku kopi', scanDonate: '🇲🇾 Scan untuk derma (MY)',
     qrTitle: 'Scan dengan TNG eWallet atau mana-mana app DuitNow. Terima kasih! 🙏',
     qrName: 'Maybank DuitNow QR',
@@ -671,6 +702,134 @@ function renderSafari() {
   bindChips();
 }
 
+/* ---------- render: Dancing in the Moonlight (regional event, 4 bursts/day) ---------- */
+/* The 2026 edition is a REGIONAL local-time event: Moonlight O'Clock fires four times a day,
+   5 minutes each, at the same wall-clock times in every participating country. So each country
+   is its own wave slot, and the user's own timezone is the comparison column. */
+function moonText(key) {
+  return LANG === 'ms' ? (MOON[key + '_ms'] || MOON[key]) : MOON[key];
+}
+function moonCountry(c) {
+  return LANG === 'ms' && c.name_ms ? c.name_ms : c.name;
+}
+function moonOffsetMin(c) {
+  const day = (MOON.days && MOON.days[0]) || '2026-01-01';
+  return Math.round(tzOffsetMs(c.tz, new Date(wallMs(c.tz, day + 'T12:00:00'))) / 60000);
+}
+/* every burst of the edition in one country's timezone: {s, e, w (local "12:00"), day} */
+function moonBursts(tz) {
+  if (!MOON) return [];
+  const dur = (MOON.burst_min || 5) * 60000;
+  const out = [];
+  (MOON.days || []).forEach((d) => (MOON.windows || []).forEach((w) => {
+    const s = wallMs(tz, d + 'T' + w + ':00');
+    out.push({ s, e: s + dur, w, day: d });
+  }));
+  return out;
+}
+function moonStatus(tz) {
+  const bursts = moonBursts(tz);
+  const now = Date.now();
+  const live = bursts.find((b) => now >= b.s && now < b.e) || null;
+  const next = bursts.filter((b) => now < b.s).sort((a, b) => a.s - b.s)[0] || null;
+  return { bursts, live, next };
+}
+/* which day's windows the row should show: the live/next burst's day, else the last day */
+function moonRefDay(st) {
+  const b = st.live || st.next;
+  if (b) return b.day;
+  const days = MOON.days || [];
+  return days[days.length - 1] || '';
+}
+/* calendar-day shift the user actually feels (e.g. Japan 12:00 = 11:00 the same day in MYT) */
+function moonDayShift(ms, fromTZ, toTZ) {
+  const idx = (m, tz) => Math.floor((m + tzOffsetMs(tz, new Date(m))) / 86400000);
+  return idx(ms, toTZ) - idx(ms, fromTZ);
+}
+function moonTimeCells(c, st) {
+  const day = moonRefDay(st);
+  const myTZ = getUserTZ();
+  const feat = MOON.featured || [];
+  const local = [];
+  const mine = [];
+  (MOON.windows || []).forEach((w) => {
+    const s = wallMs(c.tz, day + 'T' + w + ':00');
+    const sh = moonDayShift(s, c.tz, myTZ);
+    local.push(w + (feat.indexOf(w) > -1 ? '★' : ''));
+    mine.push(fmtTime(s, myTZ) + (sh > 0 ? ' +' + sh + 'd' : sh < 0 ? ' ' + sh + 'd' : ''));
+  });
+  return { local: local.join(' · '), mine: mine.join(' · ') };
+}
+function moonRowHtml(r) {
+  const { c, live, next } = r;
+  const badge = live
+    ? '<span class="badge live">' + t('moonLiveLbl') + '</span> <b data-cd="' + live.e + '">' + fmtDur(live.e - Date.now()) + '</b>'
+    : next
+      ? '<span class="mnext">' + t('moonNextIn') + ' <b data-cd="' + next.s + '">' + fmtDur(next.s - Date.now()) + '</b></span>'
+      : '<span class="badge ended">' + t('moonEnded') + '</span>';
+  const times = moonTimeCells(c, r);
+  return '<tr class="moonrow' + (live ? ' live' : '') + '">'
+    + '<td>' + flagHtml(c) + ' ' + esc(moonCountry(c)) + ' <small class="tzabbr">' + esc(c.tzAbbr || '') + '</small></td>'
+    + '<td>' + esc(times.local) + '</td>'
+    + '<td class="you">' + esc(times.mine) + '</td>'
+    + '<td>' + badge + '</td></tr>';
+}
+/* top line: a live burst wins, else the soonest upcoming burst anywhere */
+function moonBarHtml(rows) {
+  const myTZ = getUserTZ();
+  const liveRow = rows.filter((r) => r.live).sort((a, b) => a.live.e - b.live.e)[0];
+  if (liveRow) {
+    return '<div class="moonbar live">🔴 ' + flagHtml(liveRow.c) + ' <b>' + esc(moonCountry(liveRow.c)) + '</b> — ' + t('moonLiveLbl')
+      + ' · ' + t('endsIn') + ' <b data-cd="' + liveRow.live.e + '">' + fmtDur(liveRow.live.e - Date.now()) + '</b>'
+      + ' · ' + esc(fmtWin(liveRow.live.s, liveRow.live.e, myTZ)) + ' ' + t('yourTime') + '</div>';
+  }
+  const nx = rows.filter((r) => r.next).sort((a, b) => a.next.s - b.next.s)[0];
+  if (!nx) return '';
+  return '<div class="moonbar">🌙 ' + t('moonWaveLbl') + ': ' + flagHtml(nx.c) + ' <b>' + esc(moonCountry(nx.c)) + '</b> — '
+    + esc(fmtWin(nx.next.s, nx.next.e, nx.c.tz)) + ' ' + esc(nx.c.tzAbbr || '')
+    + ' (' + esc(fmtWin(nx.next.s, nx.next.e, myTZ)) + ' ' + t('yourTime') + ')'
+    + ' · ' + t('moonNextIn') + ' <b data-cd="' + nx.next.s + '">' + fmtDur(nx.next.s - Date.now()) + '</b></div>';
+}
+function renderMoonlight() {
+  const box = $('#moonList');
+  if (!box || !MOON) return;
+  const tabBtn = $('.tabs button[data-tab="moon"]');
+  const sec = $('#moon');
+  /* One edition only: once the last burst of the last day is over everywhere, the tab goes
+     away (same lifecycle as City Safari) until moonlight.json carries a new edition. */
+  const rows = (MOON.countries || []).map((c) => {
+    const st = moonStatus(c.tz);
+    return { c, bursts: st.bursts, live: st.live, next: st.next };
+  }).sort((a, b) => moonOffsetMin(b.c) - moonOffsetMin(a.c));
+  const alive = rows.filter((r) => r.live || r.next);
+  if (tabBtn) tabBtn.hidden = alive.length === 0;
+  if (!alive.length) {
+    if (sec && !sec.hidden) switchTab('live'); // was open -> leave before hiding
+    if (sec) sec.hidden = true;
+    box.innerHTML = '';
+    return;
+  }
+  const myTZ = getUserTZ();
+  const spawns = moonText('spawns') || [];
+  const shiny = MOON.shiny || [];
+  const resMs = MOON.research_end ? wallMs(myTZ, MOON.research_end + ':00') : null;
+  const resLbl = resMs ? new Intl.DateTimeFormat('en-MY', { day: 'numeric', month: 'short', year: 'numeric', timeZone: myTZ }).format(new Date(resMs)) : '—';
+  box.innerHTML = moonBarHtml(alive)
+    + '<h2 class="group-title">' + t('moonTitle') + ' <span class="cnt">' + t('moonDays') + '</span></h2>'
+    + '<table class="scmptable moon"><thead><tr><th>' + t('moonHdrCountry') + '</th><th>' + t('moonHdrBursts')
+    + '</th><th>' + t('safariHdrYours') + ' · ' + esc(myTZ) + '</th><th>' + t('moonHdrNext') + '</th></tr></thead><tbody>'
+    + rows.map(moonRowHtml).join('')
+    + '</tbody></table>'
+    + '<p class="note">' + t('moonNote') + '</p>'
+    + '<div class="mooninfo">'
+    + '<div><b>' + t('moonSpawns') + ':</b> ' + esc(spawns.join(' · ')) + '</div>'
+    + '<div><b>' + t('moonBonus') + ':</b> ' + esc(moonText('bonus')) + ' · ✨ ' + esc(shiny.join(' · ')) + '</div>'
+    + '<div><b>' + t('moonResearch') + ':</b> ' + esc(resLbl) + '</div>'
+    + (moonText('wib_note') ? '<div class="tiny">⚠️ ' + esc(moonText('wib_note')) + '</div>' : '')
+    + '<div class="tiny">📅 ' + t('moonDays') + ' · ' + t('moonSource') + ': <a href="' + esc(MOON.source) + '" target="_blank" rel="noopener">pokemongohub.net ↗</a></div>'
+    + '</div>';
+}
+
 /* ---------- interactions ---------- */
 function bindWaveButtons() {
   $$('[data-wave]').forEach((el) => el.addEventListener('click', () => goWave(el.dataset.wave)));
@@ -701,9 +860,11 @@ function switchTab(name) {
   $('#all').hidden = name !== 'all';
   $('#nests').hidden = name !== 'nests';
   if ($('#safari')) $('#safari').hidden = name !== 'safari';
+  if ($('#moon')) $('#moon').hidden = name !== 'moon';
   if (name === 'wave') renderWave(); // fresh render (details may have loaded since init)
   if (name === 'nests') renderNests();
   if (name === 'safari') renderSafari();
+  if (name === 'moon') renderMoonlight();
 }
 function startTicker() {
   if (startTicker._on) return;
@@ -718,6 +879,8 @@ function startTicker() {
   setInterval(renderNextBar, 30000);
   // drop City Safari editions as soon as they finish (tab hides itself when none left)
   setInterval(() => { if (SAFARI.length) renderSafari(); }, 60000);
+  // Moonlight bursts are 5 minutes long — re-render often so a burst flips to LIVE right away
+  setInterval(() => { if (MOON) renderMoonlight(); }, 30000);
 }
 function renderTZ() {
   const sel = $('#tz');
@@ -783,6 +946,7 @@ function renderLang() {
   renderAll();
   renderNests();
   renderSafari();
+  renderMoonlight();
   renderDonate();
 }
 
@@ -792,19 +956,22 @@ async function init() {
   USER_TZ = localStorage.getItem(TZ_STORAGE) || Intl.DateTimeFormat().resolvedOptions().timeZone || 'Asia/Kuala_Lumpur';
   $('#pvp').checked = localStorage.getItem(PVP_STORAGE) === '1';
   try {
-    const [c, e, m, n, sf] = await Promise.all([
+    const [c, e, m, n, sf, mo] = await Promise.all([
       fetch('cities.json').then((r) => r.json()),
       fetch('events.json').then((r) => r.json()),
       fetch('manual_events.json').then((r) => r.json()).catch(() => []),
       fetch('nests.json').then((r) => r.json()).catch(() => ({ nests: [], migration: null })),
       fetch('citysafari.json').then((r) => r.json()).catch(() => ({ events: [] })),
+      fetch('moonlight.json').then((r) => r.json()).catch(() => null),
     ]);
     CITIES = sortCitiesByWave(c); EVENTS = (e.events || []).concat(m); FETCHED_AT = e.fetched_at;
     NESTS = (n && n.nests) || []; NESTS_META = n || null;
     SAFARI = (sf && sf.events) || [];
+    MOON = mo || null;
     ensureDetails().then(() => { if (!$('#wave').hidden) renderWave(); });
     if (!$('#nests').hidden) renderNests();
     if ($('#safari')) renderSafari();
+    if ($('#moon')) renderMoonlight();
   } catch (err) {
     $('#live').innerHTML = '<div class="empty">' + t('loadError') + '</div>';
     return;
@@ -820,7 +987,7 @@ async function init() {
     toolsBtn.addEventListener('click', (e) => { e.stopPropagation(); toolsNav.classList.toggle('open'); });
     document.addEventListener('click', (e) => { if (!toolsNav.contains(e.target)) toolsNav.classList.remove('open'); });
   }
-  $('#tz').addEventListener('change', (ev) => { USER_TZ = ev.target.value; localStorage.setItem(TZ_STORAGE, USER_TZ); renderTZ(); renderNextBar(); renderLive(); renderAll(); renderSafari(); });
+  $('#tz').addEventListener('change', (ev) => { USER_TZ = ev.target.value; localStorage.setItem(TZ_STORAGE, USER_TZ); renderTZ(); renderNextBar(); renderLive(); renderAll(); renderSafari(); renderMoonlight(); });
   $('#pvp').addEventListener('change', () => { localStorage.setItem(PVP_STORAGE, $('#pvp').checked ? '1' : '0'); renderNextBar(); renderLive(); renderWaveSelect(); renderWave(); renderAll(); });
   $$('.tabs button').forEach((b) => b.addEventListener('click', () => switchTab(b.dataset.tab)));
   $('#waveSel').addEventListener('change', renderWave);

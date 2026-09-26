@@ -30,6 +30,7 @@ If an event has ended in your area, **it's probably still live somewhere else.**
 - 🌊 **Wave Tracker** — pick one event, watch the wave move city by city, with local window times + coordinates. Tap **📖 Read full details** for the complete LeekDuck event page (Bonuses, Spawns, Raids, Research, GO Pass…)
 - 📅 **All Events** — full schedule from leekduck
 - 🏙️ **City Safari** — in-person paid events (Brisbane, Boston, Lisbon, Marseille, Munich, Rio, 26–27 Sep 2026): date/time window in the host city's local time **and** converted to your own timezone, plus the densest player hotspots per city (coordinates ready to copy)
+- 🌙 **Moonlight** — Dancing in the Moonlight (23–27 Sep 2026, Japan/Korea/Taiwan/HK/Singapore/Malaysia/Indonesia): **four 5-minute spawn bursts a day** (12:00 · 13:00 · 19:00 · 20:00 local) with a per-country schedule, a live countdown to the next burst and every burst converted to your timezone
 
 Data auto-updates from [leekduck.com/events](https://leekduck.com/events/) every **30 minutes** via GitHub Actions. 
 
@@ -70,6 +71,7 @@ Kalau event dah habis kat tempat kau, **kemungkinan besar masih live kat tempat 
 - 🌊 **Wave Tracker** — pilih satu event, nampak ombak bergerak bandar demi bandar, masa window tempatan + koordinat. Tekan **📖 Baca butiran penuh** untuk detail penuh event dari LeekDuck (Bonuses, Spawns, Raids, Research, GO Pass…)
 - 📅 **All Events** — full schedule dari leekduck
 - 🏙️ **City Safari** — event fizikal berbayar (Brisbane, Boston, Lisbon, Marseille, Munich, Rio, 26–27 Sep 2026): jadual waktu tempatan bandar tu **dan** tukar ke zon waktu kau, plus hotspot player paling padat setiap bandar (koordinat siap copy)
+- 🌙 **Moonlight** — Dancing in the Moonlight (23–27 Sep 2026, Jepun/Korea/Taiwan/HK/Singapura/Malaysia/Indonesia): **empat burst spawn 5 minit sehari** (12:00 · 13:00 · 19:00 · 20:00 waktu tempatan) dengan jadual setiap negara, countdown live ke burst seterusnya, dan setiap burst ditukar ke zon waktu kau
 
 Data auto-update dari [leekduck.com/events](https://leekduck.com/events/) setiap **30 minit** melalui GitHub Actions. 
 
