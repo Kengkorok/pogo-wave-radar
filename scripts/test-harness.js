@@ -8,7 +8,8 @@
 
    Covers: next-event banner, Nests tab, All-Events search, City Safari tab
    (6 cards / compare table / hotspot chips / countdowns / timezone switch /
-   expired-edition auto-hide).
+   expired-edition auto-hide), and the Moonlight tab (7 country rows in wave order,
+   burst countdowns, LIVE row + live bar, tz switch, auto-hide after the edition).
 
    REALM GOTCHA: app.js is evaluated with window.eval(), so its `let`/`const`
    (SAFARI, EVENTS, USER_TZ…) are NOT reachable from a later window.eval — a later
@@ -144,6 +145,58 @@ setTimeout(async () => {
   window.renderSafari();
   await sleep(120);
   console.log('restored -> tab hidden:', sfBtn && sfBtn.hidden, '| cards:', document.querySelectorAll('.safaricard').length);
+
+  // ---- MOONLIGHT TAB (regional event, four 5-min bursts a day) ----
+  const mnBtn = document.querySelector('.tabs button[data-tab="moon"]');
+  mnBtn.click();
+  await sleep(250);
+  console.log('\n=== MOONLIGHT TAB ===');
+  console.log('section hidden:', document.getElementById('moon').hidden);
+  console.log('rows:', document.querySelectorAll('#moonList .moonrow').length);
+  console.log('countdowns:', document.querySelectorAll('#moonList [data-cd]').length);
+  console.log('live rows:', document.querySelectorAll('#moonList .moonrow.live').length);
+  console.log('bar:', (document.querySelector('#moonList .moonbar') || {}).textContent);
+  console.log('info rows:', document.querySelectorAll('#moonList .mooninfo > div').length);
+  Array.from(document.querySelectorAll('#moonList .moonrow')).forEach((r) => {
+    const c = Array.from(r.children).map((e) => e.textContent.trim().replace(/\s+/g, ' '));
+    console.log('  ' + c.join(' | '));
+  });
+  // tz switch must re-flow the comparison column
+  const mtz = document.getElementById('tz');
+  const keepTZ = mtz.value;
+  mtz.value = 'Europe/London';
+  mtz.dispatchEvent(new window.Event('change', { bubbles: true }));
+  await sleep(200);
+  console.log('tz=Europe/London first row:', Array.from(document.querySelectorAll('#moonList .moonrow')[0].children).map((e) => e.textContent.trim().replace(/\s+/g, ' ')).join(' | '));
+  mtz.value = keepTZ;
+  mtz.dispatchEvent(new window.Event('change', { bubbles: true }));
+  await sleep(150);
+  // simulate the edition being over -> tab hides itself like City Safari
+  const realMoonStatus = window.moonStatus;
+  window.moonStatus = () => ({ bursts: [], live: null, next: null });
+  window.renderMoonlight();
+  await sleep(150);
+  console.log('\n=== after every Moonlight burst ended ===');
+  console.log('tab button hidden:', mnBtn && mnBtn.hidden);
+  console.log('moon section hidden:', document.getElementById('moon').hidden);
+  console.log('active tab:', document.querySelector('.tabs button.active').dataset.tab);
+  window.moonStatus = realMoonStatus;
+  window.renderMoonlight();
+  await sleep(120);
+  console.log('restored -> tab hidden:', mnBtn && mnBtn.hidden, '| rows:', document.querySelectorAll('#moonList .moonrow').length);
+  // force the clock inside a burst window (Indonesia 20:00 WIB) -> LIVE row + live top bar
+  const realNow = window.Date.now;
+  const burstTs = window.wallMs('Asia/Jakarta', '2026-09-26T20:01:00');
+  window.Date.now = () => burstTs;
+  window.renderMoonlight();
+  await sleep(140);
+  console.log('\n=== during an Indonesia burst ===');
+  console.log('live rows:', document.querySelectorAll('#moonList .moonrow.live').length);
+  console.log('live row:', (document.querySelector('#moonList .moonrow.live') || {}).textContent);
+  console.log('bar:', (document.querySelector('#moonList .moonbar') || {}).textContent);
+  Date.now = realNow;
+  window.renderMoonlight();
+  await sleep(120);
 
   // click banner -> should switch to wave view
   const btn = bar && bar.querySelector('.nextbtn');

@@ -281,6 +281,24 @@ footer a { color: var(--accent); }
 .scmptable td { padding: 7px 6px; border-bottom: 1px solid rgba(36,52,84,.55); vertical-align: middle; }
 .scmptable td.you { color: var(--accent); font-weight: 700; }
 .scmptable img.flag, .sheadtext img.flag { width: 18px; height: 12px; vertical-align: -1px; }
+/* Dancing in the Moonlight — four 5-minute bursts a day, per country */
+.scmptable.moon td:first-child, .scmptable.moon td:last-child { white-space: nowrap; }
+.moonrow.live td { background: rgba(34,197,94,.13); }
+.moonrow.live td:first-child { box-shadow: inset 3px 0 0 var(--live); }
+.tzabbr { color: var(--muted); font-size: .72rem; }
+.mnext { color: var(--muted); font-size: .78rem; }
+.moonbar {
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 9px 11px; margin-bottom: 10px; font-size: .85rem; line-height: 1.5;
+}
+.moonbar.live { border-color: rgba(34,197,94,.5); background: rgba(34,197,94,.1); }
+.moonbar img.flag { width: 18px; height: 12px; vertical-align: -1px; }
+.mooninfo {
+  font-size: .82rem; line-height: 1.65; color: var(--muted); margin: 6px 0 14px;
+  display: flex; flex-direction: column; gap: 3px;
+}
+.mooninfo b { color: var(--text); }
+.mooninfo a { color: var(--accent); }
 .safaricard {
   background: var(--card); border: 1px solid var(--line); border-radius: 16px;
   padding: 12px; margin-bottom: 12px;
@@ -329,6 +347,8 @@ footer a { color: var(--accent); }
   .swday { grid-column: 1 / -1; }
   .hotrow { flex-direction: column; align-items: flex-start; gap: 5px; }
   .scmptable { font-size: .78rem; }
+  .scmptable.moon { font-size: .72rem; }
+  .moonbar { font-size: .8rem; }
 }
 
 /* Readable project context remains available before JavaScript loads. */
