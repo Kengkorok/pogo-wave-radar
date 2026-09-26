@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-26T06:33:10.541788+00:00",
+ "fetched_at": "2026-09-26T12:10:23.392437+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -99,18 +99,6 @@
    "summary_ms": "Choose Your Path Timed Research bagi anda kebebasan untuk terokai Pokémon GO dengan cara anda sendiri sepanjang minggu bukan acara! Sepanjang minggu Choose Your Path Timed Research, anda boleh pilih salah satu daripada tiga laluan: Explore, Catch, atau Battle. Pilihan anda akan menentukan tugasan dan bonus Timed Research sepanjang minggu itu. Anda mungkin dapat peluang research yang berbeza daripada Trainer lain."
   },
   {
-   "slug": "pokemonspotlighthour2026-09-24",
-   "name": "Rattata Spotlight Hour",
-   "type": "pokémon-spotlight-hour",
-   "start": "2026-09-24T18:00:00",
-   "end": "2026-09-24T19:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/pokemonspotlighthour.jpg",
-   "summary": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time. There will be an increased chance to encounter XXS Rattata. September 24 : The featured Pokémon is Rattata and the special bonus is 2× Evolution XP .",
-   "url": "https://leekduck.com/events/pokemonspotlighthour2026-09-24/",
-   "summary_ms": "Jam Spotlight Hour Pokémon akan menampilkan Pokémon yang berbeza dan bonus istimewa selama satu jam pada pukul 6:00 petang waktu tempatan. Akan ada peluang yang lebih tinggi untuk bertemu dengan XXS Rattata. 24 September : Pokémon yang ditampilkan ialah Rattata dan bonus istimewanya ialah 2× Evolution XP ."
-  },
-  {
    "slug": "pokemon-x-adidas-2026",
    "name": "adidas × Pokémon Timed Research",
    "type": "research",
@@ -129,10 +117,10 @@
    "start": "2026-09-26T00:00:00+00:00",
    "end": "2026-09-27T08:00:00+00:00",
    "local_time": false,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-brisbane-2026/safarizone-default.jpg",
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-brisbane-2026/city-safari-brisbane-2026.jpg",
    "summary": "Pokémon GO City Safari takes place in Brisbane, Australia, on September 26 and 27, 2026, from 10 am to 6 pm AEST each day. One-day tickets cost AU$17, including taxes and fees. Event gameplay requires a ticket and attendance in Brisbane. Official event details",
    "url": "https://leekduck.com/events/pokemon-go-city-safari-brisbane-2026/",
-   "summary_ms": null
+   "summary_ms": "Pokémon GO City Safari berlangsung di Brisbane, Australia, pada 26 dan 27 September 2026, dari 10 pagi hingga 6 petang AEST setiap hari. Tiket sehari berharga AU$17, termasuk cukai dan fi. Permainan acara memerlukan tiket dan kehadiran di Brisbane. Butiran acara rasmi"
   },
   {
    "slug": "pokemon-go-city-safari-marseille-2026",
@@ -141,10 +129,10 @@
    "start": "2026-09-26T08:00:00+00:00",
    "end": "2026-09-27T16:00:00+00:00",
    "local_time": false,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-marseille-2026/safarizone-default.jpg",
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-marseille-2026/city-safari-marseille-2026.jpg",
    "summary": "Explore Marseille on September 26–27, 2026, from 10 am–6 pm CEST daily. Tickets: €10 for one day, including taxes and fees. Ticketed gameplay requires attendance in Marseille. Official event details",
    "url": "https://leekduck.com/events/pokemon-go-city-safari-marseille-2026/",
-   "summary_ms": null
+   "summary_ms": "Terokai Marseille pada 26–27 September 2026, dari 10 pagi–6 petang CEST setiap hari. Tiket: €10 untuk satu hari, termasuk cukai dan fi. Permainan bertiket memerlukan kehadiran di Marseille. Butiran acara rasmi"
   },
   {
    "slug": "pokemon-go-city-safari-munich-2026",
@@ -153,10 +141,10 @@
    "start": "2026-09-26T08:00:00+00:00",
    "end": "2026-09-27T16:00:00+00:00",
    "local_time": false,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-munich-2026/safarizone-default.jpg",
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-munich-2026/city-safari-munich-2026.jpg",
    "summary": "Explore Munich on September 26–27, 2026, from 10 am–6 pm CEST daily. Tickets: €10 for one day, including taxes and fees. Ticketed gameplay requires attendance in Munich. Official event details",
    "url": "https://leekduck.com/events/pokemon-go-city-safari-munich-2026/",
-   "summary_ms": null
+   "summary_ms": "Jelajahi Munich pada 26–27 September 2026, dari 10 pagi–6 petang CEST setiap hari. Tiket: €10 untuk satu hari, termasuk cukai dan fi. Permainan bertiket memerlukan kehadiran di Munich. Butiran acara rasmi"
   },
   {
    "slug": "pokemon-go-city-safari-lisbon-2026",
@@ -165,10 +153,10 @@
    "start": "2026-09-26T09:00:00+00:00",
    "end": "2026-09-27T17:00:00+00:00",
    "local_time": false,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-lisbon-2026/safarizone-default.jpg",
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-lisbon-2026/city-safari-lisbon-2026.jpg",
    "summary": "Explore Lisbon on September 26–27, 2026, from 10 am–6 pm WEST daily. Tickets: €10 for one day, including taxes and fees. Ticketed gameplay requires attendance in Lisbon. Official event details",
    "url": "https://leekduck.com/events/pokemon-go-city-safari-lisbon-2026/",
-   "summary_ms": null
+   "summary_ms": "Terokai Lisbon pada 26–27 September 2026, dari 10 pagi–6 petang WEST setiap hari. Tiket: €10 untuk satu hari, termasuk cukai dan fi. Permainan bertiket memerlukan kehadiran di Lisbon. Butiran acara rasmi"
   },
   {
    "slug": "catch-mastery-phantump-2026",
@@ -189,10 +177,10 @@
    "start": "2026-09-26T13:00:00+00:00",
    "end": "2026-09-27T21:00:00+00:00",
    "local_time": false,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-rio-de-janeiro-2026/safarizone-default.jpg",
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-rio-de-janeiro-2026/city-safari-rio-de-janeiro-2026.jpg",
    "summary": "Explore Rio de Janeiro on September 26–27, 2026, from 10 am–6 pm BRT daily. Tickets: R$38 for one day, including taxes and fees. Ticketed gameplay requires attendance in Rio de Janeiro. Official event details",
    "url": "https://leekduck.com/events/pokemon-go-city-safari-rio-de-janeiro-2026/",
-   "summary_ms": null
+   "summary_ms": "Terokai Rio de Janeiro pada 26–27 September 2026, dari 10 pagi–6 petang BRT setiap hari. Tiket: R$38 untuk satu hari, termasuk cukai dan fi. Permainan bertiket memerlukan kehadiran di Rio de Janeiro. Butiran acara rasmi"
   },
   {
    "slug": "max-mondays-2026-09-28",
