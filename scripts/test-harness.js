@@ -44,6 +44,20 @@ window.document.dispatchEvent(new window.Event('DOMContentLoaded'));
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+// i18n parity: every EN key must exist in BM and vice versa (catches half-translated features)
+try {
+  const code = appSrc.slice(appSrc.indexOf('const I18N'), appSrc.indexOf('function t(key)'));
+  const I18N = eval('(' + code.replace(/^\s*const I18N\s*=\s*/, '').replace(/;\s*$/, '') + ')');
+  const en = Object.keys(I18N.en), ms = Object.keys(I18N.ms);
+  const missingMs = en.filter((k) => !ms.includes(k)), missingEn = ms.filter((k) => !en.includes(k));
+  console.log('=== I18N PARITY ===');
+  console.log('en keys:', en.length, '| ms keys:', ms.length);
+  console.log('missing in ms:', missingMs.length ? missingMs.join(', ') : 'none');
+  console.log('missing in en:', missingEn.length ? missingEn.join(', ') : 'none');
+} catch (e) {
+  console.log('i18n parity check failed:', e.message);
+}
+
 setTimeout(async () => {
   const bar = document.getElementById('nextbar');
   console.log('=== NEXTBAR ===');

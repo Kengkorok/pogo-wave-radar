@@ -825,6 +825,7 @@ function renderMoonlight() {
     + '<div><b>' + t('moonSpawns') + ':</b> ' + esc(spawns.join(' · ')) + '</div>'
     + '<div><b>' + t('moonBonus') + ':</b> ' + esc(moonText('bonus')) + ' · ✨ ' + esc(shiny.join(' · ')) + '</div>'
     + '<div><b>' + t('moonResearch') + ':</b> ' + esc(resLbl) + '</div>'
+    + (moonText('wib_note') ? '<div class="tiny">⚠️ ' + esc(moonText('wib_note')) + '</div>' : '')
     + '<div class="tiny">📅 ' + t('moonDays') + ' · ' + t('moonSource') + ': <a href="' + esc(MOON.source) + '" target="_blank" rel="noopener">pokemongohub.net ↗</a></div>'
     + '</div>';
 }
