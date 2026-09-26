@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-26T01:24:16.842763+00:00",
+ "fetched_at": "2026-09-26T06:33:10.541788+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -123,6 +123,54 @@
    "summary_ms": "Raikan koleksi adidas × Pokémon dengan Timed Research di kedai adidas dan kedai runcit yang menyertai di seluruh dunia! Research tersedia bermula 25 September 2026, hingga 15 Januari 2027, pada 8:00 p.m. waktu tempatan. Masa mula yang tepat belum diumumkan."
   },
   {
+   "slug": "pokemon-go-city-safari-brisbane-2026",
+   "name": "Brisbane, Australia - Pokémon GO City Safari",
+   "type": "city-safari",
+   "start": "2026-09-26T00:00:00+00:00",
+   "end": "2026-09-27T08:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-brisbane-2026/safarizone-default.jpg",
+   "summary": "Pokémon GO City Safari takes place in Brisbane, Australia, on September 26 and 27, 2026, from 10 am to 6 pm AEST each day. One-day tickets cost AU$17, including taxes and fees. Event gameplay requires a ticket and attendance in Brisbane. Official event details",
+   "url": "https://leekduck.com/events/pokemon-go-city-safari-brisbane-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "pokemon-go-city-safari-marseille-2026",
+   "name": "Marseille, France - Pokémon GO City Safari",
+   "type": "city-safari",
+   "start": "2026-09-26T08:00:00+00:00",
+   "end": "2026-09-27T16:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-marseille-2026/safarizone-default.jpg",
+   "summary": "Explore Marseille on September 26–27, 2026, from 10 am–6 pm CEST daily. Tickets: €10 for one day, including taxes and fees. Ticketed gameplay requires attendance in Marseille. Official event details",
+   "url": "https://leekduck.com/events/pokemon-go-city-safari-marseille-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "pokemon-go-city-safari-munich-2026",
+   "name": "Munich, Germany - Pokémon GO City Safari",
+   "type": "city-safari",
+   "start": "2026-09-26T08:00:00+00:00",
+   "end": "2026-09-27T16:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-munich-2026/safarizone-default.jpg",
+   "summary": "Explore Munich on September 26–27, 2026, from 10 am–6 pm CEST daily. Tickets: €10 for one day, including taxes and fees. Ticketed gameplay requires attendance in Munich. Official event details",
+   "url": "https://leekduck.com/events/pokemon-go-city-safari-munich-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "pokemon-go-city-safari-lisbon-2026",
+   "name": "Lisbon, Portugal - Pokémon GO City Safari",
+   "type": "city-safari",
+   "start": "2026-09-26T09:00:00+00:00",
+   "end": "2026-09-27T17:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-lisbon-2026/safarizone-default.jpg",
+   "summary": "Explore Lisbon on September 26–27, 2026, from 10 am–6 pm WEST daily. Tickets: €10 for one day, including taxes and fees. Ticketed gameplay requires attendance in Lisbon. Official event details",
+   "url": "https://leekduck.com/events/pokemon-go-city-safari-lisbon-2026/",
+   "summary_ms": null
+  },
+  {
    "slug": "catch-mastery-phantump-2026",
    "name": "Phantump Catch Mastery",
    "type": "event",
@@ -133,6 +181,18 @@
    "summary": "Get ready for a Catch Mastery event featuring Phantump, the Stump Pokémon!",
    "url": "https://leekduck.com/events/catch-mastery-phantump-2026/",
    "summary_ms": "Bersedia untuk acara Catch Mastery yang menampilkan Phantump, Pokémon Stump!"
+  },
+  {
+   "slug": "pokemon-go-city-safari-rio-de-janeiro-2026",
+   "name": "Rio de Janeiro, Brazil - Pokémon GO City Safari",
+   "type": "city-safari",
+   "start": "2026-09-26T13:00:00+00:00",
+   "end": "2026-09-27T21:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-09-26-pokemon-go-city-safari-rio-de-janeiro-2026/safarizone-default.jpg",
+   "summary": "Explore Rio de Janeiro on September 26–27, 2026, from 10 am–6 pm BRT daily. Tickets: R$38 for one day, including taxes and fees. Ticketed gameplay requires attendance in Rio de Janeiro. Official event details",
+   "url": "https://leekduck.com/events/pokemon-go-city-safari-rio-de-janeiro-2026/",
+   "summary_ms": null
   },
   {
    "slug": "max-mondays-2026-09-28",
