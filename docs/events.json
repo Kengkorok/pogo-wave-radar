@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-01T06:26:02.411545+00:00",
+ "fetched_at": "2026-10-01T13:48:41.726872+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -51,42 +51,6 @@
    "summary_ms": "Shadow Thundurus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari 9 September 2026 hingga 6 Oktober 2026. Jika anda bernasib baik, anda mungkin akan bertemu dengan Shiny Shadow Thundurus (Incarnate Forme)!"
   },
   {
-   "slug": "gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition",
-   "name": "Ultra League, Master League: Mega Edition, and Retro Cup: Great League Edition | Twilight Trails",
-   "type": "go-battle-league",
-   "start": "2026-09-22T20:00:00+00:00",
-   "end": "2026-09-29T20:00:00+00:00",
-   "local_time": false,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/go-battle-league-ultra-league-machamp-swampert.jpg",
-   "summary": "The Ultra League, Master League: Mega Edition, and Retro Cup: Great League Edition will run from September 22, 2026, at 1:00 p.m. to September 29, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Ultra League Pokémon must be at or below 2,500 CP to enter. Master League: Mega Edition No CP limit. Mega-Evolved Pokémon are allowed. Retro Cup: Great League Edition Pokémon must be at or below 1,500 CP to enter. Dark-, Steel-, and Fairy-type Pokémon are not eligible.",
-   "url": "https://leekduck.com/events/gbl-twilight-trails_ultra-league_master-league-mega-edition_retro-cup-great-league-edition/",
-   "summary_ms": "Liga Ultra, Liga Master: Edisi Mega, dan Piala Retro: Edisi Liga Hebat akan berlangsung dari 22 September 2026, 1:00 p.m. hingga 29 September 2026, 1:00 p.m. PT. Para Trainer juga akan menerima 4× Stardust daripada ganjaran kemenangan (ini tidak termasuk ganjaran akhir set). Pokémon Liga Ultra mesti berada pada atau di bawah 2,500 CP untuk menyertai. Liga Master: Edisi Mega Tiada had CP. Pokémon yang telah Mega-Evolve dibenarkan. Piala Retro: Edisi Liga Hebat Pokémon mesti berada pada atau di bawah 1,500 CP untuk menyertai. Pokémon jenis Dark, Steel, dan Fairy tidak layak."
-  },
-  {
-   "slug": "mega-malamar-in-mega-raids-september-2026",
-   "name": "Mega Malamar in Mega Raids",
-   "type": "raid-battles",
-   "start": "2026-09-23T06:00:00",
-   "end": "2026-09-29T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
-   "summary": "Mega Malamar will be in Mega Raids from September 23, 2026 at 6 am to September 29, 2026 at 10 pm local time.",
-   "url": "https://leekduck.com/events/mega-malamar-in-mega-raids-september-2026/",
-   "summary_ms": "Mega Malamar akan berada dalam Mega Raids dari 23 September 2026, jam 6 pagi hingga 29 September 2026, jam 10 malam waktu tempatan."
-  },
-  {
-   "slug": "xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026",
-   "name": "Xurkitree, Pheromosa, and Buzzwole in 5-star Raid Battles",
-   "type": "raid-battles",
-   "start": "2026-09-23T06:00:00",
-   "end": "2026-09-29T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/buzzwole-xurkitree-pheromosa-ultra-beasts.jpg",
-   "summary": "Xurkitree, Pheromosa, and Buzzwole will be in five-star raid battles from September 23, 2026 to September 29, 2026. Xurkitree: Asia-Pacific Pheromosa: Europe, the Middle East, Africa, and India Buzzwole: The Americas and Greenland Raid Hours There will also be a Raid Hour featuring these regional raid bosses from 6:00 p.m. to 7:00 p.m. local time on September 23.",
-   "url": "https://leekduck.com/events/xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026/",
-   "summary_ms": "Xurkitree, Pheromosa, dan Buzzwole akan berada dalam pertarungan raid bintang lima dari 23 September 2026 hingga 29 September 2026. Xurkitree akan muncul di rantau Asia-Pasifik, Pheromosa akan muncul di Eropah, Timur Tengah, Afrika, dan India, dan Buzzwole akan muncul di Amerika dan Greenland. Waktu Raid Akan ada juga Waktu Raid yang menampilkan bos raid serantau ini dari 6:00 petang hingga 7:00 malam waktu tempatan pada 23 September."
-  },
-  {
    "slug": "pokemon-x-adidas-2026",
    "name": "adidas × Pokémon Timed Research",
    "type": "research",
@@ -94,7 +58,7 @@
    "end": "2027-01-15T20:00:00",
    "local_time": true,
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/pokemon-x-adidas-2026.jpg",
-   "summary": "Celebrate the adidas × Pokémon collection with Timed Research at participating adidas and retail stores worldwide! Research is available starting September 25, 2026 , through January 15, 2027, at 8:00 p.m. local time . The exact start time has not been announced.",
+   "summary": "Celebrate the adidas × Pokémon collection with Timed Research at participating adidas and retail stores worldwide! Research is available starting September 25, 2026, at 10:00 a.m. local time , through January 15, 2027, at 8:00 p.m. local time .",
    "url": "https://leekduck.com/events/pokemon-x-adidas-2026/",
    "summary_ms": "Raikan koleksi adidas × Pokémon dengan Timed Research di kedai adidas dan kedai runcit yang menyertai di seluruh dunia! Research tersedia bermula 25 September 2026, hingga 15 Januari 2027, pada 8:00 p.m. waktu tempatan. Masa mula yang tepat belum diumumkan."
   },
@@ -109,18 +73,6 @@
    "summary": "Celebrate the release of Pokémon TCG: 30th Celebration! Visit participating Target, Best Buy, and GameStop locations in the United States for Mega Raids and Timed Research. The event runs from September 27, 2026, at 10:00 a.m. to October 20, 2026, at 10:00 p.m. local time .",
    "url": "https://leekduck.com/events/pokemon-tcg-30th-celebration/",
    "summary_ms": "Raikan pelancaran Pokémon TCG: 30th Celebration! Lawati lokasi Target, Best Buy, dan GameStop yang menyertai di Amerika Syarikat untuk Mega Raids dan Timed Research. Acara ini berlangsung dari 27 September 2026, 10:00 a.m. hingga 20 Oktober 2026, 10:00 p.m. waktu tempatan."
-  },
-  {
-   "slug": "max-mondays-2026-09-28",
-   "name": "Dynamax Sobble during Max Monday",
-   "type": "max-mondays",
-   "start": "2026-09-28T06:00:00",
-   "end": "2026-09-28T21:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
-   "summary": "Dynamax Sobble may appear in Max Battles from September 28, 2026 through October 4, 2026 . These Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokémon. On September 28, 2026 , the featured Dynamax Pokémon is Sobble . Sobble",
-   "url": "https://leekduck.com/events/max-mondays-2026-09-28/",
-   "summary_ms": "Dynamax Pokémon ini mungkin muncul dalam Max Battles sepanjang musim ini. Max Battles akan tersedia dari 6:00 pagi hingga 9:00 malam waktu tempatan pada hari Isnin. Power Spots akan segar semula dengan lebih kerap. Power Spots tambahan akan aktif pada hari Isnin berbanding hari lain dalam minggu ini. Max Battles akan berputar untuk menampilkan Dynamax Pokémon yang berbeza. Pada 28 September 2026, Dynamax Pokémon yang ditampilkan ialah Sobble. Sobble"
   },
   {
    "slug": "harvest-festival-2026",
