@@ -1,19 +1,7 @@
 {
- "fetched_at": "2026-10-02T09:36:00.461066+00:00",
+ "fetched_at": "2026-10-02T16:11:41.403599+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
-  {
-   "slug": "lego-pokemon-go-2026",
-   "name": "LEGO Stores and Pokémon GO",
-   "type": "event",
-   "start": "2026-08-03T10:00:00",
-   "end": "2026-09-30T23:59:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-08-03-lego-pokemon-go-2026/lego-stores-pokemon-go.jpg",
-   "summary": "The Pokémon GO and LEGO Group partnership continues for Trainers in the US, UK, Poland, France, Germany, and Australia! Visit participating LEGO Store locations for raids, a LEGO-themed stamp rally, event stickers, and LEGO Pokémon SMART Play. The LEGO Stores and Pokémon GO event will take place from August 3, 2026 at 10 am to September 30, 2026 at 11 pm.",
-   "url": "https://leekduck.com/events/lego-pokemon-go-2026/",
-   "summary_ms": "Kerjasama Pokémon GO dan LEGO Group diteruskan untuk Trainer di US, UK, Poland, Perancis, Jerman, dan Australia! Kunjungi kedai LEGO yang menyertai untuk raid, stamp rally bertema LEGO, sticker event, dan LEGO Pokémon SMART Play. Event LEGO Stores dan Pokémon GO akan berlangsung dari tarikh tersebut."
-  },
   {
    "slug": "go-pass-september-2026",
    "name": "GO Pass: September",
@@ -480,6 +468,18 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-24-dynamax-uxie-mesprit-azelf-max-battle-day-2026/dynamax-uxie-mesprit-azelf-max-battle-day.jpg",
    "summary": "The Dynamax Uxie, Mesprit, and Azelf Max Battle Day event will take place on October 24, 2026 from 2 pm to 5 pm local time.",
    "url": "https://leekduck.com/events/dynamax-uxie-mesprit-azelf-max-battle-day-2026/",
+   "summary_ms": "Hari Max Battle Dynamax Uxie, Mesprit, dan Azelf akan berlangsung pada 24 Oktober 2026 dari 2 pm hingga 5 pm waktu tempatan."
+  },
+  {
+   "slug": "pokemon-night-out-2026-twitch-drops",
+   "name": "Twitch Drops for Pokémon Night Out 2026",
+   "type": "twitch-drops",
+   "start": "2026-10-25T02:30:00+00:00",
+   "end": "2026-10-25T06:59:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-24-pokemon-night-out-2026-twitch-drops/pokemon-night-out.jpg",
+   "summary": "Celebrate Pokémon Night Out at Intuit Dome in Los Angeles with a Twitch broadcast that Trainers around the world can watch. Tune in to Twitch.tv/Pokemon on Saturday, October 24, 2026, starting at 7:30 p.m. PDT (10:30 p.m. EDT) for 30 minutes to earn a code for exclusive Timed Research. Complete the research to receive a Pokémon Night Out baseball jersey for your avatar. The broadcast end time and the code and Timed Research expiration dates have not been announced.",
+   "url": "https://leekduck.com/events/pokemon-night-out-2026-twitch-drops/",
    "summary_ms": null
   },
   {
