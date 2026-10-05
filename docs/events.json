@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-05T15:49:17.958260+00:00",
+ "fetched_at": "2026-10-05T22:28:52.828297+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -121,18 +121,6 @@
    "summary": "Rescue Shadow Zekrom as Team GO Rocket takes over the Harvest Festival! The Harvest Festival: Taken Over event will take place from October 2, 2026 at 12 am to October 5, 2026 at 8 pm local time.",
    "url": "https://leekduck.com/events/harvest-festival-taken-over-2026/",
    "summary_ms": "Rescue Shadow Zekrom semasa Team GO Rocket mengambil alih Pesta Menuai! Acara Pesta Menuai: Taken Over akan berlangsung dari 2 Oktober 2026, 12 pagi hingga 5 Oktober 2026, 8 malam waktu tempatan."
-  },
-  {
-   "slug": "gigantamax-cinderace-max-battle-day-2026",
-   "name": "Gigantamax Cinderace Max Battle Day",
-   "type": "max-battles",
-   "start": "2026-10-03T14:00:00",
-   "end": "2026-10-03T17:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-03-gigantamax-cinderace-max-battle-day-2026/gigantamax-cinderace-max-battle-day.jpg",
-   "summary": "The Gigantamax Cinderace Max Battle Day event will take place on October 3, 2026 from 2 pm to 5 pm local time.",
-   "url": "https://leekduck.com/events/gigantamax-cinderace-max-battle-day-2026/",
-   "summary_ms": "Event Gigantamax Cinderace Max Battle Day akan berlangsung pada October 3, 2026 dari 2 pm hingga 5 pm waktu tempatan."
   },
   {
    "slug": "world-space-week-2026",
@@ -472,12 +460,12 @@
   },
   {
    "slug": "halloween-2026-part-1",
-   "name": "Halloween 2026 Part I",
+   "name": "Pokémon GO Halloween 2026 Part I",
    "type": "event",
    "start": "2026-10-27T10:00:00",
-   "end": "2026-10-31T20:00:00",
+   "end": "2026-11-01T10:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-27-halloween-2026-part-1/halloween-2026-part-1.jpg",
    "summary": "The Halloween 2026 Part I event will take place from October 27, 2026 through October 31, 2026. The event is expected to begin at 10:00 a.m. and end at 8:00 p.m. local time. Stay tuned for more details.",
    "url": "https://leekduck.com/events/halloween-2026-part-1/",
    "summary_ms": "Event Halloween 2026 Part I akan berlangsung dari 27 Oktober 2026 hingga 31 Oktober 2026. Event ini dijangka bermula pada 10:00 a.m. dan tamat pada 8:00 p.m. waktu tempatan. Nantikan butiran lanjut."
