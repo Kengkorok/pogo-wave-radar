@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-08T14:50:57.641167+00:00",
+ "fetched_at": "2026-10-08T20:37:53.084708+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -13,18 +13,6 @@
    "summary": "Welcome to Pokémon GO: Twilight Trails! In Pokémon GO, Seasons are periods of time that feature new events, Pokémon debuts, and surprises that all follow a certain theme. As the Seasons change, you may find different Pokémon appearing in your area and hatching from Eggs. Make sure to explore during each in-game Season to collect and train as many different Pokémon as you can! You’ll also enjoy special bonuses as you do.",
    "url": "https://leekduck.com/events/season-24-twilight-trails/",
    "summary_ms": "Selamat datang ke Pokémon GO: Twilight Trails! Dalam Pokémon GO, Seasons ialah tempoh masa yang menampilkan acara baharu, kemunculan sulung Pokémon, dan kejutan yang semuanya mengikut tema tertentu. Apabila Seasons berubah, anda mungkin akan menemui Pokémon berbeza muncul di kawasan anda dan menetas dari Eggs. Pastikan anda meneroka semasa setiap Season dalam permainan untuk mengumpul dan melatih seberapa banyak Pokémon berbeza yang anda boleh! Anda juga akan menikmati bonus istimewa semasa melakukannya."
-  },
-  {
-   "slug": "shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026",
-   "name": "Shadow Thundurus (Incarnate Forme) in Shadow Raids",
-   "type": "raid-battles",
-   "start": "2026-09-09T06:00:00",
-   "end": "2026-10-06T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
-   "summary": "Shadow Thundurus (Incarnate Forme) will appear in five-star Shadow Raids every weekend from September 9, 2026 to October 6, 2026. If you’re lucky, you may encounter Shiny Shadow Thundurus (Incarnate Forme)!",
-   "url": "https://leekduck.com/events/shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026/",
-   "summary_ms": "Shadow Thundurus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari 9 September 2026 hingga 6 Oktober 2026. Jika anda bernasib baik, anda mungkin akan bertemu dengan Shiny Shadow Thundurus (Incarnate Forme)!"
   },
   {
    "slug": "pokemon-x-adidas-2026",
@@ -49,42 +37,6 @@
    "summary": "Celebrate the release of Pokémon TCG: 30th Celebration! Visit participating Target, Best Buy, and GameStop locations in the United States for Mega Raids and Timed Research. The event runs from September 27, 2026, at 10:00 a.m. to October 20, 2026, at 10:00 p.m. local time .",
    "url": "https://leekduck.com/events/pokemon-tcg-30th-celebration/",
    "summary_ms": "Raikan pelancaran Pokémon TCG: 30th Celebration! Lawati lokasi Target, Best Buy, dan GameStop yang menyertai di Amerika Syarikat untuk Mega Raids dan Timed Research. Acara ini berlangsung dari 27 September 2026, 10:00 a.m. hingga 20 Oktober 2026, 10:00 p.m. waktu tempatan."
-  },
-  {
-   "slug": "gbl-twilight-trails_master-league_mega-color-cup-great-league-edition",
-   "name": "Master League and Mega Color Cup: Great League Edition | Twilight Trails",
-   "type": "go-battle-league",
-   "start": "2026-09-29T20:00:00+00:00",
-   "end": "2026-10-06T20:00:00+00:00",
-   "local_time": false,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/gobattleleague-master-key.jpg",
-   "summary": "The Master League and Mega Color Cup: Great League Edition will run from September 29, 2026, at 1:00 p.m. to October 6, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Master League All Pokémon are eligible. Mega Color Cup: Great League Edition Pokémon must be at or below 1,500 CP to enter. Mega-Evolved Pokémon are allowed. Only Fire-, Water-, Grass-, and Electric-type Pokémon are eligible.",
-   "url": "https://leekduck.com/events/gbl-twilight-trails_master-league_mega-color-cup-great-league-edition/",
-   "summary_ms": "Liga Master dan Mega Color Cup: Edisi Great League akan berlangsung dari 29 September 2026, 1:00 tengah hari hingga 6 Oktober 2026, 1:00 tengah hari PT. Para Trainer juga akan menerima 4× Stardust daripada ganjaran kemenangan (ini tidak termasuk ganjaran akhir set). Liga Master Semua Pokémon layak. Mega Color Cup: Edisi Great League Pokémon mestilah pada atau di bawah 1,500 CP untuk masuk. Pokémon yang telah Mega-Evolve dibenarkan. Hanya Pokémon jenis Fire, Water, Grass, dan Electric yang layak."
-  },
-  {
-   "slug": "mega-victreebel-in-mega-raids-september-2026",
-   "name": "Mega Victreebel in Mega Raids",
-   "type": "raid-battles",
-   "start": "2026-09-30T06:00:00",
-   "end": "2026-10-06T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
-   "summary": "Mega Victreebel will be in Mega Raids from September 30, 2026 at 6 am to October 6, 2026 at 10 pm local time.",
-   "url": "https://leekduck.com/events/mega-victreebel-in-mega-raids-september-2026/",
-   "summary_ms": "Mega Victreebel akan berada dalam Mega Raids dari 30 September 2026, 6 pagi hingga 6 Oktober 2026, 10 malam waktu tempatan."
-  },
-  {
-   "slug": "xerneas-in-5-star-raid-battles-september-2026",
-   "name": "Xerneas in 5-star Raid Battles",
-   "type": "raid-battles",
-   "start": "2026-09-30T06:00:00",
-   "end": "2026-10-06T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/xerneas-woods.jpg",
-   "summary": "Xerneas will be in five-star raid battles from September 30, 2026 to October 6, 2026. Raid Hours There will also be a Raid Hour featuring Xerneas from 6:00 p.m. to 7:00 p.m. local time on September 30.",
-   "url": "https://leekduck.com/events/xerneas-in-5-star-raid-battles-september-2026/",
-   "summary_ms": "Xerneas akan berada dalam pertempuran raid lima bintang dari 30 September 2026 hingga 6 Oktober 2026. Waktu Raid Akan ada juga Waktu Raid yang menampilkan Xerneas dari 6:00 petang hingga 7:00 petang waktu tempatan pada 30 September."
   },
   {
    "slug": "world-space-week-2026",
@@ -496,12 +448,12 @@
   },
   {
    "slug": "halloween-2026-part-2",
-   "name": "Halloween 2026 Part II",
+   "name": "Pokémon GO Halloween 2026 Part II",
    "type": "event",
    "start": "2026-11-01T10:00:00",
    "end": "2026-11-05T20:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-11-01-halloween-2026-part-2/halloween-2026-part-2.jpg",
    "summary": "The Halloween 2026 Part II event will take place from November 1, 2026 through November 5, 2026. The event is expected to begin at 10:00 a.m. and end at 8:00 p.m. local time. Stay tuned for more details.",
    "url": "https://leekduck.com/events/halloween-2026-part-2/",
    "summary_ms": "Event Halloween 2026 Part II akan berlangsung dari 1 November 2026 hingga 5 November 2026. Event ini dijangka bermula pada 10:00 a.m. dan tamat pada 8:00 p.m. waktu tempatan. Nantikan butiran lanjut."
