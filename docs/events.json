@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-09T07:56:03.545875+00:00",
+ "fetched_at": "2026-10-09T15:12:35.228118+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -109,18 +109,6 @@
    "summary": "Shadow Landorus (Incarnate Forme) will appear in five-star Shadow Raids every weekend from October 7, 2026 to November 3, 2026. If you’re lucky, you may encounter Shiny Shadow Landorus (Incarnate Forme)!",
    "url": "https://leekduck.com/events/shadow-landorus-incarnate-forme-in-shadow-raids-october-2026/",
    "summary_ms": "Shadow Landorus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari October 7, 2026 hingga November 3, 2026. Jika anda bernasib baik, anda mungkin akan bertemu Shiny Shadow Landorus (Incarnate Forme)!"
-  },
-  {
-   "slug": "raidhour20261007",
-   "name": "Yveltal Raid Hour",
-   "type": "raid-hour",
-   "start": "2026-10-07T18:00:00",
-   "end": "2026-10-07T19:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/raidhour.jpg",
-   "summary": "A Raid Hour featuring Yveltal is scheduled from 6:00 p.m. to 7:00 p.m. local time. During this hour there will be an increased number of five-star raids.",
-   "url": "https://leekduck.com/events/raidhour20261007/",
-   "summary_ms": "Raid Hour yang menampilkan Yveltal dijadualkan dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan. Sepanjang jam ini akan ada peningkatan bilangan five-star raids."
   },
   {
    "slug": "pokemonspotlighthour2026-10-08",
