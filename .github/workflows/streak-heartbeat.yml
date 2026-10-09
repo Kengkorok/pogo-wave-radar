@@ -9,6 +9,11 @@ on:
   schedule:
     - cron: '0 10 * * *'   # 10:00 UTC = 18:00 MYT
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Commit even if a commit already landed today"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -22,6 +27,8 @@ jobs:
           fetch-depth: 0
 
       - name: Heartbeat commit (only if none today)
+        env:
+          FORCE: ${{ inputs.force }}
         run: |
           set -euo pipefail
 
@@ -32,7 +39,7 @@ jobs:
           fi
 
           TODAY="$(date -u +%Y-%m-%d)"
-          if git log --since="${TODAY}T00:00:00Z" --until="${TODAY}T23:59:59Z" --oneline | grep -q .; then
+          if [[ "$FORCE" != "true" ]] && git log --since="${TODAY}T00:00:00Z" --until="${TODAY}T23:59:59Z" --oneline | grep -q .; then
             echo "already committed today ($TODAY) — nothing to do"
             exit 0
           fi
