@@ -1,0 +1,46 @@
+name: streak-heartbeat
+
+# Purpose: guarantee at least ONE commit per day on `main` while the owner is
+# away from his PC (trip 2026-10-09 → 2026-10-11), so the GitHub contribution
+# streak never breaks. It is a no-op if any commit already landed today.
+# Self-expiring: after the window below it does nothing — safe to delete.
+
+on:
+  schedule:
+    - cron: '0 10 * * *'   # 10:00 UTC = 18:00 MYT
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  beat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Heartbeat commit (only if none today)
+        run: |
+          set -euo pipefail
+
+          # Self-expire: window ends after Sun 2026-10-11 MYT.
+          if [[ "$(date -u +%Y-%m-%d)" > "2026-10-11" ]]; then
+            echo "heartbeat window expired — no-op"
+            exit 0
+          fi
+
+          TODAY="$(date -u +%Y-%m-%d)"
+          if git log --since="${TODAY}T00:00:00Z" --until="${TODAY}T23:59:59Z" --oneline | grep -q .; then
+            echo "already committed today ($TODAY) — nothing to do"
+            exit 0
+          fi
+
+          git config user.name "Kengkorok"
+          git config user.email "292285727+Kengkorok@users.noreply.github.com"
+          mkdir -p docs
+          printf '%s streak heartbeat\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> docs/heartbeat.log
+          git add docs/heartbeat.log
+          git commit -m "chore: streak heartbeat (${TODAY})"
+          git push
