@@ -32,8 +32,8 @@ jobs:
         run: |
           set -euo pipefail
 
-          # Self-expire: window ends after Sun 2026-10-11 MYT.
-          if [[ "$(date -u +%Y-%m-%d)" > "2026-10-11" ]]; then
+          # Self-expire: window ends after Sun 2026-10-18 MYT (extended — owner not home yet).
+          if [[ "$(date -u +%Y-%m-%d)" > "2026-10-18" ]]; then
             echo "heartbeat window expired — no-op"
             exit 0
           fi
