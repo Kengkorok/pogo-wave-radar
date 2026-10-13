@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-12T19:15:40.897483+00:00",
+ "fetched_at": "2026-10-13T01:34:48.095707+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -37,18 +37,6 @@
    "summary": "Celebrate the release of Pokémon TCG: 30th Celebration! Visit participating Target, Best Buy, and GameStop locations in the United States for Mega Raids and Timed Research. The event runs from September 27, 2026, at 10:00 a.m. to October 20, 2026, at 10:00 p.m. local time .",
    "url": "https://leekduck.com/events/pokemon-tcg-30th-celebration/",
    "summary_ms": "Raikan pelancaran Pokémon TCG: 30th Celebration! Lawati lokasi Target, Best Buy, dan GameStop yang menyertai di Amerika Syarikat untuk Mega Raids dan Timed Research. Acara ini berlangsung dari 27 September 2026, 10:00 a.m. hingga 20 Oktober 2026, 10:00 p.m. waktu tempatan."
-  },
-  {
-   "slug": "world-space-week-2026",
-   "name": "World Space Week 2026",
-   "type": "event",
-   "start": "2026-10-04T00:00:00",
-   "end": "2026-10-10T23:59:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-04-world-space-week-2026/world-space-week-2026.jpg",
-   "summary": "Blast off with Astronaut Pikachu during World Space Week! This new costumed Pokémon makes its Pokémon GO debut in raids and free Timed Research. This global event is part of a collaboration between the European Space Agency and The Pokémon Company. World Space Week takes place from Sunday, October 4, 2026, at 12:00 a.m. to Saturday, October 10, 2026, at 11:59 p.m. local time .",
-   "url": "https://leekduck.com/events/world-space-week-2026/",
-   "summary_ms": "Berlepas dengan Astronaut Pikachu semasa World Space Week! Pokémon berkostum baharu ini membuat debut dalam Pokémon GO melalui raid dan Timed Research percuma. Event global ini adalah hasil kerjasama antara European Space Agency dengan The Pokémon Company. World Space Week berlangsung dari Ahad, 4 Oktober 2026, 12:00 a.m. hingga Sabtu, 10 Oktober 2026, 11:59 p.m. waktu tempatan ."
   },
   {
    "slug": "go-pass-october-2026",
@@ -109,18 +97,6 @@
    "summary": "Shadow Landorus (Incarnate Forme) will appear in five-star Shadow Raids every weekend from October 7, 2026 to November 3, 2026. If you’re lucky, you may encounter Shiny Shadow Landorus (Incarnate Forme)!",
    "url": "https://leekduck.com/events/shadow-landorus-incarnate-forme-in-shadow-raids-october-2026/",
    "summary_ms": "Shadow Landorus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari October 7, 2026 hingga November 3, 2026. Jika anda bernasib baik, anda mungkin akan bertemu Shiny Shadow Landorus (Incarnate Forme)!"
-  },
-  {
-   "slug": "october-communityday2026",
-   "name": "Zorua Community Day",
-   "type": "community-day",
-   "start": "2026-10-10T14:00:00",
-   "end": "2026-10-10T17:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-10-october-communityday2026/zorua-october-cd-2026.png",
-   "summary": "Zorua, the Tricky Fox Pokémon, will be featured during October Community Day!",
-   "url": "https://leekduck.com/events/october-communityday2026/",
-   "summary_ms": "Zorua, Pokémon Tricky Fox, akan ditampilkan semasa October Community Day pada 10 Oktober 2026 dari 2 petang hingga 5 petang!"
   },
   {
    "slug": "max-mondays-2026-10-12",
