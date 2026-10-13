@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-13T17:05:02.081552+00:00",
+ "fetched_at": "2026-10-13T21:56:16.978462+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -387,16 +387,16 @@
    "summary_ms": "Waktu Sorotan Pokémon akan menampilkan Pokémon berbeza dan bonus istimewa selama satu jam pada 6:00 p.m. waktu tempatan. October 29 : Pokémon yang ditampilkan ialah Gastly dan bonus istimewa ialah 2× Evolution XP ."
   },
   {
-   "slug": "super-mega-raid-day-october-2026",
-   "name": "Super Mega Raid Day",
+   "slug": "chandelure-super-mega-raid-day-2026",
+   "name": "Chandelure Super Mega Raid Day",
    "type": "raid-day",
    "start": "2026-10-31T14:00:00",
    "end": "2026-10-31T17:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
-   "summary": "The Super Mega Raid Day event will take place on October 31, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
-   "url": "https://leekduck.com/events/super-mega-raid-day-october-2026/",
-   "summary_ms": "Event Super Mega Raid Day akan berlangsung pada 31 Oktober 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/chandelure-super-mega-raid-day-2026.jpg",
+   "summary": "Mega Chandelure makes its Pokémon GO debut during Chandelure Super Mega Raid Day on Saturday, October 31, 2026, from 2:00 p.m. to 5:00 p.m. local time!",
+   "url": "https://leekduck.com/events/chandelure-super-mega-raid-day-2026/",
+   "summary_ms": null
   },
   {
    "slug": "halloween-2026-part-2",
