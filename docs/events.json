@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-14T12:48:08.379408+00:00",
+ "fetched_at": "2026-10-14T17:54:52.330690+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -97,18 +97,6 @@
    "summary": "Shadow Landorus (Incarnate Forme) will appear in five-star Shadow Raids every weekend from October 7, 2026 to November 3, 2026. If you’re lucky, you may encounter Shiny Shadow Landorus (Incarnate Forme)!",
    "url": "https://leekduck.com/events/shadow-landorus-incarnate-forme-in-shadow-raids-october-2026/",
    "summary_ms": "Shadow Landorus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari October 7, 2026 hingga November 3, 2026. Jika anda bernasib baik, anda mungkin akan bertemu Shiny Shadow Landorus (Incarnate Forme)!"
-  },
-  {
-   "slug": "max-mondays-2026-10-12",
-   "name": "Dynamax Rookidee during Max Monday",
-   "type": "max-mondays",
-   "start": "2026-10-12T06:00:00",
-   "end": "2026-10-12T21:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
-   "summary": "Dynamax Rookidee may appear in Max Battles from October 12, 2026 through October 18, 2026 . These Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokémon. On October 12, 2026 , the featured Dynamax Pokémon is Rookidee . Rookidee",
-   "url": "https://leekduck.com/events/max-mondays-2026-10-12/",
-   "summary_ms": "Dynamax Rookidee mungkin muncul dalam Max Battles dari October 12, 2026 hingga October 18, 2026 . Dynamax Pokémon ini mungkin muncul dalam Max Battles sepanjang musim ini. Max Battles akan tersedia dari 6:00 a.m. hingga 9:00 p.m. waktu tempatan pada hari Isnin. Power Spots akan dikemas kini dengan lebih kerap. Power Spots tambahan akan aktif pada hari Isnin berbanding hari-hari lain dalam minggu ini. Max Battles akan berputar untuk menampilkan Dynamax Pokémon yang berbeza. Pada October 12, 2026 , Dynamax Pokémon yang ditampilkan ialah Rookidee . Rookidee"
   },
   {
    "slug": "fall-marathon-buddy-trek-2026",
@@ -288,7 +276,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/city-safari-boston-2026.jpg",
    "summary": "Boston City Safari will run globally for current ticket holders on October 24–25, 2026, from 10 am to 6 pm local time daily. Keep your ticket to participate; no action is needed. Official announcement",
    "url": "https://leekduck.com/events/pokemon-go-city-safari-boston-2026-rescheduled/",
-   "summary_ms": null
+   "summary_ms": "Boston City Safari akan berlangsung secara global untuk pemegang tiket semasa pada 24–25 Oktober 2026, dari 10 pagi hingga 6 petang waktu tempatan setiap hari. Simpan tiket anda untuk menyertai; tiada tindakan diperlukan. Pengumuman rasmi"
   },
   {
    "slug": "dynamax-uxie-mesprit-azelf-max-battle-day-2026",
@@ -457,6 +445,18 @@
    "summary": "GO Wild Area returns in 2026 with Steel- and Dragon-type Pokémon, the debuts of Gigantamax Duraludon, Dynamax Dialga, and Dynamax Palkia, and powerful mighty Pokémon. Collect GO Safari Balls to help catch these challenging encounters! Dates: November 6, 7, or 8, 2026 Time: 10:00 a.m. – 6:00 p.m. local time (UTC−6) Location: Mexico City, Mexico, with gameplay throughout the metropolitan area Ticket: MXN$350 (plus applicable taxes and fees) for one day All event gameplay is exclusive to ticket holders. A standard ticket covers one selected day; Extra Day add-ons extend eligible gameplay to additional days. Gameplay is available only within the event area at the date and time specified on your ticket. Tickets are available on the official event ticket page , while supplies last.",
    "url": "https://leekduck.com/events/pokemon-go-wild-area-2026-mexico-city/",
    "summary_ms": "GO Wild Area kembali pada 2026 dengan Pokémon jenis Steel dan Dragon, kemunculan sulung Dynamax Dialga dan Dynamax Palkia, serta mighty Pokémon yang kuat. Kumpulkan GO Safari Balls untuk membantu menangkap cabaran yang mencabar ini! Tarikh: 6, 7, atau 8 November 2026 Masa: 10:00 pagi – 6:00 petang waktu tempatan (UTC−6) Lokasi: Mexico City, Mexico, dengan permainan di seluruh kawasan metropolitan Tiket: MXN$350 (termasuk cukai dan yuran yang berkenaan) untuk satu hari Semua aktiviti acara adalah eksklusif untuk pemegang tiket. Tiket standard meliputi satu hari pilihan; tambahan Extra Day memanjangkan permainan yang layak ke hari tambahan. Permainan hanya tersedia dalam kawasan acara pada tarikh dan masa yang dinyatakan pada tiket anda. Tiket boleh didapati di halaman tiket acara rasmi , selagi stok masih ada."
+  },
+  {
+   "slug": "into-the-wild-2026",
+   "name": "Into the Wild",
+   "type": "event",
+   "start": "2026-11-09T10:00:00",
+   "end": "2026-11-13T20:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-11-09-into-the-wild-2026/into-the-wild-2026.jpg",
+   "summary": "It’s time to head back Into the Wild for a Steel- and Dragon-type adventure! Regidrago makes its Dynamax debut in five-star Max Battles, Dynamax Meltan debuts in GO Pass: Into the Wild, and Crowned Sword Zacian and Crowned Shield Zamazenta take over five-star raids as Pokémon GO Wild Area 2026 approaches.",
+   "url": "https://leekduck.com/events/into-the-wild-2026/",
+   "summary_ms": null
   },
   {
    "slug": "gbl-twilight-trails_great-league_ultra-league-mega-edition_2026-go-laic-cup",
