@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-16T22:43:59.024873+00:00",
+ "fetched_at": "2026-10-17T01:13:07.236302+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -49,30 +49,6 @@
    "summary": "Kyogre makes waves and the Lucky Trinket returns in GO Pass: October! The GO Pass and GO Pass Deluxe for October will be available from October 6, 2026 at 10:00 am to November 3, 2026 at 10:00 am local time.",
    "url": "https://leekduck.com/events/go-pass-october-2026/",
    "summary_ms": "Kyogre buat gelombang dan Lucky Trinket kembali dalam GO Pass: Oktober! GO Pass dan GO Pass Deluxe untuk Oktober akan tersedia dari October 6, 2026 pada 10:00 am hingga November 3, 2026 pada 10:00 am waktu tempatan."
-  },
-  {
-   "slug": "mega-blastoise-in-mega-raids-october-2026",
-   "name": "Mega Blastoise in Mega Raids",
-   "type": "raid-battles",
-   "start": "2026-10-07T06:00:00",
-   "end": "2026-10-13T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
-   "summary": "Mega Blastoise will be in Mega Raids from October 7, 2026 at 6 am to October 13, 2026 at 10 pm local time.",
-   "url": "https://leekduck.com/events/mega-blastoise-in-mega-raids-october-2026/",
-   "summary_ms": "Mega Blastoise akan berada dalam Mega Raids dari October 7, 2026 jam 6 pagi hingga October 13, 2026 jam 10 malam waktu tempatan."
-  },
-  {
-   "slug": "yveltal-in-5-star-raid-battles-october-2026",
-   "name": "Yveltal in 5-star Raid Battles",
-   "type": "raid-battles",
-   "start": "2026-10-07T06:00:00",
-   "end": "2026-10-13T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/yveltal-2.jpg",
-   "summary": "Yveltal will be in five-star raid battles from October 7, 2026 to October 13, 2026. Raid Hours There will also be a Raid Hour featuring Yveltal from 6:00 p.m. to 7:00 p.m. local time on October 7.",
-   "url": "https://leekduck.com/events/yveltal-in-5-star-raid-battles-october-2026/",
-   "summary_ms": "Yveltal akan berada dalam raid battle lima bintang dari 7 Oktober 2026 hingga 13 Oktober 2026. Raid Hour Akan ada juga Raid Hour yang menampilkan Yveltal dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan pada 7 Oktober."
   },
   {
    "slug": "shadow-landorus-incarnate-forme-in-shadow-raids-october-2026",
@@ -133,18 +109,6 @@
    "summary": "Mega Dragonite will be in Mega Raids from October 14, 2026 at 6 am to October 20, 2026 at 10 pm local time.",
    "url": "https://leekduck.com/events/mega-dragonite-in-mega-raids-october-2026/",
    "summary_ms": "Mega Dragonite akan berada dalam Mega Raids dari 14 Oktober 2026 jam 6 pagi hingga 20 Oktober 2026 jam 10 malam waktu tempatan."
-  },
-  {
-   "slug": "raidhour20261014",
-   "name": "Dialga Raid Hour",
-   "type": "raid-hour",
-   "start": "2026-10-14T18:00:00",
-   "end": "2026-10-14T19:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/raidhour.jpg",
-   "summary": "A Raid Hour featuring Dialga is scheduled from 6:00 p.m. to 7:00 p.m. local time. During this hour there will be an increased number of five-star raids.",
-   "url": "https://leekduck.com/events/raidhour20261014/",
-   "summary_ms": "Raid Hour yang menampilkan Dialga dijadualkan dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan. Sepanjang jam ini, akan ada peningkatan bilangan raid lima bintang."
   },
   {
    "slug": "pokemonspotlighthour2026-10-15",
