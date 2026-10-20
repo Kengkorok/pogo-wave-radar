@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-20T12:02:26.461240+00:00",
+ "fetched_at": "2026-10-20T17:27:14.746829+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -361,6 +361,18 @@
    "summary": "Dynamax Machop may appear in Max Battles from November 2, 2026 through November 8, 2026 . These Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokémon. On November 2, 2026 , the featured Dynamax Pokémon is Machop . Machop",
    "url": "https://leekduck.com/events/max-mondays-2026-11-02/",
    "summary_ms": "Dynamax Machop mungkin muncul dalam Max Battles dari 2 November 2026 hingga 8 November 2026 . Dynamax Pokémon ini mungkin muncul dalam Max Battles sepanjang musim ini. Max Battles akan tersedia dari 6:00 a.m. hingga 9:00 p.m. waktu tempatan pada hari Isnin. Power Spots akan dikemas kini dengan lebih kerap. Power Spots tambahan akan aktif pada hari Isnin berbanding hari-hari lain dalam minggu itu. Max Battles akan bergilir untuk menampilkan Dynamax Pokémon yang berbeza. Pada 2 November 2026 , Dynamax Pokémon yang ditampilkan ialah Machop . Machop"
+  },
+  {
+   "slug": "go-pass-november-2026",
+   "name": "GO Pass: November",
+   "type": "go-pass",
+   "start": "2026-11-03T10:00:00",
+   "end": "2026-12-01T10:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-11-03-go-pass-november-2026/go-pass-november-2026.jpg",
+   "summary": "Earn PokéCoins and encounter Groudon in GO Pass: November! The GO Pass and GO Pass Deluxe for November will be available from November 3, 2026 at 10:00 am to December 1, 2026 at 10:00 am local time.",
+   "url": "https://leekduck.com/events/go-pass-november-2026/",
+   "summary_ms": null
   },
   {
    "slug": "gbl-twilight-trails_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-3",
