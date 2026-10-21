@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-21T15:00:16.714053+00:00",
+ "fetched_at": "2026-10-21T19:30:40.244394+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -63,18 +63,6 @@
    "summary_ms": "Shadow Landorus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari October 7, 2026 hingga November 3, 2026. Jika anda bernasib baik, anda mungkin akan bertemu Shiny Shadow Landorus (Incarnate Forme)!"
   },
   {
-   "slug": "fall-marathon-buddy-trek-2026",
-   "name": "Fall Marathon: Buddy Trek",
-   "type": "event",
-   "start": "2026-10-13T10:00:00",
-   "end": "2026-10-19T20:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-13-fall-marathon-buddy-trek-2026/fall-marathon-buddy-trek-2026.jpg",
-   "summary": "Bramblin makes its Pokémon GO debut during Fall Marathon: Buddy Trek! Explore up to 42 km to earn Marathon Visor Pikachu, enjoy increased chances of encountering Shiny Electrike and Shiny Hisuian Growlithe, and unlock new GO Pass rewards. The event runs from Tuesday, October 13, at 10:00 a.m. to Monday, October 19, 2026, at 8:00 p.m. local time .",
-   "url": "https://leekduck.com/events/fall-marathon-buddy-trek-2026/",
-   "summary_ms": "Bramblin membuat debut dalam Pokémon GO semasa Fall Marathon: Buddy Trek! Jalan sehingga 42 km untuk dapatkan Marathon Visor Pikachu, nikmati peluang lebih tinggi untuk berjumpa Shiny Electrike dan Shiny Hisuian Growlithe, dan buka ganjaran GO Pass baharu. Event ini berjalan dari Selasa, 13 Oktober 2026, 10:00 a.m. hingga Isnin, 19 Oktober 2026, 8:00 p.m. waktu tempatan ."
-  },
-  {
    "slug": "gbl-twilight-trails_great-league_ultra-league-mega-edition_little-cup",
    "name": "Great League, Ultra League: Mega Edition, and Little Cup | Twilight Trails",
    "type": "go-battle-league",
@@ -109,18 +97,6 @@
    "summary": "Mega Dragonite will be in Mega Raids from October 14, 2026 at 6 am to October 20, 2026 at 10 pm local time.",
    "url": "https://leekduck.com/events/mega-dragonite-in-mega-raids-october-2026/",
    "summary_ms": "Mega Dragonite akan berada dalam Mega Raids dari 14 Oktober 2026 jam 6 pagi hingga 20 Oktober 2026 jam 10 malam waktu tempatan."
-  },
-  {
-   "slug": "max-mondays-2026-10-19",
-   "name": "Dynamax Sneasel during Max Monday",
-   "type": "max-mondays",
-   "start": "2026-10-19T06:00:00",
-   "end": "2026-10-19T21:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
-   "summary": "Dynamax Sneasel may appear in Max Battles from October 19, 2026 through October 25, 2026 . These Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokémon. On October 19, 2026 , the featured Dynamax Pokémon is Sneasel . Sneasel",
-   "url": "https://leekduck.com/events/max-mondays-2026-10-19/",
-   "summary_ms": "Dynamax Sneasel mungkin muncul dalam Max Battles dari October 19, 2026 hingga October 25, 2026 . Dynamax Pokémon ini mungkin muncul dalam Max Battles sepanjang musim ini. Max Battles akan tersedia dari 6:00 a.m. hingga 9:00 p.m. waktu tempatan pada hari Isnin. Power Spots akan dikemas kini dengan lebih kerap. Power Spots tambahan akan aktif pada hari Isnin berbanding sepanjang minggu. Max Battles akan berputar untuk menampilkan Dynamax Pokémon yang berbeza. Pada October 19, 2026 , Dynamax Pokémon yang ditampilkan ialah Sneasel . Sneasel"
   },
   {
    "slug": "minior-showers-orionids-2026",
@@ -604,12 +580,12 @@
   },
   {
    "slug": "november-communityday2026",
-   "name": "November Community Day",
+   "name": "Pawniard Community Day",
    "type": "community-day",
    "start": "2026-11-21T14:00:00",
    "end": "2026-11-21T17:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/cd-default.jpg",
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-11-21-november-communityday2026/pawniard-november-cd-2026.jpg",
    "summary": "The November Community Day event will take place on November 21, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
    "url": "https://leekduck.com/events/november-communityday2026/",
    "summary_ms": "Event November Community Day akan berlangsung pada 21 November 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
