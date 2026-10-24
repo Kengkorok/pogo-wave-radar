@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-23T23:00:51.183588+00:00",
+ "fetched_at": "2026-10-24T01:53:22.580891+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -97,18 +97,6 @@
    "summary": "Palkia will be in five-star raid battles from October 21, 2026 to October 27, 2026. Raid Hours There will also be a Raid Hour featuring Palkia from 6:00 p.m. to 7:00 p.m. local time on October 21.",
    "url": "https://leekduck.com/events/palkia-in-5-star-raid-battles-october-2026/",
    "summary_ms": "Palkia akan berada dalam five-star raid battles dari October 21, 2026 hingga October 27, 2026. Raid Hours Akan ada juga Raid Hour yang menampilkan Palkia dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan pada October 21."
-  },
-  {
-   "slug": "raidhour20261021",
-   "name": "Palkia Raid Hour",
-   "type": "raid-hour",
-   "start": "2026-10-21T18:00:00",
-   "end": "2026-10-21T19:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/raidhour.jpg",
-   "summary": "A Raid Hour featuring Palkia is scheduled from 6:00 p.m. to 7:00 p.m. local time. During this hour there will be an increased number of five-star raids.",
-   "url": "https://leekduck.com/events/raidhour20261021/",
-   "summary_ms": "Raid Hour yang menampilkan Palkia dijadualkan dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan. Sepanjang jam ini, bilangan raid lima bintang akan meningkat."
   },
   {
    "slug": "pokemonspotlighthour2026-10-22",
