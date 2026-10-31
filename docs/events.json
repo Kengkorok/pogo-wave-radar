@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-31T11:08:16.496283+00:00",
+ "fetched_at": "2026-10-31T16:16:18.781576+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -51,30 +51,6 @@
    "summary_ms": "Shadow Landorus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari October 7, 2026 hingga November 3, 2026. Jika anda bernasib baik, anda mungkin akan bertemu Shiny Shadow Landorus (Incarnate Forme)!"
   },
   {
-   "slug": "mega-charizard-x-mega-charizard-y-in-mega-raids-october-2026",
-   "name": "Mega Charizard X and Mega Charizard Y in Mega Raids",
-   "type": "raid-battles",
-   "start": "2026-10-21T06:00:00",
-   "end": "2026-10-27T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
-   "summary": "Mega Charizard X and Mega Charizard Y will be in Mega Raids from October 21, 2026 at 6 am to October 27, 2026 at 10 pm local time.",
-   "url": "https://leekduck.com/events/mega-charizard-x-mega-charizard-y-in-mega-raids-october-2026/",
-   "summary_ms": "Mega Charizard X dan Mega Charizard Y akan berada dalam Mega Raids dari 21 Oktober 2026 jam 6 pagi hingga 27 Oktober 2026 jam 10 malam waktu tempatan."
-  },
-  {
-   "slug": "palkia-in-5-star-raid-battles-october-2026",
-   "name": "Palkia in 5-star Raid Battles",
-   "type": "raid-battles",
-   "start": "2026-10-21T06:00:00",
-   "end": "2026-10-27T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/palkiaraid.jpg",
-   "summary": "Palkia will be in five-star raid battles from October 21, 2026 to October 27, 2026. Raid Hours There will also be a Raid Hour featuring Palkia from 6:00 p.m. to 7:00 p.m. local time on October 21.",
-   "url": "https://leekduck.com/events/palkia-in-5-star-raid-battles-october-2026/",
-   "summary_ms": "Palkia akan berada dalam five-star raid battles dari October 21, 2026 hingga October 27, 2026. Raid Hours Akan ada juga Raid Hour yang menampilkan Palkia dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan pada October 21."
-  },
-  {
    "slug": "halloween-2026-part-1",
    "name": "Pokémon GO Halloween 2026 Part I",
    "type": "event",
@@ -121,30 +97,6 @@
    "summary": "Mega Sableye will be in Mega Raids from October 28, 2026 at 6 am to November 8, 2026 at 10 pm local time.",
    "url": "https://leekduck.com/events/mega-sableye-in-mega-raids-october-2026/",
    "summary_ms": "Mega Sableye akan berada dalam Mega Raids dari 28 Oktober 2026 jam 6 pagi hingga 3 November 2026 jam 10 malam waktu tempatan."
-  },
-  {
-   "slug": "raidhour20261028",
-   "name": "Giratina (Origin Forme) Raid Hour",
-   "type": "raid-hour",
-   "start": "2026-10-28T18:00:00",
-   "end": "2026-10-28T19:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/raidhour.jpg",
-   "summary": "A Raid Hour featuring Giratina (Origin Forme) is scheduled from 6:00 p.m. to 7:00 p.m. local time. During this hour there will be an increased number of five-star raids.",
-   "url": "https://leekduck.com/events/raidhour20261028/",
-   "summary_ms": "Raid Hour yang menampilkan Giratina (Origin Forme) dijadualkan dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan. Sepanjang jam ini, bilangan raid lima bintang akan meningkat."
-  },
-  {
-   "slug": "pokemonspotlighthour2026-10-29",
-   "name": "Gastly Spotlight Hour",
-   "type": "pokémon-spotlight-hour",
-   "start": "2026-10-29T18:00:00",
-   "end": "2026-10-29T19:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/pokemonspotlighthour.jpg",
-   "summary": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time. October 29 : The featured Pokémon is Gastly and the special bonus is 2× Evolution XP .",
-   "url": "https://leekduck.com/events/pokemonspotlighthour2026-10-29/",
-   "summary_ms": "Waktu Sorotan Pokémon akan menampilkan Pokémon berbeza dan bonus istimewa selama satu jam pada 6:00 p.m. waktu tempatan. October 29 : Pokémon yang ditampilkan ialah Gastly dan bonus istimewa ialah 2× Evolution XP ."
   },
   {
    "slug": "chandelure-super-mega-raid-day-2026",
