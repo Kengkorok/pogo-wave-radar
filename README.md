@@ -4,15 +4,15 @@
 
 # 🌊 PoGo Wave Radar
 
-[**PoGo Wave Radar — Pokémon GO Event & Time Zone Tracker**](https://kengkorok.github.io/pogo-wave-radar/)
+[**PoGo Wave Radar — Pokémon GO Event & Time Zone Tracker**](https://korokk.com/pogo-wave-radar/)
 
 **Never miss a Pokémon GO event again.** Chase the event wave across time zones — pick a city, copy coords, spoof!
 
-[![Live Site](https://img.shields.io/badge/🌊-Open_App-blueviolet?style=for-the-badge)](https://kengkorok.github.io/pogo-wave-radar/)
+[![Live Site](https://img.shields.io/badge/🌊-Open_App-blueviolet?style=for-the-badge)](https://korokk.com/pogo-wave-radar/)
 ![Last Scrape](https://img.shields.io/github/last-commit/kengkorok/pogo-wave-radar?style=for-the-badge&label=Event+Update)
 [![License](https://img.shields.io/github/license/kengkorok/pogo-wave-radar?style=for-the-badge)](LICENSE)
 
-**Support:** ☕ [Buy me a coffee](https://ko-fi.com/kengkorok) · [Scan DuitNow QR](https://kengkorok.github.io/pogo-wave-radar/img/duitnow-qr.png)
+**Support:** ☕ [Buy me a coffee](https://ko-fi.com/kengkorok) · [Scan DuitNow QR](https://korokk.com/pogo-wave-radar/img/duitnow-qr.png)
 
 </div>
 
@@ -36,7 +36,7 @@ Data auto-updates from [leekduck.com/events](https://leekduck.com/events/) every
 
 ### 📲 Use on your phone
 
-1. Open [kengkorok.github.io/pogo-wave-radar](https://kengkorok.github.io/pogo-wave-radar/)
+1. Open [korokk.com/pogo-wave-radar](https://korokk.com/pogo-wave-radar/)
 2. Chrome/Android: **Add to Home screen** → installs as an app
 3. Set your timezone (auto-detect is usually correct)
 4. Event live → tap a city → **📋 copy coords** → paste into GPS Joystick
@@ -50,7 +50,7 @@ Want to add/change a city? Edit `docs/cities.json` (name, IANA timezone, lat/lng
 This app is free and ad-free. If it helps you never miss an event, you can buy me a coffee:
 
 - **Ko-fi** ⭐ — best for international supporters, payout via PayPal: [ko-fi.com/kengkorok](https://ko-fi.com/kengkorok)
-- **DuitNow QR (Malaysia)** — zero fee, scan directly with TNG eWallet / any DuitNow app: [duitnow-qr.png](https://kengkorok.github.io/pogo-wave-radar/img/duitnow-qr.png)
+- **DuitNow QR (Malaysia)** — zero fee, scan directly with TNG eWallet / any DuitNow app: [duitnow-qr.png](https://korokk.com/pogo-wave-radar/img/duitnow-qr.png)
 - Links live in `docs/config.js` — edit and push to change them.
 
 ### ⚠️ Disclaimer
@@ -77,7 +77,7 @@ Data auto-update dari [leekduck.com/events](https://leekduck.com/events/) setiap
 
 ### 📲 Guna kat phone
 
-1. Buka [kengkorok.github.io/pogo-wave-radar](https://kengkorok.github.io/pogo-wave-radar/)
+1. Buka [korokk.com/pogo-wave-radar](https://korokk.com/pogo-wave-radar/)
 2. Chrome/Android: **Add to Home screen** → install sebagai app
 3. Set zon anda (auto-detect biasanya dah betul)
 4. Event live → tekan bandar → **📋 copy koordinat** → paste kat GPS Joystick, Teleport PGS
@@ -90,7 +90,7 @@ Data auto-update dari [leekduck.com/events](https://leekduck.com/events/) setiap
 App ni free & takde iklan. Kalau app ni membantu anda boleh payung aku kopi:
 
 - **Ko-fi** ⭐ — terbaik untuk penyokong luar negara, worldwide, payout via PayPal: [ko-fi.com/kengkorok](https://ko-fi.com/kengkorok)
-- **DuitNow QR (Malaysia)** — zero fee, scan terus guna TNG eWallet / mana-mana app DuitNow: [duitnow-qr.png](https://kengkorok.github.io/pogo-wave-radar/img/duitnow-qr.png)
+- **DuitNow QR (Malaysia)** — zero fee, scan terus guna TNG eWallet / mana-mana app DuitNow: [duitnow-qr.png](https://korokk.com/pogo-wave-radar/img/duitnow-qr.png)
 
 ### ⚠️ Disclaimer
 
