@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-02T09:51:45.384947+00:00",
+ "fetched_at": "2026-11-02T20:10:18.623970+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -97,18 +97,6 @@
    "summary": "Mega Sableye will be in Mega Raids from October 28, 2026 at 6 am to November 8, 2026 at 10 pm local time.",
    "url": "https://leekduck.com/events/mega-sableye-in-mega-raids-october-2026/",
    "summary_ms": "Mega Sableye akan berada dalam Mega Raids dari 28 Oktober 2026 jam 6 pagi hingga 3 November 2026 jam 10 malam waktu tempatan."
-  },
-  {
-   "slug": "chandelure-super-mega-raid-day-2026",
-   "name": "Chandelure Super Mega Raid Day",
-   "type": "raid-day",
-   "start": "2026-10-31T14:00:00",
-   "end": "2026-10-31T17:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/chandelure-super-mega-raid-day-2026.jpg",
-   "summary": "Mega Chandelure makes its Pokémon GO debut during Chandelure Super Mega Raid Day on Saturday, October 31, 2026, from 2:00 p.m. to 5:00 p.m. local time!",
-   "url": "https://leekduck.com/events/chandelure-super-mega-raid-day-2026/",
-   "summary_ms": "Mega Chandelure membuat penampilan sulungnya dalam Pokémon GO semasa Chandelure Super Mega Raid Day pada Sabtu, 31 Oktober 2026, dari 2:00 p.m. hingga 5:00 p.m. waktu tempatan!"
   },
   {
    "slug": "halloween-2026-part-2",
@@ -429,7 +417,7 @@
    "start": "2026-11-24T10:00:00",
    "end": "2026-11-30T20:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/twilight-wishes-2026.jpg?v2",
    "summary": "The Twilight Wishes event will take place from November 24, 2026 to November 30, 2026. Stay tuned for more details.",
    "url": "https://leekduck.com/events/twilight-wishes-2026/",
    "summary_ms": "Event Twilight Wishes akan berlangsung dari November 24, 2026 hingga November 30, 2026. Nantikan lebih banyak butiran."
