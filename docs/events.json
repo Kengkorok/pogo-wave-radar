@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-02T20:10:18.623970+00:00",
+ "fetched_at": "2026-11-03T02:34:01.255612+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -49,18 +49,6 @@
    "summary": "Shadow Landorus (Incarnate Forme) will appear in five-star Shadow Raids every weekend from October 7, 2026 to November 3, 2026. If you’re lucky, you may encounter Shiny Shadow Landorus (Incarnate Forme)!",
    "url": "https://leekduck.com/events/shadow-landorus-incarnate-forme-in-shadow-raids-october-2026/",
    "summary_ms": "Shadow Landorus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari October 7, 2026 hingga November 3, 2026. Jika anda bernasib baik, anda mungkin akan bertemu Shiny Shadow Landorus (Incarnate Forme)!"
-  },
-  {
-   "slug": "halloween-2026-part-1",
-   "name": "Pokémon GO Halloween 2026 Part I",
-   "type": "event",
-   "start": "2026-10-27T10:00:00",
-   "end": "2026-11-01T10:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-27-halloween-2026-part-1/halloween-2026-part-1.jpg",
-   "summary": "Celebrate Halloween with the debut of Pikachu wearing a hat and capelet, Zubat wearing a top hat, and Sinistea wearing a bow! Discover spooky surprises in the wild and unlock Candy and Stardust bonuses with the event GO Pass. Halloween 2026 Part I runs from Tuesday, October 27, at 10:00 a.m. to Sunday, November 1, 2026, at 10:00 a.m. local time . The celebration continues in Halloween 2026 Part II , featuring Shiny Greavard’s debut and Mega Sableye’s new Super Max level.",
-   "url": "https://leekduck.com/events/halloween-2026-part-1/",
-   "summary_ms": "Event Halloween 2026 Part I akan berlangsung dari 27 Oktober 2026 hingga 31 Oktober 2026. Event ini dijangka bermula pada 10:00 a.m. dan tamat pada 8:00 p.m. waktu tempatan. Nantikan butiran lanjut."
   },
   {
    "slug": "gbl-twilight-trails_master-league_mega-halloween-cup-great-league-edition",
@@ -334,7 +322,7 @@
    "end": "2026-11-23T20:00:00",
    "local_time": true,
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-11-16-dynamax-trails-2026/dynamax-trails-2026.jpg",
-   "summary": "The Dynamax Trails event will take place from November 16, 2026 to November 23, 2026. Stay tuned for more details.",
+   "summary": "Get ready for a week of Max Battles! Dynamax Pokémon return, Max Particles are surging in the wild, and Eternamax Eternatus returns to Power Spots during Dynamax Trails. The Dynamax Trails event will take place from November 16, 2026 at 10 am to November 23, 2026 at 8 pm local time.",
    "url": "https://leekduck.com/events/dynamax-trails-2026/",
    "summary_ms": "Acara Dynamax Trails akan berlangsung dari November 16, 2026 hingga November 23, 2026. Nantikan butiran lanjut."
   },
@@ -418,7 +406,7 @@
    "end": "2026-11-30T20:00:00",
    "local_time": true,
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/twilight-wishes-2026.jpg?v2",
-   "summary": "The Twilight Wishes event will take place from November 24, 2026 to November 30, 2026. Stay tuned for more details.",
+   "summary": "Celebrate Twilight Wishes with Espeon wearing a sun scarf, Umbreon wearing a moon scarf, and Rockruff! Enjoy increased chances to encounter Shiny Staryu and Shiny Elgyem, event-themed raids and Field Research, and rewards and bonuses from the event GO Pass. Twilight Wishes runs from Tuesday, November 24, at 10:00 a.m. to Monday, November 30, 2026, at 8:00 p.m. local time .",
    "url": "https://leekduck.com/events/twilight-wishes-2026/",
    "summary_ms": "Event Twilight Wishes akan berlangsung dari November 24, 2026 hingga November 30, 2026. Nantikan lebih banyak butiran."
   },
