@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-05T16:41:58.834760+00:00",
+ "fetched_at": "2026-11-05T22:37:49.960778+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -411,16 +411,16 @@
    "summary_ms": "<p>Pokémon Spotlight Hour akan menampilkan Pokémon yang berbeza dan bonus istimewa selama satu jam pada 6:00 p.m. waktu tempatan. 26 November : Pokémon yang ditampilkan ialah Noibat dan bonus istimewa ialah 2× Catch Candy .</p>"
   },
   {
-   "slug": "super-mega-raid-day-november-2026",
-   "name": "Super Mega Raid Day",
+   "slug": "clefable-super-mega-raid-day-2026",
+   "name": "Clefable Super Mega Raid Day",
    "type": "raid-day",
    "start": "2026-11-28T14:00:00",
    "end": "2026-11-28T17:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
-   "summary": "The Super Mega Raid Day event will take place on November 28, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
-   "url": "https://leekduck.com/events/super-mega-raid-day-november-2026/",
-   "summary_ms": "Event Super Mega Raid Day akan berlangsung pada 28 November 2026 dari 2 petang hingga 5 petang. Nantikan butiran lanjut."
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/clefable-super-mega-raid-day-2026.jpg",
+   "summary": "Mega Clefable makes its Pokémon GO debut during Clefable Super Mega Raid Day on Saturday, November 28, 2026, from 2:00 p.m. to 5:00 p.m. local time!",
+   "url": "https://leekduck.com/events/clefable-super-mega-raid-day-2026/",
+   "summary_ms": null
   },
   {
    "slug": "max-mondays-2026-11-30",
