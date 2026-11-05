@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-05T08:22:49.914029+00:00",
+ "fetched_at": "2026-11-05T16:41:58.834760+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -27,54 +27,6 @@
    "summary_ms": "Raikan koleksi adidas × Pokémon dengan Timed Research di kedai adidas dan kedai runcit yang menyertai di seluruh dunia! Research tersedia bermula 25 September 2026, 10:00 a.m. waktu tempatan, hingga 15 Januari 2027, 8:00 p.m. waktu tempatan ."
   },
   {
-   "slug": "go-pass-october-2026",
-   "name": "GO Pass: October",
-   "type": "go-pass",
-   "start": "2026-10-06T10:00:00",
-   "end": "2026-11-03T10:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-10-06-go-pass-october-2026/go-pass-october-2026.jpg",
-   "summary": "Kyogre makes waves and the Lucky Trinket returns in GO Pass: October! The GO Pass and GO Pass Deluxe for October will be available from October 6, 2026 at 10:00 am to November 3, 2026 at 10:00 am local time.",
-   "url": "https://leekduck.com/events/go-pass-october-2026/",
-   "summary_ms": "Kyogre buat gelombang dan Lucky Trinket kembali dalam GO Pass: Oktober! GO Pass dan GO Pass Deluxe untuk Oktober akan tersedia dari October 6, 2026 pada 10:00 am hingga November 3, 2026 pada 10:00 am waktu tempatan."
-  },
-  {
-   "slug": "shadow-landorus-incarnate-forme-in-shadow-raids-october-2026",
-   "name": "Shadow Landorus (Incarnate Forme) in Shadow Raids",
-   "type": "raid-battles",
-   "start": "2026-10-07T06:00:00",
-   "end": "2026-11-03T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
-   "summary": "Shadow Landorus (Incarnate Forme) will appear in five-star Shadow Raids every weekend from October 7, 2026 to November 3, 2026. If you’re lucky, you may encounter Shiny Shadow Landorus (Incarnate Forme)!",
-   "url": "https://leekduck.com/events/shadow-landorus-incarnate-forme-in-shadow-raids-october-2026/",
-   "summary_ms": "Shadow Landorus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari October 7, 2026 hingga November 3, 2026. Jika anda bernasib baik, anda mungkin akan bertemu Shiny Shadow Landorus (Incarnate Forme)!"
-  },
-  {
-   "slug": "gbl-twilight-trails_master-league_mega-halloween-cup-great-league-edition",
-   "name": "Master League and Mega Halloween Cup: Great League Edition | Twilight Trails",
-   "type": "go-battle-league",
-   "start": "2026-10-27T20:00:00+00:00",
-   "end": "2026-11-03T21:00:00+00:00",
-   "local_time": false,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/gobattleleague-master-key.jpg",
-   "summary": "The Master League and Mega Halloween Cup: Great League Edition will run from October 27, 2026, at 1:00 p.m. to November 3, 2026, at 1:00 p.m. PT. Trainers will also receive 4× Stardust from win rewards (this does not include end-of-set rewards). Master League All Pokémon are eligible. Mega Halloween Cup: Great League Edition Pokémon must be at or below 1,500 CP to enter. Mega-Evolved Pokémon are allowed. Only Bug-, Poison-, Ghost-, Dark-, and Fairy-type Pokémon are eligible.",
-   "url": "https://leekduck.com/events/gbl-twilight-trails_master-league_mega-halloween-cup-great-league-edition/",
-   "summary_ms": "Liga Master dan Piala Halloween Mega: Edisi Liga Hebat akan berlangsung dari 27 Oktober 2026, 1:00 tengah hari hingga 3 November 2026, 1:00 tengah hari PT. Para Trainer juga akan menerima 4× Stardust daripada ganjaran kemenangan (ini tidak termasuk ganjaran akhir set). Liga Master Semua Pokémon layak. Piala Halloween Mega: Edisi Liga Hebat Pokémon mesti berada pada atau di bawah 1,500 CP untuk masuk. Pokémon yang telah Mega-Evolve dibenarkan. Hanya Pokémon jenis Bug, Poison, Ghost, Dark, dan Fairy yang layak."
-  },
-  {
-   "slug": "giratina-origin-forme-in-5-star-raid-battles-october-2026",
-   "name": "Giratina (Origin Forme) in 5-star Raid Battles",
-   "type": "raid-battles",
-   "start": "2026-10-28T06:00:00",
-   "end": "2026-11-03T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/giratinaoriginforme.jpg",
-   "summary": "Giratina (Origin) will be in five-star raid battles from October 28, 2026 to November 3, 2026. Raid Hours There will also be a Raid Hour featuring Giratina (Origin Forme) from 6:00 p.m. to 7:00 p.m. local time on October 28.",
-   "url": "https://leekduck.com/events/giratina-origin-forme-in-5-star-raid-battles-october-2026/",
-   "summary_ms": "Giratina (Origin) akan berada dalam raid battle lima bintang dari 28 Oktober 2026 hingga 3 November 2026. Raid Hour Akan ada juga Raid Hour yang menampilkan Giratina (Origin Forme) dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan pada 28 Oktober."
-  },
-  {
    "slug": "mega-sableye-in-mega-raids-october-2026",
    "name": "Mega Sableye in Mega Raids",
    "type": "raid-battles",
@@ -97,18 +49,6 @@
    "summary": "Shiny Greavard makes its Pokémon GO debut, and Mega Sableye can reach the new Super Max Mega Level! Halloween continues with costumed Pokémon, themed encounters, and GO Pass bonuses. Halloween 2026 Part II runs from Sunday, November 1, at 10:00 a.m. to Thursday, November 5, 2026, at 8:00 p.m. local time . See Halloween 2026 Part I for the first part of the celebration, including the debut of costumed Pikachu, Zubat, and Sinistea.",
    "url": "https://leekduck.com/events/halloween-2026-part-2/",
    "summary_ms": "Event Halloween 2026 Part II akan berlangsung dari 1 November 2026 hingga 5 November 2026. Event ini dijangka bermula pada 10:00 a.m. dan tamat pada 8:00 p.m. waktu tempatan. Nantikan butiran lanjut."
-  },
-  {
-   "slug": "max-mondays-2026-11-02",
-   "name": "Dynamax Machop during Max Monday",
-   "type": "max-mondays",
-   "start": "2026-11-02T06:00:00",
-   "end": "2026-11-02T21:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
-   "summary": "Dynamax Machop may appear in Max Battles from November 2, 2026 through November 8, 2026 . These Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokémon. On November 2, 2026 , the featured Dynamax Pokémon is Machop . Machop",
-   "url": "https://leekduck.com/events/max-mondays-2026-11-02/",
-   "summary_ms": "Dynamax Machop mungkin muncul dalam Max Battles dari 2 November 2026 hingga 8 November 2026 . Dynamax Pokémon ini mungkin muncul dalam Max Battles sepanjang musim ini. Max Battles akan tersedia dari 6:00 a.m. hingga 9:00 p.m. waktu tempatan pada hari Isnin. Power Spots akan dikemas kini dengan lebih kerap. Power Spots tambahan akan aktif pada hari Isnin berbanding hari-hari lain dalam minggu itu. Max Battles akan bergilir untuk menampilkan Dynamax Pokémon yang berbeza. Pada 2 November 2026 , Dynamax Pokémon yang ditampilkan ialah Machop . Machop"
   },
   {
    "slug": "go-pass-november-2026",
