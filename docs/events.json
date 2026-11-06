@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-06T03:19:43.285475+00:00",
+ "fetched_at": "2026-11-06T11:23:47.712053+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -99,18 +99,6 @@
    "summary_ms": "Shadow Tornadus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari November 4, 2026 hingga November 8, 2026."
   },
   {
-   "slug": "raidhour20261104",
-   "name": "Giratina (Altered Forme) Raid Hour",
-   "type": "raid-hour",
-   "start": "2026-11-04T18:00:00",
-   "end": "2026-11-04T19:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/raidhour.jpg",
-   "summary": "A Raid Hour featuring Giratina (Altered Forme) is scheduled from 6:00 p.m. to 7:00 p.m. local time. During this hour there will be an increased number of five-star raids.",
-   "url": "https://leekduck.com/events/raidhour20261104/",
-   "summary_ms": "<p>Raid Hour yang menampilkan Giratina (Altered Forme) dijadualkan dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan. Sepanjang jam ini, bilangan raid lima bintang akan meningkat.</p>"
-  },
-  {
    "slug": "pokemonspotlighthour2026-11-05",
    "name": "Teddiursa wearing a witch hat Spotlight Hour",
    "type": "pokémon-spotlight-hour",
@@ -144,7 +132,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2025/2025-05-25-gigantamax-machamp-max-battle-day-may-2025/gigantamax-machamp-max-battles.jpg",
    "summary": "There will be Timed Research available to Trainers starting Friday, November 6, at 10:00 a.m. to Sunday, November 15, 2026, at 11:59 p.m. local time. Complete the Timed Research to encounter Gigantamax Machamp and earn Machop Candy, Machop Candy XL, and Max Particles to help power it up. Timed Research tasks will also award Stardust, Ultra Balls, and more!",
    "url": "https://leekduck.com/events/go-wild-area-gigantamax-machamp-power-up-timed-research/",
-   "summary_ms": null
+   "summary_ms": "Akan ada Timed Research tersedia untuk Trainer bermula Jumaat, 6 November, jam 10:00 pagi hingga Ahad, 15 November 2026, jam 11:59 malam waktu tempatan. Selesaikan Timed Research untuk bertemu Gigantamax Machamp dan dapatkan Machop Candy, Machop Candy XL, dan Max Particles untuk membantu meningkatkannya. Tugasan Timed Research juga akan memberi Stardust, Ultra Balls, dan banyak lagi!"
   },
   {
    "slug": "pokemon-go-wild-area-2026-mexico-city",
