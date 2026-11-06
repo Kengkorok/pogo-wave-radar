@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-05T22:37:49.960778+00:00",
+ "fetched_at": "2026-11-06T03:19:43.285475+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -133,6 +133,18 @@
    "summary": "GO Wild Area returns in 2026 with Steel- and Dragon-type Pokémon, the debuts of Gigantamax Duraludon, Dynamax Dialga, and Dynamax Palkia, and powerful mighty Pokémon. Collect GO Safari Balls to help catch these challenging encounters! Dates: November 6, 7, or 8, 2026 Time: 10:00 a.m. – 6:00 p.m. JST (UTC+9) Location: Sendai, Japan, with gameplay throughout Miyagi Prefecture Ticket: ¥4,000 (including applicable taxes and fees) for one day All event gameplay is exclusive to ticket holders. A standard ticket covers one selected day; Extra Day add-ons extend eligible gameplay to additional days. Gameplay is available only within the event area at the date and time specified on your ticket. Ticket registration: Register from September 11 at 8:00 a.m. JST through September 15, 2026, at 7:59 a.m. JST . Registered Trainers will be notified of their purchase window afterward. Tickets are first come, first served, and registration does not guarantee availability. Read the ticket registration announcement .",
    "url": "https://leekduck.com/events/pokemon-go-wild-area-2026-sendai-japan/",
    "summary_ms": "GO Wild Area kembali pada 2026 dengan Pokémon jenis Steel dan Dragon, kemunculan sulung Dynamax Dialga dan Dynamax Palkia, serta mighty Pokémon yang kuat. Kumpulkan GO Safari Balls untuk membantu menangkap cabaran yang mencabar ini! Tarikh: 6, 7, atau 8 November 2026 Masa: 10:00 a.m. – 6:00 p.m. JST (UTC+9) Lokasi: Sendai, Jepun, dengan permainan di seluruh Miyagi Prefecture Tiket: ¥4,000 (termasuk cukai dan yuran yang berkenaan) untuk satu hari Semua aktiviti permainan acara adalah eksklusif untuk pemegang tiket. Tiket standard meliputi satu hari yang dipilih; tambahan Extra Day memanjangkan kelayakan permainan ke hari tambahan. Permainan hanya tersedia dalam kawasan acara pada tarikh dan masa yang dinyatakan pada tiket anda. Pendaftaran tiket: Daftar dari 11 September pada 8:00 a.m. JST hingga 15 September 2026, pada 7:59 a.m. JST. Trainer yang berdaftar akan dimaklumkan tentang tetingkap pembelian mereka selepas itu. Tiket diberikan mengikut siapa cepat dia dapat, dan pendaftaran tidak menjamin ketersediaan. Baca pengumuman pendaftaran tiket ."
+  },
+  {
+   "slug": "go-wild-area-gigantamax-machamp-power-up-timed-research",
+   "name": "GO Wild Area: Gigantamax Machamp Power Up! Timed Research",
+   "type": "timed-research",
+   "start": "2026-11-06T10:00:00",
+   "end": "2026-11-15T23:59:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2025/2025-05-25-gigantamax-machamp-max-battle-day-may-2025/gigantamax-machamp-max-battles.jpg",
+   "summary": "There will be Timed Research available to Trainers starting Friday, November 6, at 10:00 a.m. to Sunday, November 15, 2026, at 11:59 p.m. local time. Complete the Timed Research to encounter Gigantamax Machamp and earn Machop Candy, Machop Candy XL, and Max Particles to help power it up. Timed Research tasks will also award Stardust, Ultra Balls, and more!",
+   "url": "https://leekduck.com/events/go-wild-area-gigantamax-machamp-power-up-timed-research/",
+   "summary_ms": null
   },
   {
    "slug": "pokemon-go-wild-area-2026-mexico-city",
@@ -420,7 +432,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/clefable-super-mega-raid-day-2026.jpg",
    "summary": "Mega Clefable makes its Pokémon GO debut during Clefable Super Mega Raid Day on Saturday, November 28, 2026, from 2:00 p.m. to 5:00 p.m. local time!",
    "url": "https://leekduck.com/events/clefable-super-mega-raid-day-2026/",
-   "summary_ms": null
+   "summary_ms": "Mega Clefable membuat penampilan sulungnya dalam Pokémon GO semasa Clefable Super Mega Raid Day pada Sabtu, 28 November 2026, dari 2:00 p.m. hingga 5:00 p.m. waktu tempatan!"
   },
   {
    "slug": "max-mondays-2026-11-30",
