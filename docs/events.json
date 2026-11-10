@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-09T21:35:43.815176+00:00",
+ "fetched_at": "2026-11-10T04:01:23.457217+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -144,7 +144,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/zacian-and-zamazenta-2.jpg",
    "summary": "Zacian (Crowned Sword) and Zamazenta (Crowned Shield) will be in five-star raid battles from November 9, 2026 to November 13, 2026, during the Into the Wild event. These raids start at 10:00 a.m. local time on November 9 and end at 8:00 p.m. local time on November 13. Defeating Zacian (Crowned Sword) or Zamazenta (Crowned Shield) in raids will earn you Crowned Sword Energy or Crowned Shield Energy, respectively. Raid Hours There will also be Raid Hours from 6:00 p.m. to 7:00 p.m. local time on the following dates: November 9: Zacian (Crowned Sword) November 10: Zamazenta (Crowned Shield)",
    "url": "https://leekduck.com/events/zacian-crowned-sword-zamazenta-crowned-shield-in-5-star-raid-battles-november-2026/",
-   "summary_ms": null
+   "summary_ms": "Zacian (Crowned Sword) dan Zamazenta (Crowned Shield) akan muncul dalam raid battle lima bintang dari November 9, 2026 hingga November 13, 2026, semasa event Into the Wild. Raid ini bermula pada 10:00 a.m. waktu tempatan pada November 9 dan tamat pada 8:00 p.m. waktu tempatan pada November 13. Menewaskan Zacian (Crowned Sword) atau Zamazenta (Crowned Shield) dalam raid akan memberi anda Crowned Sword Energy atau Crowned Shield Energy, masing-masing. Raid Hours Akan ada juga Raid Hours dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan pada tarikh-tarikh berikut: November 9: Zacian (Crowned Sword) November 10: Zamazenta (Crowned Shield)"
   },
   {
    "slug": "pokemon-night-out-london-2026",
@@ -423,6 +423,18 @@
    "summary_ms": "Dynamax Cryogonal mungkin muncul dalam Max Battles dari 30 November 2026 hingga 6 Disember 2026 . Dynamax Pokémon ini mungkin muncul dalam Max Battles sepanjang musim ini. Max Battles akan tersedia dari 6:00 a.m. hingga 9:00 p.m. waktu tempatan pada hari Isnin. Power Spots akan dikemas kini dengan lebih kerap. Power Spots tambahan akan aktif pada hari Isnin berbanding hari-hari lain dalam minggu itu. Max Battles akan bergilir untuk menampilkan Dynamax Pokémon yang berbeza. Pada 30 November 2026 , Dynamax Pokémon yang ditampilkan ialah Cryogonal . Cryogonal"
   },
   {
+   "slug": "max-battle-day-december-2026",
+   "name": "Max Battle Day",
+   "type": "max-battles",
+   "start": "2026-12-05T14:00:00",
+   "end": "2026-12-05T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "The Max Battle Day event will take place on December 5, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/max-battle-day-december-2026/",
+   "summary_ms": null
+  },
+  {
    "slug": "minior-showers-geminids-2026",
    "name": "Minior Showers: Geminids 2026",
    "type": "event",
@@ -433,6 +445,126 @@
    "summary": "Explore by starlight during the Geminids meteor shower for a chance to encounter Minior in Pokémon GO! This Minior Shower runs from December 11, 2026 at 5:00 p.m. to December 16, 2026 at 11:59 p.m. local time .",
    "url": "https://leekduck.com/events/minior-showers-geminids-2026/",
    "summary_ms": "Jelajah di bawah cahaya bintang semasa hujan meteor Geminids untuk peluang bertemu Minior dalam Pokémon GO! Minior Shower ini berlangsung dari December 11, 2026 at 5:00 p.m. hingga December 16, 2026 at 11:59 p.m. waktu tempatan ."
+  },
+  {
+   "slug": "december-communityday2026",
+   "name": "December Community Day",
+   "type": "community-day",
+   "start": "2026-12-12T14:00:00",
+   "end": "2026-12-13T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/cd-default.jpg",
+   "summary": "The December Community Day event will take place on December 12 and December 13, 2026 from 2 pm to 5 pm each day. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/december-communityday2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "raid-day-december-2026",
+   "name": "Raid Day",
+   "type": "raid-day",
+   "start": "2026-12-19T14:00:00",
+   "end": "2026-12-19T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "The Raid Day event will take place on December 19, 2026 from 2 pm to 5 pm. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/raid-day-december-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "hatch-day-december-2026",
+   "name": "Hatch Day",
+   "type": "event",
+   "start": "2026-12-26T11:00:00",
+   "end": "2026-12-26T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "The Hatch Day event will take place on December 26, 2026 from 11 am to 5 pm. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/hatch-day-december-2026/",
+   "summary_ms": null
+  },
+  {
+   "slug": "january-communitydayclassic2027",
+   "name": "January Community Day Classic",
+   "type": "community-day",
+   "start": "2027-01-02T14:00:00",
+   "end": "2027-01-02T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/cd-default.jpg",
+   "summary": "The January Community Day Classic event will take place on January 2, 2027 from 2 pm to 5 pm. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/january-communitydayclassic2027/",
+   "summary_ms": null
+  },
+  {
+   "slug": "super-mega-raid-day-january-2027",
+   "name": "Super Mega Raid Day",
+   "type": "raid-day",
+   "start": "2027-01-09T14:00:00",
+   "end": "2027-01-09T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "The Super Mega Raid Day event will take place on January 9, 2027 from 2 pm to 5 pm. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/super-mega-raid-day-january-2027/",
+   "summary_ms": null
+  },
+  {
+   "slug": "january-communityday2027",
+   "name": "January Community Day",
+   "type": "community-day",
+   "start": "2027-01-16T14:00:00",
+   "end": "2027-01-16T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/cd-default.jpg",
+   "summary": "The January Community Day event will take place on January 16, 2027 from 2 pm to 5 pm. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/january-communityday2027/",
+   "summary_ms": null
+  },
+  {
+   "slug": "max-battle-day-january-2027",
+   "name": "Max Battle Day",
+   "type": "max-battles",
+   "start": "2027-01-23T14:00:00",
+   "end": "2027-01-23T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "The Max Battle Day event will take place on January 23, 2027 from 2 pm to 5 pm. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/max-battle-day-january-2027/",
+   "summary_ms": null
+  },
+  {
+   "slug": "super-mega-raid-day-january-30-2027",
+   "name": "Super Mega Raid Day",
+   "type": "raid-day",
+   "start": "2027-01-30T14:00:00",
+   "end": "2027-01-30T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "The Super Mega Raid Day event will take place on January 30, 2027 from 2 pm to 5 pm. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/super-mega-raid-day-january-30-2027/",
+   "summary_ms": null
+  },
+  {
+   "slug": "february-communityday2027",
+   "name": "February Community Day",
+   "type": "community-day",
+   "start": "2027-02-06T14:00:00",
+   "end": "2027-02-06T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/cd-default.jpg",
+   "summary": "The February Community Day event will take place on February 6, 2027 from 2 pm to 5 pm. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/february-communityday2027/",
+   "summary_ms": null
+  },
+  {
+   "slug": "raid-day-february-2027",
+   "name": "Raid Day",
+   "type": "raid-day",
+   "start": "2027-02-13T14:00:00",
+   "end": "2027-02-13T17:00:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "summary": "The Raid Day event will take place on February 13, 2027 from 2 pm to 5 pm. Stay tuned for more details.",
+   "url": "https://leekduck.com/events/raid-day-february-2027/",
+   "summary_ms": null
   },
   {
    "slug": "pokemon-go-tour-alola-kaohsiung-2027",
