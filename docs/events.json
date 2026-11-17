@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-16T18:17:44.686428+00:00",
+ "fetched_at": "2026-11-17T01:59:45.051422+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -145,6 +145,18 @@
    "summary": "Get ready for a week of Max Battles! Dynamax Pokémon return, Max Particles are surging in the wild, and Eternamax Eternatus returns to Power Spots during Dynamax Trails. The Dynamax Trails event will take place from November 16, 2026 at 10 am to November 23, 2026 at 8 pm local time.",
    "url": "https://leekduck.com/events/dynamax-trails-2026/",
    "summary_ms": "Acara Dynamax Trails akan berlangsung dari November 16, 2026 hingga November 23, 2026. Nantikan butiran lanjut."
+  },
+  {
+   "slug": "duolingo-timed-research-2026",
+   "name": "Pokémon GO and Duolingo Timed Research",
+   "type": "timed-research",
+   "start": "2026-11-17T01:00:00+00:00",
+   "end": "2026-12-31T23:59:00",
+   "local_time": true,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-11-17-duolingo-timed-research-2026/duolingo-timed-research-2026.jpg",
+   "summary": "Pokémon GO and Duolingo are teaming up! Do at least one Duolingo lesson a day for seven days to earn an offer code for Timed Research in Pokémon GO. Complete the research to earn XP, Stardust, and encounters with Pikachu, Meowth, Chatot, and Lucario that have a Special Background. Duo’s Pokémon Party, the limited-time Duolingo quest, starts on Tuesday, November 17, 2026, at 10:00 a.m. JST (Monday, November 16, at 5:00 p.m. PST).",
+   "url": "https://leekduck.com/events/duolingo-timed-research-2026/",
+   "summary_ms": null
   },
   {
    "slug": "raidhour20261118",
