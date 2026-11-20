@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-20T09:04:04.100443+00:00",
+ "fetched_at": "2026-11-20T17:57:49.275337+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -111,18 +111,6 @@
    "summary_ms": "Pokémon GO dan Duolingo bergabung tenaga! Lakukan sekurang-kurangnya satu pelajaran Duolingo sehari selama tujuh hari untuk dapatkan kod tawaran bagi Timed Research dalam Pokémon GO. Selesaikan penyelidikan itu untuk dapatkan XP, Stardust, dan pertemuan dengan Pikachu, Meowth, Chatot, dan Lucario yang mempunyai Special Background. Duo’s Pokémon Party, misi Duolingo terhad masa, bermula pada Selasa, 17 November 2026, jam 10:00 a.m. JST (Isnin, 16 November, jam 5:00 p.m. PST)."
   },
   {
-   "slug": "raidhour20261118",
-   "name": "Cresselia and Darkrai Raid Hour",
-   "type": "raid-hour",
-   "start": "2026-11-18T18:00:00",
-   "end": "2026-11-18T19:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/raidhour.jpg",
-   "summary": "A Raid Hour featuring Cresselia and Darkrai is scheduled from 6:00 p.m. to 7:00 p.m. local time. During this hour there will be an increased number of five-star raids.",
-   "url": "https://leekduck.com/events/raidhour20261118/",
-   "summary_ms": "<p>Raid Hour yang menampilkan Cresselia dan Darkrai dijadualkan dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan. Sepanjang jam ini, bilangan raid lima bintang akan meningkat.</p>"
-  },
-  {
    "slug": "gbl-twilight-trails_ultra-league_master-league-mega-edition_2026-go-laic-cup",
    "name": "Ultra League, Master League: Mega Edition, and 2026 GO LAIC Cup | Twilight Trails",
    "type": "go-battle-league",
@@ -145,6 +133,18 @@
    "summary": "Pokémon Spotlight Hour will feature a different Pokémon and special bonus for one hour at 6:00 p.m. local time. November 19 : The featured Pokémon are Grookey, Scorbunny, and Sobble and the special bonus is 2× Catch Candy .",
    "url": "https://leekduck.com/events/pokemonspotlighthour2026-11-19/",
    "summary_ms": "Pokémon Spotlight Hour akan menampilkan Pokémon yang berbeza dan bonus istimewa selama satu jam pada 6:00 p.m. waktu tempatan. 19 November : Pokémon yang ditampilkan ialah Grookey, Scorbunny, dan Sobble dan bonus istimewa ialah 2× Catch Candy ."
+  },
+  {
+   "slug": "pokemon-latin-america-international-championships-2027-timed-research-twitch-drops",
+   "name": "Twitch Drops for 2027 Pokémon Latin America International Championships",
+   "type": "twitch-drops",
+   "start": "2026-11-20T12:00:00+00:00",
+   "end": "2026-11-22T23:00:00+00:00",
+   "local_time": false,
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-11-20-pokemon-latin-america-international-championships-2027-timed-research-twitch-drops/2027-laic-go-drops.jpg",
+   "summary": "Get codes for exclusive Timed Research and a Battle Bundle during the 2027 Pokémon Latin America International Championships Twitch broadcast. PsyRhino took home the gold at the 2026 Pokémon GO North America International Championships with a powerful Shadow Samurott on their team. Watch the 2027 LAIC stream, and you can get a Samurott inspired by PsyRhino’s NAIC-winning team. Tune in to Twitch.tv/PokemonGO on November 20 and 21, or Twitch.tv/Pokemon on November 22, and you’ll earn rewards the longer you watch. Here’s what you can get: Watch for 30 minutes: Unique Timed Research that includes the following. An encounter with a Samurott inspired by PsyRhino’s NAIC-winning team 20 Oshawott Candy 20 Oshawott Candy XL 10 Charged TMs 10 Fast TMs Watch for 45 minutes: An LAIC Battle Bundle that includes the following. 1 Elite Charged TM 1 Rare Candy XL 25 Charged TMs 25 Fast TMs Timed Research tasks must be completed and rewards claimed before Friday, December 4, 2026, at 12:00 p.m. PST. Find more information on the Timed Research from the Twitch Drops in the Research section .",
+   "url": "https://leekduck.com/events/pokemon-latin-america-international-championships-2027-timed-research-twitch-drops/",
+   "summary_ms": null
   },
   {
    "slug": "eternamax-eternatus-max-battles-2026",
