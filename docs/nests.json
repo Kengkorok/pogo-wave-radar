@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T12:18:32Z",
+  "fetched_at": "2026-11-23T14:04:45Z",
   "migration": "2026-12-02T14:18:00Z",
   "nests": [
     {
@@ -25,10 +25,20 @@
     {
       "pokemon": "Combee",
       "dex": 415,
-      "country": "UNITED STATES",
-      "flag": "🇺🇸",
-      "lat": 43.6222,
-      "lng": -116.346,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": 38.3357,
+      "lng": 140.3795,
+      "stardust": 500,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Combee",
+      "dex": 415,
+      "country": "JAPAN",
+      "flag": "🇯🇵",
+      "lat": -1.0,
+      "lng": 1.0,
       "stardust": 500,
       "source": "pokecoord"
     },
@@ -39,6 +49,16 @@
       "flag": "🇺🇸",
       "lat": 39.5637,
       "lng": -75.7214,
+      "stardust": 500,
+      "source": "pokecoord"
+    },
+    {
+      "pokemon": "Combee",
+      "dex": 415,
+      "country": "UNITED STATES",
+      "flag": "🇺🇸",
+      "lat": 43.6222,
+      "lng": -116.346,
       "stardust": 500,
       "source": "pokecoord"
     },
@@ -335,8 +355,8 @@
     {
       "pokemon": "Houndour",
       "dex": 228,
-      "country": "GERMANY",
-      "flag": "🇩🇪",
+      "country": "DENMARK",
+      "flag": "🇩🇰",
       "lat": 53.5959,
       "lng": 10.0152,
       "stardust": null,
@@ -397,8 +417,8 @@
       "dex": 81,
       "country": "JAPAN",
       "flag": "🇯🇵",
-      "lat": 36.2426,
-      "lng": 139.5435,
+      "lat": 36.9391,
+      "lng": 140.9176,
       "stardust": null,
       "source": "pokecoord"
     },
@@ -407,8 +427,8 @@
       "dex": 81,
       "country": "JAPAN",
       "flag": "🇯🇵",
-      "lat": 36.9391,
-      "lng": 140.9176,
+      "lat": 36.2426,
+      "lng": 139.5435,
       "stardust": null,
       "source": "pokecoord"
     },
@@ -677,8 +697,8 @@
       "dex": 769,
       "country": "CANADA",
       "flag": "🇨🇦",
-      "lat": 49.8697,
-      "lng": -97.239,
+      "lat": 43.7204,
+      "lng": -79.3581,
       "stardust": null,
       "source": "pokecoord"
     },
@@ -687,8 +707,8 @@
       "dex": 769,
       "country": "CANADA",
       "flag": "🇨🇦",
-      "lat": 43.7204,
-      "lng": -79.3581,
+      "lat": 49.8697,
+      "lng": -97.239,
       "stardust": null,
       "source": "pokecoord"
     },
