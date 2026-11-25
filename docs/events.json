@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T05:20:51.418700+00:00",
+ "fetched_at": "2026-11-25T15:57:54.633773+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -75,18 +75,6 @@
    "summary_ms": "Shadow Tornadus (Incarnate Forme) akan muncul dalam Shadow Raid lima bintang setiap hujung minggu dari November 16, 2026 hingga December 1, 2026."
   },
   {
-   "slug": "dynamax-trails-2026",
-   "name": "Dynamax Trails",
-   "type": "event",
-   "start": "2026-11-16T10:00:00",
-   "end": "2026-11-23T20:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-11-16-dynamax-trails-2026/dynamax-trails-2026.jpg",
-   "summary": "Get ready for a week of Max Battles! Dynamax Pokémon return, Max Particles are surging in the wild, and Eternamax Eternatus returns to Power Spots during Dynamax Trails. The Dynamax Trails event will take place from November 16, 2026 at 10 am to November 23, 2026 at 8 pm local time.",
-   "url": "https://leekduck.com/events/dynamax-trails-2026/",
-   "summary_ms": "Acara Dynamax Trails akan berlangsung dari November 16, 2026 hingga November 23, 2026. Nantikan butiran lanjut."
-  },
-  {
    "slug": "duolingo-timed-research-2026",
    "name": "Pokémon GO and Duolingo Timed Research",
    "type": "timed-research",
@@ -97,18 +85,6 @@
    "summary": "Pokémon GO and Duolingo are teaming up! Do at least one Duolingo lesson a day for seven days to earn an offer code for Timed Research in Pokémon GO. Complete the research to earn XP, Stardust, and encounters with Pikachu, Meowth, Chatot, and Lucario that have a Special Background. Duo’s Pokémon Party, the limited-time Duolingo quest, starts on Tuesday, November 17, 2026, at 10:00 a.m. JST (Monday, November 16, at 5:00 p.m. PST).",
    "url": "https://leekduck.com/events/duolingo-timed-research-2026/",
    "summary_ms": "Pokémon GO dan Duolingo bergabung tenaga! Lakukan sekurang-kurangnya satu pelajaran Duolingo sehari selama tujuh hari untuk dapatkan kod tawaran bagi Timed Research dalam Pokémon GO. Selesaikan penyelidikan itu untuk dapatkan XP, Stardust, dan pertemuan dengan Pikachu, Meowth, Chatot, dan Lucario yang mempunyai Special Background. Duo’s Pokémon Party, misi Duolingo terhad masa, bermula pada Selasa, 17 November 2026, jam 10:00 a.m. JST (Isnin, 16 November, jam 5:00 p.m. PST)."
-  },
-  {
-   "slug": "max-mondays-2026-11-23",
-   "name": "Dynamax Espurr during Max Monday",
-   "type": "max-mondays",
-   "start": "2026-11-23T06:00:00",
-   "end": "2026-11-23T21:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/max-battles-kanto.jpg",
-   "summary": "Dynamax Espurr may appear in Max Battles from November 23, 2026 through November 29, 2026 . These Dynamax Pokémon may appear in Max Battles throughout this season. Max Battles will be available from 6:00 a.m. to 9:00 p.m. local time on Mondays. Power Spots will refresh more frequently. Additional Power Spots will be active on Mondays compared to the rest of the week. Max Battles will rotate to feature different Dynamax Pokémon. On November 23, 2026 , the featured Dynamax Pokémon is Espurr . Espurr",
-   "url": "https://leekduck.com/events/max-mondays-2026-11-23/",
-   "summary_ms": "Dynamax Espurr mungkin muncul dalam Max Battles dari 23 November 2026 hingga 29 November 2026 . Dynamax Pokémon ini mungkin muncul dalam Max Battles sepanjang musim ini. Max Battles akan tersedia dari 6:00 a.m. hingga 9:00 p.m. waktu tempatan pada hari Isnin. Power Spots akan dikemas kini dengan lebih kerap. Power Spots tambahan akan aktif pada hari Isnin berbanding hari-hari lain dalam minggu itu. Max Battles akan bergilir untuk menampilkan Dynamax Pokémon yang berbeza. Pada 23 November 2026 , Dynamax Pokémon yang ditampilkan ialah Espurr . Espurr"
   },
   {
    "slug": "twilight-wishes-2026",
@@ -444,7 +420,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/choose-your-path-daydream-destinations-2026.jpg",
    "summary": "Choose Your Path Timed Research gives you the freedom to explore Pokémon GO your way during non-event weeks! During a Choose Your Path Timed Research week, you’ll be able to select one of three paths: Explore , Catch , or Battle . Your choice will shape the Timed Research tasks and bonuses throughout the week. You may have different research opportunities than other Trainers.",
    "url": "https://leekduck.com/events/choose-your-path-daydream-destinations-2026-12-15/",
-   "summary_ms": null
+   "summary_ms": "Choose Your Path Timed Research memberi anda kebebasan untuk meneroka Pokémon GO dengan cara anda sendiri sepanjang minggu bukan acara! Sepanjang minggu Choose Your Path Timed Research, anda boleh memilih salah satu daripada tiga laluan: Explore , Catch , atau Battle . Pilihan anda akan menentukan tugasan dan bonus Timed Research sepanjang minggu itu. Anda mungkin mendapat peluang penyelidikan yang berbeza daripada Trainer lain."
   },
   {
    "slug": "gbl-daydream-destinations_ultra-league-mega-edition_holiday-cup-great-league-edition",
@@ -744,7 +720,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/choose-your-path-daydream-destinations-2026.jpg",
    "summary": "Choose Your Path Timed Research gives you the freedom to explore Pokémon GO your way during non-event weeks! During a Choose Your Path Timed Research week, you’ll be able to select one of three paths: Explore , Catch , or Battle . Your choice will shape the Timed Research tasks and bonuses throughout the week. You may have different research opportunities than other Trainers.",
    "url": "https://leekduck.com/events/choose-your-path-daydream-destinations-2027-01-12/",
-   "summary_ms": null
+   "summary_ms": "Choose Your Path Timed Research memberi anda kebebasan untuk meneroka Pokémon GO dengan cara anda sendiri sepanjang minggu bukan acara! Sepanjang minggu Choose Your Path Timed Research, anda boleh memilih salah satu daripada tiga laluan: Explore , Catch , atau Battle . Pilihan anda akan membentuk tugasan dan bonus Timed Research sepanjang minggu itu. Anda mungkin mendapat peluang penyelidikan yang berbeza daripada Trainer lain."
   },
   {
    "slug": "gbl-daydream-destinations_ultra-league-mega-edition_jungle-cup-great-league-edition",
@@ -804,7 +780,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/choose-your-path-daydream-destinations-2026.jpg",
    "summary": "Choose Your Path Timed Research gives you the freedom to explore Pokémon GO your way during non-event weeks! During a Choose Your Path Timed Research week, you’ll be able to select one of three paths: Explore , Catch , or Battle . Your choice will shape the Timed Research tasks and bonuses throughout the week. You may have different research opportunities than other Trainers.",
    "url": "https://leekduck.com/events/choose-your-path-daydream-destinations-2027-01-26/",
-   "summary_ms": null
+   "summary_ms": "Choose Your Path Timed Research memberi anda kebebasan untuk meneroka Pokémon GO dengan cara anda sendiri sepanjang minggu bukan acara! Sepanjang minggu Choose Your Path Timed Research, anda boleh memilih salah satu daripada tiga laluan: Explore, Catch, atau Battle. Pilihan anda akan menentukan tugasan dan bonus Timed Research sepanjang minggu itu. Anda mungkin mendapat peluang penyelidikan yang berbeza daripada Trainer lain."
   },
   {
    "slug": "gbl-daydream-destinations_great-league-mega-edition_ultra-league-mega-edition_master-league-mega-edition-split-3",
@@ -888,7 +864,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/choose-your-path-daydream-destinations-2026.jpg",
    "summary": "Choose Your Path Timed Research gives you the freedom to explore Pokémon GO your way during non-event weeks! During a Choose Your Path Timed Research week, you’ll be able to select one of three paths: Explore , Catch , or Battle . Your choice will shape the Timed Research tasks and bonuses throughout the week. You may have different research opportunities than other Trainers.",
    "url": "https://leekduck.com/events/choose-your-path-daydream-destinations-2027-02-16/",
-   "summary_ms": null
+   "summary_ms": "Choose Your Path Timed Research memberi anda kebebasan untuk meneroka Pokémon GO dengan cara anda sendiri sepanjang minggu bukan acara! Sepanjang minggu Choose Your Path Timed Research, anda boleh memilih salah satu daripada tiga laluan: Explore, Catch, atau Battle. Pilihan anda akan menentukan tugasan dan bonus Timed Research sepanjang minggu itu. Anda mungkin mendapat peluang penyelidikan yang berbeza daripada Trainer lain."
   },
   {
    "slug": "gbl-daydream-destinations_master-league-mega-edition_mega-catch-cup-great-league-edition_2027-go-euic-cup",
