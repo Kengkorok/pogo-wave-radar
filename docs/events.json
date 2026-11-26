@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-26T08:48:44.946505+00:00",
+ "fetched_at": "2026-11-26T18:56:06.280273+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -37,30 +37,6 @@
    "summary": "Earn PokéCoins and encounter Groudon in GO Pass: November! The GO Pass and GO Pass Deluxe for November will be available from November 3, 2026 at 10:00 am to December 1, 2026 at 10:00 am local time.",
    "url": "https://leekduck.com/events/go-pass-november-2026/",
    "summary_ms": "Dapatkan PokéCoins dan temui Groudon dalam GO Pass: November! GO Pass dan GO Pass Deluxe untuk November akan tersedia dari 3 November 2026 jam 10:00 pagi hingga 1 Disember 2026 jam 10:00 pagi waktu tempatan."
-  },
-  {
-   "slug": "cresselia-darkrai-in-5-star-raid-battles-november-2026",
-   "name": "Cresselia and Darkrai in 5-star Raid Battles",
-   "type": "raid-battles",
-   "start": "2026-11-16T06:00:00",
-   "end": "2026-11-24T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/legendary-cresselia.jpg",
-   "summary": "Cresselia and Darkrai will be in five-star raid battles from November 16, 2026 to November 24, 2026. Raid bosses change at 6:00 a.m. local time. Raid Hours There will also be a Raid Hour featuring Cresselia and Darkrai from 6:00 p.m. to 7:00 p.m. local time on November 18.",
-   "url": "https://leekduck.com/events/cresselia-darkrai-in-5-star-raid-battles-november-2026/",
-   "summary_ms": "Cresselia dan Darkrai akan berada dalam raid battle bintang lima dari 16 November 2026 hingga 24 November 2026. Raid boss bertukar pada 6:00 a.m. waktu tempatan. Raid Hour Akan ada juga Raid Hour yang menampilkan Cresselia dan Darkrai dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan pada 18 November."
-  },
-  {
-   "slug": "mega-banette-in-mega-raids-november-2026",
-   "name": "Mega Banette in Mega Raids",
-   "type": "raid-battles",
-   "start": "2026-11-16T06:00:00",
-   "end": "2026-11-24T22:00:00",
-   "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/mega-default.jpg",
-   "summary": "Mega Banette will be in Mega Raids from November 16, 2026 at 6 am to November 24, 2026 at 10 pm local time. Raid bosses change at 6:00 a.m. local time.",
-   "url": "https://leekduck.com/events/mega-banette-in-mega-raids-november-2026/",
-   "summary_ms": "Mega Banette akan berada dalam Mega Raid dari 16 November 2026 jam 6 pagi hingga 24 November 2026 jam 10 malam waktu tempatan. Raid boss bertukar pada jam 6:00 pagi waktu tempatan."
   },
   {
    "slug": "shadow-tornadus-incarnate-forme-in-shadow-raids-november-16-2026",
@@ -288,7 +264,7 @@
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-12-05-gigantamax-inteleon-max-battle-day-2026/gigantamax-inteleon-max-battle-day.jpg",
    "summary": "The Gigantamax Inteleon Max Battle Day event will take place on December 5, 2026 from 2 pm to 5 pm local time.",
    "url": "https://leekduck.com/events/gigantamax-inteleon-max-battle-day-2026/",
-   "summary_ms": null
+   "summary_ms": "<p>Event Gigantamax Inteleon Max Battle Day akan berlangsung pada December 5, 2026 dari 2 pm hingga 5 pm waktu tempatan.</p>"
   },
   {
    "slug": "max-mondays-2026-12-07",
