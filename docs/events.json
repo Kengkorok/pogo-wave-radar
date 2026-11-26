@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T15:57:54.633773+00:00",
+ "fetched_at": "2026-11-26T00:11:52.299079+00:00",
  "source": "https://leekduck.com/events/",
  "events": [
   {
@@ -177,7 +177,7 @@
    "start": "2026-12-01T10:00:00",
    "end": "2026-12-07T20:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/tropical-paradise-2026.jpg",
    "summary": "The Tropical Paradise event will take place from December 1 to December 7, 2026. Stay tuned for more details.",
    "url": "https://leekduck.com/events/tropical-paradise-2026/",
    "summary_ms": "Event Tropical Paradise akan berlangsung dari 1 Disember hingga 7 Disember 2026. Nantikan maklumat lanjut."
@@ -303,16 +303,16 @@
    "summary_ms": "Dynamax Deino mungkin muncul dalam Max Battles dari 7 Disember 2026 hingga 13 Disember 2026 . Dynamax Pokémon ini mungkin muncul dalam Max Battles sepanjang Daydream Destinations. Max Battles akan tersedia dari 6:00 a.m. hingga 9:00 p.m. waktu tempatan pada hari Isnin. Power Spots akan dikemas kini dengan lebih kerap. Power Spots tambahan akan aktif pada hari Isnin berbanding hari-hari lain dalam seminggu. Max Battles akan bergilir untuk menampilkan Dynamax Pokémon yang berbeza. Pada 7 Disember 2026 , Dynamax Pokémon yang ditampilkan ialah Deino . Deino"
   },
   {
-   "slug": "unannounced-event-december-2026",
-   "name": "Unannounced Event",
+   "slug": "pokemon-champions-celebration-event-2026",
+   "name": "Pokémon Champions Celebration Event 2026",
    "type": "event",
    "start": "2026-12-08T10:00:00",
    "end": "2026-12-14T20:00:00",
    "local_time": true,
-   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
-   "summary": "An event that has not been announced yet will take place from December 8 to December 14, 2026. Stay tuned for more details.",
-   "url": "https://leekduck.com/events/unannounced-event-december-2026/",
-   "summary_ms": "Satu acara yang belum diumumkan lagi akan berlangsung dari 8 Disember hingga 14 Disember 2026. Nantikan butiran lanjut."
+   "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/article-images/2026/2026-12-08-pokemon-champions-celebration-event-2026/pokemon-champions-celebration-event-2026.jpg",
+   "summary": "Celebrate Pokémon Champions in Pokémon GO with the Pokémon Champions Celebration Event! Look for event-themed wild encounters, raids featuring Pokémon with a Special Background, an event GO Pass, and gifts for sending Pokémon from Pokémon HOME to visit Pokémon Champions .",
+   "url": "https://leekduck.com/events/pokemon-champions-celebration-event-2026/",
+   "summary_ms": null
   },
   {
    "slug": "gbl-daydream-destinations_great-league-mega-edition_mountain-cup-great-league-edition",
@@ -339,16 +339,16 @@
    "summary_ms": "Mega Gengar akan berada dalam Mega Raid dari 9 Disember 2026 jam 6 pagi hingga 15 Disember 2026 jam 10 malam waktu tempatan. Raid boss bertukar pada 6:00 a.m. waktu tempatan."
   },
   {
-   "slug": "unannounced-pokemon-in-5-star-raid-battles-december-2026",
-   "name": "Unannounced Pokémon in 5-star Raid Battles",
+   "slug": "pokemon-champions-celebration-5-star-raid-battles-december-2026",
+   "name": "Pokémon Champions Celebration 5-star Raid Battles",
    "type": "raid-battles",
    "start": "2026-12-09T06:00:00",
    "end": "2026-12-15T22:00:00",
    "local_time": true,
    "img": "https://cdn.leekduck.com/cdn-cgi/image/fit=scale-down,height=95,quality=100,format=webp/assets/img/events/events-default-img.jpg",
-   "summary": "A five-star raid boss that has not been announced yet will be in five-star raid battles from December 9, 2026 to December 15, 2026. Stay tuned for more details. Raid bosses change at 6:00 a.m. local time. Raid Hours There will also be a Raid Hour featuring this raid boss from 6:00 p.m. to 7:00 p.m. local time on December 9.",
-   "url": "https://leekduck.com/events/unannounced-pokemon-in-5-star-raid-battles-december-2026/",
-   "summary_ms": "Boss raid lima bintang yang belum diumumkan lagi akan berada dalam pertempuran raid lima bintang dari 9 Disember 2026 hingga 15 Disember 2026. Nantikan butiran lanjut. Boss raid bertukar pada 6:00 a.m. waktu tempatan. Raid Hours Akan ada juga Raid Hour yang menampilkan boss raid ini dari 6:00 p.m. hingga 7:00 p.m. waktu tempatan pada 9 Disember."
+   "summary": "As part of the Pokémon Champions Celebration Event , Latias, Latios, Heatran, Cobalion, Terrakion, Virizion, Regieleki, and Regidrago will have scheduled appearances in five-star raid battles from December 9, 2026 to December 15, 2026. They are part of the Seasonal rotation; the daily schedule has not been announced yet. The Special Background will only be available for the duration of the Pokémon Champions Celebration Event, which ends on December 14 at 8:00 p.m. local time. Raid bosses change at 6:00 a.m. local time. Raid Hours There will also be a Raid Hour from 6:00 p.m. to 7:00 p.m. local time on December 9.",
+   "url": "https://leekduck.com/events/pokemon-champions-celebration-5-star-raid-battles-december-2026/",
+   "summary_ms": null
   },
   {
    "slug": "raidhour20261209",
